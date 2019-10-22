@@ -2,6 +2,7 @@
 using GraphQL.Types;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
+using Dieter.API.Models.GraphQL.Query;
 
 namespace Dieter.Controllers
 {
@@ -21,7 +22,7 @@ namespace Dieter.Controllers
 
             var schema = new Schema()
             {
-                Query = new DieterQuery(_db)
+                Query = new GetUsersQuery(_db)
             };
 
             var result = await new DocumentExecuter().ExecuteAsync(_ =>

@@ -1,5 +1,4 @@
-﻿using Dieter.Models;
-
+﻿
 namespace Dieter.API.Models
 {
     public class IngredientRecipe

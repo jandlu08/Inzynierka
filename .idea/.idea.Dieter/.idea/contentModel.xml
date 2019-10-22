@@ -23,6 +23,9 @@
               <e p="IngredientType.cs" t="Include" />
               <e p="IngredientTypeEnum.cs" t="Include" />
               <e p="PhotoType.cs" t="Include" />
+              <e p="Query" t="Include">
+                <e p="GetUsersQuery.cs" t="Include" />
+              </e>
               <e p="RatingType.cs" t="Include" />
               <e p="RecipeType.cs" t="Include" />
               <e p="SexEnum.cs" t="Include" />
@@ -41,6 +44,11 @@
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Dieter.csproj" t="IncludeRecursive" />
+        <e p="Migrations" t="Include">
+          <e p="20191022082105_init.cs" t="Include" />
+          <e p="20191022082105_init.Designer.cs" t="Include" />
+          <e p="ResourcesDbContextModelSnapshot.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.0" t="Include">
