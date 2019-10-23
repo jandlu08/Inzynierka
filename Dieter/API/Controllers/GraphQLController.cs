@@ -22,7 +22,8 @@ namespace Dieter.Controllers
 
             var schema = new Schema()
             {
-                Query = new GetUsersQuery(_db)
+                Query = new DieterQuery(_db),
+
             };
 
             var result = await new DocumentExecuter().ExecuteAsync(_ =>

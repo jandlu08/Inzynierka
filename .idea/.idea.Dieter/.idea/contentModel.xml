@@ -24,7 +24,7 @@
               <e p="IngredientTypeEnum.cs" t="Include" />
               <e p="PhotoType.cs" t="Include" />
               <e p="Query" t="Include">
-                <e p="GetUsersQuery.cs" t="Include" />
+                <e p="DieterQuery.cs" t="Include" />
               </e>
               <e p="RatingType.cs" t="Include" />
               <e p="RecipeType.cs" t="Include" />
@@ -47,6 +47,8 @@
         <e p="Migrations" t="Include">
           <e p="20191022082105_init.cs" t="Include" />
           <e p="20191022082105_init.Designer.cs" t="Include" />
+          <e p="20191023152805_updateTypes.cs" t="Include" />
+          <e p="20191023152805_updateTypes.Designer.cs" t="Include" />
           <e p="ResourcesDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">

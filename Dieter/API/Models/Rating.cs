@@ -1,4 +1,5 @@
-﻿namespace Dieter.API.Models
+﻿
+namespace Dieter.API.Models
 {
     public class Rating
     {
