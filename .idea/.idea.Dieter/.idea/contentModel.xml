@@ -19,6 +19,9 @@
             </e>
             <e p="Graphql" t="Include">
               <e p="CommentType.cs" t="Include" />
+              <e p="DieterMutation" t="Include">
+                <e p="DieterMutation.cs" t="Include" />
+              </e>
               <e p="DifficultyEnum.cs" t="Include" />
               <e p="IngredientType.cs" t="Include" />
               <e p="IngredientTypeEnum.cs" t="Include" />
@@ -49,6 +52,8 @@
           <e p="20191022082105_init.Designer.cs" t="Include" />
           <e p="20191023152805_updateTypes.cs" t="Include" />
           <e p="20191023152805_updateTypes.Designer.cs" t="Include" />
+          <e p="20191023190226_dateIsNullable.cs" t="Include" />
+          <e p="20191023190226_dateIsNullable.Designer.cs" t="Include" />
           <e p="ResourcesDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
