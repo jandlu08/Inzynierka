@@ -2,7 +2,7 @@
 
 namespace Dieter.API.Models.GraphQL.InputTypes
 {
-    public class AddCommentInputType : ObjectGraphType
+    public class AddCommentInputType : InputObjectGraphType
     {
         public AddCommentInputType()
         {

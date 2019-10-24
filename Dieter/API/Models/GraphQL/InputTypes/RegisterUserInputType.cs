@@ -2,7 +2,7 @@
 
 namespace Dieter.API.Models.GraphQL.InputTypes
 {
-    public class RegisterUserInputType : ObjectGraphType
+    public class RegisterUserInputType : InputObjectGraphType
     {
         public RegisterUserInputType()
         {

@@ -2,6 +2,7 @@
 using GraphQL.Types;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
+using Dieter.API.Models.GraphQL.DieterMutation;
 using Dieter.API.Models.GraphQL.Query;
 
 namespace Dieter.Controllers
@@ -15,7 +16,7 @@ namespace Dieter.Controllers
         {
             _db = db;
         }
-        
+
         public async Task<IActionResult> Post([FromBody] GraphQlQuery query)
         {
             var inputs = query.Variables.ToInputs();
@@ -23,7 +24,7 @@ namespace Dieter.Controllers
             var schema = new Schema()
             {
                 Query = new DieterQuery(_db),
-
+                Mutation = new DieterMutation(_db)
             };
 
             var result = await new DocumentExecuter().ExecuteAsync(_ =>
@@ -34,7 +35,7 @@ namespace Dieter.Controllers
                 _.Inputs = inputs;
             }).ConfigureAwait(false);
 
-            if(result.Errors?.Count > 0)
+            if (result.Errors?.Count > 0)
             {
                 return BadRequest();
             }
