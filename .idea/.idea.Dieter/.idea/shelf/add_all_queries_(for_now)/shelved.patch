@@ -1,0 +1,67 @@
+Index: Dieter/API/Models/GraphQL/Query/DieterQuery.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>using System;\r\nusing System.Collections.Generic;\r\nusing System.Linq;\r\nusing GraphQL.Types;\r\nusing Microsoft.EntityFrameworkCore;\r\n\r\nnamespace Dieter.API.Models.GraphQL.Query\r\n{\r\n    public class DieterQuery : ObjectGraphType\r\n    {\r\n        public DieterQuery(ResourcesDbContext db)\r\n        {\r\n            Field<UserType>(\r\n                \"getUser\",\r\n                arguments: new QueryArguments(\r\n                    new QueryArgument<IdGraphType> {Name = \"userId\",}),\r\n                resolve: context =>\r\n                {\r\n                    var id = context.GetArgument<int?>(\"userId\");\r\n                    return db\r\n                        .Users\r\n                        .Include(x => x.Recipes)\r\n                        .FirstOrDefault(i => i.UserId == id);\r\n                }\r\n            );\r\n            Field<ListGraphType<UserType>>(\r\n                \"getUsers\",\r\n                resolve: context => { return db.Users.Include(x => x.Recipes); }\r\n            );\r\n\r\n\r\n            Field<RecipeType>(\r\n                \"getRecipe\",\r\n                arguments: new QueryArguments(\r\n                    new QueryArgument<IdGraphType> {Name = \"recipeId\",}),\r\n                resolve: context =>\r\n                {\r\n                    var id = context.GetArgument<int?>(\"recipeId\");\r\n                    return db\r\n                        .Recipes\r\n                        .Include(x => x.Photos)\r\n                        .Include(x => x.IngredientRecipes)\r\n                        .FirstOrDefault(i => i.RecipeId == id);\r\n                }\r\n            );\r\n            Field<ListGraphType<RecipeType>>(\r\n                \"getRecipes\",\r\n                arguments: new QueryArguments(\r\n                    new QueryArgument<IntGraphType> {Name = \"calories\",},\r\n                    new QueryArgument<IntGraphType> {Name = \"amount\"},\r\n                    new QueryArgument<IntGraphType> {Name = \"offset\", DefaultValue = 0}),\r\n                resolve: context =>\r\n                {\r\n                    var calories = context.GetArgument<int?>(\"calories\");\r\n                    var amount = context.GetArgument<int?>(\"amount\");\r\n                    var offset = context.GetArgument<int?>(\"offset\");\r\n\r\n                    if (calories == null && amount == null)\r\n                    {\r\n                        return db\r\n                            .Recipes\r\n                            .Include(x => x.Comments)\r\n                            .Include(x => x.Thumb)\r\n                            .Include(x => x.Photos)\r\n                            .Include(x => x.IngredientRecipes);\r\n                    }\r\n\r\n                    if (calories == null)\r\n                    {\r\n                        return db\r\n                            .Recipes\r\n                            .Include(x => x.Comments)\r\n                            .Include(x => x.Thumb)\r\n                            .Include(x => x.Photos)\r\n                            .Include(x => x.IngredientRecipes).Take((int) amount);\r\n                    }\r\n\r\n                    if (amount == null)\r\n                    {\r\n                        return db\r\n                            .Recipes\r\n                            .Include(x => x.Comments)\r\n                            .Include(x => x.Thumb)\r\n                            .Include(x => x.Photos)\r\n                            .Include(x => x.IngredientRecipes)\r\n                            .Where(x => x.Calories <= calories);\r\n                    }\r\n\r\n                    var allRecipes = db.Recipes\r\n                        .Include(x => x.Comments)\r\n                        .Include(x => x.Thumb)\r\n                        .Include(x => x.Photos)\r\n                        .Include(x => x.IngredientRecipes)\r\n                        .Where(x => x.Calories <= calories).ToList();\r\n\r\n                    var returnRecipes = new List<Recipe>();\r\n                    var rnd = new Random();\r\n                    while (amount > 0 && allRecipes.Count > 0 && calories > 0)\r\n                    {\r\n                        var index = rnd.Next(allRecipes.Count - 1);\r\n                        var recipe = allRecipes[index];\r\n                        if (calories - recipe.Calories - offset > 0)\r\n                        {\r\n                            returnRecipes.Add(recipe);\r\n                            amount--;\r\n                            calories = -recipe.Calories;\r\n                            allRecipes.RemoveAt(index);\r\n                        }\r\n                        else\r\n                        {\r\n                            amount--;\r\n                            allRecipes.RemoveAt(index);\r\n                        }\r\n                    }\r\n\r\n                    return returnRecipes;\r\n                }\r\n            );\r\n\r\n            Field<CommentType>(\r\n                \"getComment\",\r\n                arguments: new QueryArguments(\r\n                    new QueryArgument<IntGraphType> {Name = \"commentId\"}),\r\n                resolve: context =>\r\n                {\r\n                    var commentId = context.GetArgument<int?>(\"commentId\");\r\n                    return db.Comments\r\n                        .Include(x => x.Author)\r\n                        .Include(x => x.Rating)\r\n                        .FirstOrDefault(x => x.CommentId == commentId);\r\n                });\r\n            Field<ListGraphType<CommentType>>(\r\n                \"getComments\",\r\n                arguments: new QueryArguments(\r\n                    new QueryArgument<IntGraphType> {Name = \"recipeId\"}),\r\n                resolve: context =>\r\n                {\r\n                    var recipeId = context.GetArgument<int?>(\"recipeId\");\r\n                    return db.Recipes\r\n                        .Include(x => x.Comments)\r\n                        .ThenInclude(x=> x.Author)\r\n                        .Where(x => x.RecipeId == recipeId)\r\n                        .Select(x => x.Comments)\r\n                        .SingleOrDefault();;\r\n                });\r\n            \r\n            Field<IngredientType>(\r\n                \"getIngredient\",\r\n                arguments: new QueryArguments(\r\n                    new QueryArgument<IntGraphType> {Name = \"ingredientId\"}),\r\n                resolve: context =>\r\n                {\r\n                    var ingredientId = context.GetArgument<int?>(\"ingredientId\");\r\n                    return db.Ingredients\r\n                        .Include(x => x.Photo)\r\n                        .FirstOrDefault(x => x.IngredientId == ingredientId);\r\n                });\r\n            Field<ListGraphType<IngredientType>>(\r\n                \"getIngredients\",\r\n                arguments: new QueryArguments(\r\n                    new QueryArgument<IntGraphType> {Name = \"recipeId\"}),\r\n                resolve: context =>\r\n                {\r\n                    var recipeId = context.GetArgument<int?>(\"recipeId\");\r\n\r\n                    if (recipeId == null)\r\n                    {\r\n                        return db.Ingredients\r\n                            .Include(x => x.Photo);\r\n                    }\r\n\r\n                    return db.Recipes\r\n                        .Include(x => x.IngredientRecipes)\r\n                        .ThenInclude(x => x.Ingredient)\r\n                        .Where(x => x.RecipeId == recipeId)\r\n                        .Select(x => x.IngredientRecipes.Select(y => y.Ingredient))\r\n                        .SingleOrDefault();\r\n                });\r\n            \r\n        }\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Dieter/API/Models/GraphQL/Query/DieterQuery.cs	(date 1571859543000)
++++ Dieter/API/Models/GraphQL/Query/DieterQuery.cs	(date 1571937202379)
+@@ -62,7 +62,9 @@
+                             .Include(x => x.Comments)
+                             .Include(x => x.Thumb)
+                             .Include(x => x.Photos)
+-                            .Include(x => x.IngredientRecipes);
++                            .Include(x => x.IngredientRecipes)
++                            .ThenInclude(x => x.Ingredient);
++
+                     }
+ 
+                     if (calories == null)
+@@ -72,7 +74,8 @@
+                             .Include(x => x.Comments)
+                             .Include(x => x.Thumb)
+                             .Include(x => x.Photos)
+-                            .Include(x => x.IngredientRecipes).Take((int) amount);
++                            .Include(x => x.IngredientRecipes)
++                            .Take((int) amount);
+                     }
+ 
+                     if (amount == null)
+Index: Dieter/API/Models/GraphQL/RecipeType.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>using GraphQL.Types;\r\n\r\nnamespace Dieter.API.Models.GraphQL\r\n{\r\n    public class RecipeType : ObjectGraphType<Recipe>\r\n    {\r\n        public RecipeType()\r\n        {\r\n            Name = \"Recipe\";\r\n\r\n            Field(x => x.RecipeId, type: typeof(IdGraphType));\r\n            Field(x => x.Calories, type: typeof(IntGraphType));\r\n            Field(x => x.Comments, type: typeof(ListGraphType<CommentType>));\r\n            Field(x => x.Description, type: typeof(StringGraphType));\r\n            Field(x => x.Difficulty, type: typeof(DifficultyEnum));\r\n            Field(x => x.Name, type: typeof(StringGraphType));\r\n            Field(x => x.Photos, type: typeof(ListGraphType<PhotoType>));\r\n            Field(x => x.Rating, type: typeof(RatingType));\r\n            Field(x => x.Thumb, type: typeof(PhotoType));\r\n            Field(x => x.Weight, type: typeof(IntGraphType));\r\n            Field(x => x.EstTime, type: typeof(IntGraphType));\r\n            Field<ListGraphType<IngredientType>>(\"Ingredients\");\r\n        }\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Dieter/API/Models/GraphQL/RecipeType.cs	(date 1571859543000)
++++ Dieter/API/Models/GraphQL/RecipeType.cs	(date 1571937569737)
+@@ -19,7 +19,7 @@
+             Field(x => x.Thumb, type: typeof(PhotoType));
+             Field(x => x.Weight, type: typeof(IntGraphType));
+             Field(x => x.EstTime, type: typeof(IntGraphType));
+-            Field<ListGraphType<IngredientType>>("Ingredients");
++            Field(x => x.IngredientRecipes, type: typeof(IngredientRecipeType));
+         }
+     }
+ }
+\ No newline at end of file
+Index: Dieter/API/Models/GraphQL/IngredientType.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>using GraphQL.Types;\r\n\r\nnamespace Dieter.API.Models.GraphQL\r\n{\r\n    public class IngredientType : ObjectGraphType<Ingredient>\r\n    {\r\n        public IngredientType()\r\n        {\r\n            Name = \"Ingredient\";\r\n\r\n            Field(x => x.IngredientId, type: typeof(IdGraphType));\r\n            Field(x => x.Calories, type: typeof(IntGraphType));\r\n            Field(x => x.Description, type: typeof(StringGraphType));\r\n            Field(x => x.Name, type: typeof(StringGraphType));\r\n            Field(x => x.Photo, type: typeof(PhotoType));\r\n            Field(x => x.IngredientType, type: typeof(IngredientTypeEnum));\r\n            Field<ListGraphType<RecipeType>>(\"Recipes\");\r\n\r\n        }\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Dieter/API/Models/GraphQL/IngredientType.cs	(date 1571859543000)
++++ Dieter/API/Models/GraphQL/IngredientType.cs	(date 1571937569731)
+@@ -14,7 +14,7 @@
+             Field(x => x.Name, type: typeof(StringGraphType));
+             Field(x => x.Photo, type: typeof(PhotoType));
+             Field(x => x.IngredientType, type: typeof(IngredientTypeEnum));
+-            Field<ListGraphType<RecipeType>>("Recipes");
++            Field(x => x.IngredientRecipes, type: typeof(IngredientRecipeType));
+ 
+         }
+     }
