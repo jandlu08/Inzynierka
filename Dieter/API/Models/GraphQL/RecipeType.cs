@@ -18,6 +18,7 @@ namespace Dieter.API.Models.GraphQL
             Field(x => x.Rating, type: typeof(RatingType));
             Field(x => x.Weight, type: typeof(IntGraphType));
             Field(x => x.EstTime, type: typeof(IntGraphType));
+            Field(x => x.AuthorUserId, type: typeof(IdGraphType));
             Field<ListGraphType<IngredientType>>("Ingredients");
         }
     }

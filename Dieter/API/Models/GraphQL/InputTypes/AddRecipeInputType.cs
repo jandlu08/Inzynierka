@@ -2,9 +2,9 @@
 
 namespace Dieter.API.Models.GraphQL.InputTypes
 {
-    public class RecipeInputType : InputObjectGraphType
+    public class AddRecipeInputType : InputObjectGraphType
     {
-        public RecipeInputType()
+        public AddRecipeInputType()
         {
             Name = "RecipeInput";
 
@@ -14,8 +14,9 @@ namespace Dieter.API.Models.GraphQL.InputTypes
             Field<NonNullGraphType<IntGraphType>>("weight");
             Field<IntGraphType>("estTime");
             Field<NonNullGraphType<DifficultyEnum>>("difficulty");
-            Field<NonNullGraphType<IdGraphType>>("userId");
             Field<IdGraphType>("photoId");
+            Field<NonNullGraphType<IdGraphType>>("authorUserId");
+          
         }
     }
 }

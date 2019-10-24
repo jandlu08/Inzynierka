@@ -16,6 +16,5 @@ namespace Dieter.API.Models
         public DateTime? RegistrationDate { get; set; }
         public DateTime? LastActive { get; set; }
 
-        public ICollection<Recipe> Recipes { get; set; }
     }
 }

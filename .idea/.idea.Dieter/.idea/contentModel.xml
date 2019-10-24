@@ -29,7 +29,7 @@
               <e p="InputTypes" t="Include">
                 <e p="AddCommentInputType.cs" t="Include" />
                 <e p="AddIngredientInputType.cs" t="Include" />
-                <e p="RecipeInputType.cs" t="Include" />
+                <e p="AddRecipeInputType.cs" t="Include" />
                 <e p="RegisterUserInputType.cs" t="Include" />
               </e>
               <e p="PhotoType.cs" t="Include" />
@@ -64,6 +64,8 @@
           <e p="20191023190226_dateIsNullable.Designer.cs" t="Include" />
           <e p="20191024182529_deleteThumb.cs" t="Include" />
           <e p="20191024182529_deleteThumb.Designer.cs" t="Include" />
+          <e p="20191024205814_addAuthorIdRecipes.cs" t="Include" />
+          <e p="20191024205814_addAuthorIdRecipes.Designer.cs" t="Include" />
           <e p="ResourcesDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">

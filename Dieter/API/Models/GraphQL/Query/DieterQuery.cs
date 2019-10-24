@@ -19,14 +19,12 @@ namespace Dieter.API.Models.GraphQL.Query
                     var id = context.GetArgument<int?>("userId");
                     return db
                         .Users
-                        .Include(x => x.Recipes)
                         .FirstOrDefault(i => i.UserId == id);
                 }
             );
             Field<ListGraphType<UserType>>(
                 "getUsers",
-                resolve: context => { return db.Users.Include(x => x.Recipes); }
-            );
+                resolve: context => db.Users);
 
 
             Field<RecipeType>(

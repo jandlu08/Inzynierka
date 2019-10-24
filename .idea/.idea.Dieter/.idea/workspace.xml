@@ -4,16 +4,15 @@
     <list default="true" id="490b1499-0315-47b0-85b5-49b079606736" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/API/Models/GraphQL/DieterMutation/DieterMutation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/API/Models/GraphQL/DieterMutation/DieterMutation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/API/Models/GraphQL/InputTypes/RecipeInputType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/API/Models/GraphQL/InputTypes/AddRecipeInputType.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dieter/API/Models/GraphQL/Query/DieterQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/API/Models/GraphQL/Query/DieterQuery.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dieter/API/Models/GraphQL/RecipeType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/API/Models/GraphQL/RecipeType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/API/Models/GraphQL/UserType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/API/Models/GraphQL/UserType.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dieter/API/Models/Recipe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/API/Models/Recipe.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/Migrations/20191022082105_init.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/Migrations/20191022082105_init.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/Migrations/20191023152805_updateTypes.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/Migrations/20191023152805_updateTypes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/Migrations/20191023190226_dateIsNullable.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/Migrations/20191023190226_dateIsNullable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/Migrations/ResourcesDbContextModelSnapshot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/API/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/API/Models/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/Dieter.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/Dieter.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/Migrations/ResourcesDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/Migrations/ResourcesDbContextModelSnapshot.cs" afterDir="false" />
     </list>
     <list id="f107c17d-2d2f-482b-8382-8cd0796d5b43" name="add all queries (for now)" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,11 +51,14 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Dieter/API/Models/GraphQL/Query/DieterQuery.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6237DFF0-4F52-4754-BF5D-A40EE79AA5C4/7b/65c3ff67/Schema.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6237DFF0-4F52-4754-BF5D-A40EE79AA5C4/1e/bf8654e9/SerialExecutionStrategy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Dieter/API/Models/GraphQL/InputTypes/RegisterUserInputType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Dieter/API/Models/GraphQL/VoteEnum.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Dieter/API/Models/GraphQL/InputTypes/AddCommentInputType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Dieter/API/Models/GraphQL/InputTypes/AddIngredientInputType.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Dieter/API/Models/GraphQL/InputTypes/RecipeInputType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Dieter/API/Models/GraphQL/InputTypes/AddRecipeInputType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Dieter/Migrations/20191022082105_init.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Dieter/Migrations/20191024182529_deleteThumb.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6237DFF0-4F52-4754-BF5D-A40EE79AA5C4/31/4f568699/FuncFieldResolver`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Dieter/API/Models/GraphQL/PhotoType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Dieter/API/Models/GraphQL/IngredientTypeEnum.cs" root0="FORCE_HIGHLIGHTING" />
@@ -87,7 +89,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Dieter/Models/Enums/IngredientType.cs" />
         <option value="$PROJECT_DIR$/Dieter/Models/Enums/Sex.cs" />
         <option value="$PROJECT_DIR$/Dieter/Models/Comment.cs" />
         <option value="$PROJECT_DIR$/Dieter/Models/IngredientRecipe.cs" />
@@ -103,7 +104,6 @@
         <option value="$PROJECT_DIR$/Dieter/API/GraphQlQuery.cs" />
         <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/SexType.cs" />
         <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/SexEnum.cs" />
-        <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/UserType.cs" />
         <option value="$PROJECT_DIR$/Dieter/API/Models/Enums/Difficulty.cs" />
         <option value="$PROJECT_DIR$/Dieter/API/Models/Enums/Sex.cs" />
         <option value="$PROJECT_DIR$/Dieter/API/Models/Enums/IngredientType.cs" />
@@ -117,27 +117,29 @@
         <option value="$PROJECT_DIR$/Dieter/API/ResourcesDbContext.cs" />
         <option value="$PROJECT_DIR$/Dieter/Dieter.csproj" />
         <option value="$PROJECT_DIR$/Dieter/Startup.cs" />
-        <option value="$PROJECT_DIR$/Dieter/API/Models/User.cs" />
         <option value="$PROJECT_DIR$/Dieter/API/Models/Rating.cs" />
         <option value="$PROJECT_DIR$/Dieter/API/Models/Photo.cs" />
         <option value="$PROJECT_DIR$/Dieter/API/Models/IngredientRecipe.cs" />
         <option value="$PROJECT_DIR$/Dieter/API/Models/Comment.cs" />
         <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/Query/GetUserQuery.cs" />
         <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/Query/GetUsersQuery.cs" />
-        <option value="$PROJECT_DIR$/Dieter/API/Controllers/GraphQLController.cs" />
         <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/CommentType.cs" />
         <option value="$PROJECT_DIR$/Dieter/API/Models/Ingredient.cs" />
-        <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/DieterMutation/DieterMutation.cs" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8fda383c-72a9-4db7-8c24-7e28127814b6/console.sql" />
-        <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/InputTypes/RegisterUserInputType.cs" />
         <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/VoteEnum.cs" />
         <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/InputTypes/AddCommentInput.cs" />
-        <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/InputTypes/AddCommentInputType.cs" />
+        <option value="$PROJECT_DIR$/Dieter/API/Controllers/GraphQLController.cs" />
+        <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/InputTypes/RecipeInputType.cs" />
         <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/InputTypes/AddIngredientInputType.cs" />
+        <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/InputTypes/AddCommentInputType.cs" />
+        <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/InputTypes/RegisterUserInputType.cs" />
+        <option value="$PROJECT_DIR$/Dieter/API/Models/User.cs" />
+        <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/UserType.cs" />
         <option value="$PROJECT_DIR$/Dieter/API/Models/Recipe.cs" />
         <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/RecipeType.cs" />
         <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/Query/DieterQuery.cs" />
-        <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/InputTypes/RecipeInputType.cs" />
+        <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/DieterMutation/DieterMutation.cs" />
+        <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/InputTypes/AddRecipeInputType.cs" />
       </list>
     </option>
   </component>
@@ -226,7 +228,35 @@
       <option name="project" value="LOCAL" />
       <updated>1571848345478</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add input types">
+      <created>1571942173132</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1571942173132</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add input types">
+      <created>1571942273995</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1571942273995</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix types in graphql types">
+      <created>1571944328969</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1571944328969</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix types in graphql types">
+      <created>1571944439856</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1571944439856</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +281,9 @@
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
     <MESSAGE value="add getUsers query" />
     <MESSAGE value="add queries" />
-    <option name="LAST_COMMIT_MESSAGE" value="add queries" />
+    <MESSAGE value="add input types" />
+    <MESSAGE value="fix types in graphql types" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix types in graphql types" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -262,9 +294,15 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <reveal-manager>
+      <revealed-members>
+        <RevealItemInfo typeName="GraphQL.Language.AST.Field" fieldName="Name" />
+      </revealed-members>
+    </reveal-manager>
     <watches-manager>
       <configuration name="LaunchSettings">
         <watch expression="Results" />
+        <watch expression="this.node" />
       </configuration>
     </watches-manager>
   </component>
