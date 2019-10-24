@@ -14,9 +14,8 @@ namespace Dieter.API.Models
         public int? EstTime { get; set; }
         public Difficulty? Difficulty { get; set; }
         public Rating Rating { get; set; }
-        public Photo Thumb { get; set; }
 
-        public ICollection<Photo> Photos { get; set; }
+        public Photo Photo { get; set; }
         public ICollection<Comment> Comments { get; set; }
         public ICollection<IngredientRecipe> IngredientRecipes { get; set; }
     }

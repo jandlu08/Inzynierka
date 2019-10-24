@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
+    <e p="C:\Users\Janusz\.Rider2019.2\config\consoles\db" t="IncludeRecursive" />
     <e p="C:\Users\Janusz\.Rider2019.2\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Janusz\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Dieter.-130691254.00" t="ExcludeRecursive" />
     <e p="C:\Users\Janusz\RiderProjects\Dieter" t="IncludeFlat">
@@ -25,6 +26,12 @@
               <e p="DifficultyEnum.cs" t="Include" />
               <e p="IngredientType.cs" t="Include" />
               <e p="IngredientTypeEnum.cs" t="Include" />
+              <e p="InputTypes" t="Include">
+                <e p="AddCommentInputType.cs" t="Include" />
+                <e p="AddIngredientInputType.cs" t="Include" />
+                <e p="RecipeInputType.cs" t="Include" />
+                <e p="RegisterUserInputType.cs" t="Include" />
+              </e>
               <e p="PhotoType.cs" t="Include" />
               <e p="Query" t="Include">
                 <e p="DieterQuery.cs" t="Include" />
@@ -33,6 +40,7 @@
               <e p="RecipeType.cs" t="Include" />
               <e p="SexEnum.cs" t="Include" />
               <e p="UserType.cs" t="Include" />
+              <e p="VoteEnum.cs" t="Include" />
             </e>
             <e p="Ingredient.cs" t="Include" />
             <e p="IngredientRecipe.cs" t="Include" />
@@ -54,6 +62,8 @@
           <e p="20191023152805_updateTypes.Designer.cs" t="Include" />
           <e p="20191023190226_dateIsNullable.cs" t="Include" />
           <e p="20191023190226_dateIsNullable.Designer.cs" t="Include" />
+          <e p="20191024182529_deleteThumb.cs" t="Include" />
+          <e p="20191024182529_deleteThumb.Designer.cs" t="Include" />
           <e p="ResourcesDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">

@@ -38,8 +38,8 @@ namespace Dieter.API.Models.GraphQL.Query
                     var id = context.GetArgument<int?>("recipeId");
                     return db
                         .Recipes
-                        .Include(x => x.Photos)
-                        .Include(x => x.IngredientRecipes)
+                        .Include(x => x.Photo)
+                        .Include(x=>x.Comments)
                         .FirstOrDefault(i => i.RecipeId == id);
                 }
             );
@@ -60,9 +60,7 @@ namespace Dieter.API.Models.GraphQL.Query
                         return db
                             .Recipes
                             .Include(x => x.Comments)
-                            .Include(x => x.Thumb)
-                            .Include(x => x.Photos)
-                            .Include(x => x.IngredientRecipes);
+                            .Include(x => x.Photo);
                     }
 
                     if (calories == null)
@@ -70,9 +68,8 @@ namespace Dieter.API.Models.GraphQL.Query
                         return db
                             .Recipes
                             .Include(x => x.Comments)
-                            .Include(x => x.Thumb)
-                            .Include(x => x.Photos)
-                            .Include(x => x.IngredientRecipes).Take((int) amount);
+                            .Include(x => x.Photo)
+                            .Take((int) amount);
                     }
 
                     if (amount == null)
@@ -80,17 +77,13 @@ namespace Dieter.API.Models.GraphQL.Query
                         return db
                             .Recipes
                             .Include(x => x.Comments)
-                            .Include(x => x.Thumb)
-                            .Include(x => x.Photos)
-                            .Include(x => x.IngredientRecipes)
+                            .Include(x => x.Photo)
                             .Where(x => x.Calories <= calories);
                     }
 
                     var allRecipes = db.Recipes
                         .Include(x => x.Comments)
-                        .Include(x => x.Thumb)
-                        .Include(x => x.Photos)
-                        .Include(x => x.IngredientRecipes)
+                        .Include(x => x.Photo)
                         .Where(x => x.Calories <= calories).ToList();
 
                     var returnRecipes = new List<Recipe>();
