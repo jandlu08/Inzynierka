@@ -10,6 +10,8 @@ namespace Dieter.API.Models
         public Rating Rating { get; set; }
         [Required]
         public User Author { get; set; }
+        [Required]
+        public Recipe Recipe { get; set; }
         public DateTime? PublicationDate { get; set; }
     }
 }

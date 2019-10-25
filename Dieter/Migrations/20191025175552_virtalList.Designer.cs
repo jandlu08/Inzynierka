@@ -3,15 +3,17 @@ using System;
 using Dieter;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Dieter.Migrations
 {
     [DbContext(typeof(ResourcesDbContext))]
-    partial class ResourcesDbContextModelSnapshot : ModelSnapshot
+    [Migration("20191025175552_virtalList")]
+    partial class virtalList
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -38,7 +40,7 @@ namespace Dieter.Migrations
                     b.Property<int?>("RatingId")
                         .HasColumnType("integer");
 
-                    b.Property<int>("RecipeId")
+                    b.Property<int?>("RecipeId")
                         .HasColumnType("integer");
 
                     b.HasKey("CommentId");
@@ -219,11 +221,9 @@ namespace Dieter.Migrations
                         .WithMany()
                         .HasForeignKey("RatingId");
 
-                    b.HasOne("Dieter.API.Models.Recipe", "Recipe")
-                        .WithMany()
-                        .HasForeignKey("RecipeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.HasOne("Dieter.API.Models.Recipe", null)
+                        .WithMany("Comments")
+                        .HasForeignKey("RecipeId");
                 });
 
             modelBuilder.Entity("Dieter.API.Models.Ingredient", b =>

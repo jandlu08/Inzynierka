@@ -8,8 +8,6 @@ namespace Dieter.API.Models.GraphQL.InputTypes
         {
             Name = "AddCommentInput";
             Field<NonNullGraphType<StringGraphType>>("content");
-            Field<NonNullGraphType<IdGraphType>>("authorUserId");
-            Field<NonNullGraphType<IdGraphType>>("recipeId");
         }
     }
 }

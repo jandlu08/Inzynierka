@@ -15,7 +15,7 @@ namespace Dieter.API.Models.GraphQL.InputTypes
             Field<IntGraphType>("estTime");
             Field<NonNullGraphType<DifficultyEnum>>("difficulty");
             Field<IdGraphType>("photoId");
-            Field<NonNullGraphType<IdGraphType>>("authorUserId");
+            
           
         }
     }

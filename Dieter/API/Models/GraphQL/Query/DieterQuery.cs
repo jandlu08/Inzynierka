@@ -37,7 +37,6 @@ namespace Dieter.API.Models.GraphQL.Query
                     return db
                         .Recipes
                         .Include(x => x.Photo)
-                        .Include(x=>x.Comments)
                         .FirstOrDefault(i => i.RecipeId == id);
                 }
             );
@@ -57,7 +56,7 @@ namespace Dieter.API.Models.GraphQL.Query
                     {
                         return db
                             .Recipes
-                            .Include(x => x.Comments)
+                            .Include(x=>x.AuthorUser)
                             .Include(x => x.Photo);
                     }
 
@@ -65,7 +64,7 @@ namespace Dieter.API.Models.GraphQL.Query
                     {
                         return db
                             .Recipes
-                            .Include(x => x.Comments)
+                            .Include(x=>x.AuthorUser)
                             .Include(x => x.Photo)
                             .Take((int) amount);
                     }
@@ -74,14 +73,14 @@ namespace Dieter.API.Models.GraphQL.Query
                     {
                         return db
                             .Recipes
-                            .Include(x => x.Comments)
+                            .Include(x=>x.AuthorUser)
                             .Include(x => x.Photo)
                             .Where(x => x.Calories <= calories);
                     }
 
                     var allRecipes = db.Recipes
-                        .Include(x => x.Comments)
                         .Include(x => x.Photo)
+                        .Include(x=>x.AuthorUser)
                         .Where(x => x.Calories <= calories).ToList();
 
                     var returnRecipes = new List<Recipe>();
@@ -118,6 +117,7 @@ namespace Dieter.API.Models.GraphQL.Query
                     return db.Comments
                         .Include(x => x.Author)
                         .Include(x => x.Rating)
+                        .Include(x=>x.Rating)
                         .FirstOrDefault(x => x.CommentId == commentId);
                 });
             Field<ListGraphType<CommentType>>(
@@ -127,12 +127,11 @@ namespace Dieter.API.Models.GraphQL.Query
                 resolve: context =>
                 {
                     var recipeId = context.GetArgument<int?>("recipeId");
-                    return db.Recipes
-                        .Include(x => x.Comments)
-                        .ThenInclude(x=> x.Author)
-                        .Where(x => x.RecipeId == recipeId)
-                        .Select(x => x.Comments)
-                        .SingleOrDefault();;
+                    return db.Comments
+                        .Where(x => x.Recipe.RecipeId == recipeId)
+                        .Include(x => x.Author)
+                        .Include(x => x.Recipe)
+                        .Include(x=>x.Rating);
                 });
             
             Field<IngredientType>(

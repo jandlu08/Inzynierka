@@ -10,7 +10,6 @@ namespace Dieter.API.Models.GraphQL
 
             Field(x => x.RecipeId, type: typeof(IdGraphType));
             Field(x => x.Calories, type: typeof(IntGraphType));
-            Field(x => x.Comments, type: typeof(ListGraphType<CommentType>));
             Field(x => x.Description, type: typeof(StringGraphType));
             Field(x => x.Difficulty, type: typeof(DifficultyEnum));
             Field(x => x.Name, type: typeof(StringGraphType));
@@ -18,7 +17,7 @@ namespace Dieter.API.Models.GraphQL
             Field(x => x.Rating, type: typeof(RatingType));
             Field(x => x.Weight, type: typeof(IntGraphType));
             Field(x => x.EstTime, type: typeof(IntGraphType));
-            Field(x => x.AuthorUserId, type: typeof(IdGraphType));
+            Field(x => x.AuthorUser, type: typeof(UserType));
             Field<ListGraphType<IngredientType>>("Ingredients");
         }
     }

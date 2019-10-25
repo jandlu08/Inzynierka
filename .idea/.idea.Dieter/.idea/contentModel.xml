@@ -24,12 +24,15 @@
                 <e p="DieterMutation.cs" t="Include" />
               </e>
               <e p="DifficultyEnum.cs" t="Include" />
+              <e p="IngredientRecipeType.cs" t="Include" />
               <e p="IngredientType.cs" t="Include" />
               <e p="IngredientTypeEnum.cs" t="Include" />
               <e p="InputTypes" t="Include">
                 <e p="AddCommentInputType.cs" t="Include" />
                 <e p="AddIngredientInputType.cs" t="Include" />
+                <e p="AddPhotoInputType.cs" t="Include" />
                 <e p="AddRecipeInputType.cs" t="Include" />
+                <e p="RecipeInputType.cs" t="Include" />
                 <e p="RegisterUserInputType.cs" t="Include" />
               </e>
               <e p="PhotoType.cs" t="Include" />
@@ -66,6 +69,12 @@
           <e p="20191024182529_deleteThumb.Designer.cs" t="Include" />
           <e p="20191024205814_addAuthorIdRecipes.cs" t="Include" />
           <e p="20191024205814_addAuthorIdRecipes.Designer.cs" t="Include" />
+          <e p="20191025175209_updateRecipes.cs" t="Include" />
+          <e p="20191025175209_updateRecipes.Designer.cs" t="Include" />
+          <e p="20191025175552_virtalList.cs" t="Include" />
+          <e p="20191025175552_virtalList.Designer.cs" t="Include" />
+          <e p="20191025180158_updateRecipe.cs" t="Include" />
+          <e p="20191025180158_updateRecipe.Designer.cs" t="Include" />
           <e p="ResourcesDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
