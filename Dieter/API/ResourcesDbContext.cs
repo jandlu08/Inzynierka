@@ -1,11 +1,7 @@
-﻿﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
- using Dieter.API.Models;
- using Microsoft.EntityFrameworkCore;
+﻿using Dieter.API.Models;
+using Microsoft.EntityFrameworkCore;
 
-namespace Dieter
+namespace Dieter.API
 {
     public class ResourcesDbContext : DbContext
     {
@@ -13,6 +9,7 @@ namespace Dieter
         {
         }
 
+     
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<IngredientRecipe>().HasKey(ir => new {ir.IngredientId, ir.RecipeId});

@@ -11,8 +11,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Dieter.Migrations
 {
     [DbContext(typeof(ResourcesDbContext))]
-    [Migration("20191025175209_updateRecipes")]
-    partial class updateRecipes
+    [Migration("20191026113211_password")]
+    partial class password
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -41,7 +41,7 @@ namespace Dieter.Migrations
                     b.Property<int?>("RatingId")
                         .HasColumnType("integer");
 
-                    b.Property<int?>("RecipeId")
+                    b.Property<int>("RecipeId")
                         .HasColumnType("integer");
 
                     b.HasKey("CommentId");
@@ -196,6 +196,9 @@ namespace Dieter.Migrations
                     b.Property<string>("LastName")
                         .HasColumnType("text");
 
+                    b.Property<string>("Password")
+                        .HasColumnType("text");
+
                     b.Property<DateTime?>("RegistrationDate")
                         .HasColumnType("timestamp without time zone");
 
@@ -222,9 +225,11 @@ namespace Dieter.Migrations
                         .WithMany()
                         .HasForeignKey("RatingId");
 
-                    b.HasOne("Dieter.API.Models.Recipe", null)
-                        .WithMany("Comments")
-                        .HasForeignKey("RecipeId");
+                    b.HasOne("Dieter.API.Models.Recipe", "Recipe")
+                        .WithMany()
+                        .HasForeignKey("RecipeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Dieter.API.Models.Ingredient", b =>

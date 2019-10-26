@@ -7,7 +7,7 @@ namespace Dieter.API.Models.GraphQL.InputTypes
         public RegisterUserInputType()
         {
             Name = "RegisterUserInput";
-            Field<NonNullGraphType<StringGraphType>>("name");
+            Field<NonNullGraphType<StringGraphType>>("userName");
             Field<StringGraphType>("firstName");
             Field<StringGraphType>("lastName");
             Field<NonNullGraphType<StringGraphType>>("email");

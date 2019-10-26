@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json.Linq;
 
-namespace Dieter
+namespace Dieter.API
 {
     public class GraphQlQuery
     {

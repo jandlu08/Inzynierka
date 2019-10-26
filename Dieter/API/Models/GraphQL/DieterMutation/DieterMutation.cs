@@ -2,31 +2,44 @@
 using System.Collections.Generic;
 using System.Linq;
 using Dieter.API.Models.GraphQL.InputTypes;
+using Dieter.Identity;
 using GraphQL.Types;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Identity;
+
 
 namespace Dieter.API.Models.GraphQL.DieterMutation
 {
     public class DieterMutation : ObjectGraphType
     {
-        public DieterMutation(ResourcesDbContext db)
+        public DieterMutation(ResourcesDbContext db,
+            UserManager<AppUser> userManager,
+            SignInManager<AppUser> signInManager)
         {
             Field<UserType>(
                 "registerUser",
                 arguments: new QueryArguments(
-                    new QueryArgument<NonNullGraphType<RegisterUserInputType>>
-                        {Name = "user"}),
+                    new QueryArgument<NonNullGraphType<RegisterUserInputType>> {Name = "user"},
+                    new QueryArgument<NonNullGraphType<StringGraphType>> {Name = "password"}),
                 resolve: context =>
                 {
                     var user = context.GetArgument<User>("user");
+                    var password = context.GetArgument<string>("password");
+
+                    var result = userManager.CreateAsync(
+                        new AppUser()
+                        {
+                            UserName = user.UserName,
+                            Email = user.Email
+                        }, password).Result;
+
+                    if (!result.Succeeded) return null;
                     user.RegistrationDate = DateTime.Now;
                     user.LastActive = DateTime.Now;
                     db.Users.Add(user);
                     db.SaveChanges();
-
                     return user;
                 });
+
 
             Field<RecipeType>(
                 "addRecipe",
@@ -118,22 +131,26 @@ namespace Dieter.API.Models.GraphQL.DieterMutation
                     return comment;
                 });
             Field<UserType>(
-                "updateUserLastActive",
+                "loginUser",
                 arguments: new QueryArguments(
-                    new QueryArgument<NonNullGraphType<IdGraphType>> {Name = "userId"},
-                    new QueryArgument<NonNullGraphType<DateGraphType>> {Name = "lastActiveDate"}),
+                    new QueryArgument<NonNullGraphType<StringGraphType>> {Name = "userName"},
+                    new QueryArgument<NonNullGraphType<StringGraphType>> {Name = "password"}),
                 resolve: context =>
                 {
-                    var userId = context.GetArgument<int>("userId");
-                    var lastActiveDate = context.GetArgument<DateTime>("lastActiveDate");
+                    var userName = context.GetArgument<string>("userName");
+                    var password = context.GetArgument<string>("password");
 
-                    var user = db.Users.FirstOrDefault(x => x.UserId == userId);
-                    if (user != null)
-                    {
-                        user.LastActive = lastActiveDate;
-                        db.SaveChanges();
-                    }
+                    var identityUser = userManager.FindByNameAsync(userName).Result;
+                    if (identityUser == null) return null;
 
+                    var result = signInManager
+                        .CheckPasswordSignInAsync(identityUser, password, false).Result;
+
+                    if (!result.Succeeded) return null;
+                    var user = db.Users.FirstOrDefault(x => x.UserName == userName);
+                    if (user == null) return null;
+                    user.LastActive = DateTime.Now;
+                    db.SaveChanges();
                     return user;
                 });
             /*Field<PhotoType>(
