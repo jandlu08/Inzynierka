@@ -7,11 +7,11 @@ namespace Dieter.API.Models
     {
         public int CommentId { get; set; }
         public string Content { get; set; }
-        public Rating Rating { get; set; }
+        public virtual Rating Rating { get; set; }
         [Required]
-        public User Author { get; set; }
+        public virtual User Author { get; set; }
         [Required]
-        public Recipe Recipe { get; set; }
+        public virtual Recipe Recipe { get; set; }
         public DateTime? PublicationDate { get; set; }
     }
 }

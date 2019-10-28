@@ -3,15 +3,17 @@ using System;
 using Dieter.API;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Dieter.Migrations
 {
     [DbContext(typeof(ResourcesDbContext))]
-    partial class ResourcesDbContextModelSnapshot : ModelSnapshot
+    [Migration("20191028145350_lazyLoading")]
+    partial class lazyLoading
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -136,7 +138,7 @@ namespace Dieter.Migrations
                         .HasColumnType("integer")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-                    b.Property<int?>("AuthorUserId")
+                    b.Property<int?>("AuthorUserUserId")
                         .HasColumnType("integer");
 
                     b.Property<int?>("Calories")
@@ -165,7 +167,7 @@ namespace Dieter.Migrations
 
                     b.HasKey("RecipeId");
 
-                    b.HasIndex("AuthorUserId");
+                    b.HasIndex("AuthorUserUserId");
 
                     b.HasIndex("PhotoId");
 
@@ -250,9 +252,9 @@ namespace Dieter.Migrations
 
             modelBuilder.Entity("Dieter.API.Models.Recipe", b =>
                 {
-                    b.HasOne("Dieter.API.Models.User", "Author")
+                    b.HasOne("Dieter.API.Models.User", "AuthorUser")
                         .WithMany("Recipes")
-                        .HasForeignKey("AuthorUserId");
+                        .HasForeignKey("AuthorUserUserId");
 
                     b.HasOne("Dieter.API.Models.Photo", "Photo")
                         .WithMany()

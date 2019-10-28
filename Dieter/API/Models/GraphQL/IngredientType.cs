@@ -14,7 +14,7 @@ namespace Dieter.API.Models.GraphQL
             Field(x => x.Name, type: typeof(StringGraphType));
             Field(x => x.Photo, type: typeof(PhotoType));
             Field(x => x.IngredientType, type: typeof(IngredientTypeEnum));
-            Field<ListGraphType<RecipeType>>("Recipes");
+            Field(x => x.IngredientRecipes, type: typeof(IngredientRecipeType));
 
         }
     }

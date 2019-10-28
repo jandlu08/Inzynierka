@@ -14,6 +14,11 @@ namespace Dieter.API
         {
             modelBuilder.Entity<IngredientRecipe>().HasKey(ir => new {ir.IngredientId, ir.RecipeId});
         }
+        
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseLazyLoadingProxies();
+        }
 
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Ingredient> Ingredients { get; set; }

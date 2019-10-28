@@ -9,9 +9,9 @@ namespace Dieter.API.Models
         public string Name { get; set; }
         public IngredientType? IngredientType { get; set; }
         public int? Calories { get; set; }
-        public Photo Photo { get; set; }
+        public virtual Photo Photo { get; set; }
         public string Description { get; set; }
 
-        public ICollection<IngredientRecipe> IngredientRecipes { get; set; }
+        public virtual ICollection<IngredientRecipe> IngredientRecipes { get; set; }
     }
 }

@@ -32,7 +32,6 @@
                 <e p="AddIngredientInputType.cs" t="Include" />
                 <e p="AddPhotoInputType.cs" t="Include" />
                 <e p="AddRecipeInputType.cs" t="Include" />
-                <e p="RecipeInputType.cs" t="Include" />
                 <e p="RegisterUserInputType.cs" t="Include" />
               </e>
               <e p="PhotoType.cs" t="Include" />
@@ -83,6 +82,10 @@
           <e p="20191026113211_password.Designer.cs" t="Include" />
           <e p="20191026141134_deletePassword.cs" t="Include" />
           <e p="20191026141134_deletePassword.Designer.cs" t="Include" />
+          <e p="20191028145350_lazyLoading.cs" t="Include" />
+          <e p="20191028145350_lazyLoading.Designer.cs" t="Include" />
+          <e p="20191028145806_fix.cs" t="Include" />
+          <e p="20191028145806_fix.Designer.cs" t="Include" />
           <e p="AuthDb" t="Include">
             <e p="20191026131948_identity.cs" t="Include" />
             <e p="20191026131948_identity.Designer.cs" t="Include" />

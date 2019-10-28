@@ -16,6 +16,8 @@ namespace Dieter.API.Models.GraphQL
             Field(x => x.LastName, type: typeof(StringGraphType));
             Field(x => x.RegistrationDate, type: typeof(DateGraphType));
             Field(x => x.UserName, type: typeof(StringGraphType));
+            Field(x => x.Recipes, type: typeof(ListGraphType<RecipeType>));
+            Field(x => x.Comments, type: typeof(ListGraphType<CommentType>));
 
         }
     }

@@ -64,7 +64,7 @@ namespace Dieter.API.Models.GraphQL.DieterMutation
 
                     //add user
                     var user = db.Users.FirstOrDefault(x => x.UserId == authorUserId);
-                    recipe.AuthorUser = user;
+                    recipe.Author = user;
 
                     //add recipe
                     db.Recipes.Add(recipe);

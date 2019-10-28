@@ -36,7 +36,6 @@ namespace Dieter.API.Models.GraphQL.Query
                     var id = context.GetArgument<int?>("recipeId");
                     return db
                         .Recipes
-                        .Include(x => x.Photo)
                         .FirstOrDefault(i => i.RecipeId == id);
                 }
             );
@@ -55,17 +54,13 @@ namespace Dieter.API.Models.GraphQL.Query
                     if (calories == null && amount == null)
                     {
                         return db
-                            .Recipes
-                            .Include(x=>x.AuthorUser)
-                            .Include(x => x.Photo);
+                            .Recipes;
                     }
 
                     if (calories == null)
                     {
                         return db
                             .Recipes
-                            .Include(x=>x.AuthorUser)
-                            .Include(x => x.Photo)
                             .Take((int) amount);
                     }
 
@@ -73,14 +68,10 @@ namespace Dieter.API.Models.GraphQL.Query
                     {
                         return db
                             .Recipes
-                            .Include(x=>x.AuthorUser)
-                            .Include(x => x.Photo)
                             .Where(x => x.Calories <= calories);
                     }
 
                     var allRecipes = db.Recipes
-                        .Include(x => x.Photo)
-                        .Include(x=>x.AuthorUser)
                         .Where(x => x.Calories <= calories).ToList();
 
                     var returnRecipes = new List<Recipe>();
@@ -115,9 +106,6 @@ namespace Dieter.API.Models.GraphQL.Query
                 {
                     var commentId = context.GetArgument<int?>("commentId");
                     return db.Comments
-                        .Include(x => x.Author)
-                        .Include(x => x.Rating)
-                        .Include(x=>x.Rating)
                         .FirstOrDefault(x => x.CommentId == commentId);
                 });
             Field<ListGraphType<CommentType>>(
@@ -128,12 +116,9 @@ namespace Dieter.API.Models.GraphQL.Query
                 {
                     var recipeId = context.GetArgument<int?>("recipeId");
                     return db.Comments
-                        .Where(x => x.Recipe.RecipeId == recipeId)
-                        .Include(x => x.Author)
-                        .Include(x => x.Recipe)
-                        .Include(x=>x.Rating);
+                        .Where(x => x.Recipe.RecipeId == recipeId);
                 });
-            
+
             Field<IngredientType>(
                 "getIngredient",
                 arguments: new QueryArguments(
@@ -142,7 +127,6 @@ namespace Dieter.API.Models.GraphQL.Query
                 {
                     var ingredientId = context.GetArgument<int?>("ingredientId");
                     return db.Ingredients
-                        .Include(x => x.Photo)
                         .FirstOrDefault(x => x.IngredientId == ingredientId);
                 });
             Field<ListGraphType<IngredientType>>(
@@ -155,18 +139,14 @@ namespace Dieter.API.Models.GraphQL.Query
 
                     if (recipeId == null)
                     {
-                        return db.Ingredients
-                            .Include(x => x.Photo);
+                        return db.Ingredients;
                     }
 
                     return db.Recipes
-                        .Include(x => x.IngredientRecipes)
-                        .ThenInclude(x => x.Ingredient)
                         .Where(x => x.RecipeId == recipeId)
                         .Select(x => x.IngredientRecipes.Select(y => y.Ingredient))
                         .SingleOrDefault();
                 });
-            
         }
     }
 }
