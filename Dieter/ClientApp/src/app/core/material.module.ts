@@ -11,6 +11,8 @@ import {
   MatTableModule,
   MatToolbarModule
 } from '@angular/material';
+import {MatSelectModule} from '@angular/material/select';
+import {MatOptionModule} from '@angular/material/core';
 
 @NgModule({
   imports: [
@@ -23,7 +25,9 @@ import {
     MatTableModule,
     MatMenuModule,
     MatIconModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatSelectModule,
+    MatOptionModule,
   ],
 
   exports: [
@@ -36,7 +40,9 @@ import {
     MatTableModule,
     MatMenuModule,
     MatIconModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatSelectModule,
+    MatOptionModule,
   ],
 
 })

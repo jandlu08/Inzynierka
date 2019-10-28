@@ -10146,12 +10146,20 @@
                 <e p="login.component.scss" t="Include" />
                 <e p="login.component.spec.ts" t="Include" />
                 <e p="login.component.ts" t="Include" />
+                <e p="loginUser.graphql" t="Include" />
               </e>
               <e p="nav-menu" t="Include">
                 <e p="nav-menu.component.html" t="Include" />
                 <e p="nav-menu.component.scss" t="Include" />
                 <e p="nav-menu.component.spec.ts" t="Include" />
                 <e p="nav-menu.component.ts" t="Include" />
+              </e>
+              <e p="register" t="Include">
+                <e p="register.component.html" t="Include" />
+                <e p="register.component.scss" t="Include" />
+                <e p="register.component.spec.ts" t="Include" />
+                <e p="register.component.ts" t="Include" />
+                <e p="registerUser.graphql" t="Include" />
               </e>
               <e p="users.graphql" t="Include" />
             </e>

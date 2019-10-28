@@ -272,6 +272,34 @@ export type User = {
 };
 
 
+export type LoginUserMutationVariables = {
+  username: Scalars['String'],
+  password: Scalars['String']
+};
+
+
+export type LoginUserMutation = (
+  { __typename?: 'DieterMutation' }
+  & { loginUser: Maybe<(
+    { __typename?: 'User' }
+    & Pick<User, 'userId' | 'userName' | 'email' | 'firstName' | 'lastName' | 'lastActive' | 'registrationDate' | 'sex'>
+  )> }
+);
+
+export type RegisterUserMutationVariables = {
+  password: Scalars['String'],
+  user: RegisterUserInput
+};
+
+
+export type RegisterUserMutation = (
+  { __typename?: 'DieterMutation' }
+  & { registerUser: Maybe<(
+    { __typename?: 'User' }
+    & Pick<User, 'userId'>
+  )> }
+);
+
 export type UsersQueryVariables = {};
 
 
@@ -288,6 +316,43 @@ export type UsersQuery = (
 );
 
 
+export const LoginUserDocument = gql`
+    mutation loginUser($username: String!, $password: String!) {
+  loginUser(userName: $username, password: $password) {
+    userId
+    userName
+    email
+    firstName
+    lastName
+    lastActive
+    registrationDate
+    sex
+  }
+}
+    `;
+
+  @Injectable({
+    providedIn: 'root'
+  })
+  export class LoginUserGQL extends Apollo.Mutation<LoginUserMutation, LoginUserMutationVariables> {
+    document = LoginUserDocument;
+    
+  }
+export const RegisterUserDocument = gql`
+    mutation registerUser($password: String!, $user: RegisterUserInput!) {
+  registerUser(password: $password, user: $user) {
+    userId
+  }
+}
+    `;
+
+  @Injectable({
+    providedIn: 'root'
+  })
+  export class RegisterUserGQL extends Apollo.Mutation<RegisterUserMutation, RegisterUserMutationVariables> {
+    document = RegisterUserDocument;
+    
+  }
 export const UsersDocument = gql`
     query Users {
   getUsers {

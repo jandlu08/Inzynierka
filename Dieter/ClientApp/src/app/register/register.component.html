@@ -1,0 +1,85 @@
+<mat-card class="mat-card-placeholder">
+  <mat-card-header>
+    <mat-card-title>Register</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form #f="ngForm" id="registerForm" (ngSubmit)="register()" novalidate>
+      <table class="full-width" cellspacing="0">
+        <tr>
+          <td>
+            <mat-form-field class="full-width">
+              <input matInput [(ngModel)]="user.userName" placeholder="Username" name="username" required minlength="5" maxlength="15" #username="ngModel">
+              <span class="small" [hidden]="username.valid || (username.pristine && !f.submitted)">
+                Length 5-15.
+              </span>
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field class="full-width">
+              <input matInput [(ngModel)]="password" placeholder="Password" type="password" name="password" required
+                     pattern ="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*[@$!%*?&]).{8,}$"  validateEqual="confirmPasswordVal" reverse="true"
+                     #passwordVal="ngModel">
+              <span class="small" [hidden]="passwordVal.valid || (passwordVal.pristine && !f.submitted)">
+                Password should have 1 uppercase letter, 1 number, 1 special character and length 8.
+              </span>
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field class="full-width">
+              <input matInput [(ngModel)]="confirmPassword" placeholder="Confirm password" type="password" name="confirmPassword"
+                     required validateEqual="passwordVal" #confirmPasswordVal="ngModel">
+              <span class="small" [hidden]="confirmPasswordVal.valid || (confirmPasswordVal.pristine && !f.submitted)">
+                Passwords should be the same.
+              </span>
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field class="full-width">
+              <input matInput [(ngModel)]="user.email" placeholder="Email" type="email" name="email"
+                     required pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" #email="ngModel">
+              <span class="small" [hidden]="email.valid || (email.pristine && !f.submitted)">
+                Email is not valid.
+              </span>
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field class="full-width">
+              <input matInput [(ngModel)]="user.firstName" placeholder="First Name" name="firstName" required>
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field class="full-width">
+              <input matInput [(ngModel)]="user.firstName" placeholder="Last Name" name="lastName" required>
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field class="full-width">
+              <mat-label>Sex</mat-label>
+              <mat-select [(value)]="user.sex">
+                <mat-option [value]="sexTypes.male">Male</mat-option>
+                <mat-option [value]="sexTypes.female">Female</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <!--  <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>-->
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button  color="primary" type="submit" form="registerForm" >Register</button>
+    <button mat-button (click)="back()" color="primary">Back</button>
+  </mat-card-actions>
+</mat-card>

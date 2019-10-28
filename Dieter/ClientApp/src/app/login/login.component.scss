@@ -6,4 +6,8 @@ app-login {
   .full-width {
     width: 100%;
   }
+  .action-buttons{
+    display: flex;
+    justify-content: space-between;
+  }
 }

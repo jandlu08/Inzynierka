@@ -9,12 +9,15 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {LoginComponent} from './login/login.component';
 import {CustomMaterialModule} from './core/material.module';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
+import {FormsModule} from '@angular/forms';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    NavMenuComponent
+    NavMenuComponent,
+    RegisterComponent
   ],
   imports: [
     AppRoutingModule,
@@ -23,6 +26,7 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
     CustomMaterialModule,
     GraphQLModule,
     HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,5 @@
+﻿mutation registerUser($password: String!, $user: RegisterUserInput!){
+  registerUser(password: $password, user: $user){
+    userId
+  }
+}

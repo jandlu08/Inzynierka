@@ -1,0 +1,12 @@
+﻿mutation loginUser($username: String!, $password: String!){
+  loginUser(userName: $username, password: $password){
+    userId
+    userName
+    email
+    firstName
+    lastName
+    lastActive
+    registrationDate
+    sex
+  }
+}

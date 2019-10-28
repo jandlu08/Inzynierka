@@ -4,13 +4,13 @@
     <list default="true" id="490b1499-0315-47b0-85b5-49b079606736" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/core/material.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/core/material.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/login/login.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/login/login.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/generated/graphql.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/generated/graphql.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/styles.scss" afterDir="false" />
     </list>
     <list id="f107c17d-2d2f-482b-8382-8cd0796d5b43" name="add all queries (for now)" comment="" />
@@ -43,6 +43,13 @@
       </path>
     </expand>
     <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="GraphQL File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -103,12 +110,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/InputTypes/AddRecipeInputType.cs" />
-        <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/CommentType.cs" />
-        <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/InputTypes/AddPhotoInputType.cs" />
-        <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/IngredientRecipesType.cs" />
-        <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/IngredientRecipeType.cs" />
-        <option value="$PROJECT_DIR$/Dieter/Idendity/Models/AppUser.cs" />
         <option value="$PROJECT_DIR$/Dieter/Idendity/Models/AppRole.cs" />
         <option value="$PROJECT_DIR$/Dieter/Identity/Models/AppRole.cs" />
         <option value="$PROJECT_DIR$/Dieter/ResourcesDbContext.cs" />
@@ -142,8 +143,6 @@
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/users.graphql" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/package.json" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/app-routing.module.ts" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/core/material.module.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.component.scss" />
@@ -151,9 +150,17 @@
         <option value="$PROJECT_DIR$/Dieter/ClientApp/angular.json" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/nav-menu/nav-menu.component.scss" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/nav-menu/nav-menu.component.html" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/styles.scss" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/login/login.component.html" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/login/loginUser.graphql" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/login/login.component.scss" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/login/login.component.html" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/login/login.component.ts" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/styles.scss" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/core/material.module.ts" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/register/register.component.scss" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/register/registerUser.graphql" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/register/register.component.ts" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/register/register.component.html" />
       </list>
     </option>
   </component>
@@ -231,6 +238,16 @@
         <option name="Build" enabled="true" />
       </method>
     </configuration>
+    <configuration name="graphql-codegen" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/Dieter/ClientApp/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="graphql-codegen" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="update-schema" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/Dieter/ClientApp/package.json" />
       <command value="run" />
@@ -246,9 +263,11 @@
       <item itemvalue=".NET Launch Settings Profile.Dieter" />
       <item itemvalue=".NET Launch Settings Profile.Dieter: IIS Express" />
       <item itemvalue="npm.update-schema" />
+      <item itemvalue="npm.graphql-codegen" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.graphql-codegen" />
         <item itemvalue="npm.update-schema" />
       </list>
     </recent_temporary>
@@ -360,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572283502112</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add nav-menu and login component">
+      <created>1572287629306</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1572287629306</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,7 +418,8 @@
     <MESSAGE value="add authentication" />
     <MESSAGE value="add lazy loading" />
     <MESSAGE value="add graphql integration to ClientApp" />
-    <option name="LAST_COMMIT_MESSAGE" value="add graphql integration to ClientApp" />
+    <MESSAGE value="add nav-menu and login component" />
+    <option name="LAST_COMMIT_MESSAGE" value="add nav-menu and login component" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

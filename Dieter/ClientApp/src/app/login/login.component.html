@@ -8,19 +8,20 @@
         <tr>
           <td>
             <mat-form-field class="full-width">
-              <input matInput placeholder="Username"name="username" required>
+              <input matInput [(ngModel)]="username" placeholder="Username"name="username" required>
             </mat-form-field>
           </td>
         </tr>
         <tr>
           <td><mat-form-field class="full-width">
-            <input matInput placeholder="Password"type="password" name="password" required>
+            <input matInput [(ngModel)]="password" placeholder="Password"type="password" name="password" required>
           </mat-form-field></td>
         </tr></table>
     </form>
   <!--  <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>-->
   </mat-card-content>
-  <mat-card-actions>
+  <mat-card-actions class="action-buttons">
     <button mat-raised-button (click)="login()" color="primary">Login</button>
+    <button mat-button (click)="register()" color="primary">Register</button>
   </mat-card-actions>
 </mat-card>
