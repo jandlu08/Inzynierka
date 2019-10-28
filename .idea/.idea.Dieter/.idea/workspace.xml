@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="490b1499-0315-47b0-85b5-49b079606736" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/Dieter.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/Dieter.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/Startup.cs" afterDir="false" />
     </list>
     <list id="f107c17d-2d2f-482b-8382-8cd0796d5b43" name="add all queries (for now)" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -131,7 +134,6 @@
         <option value="$PROJECT_DIR$/Dieter/API/Controllers/GraphQLController.cs" />
         <option value="$PROJECT_DIR$/Dieter/Identity/AuthDbContext.cs" />
         <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/InputTypes/RegisterUserInputType.cs" />
-        <option value="$PROJECT_DIR$/Dieter/Startup.cs" />
         <option value="$PROJECT_DIR$/Dieter/API/Models/Ingredient.cs" />
         <option value="$PROJECT_DIR$/Dieter/API/Models/Comment.cs" />
         <option value="$PROJECT_DIR$/Dieter/API/Models/User.cs" />
@@ -144,6 +146,7 @@
         <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/UserType.cs" />
         <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/RecipeType.cs" />
         <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/IngredientType.cs" />
+        <option value="$PROJECT_DIR$/Dieter/Startup.cs" />
       </list>
     </option>
   </component>
@@ -244,7 +247,7 @@
       <workItem from="1572026885031" duration="4923000" />
       <workItem from="1572080194097" duration="14444000" />
       <workItem from="1572102264362" duration="870000" />
-      <workItem from="1572272078824" duration="3007000" />
+      <workItem from="1572272078824" duration="4427000" />
     </task>
     <task id="LOCAL-00001" summary="add getUsers query">
       <created>1571733525858</created>
