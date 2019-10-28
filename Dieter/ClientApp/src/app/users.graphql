@@ -1,0 +1,9 @@
+﻿query Users{
+  getUsers{
+    userId
+    userName
+    comments{
+      content
+    }
+  }
+}

@@ -1,0 +1,183 @@
+﻿# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+  query: DieterQuery
+  mutation: DieterMutation
+}
+
+type Comment {
+  author: User
+  commentId: ID
+  content: String
+  publicationDate: Date
+  rating: Rating
+  recipe: Recipe
+}
+
+type DieterMutation {
+  addComment(authorUserId: ID!, comment: AddCommentInput!, recipeId: ID!): Comment
+  addIngredient(ingredient: AddIngredientInput!): Ingredient
+  addRecipe(authorUserId: ID!, ingredientIds: [ID]!, recipe: RecipeInput!): Recipe
+  assignIngredient(ingredientId: ID!, recipeId: ID!): IngredientRecipeType
+  loginUser(password: String!, userName: String!): User
+  registerUser(password: String!, user: RegisterUserInput!): User
+}
+
+type DieterQuery {
+  getComment(commentId: Int): Comment
+  getComments(recipeId: Int): [Comment]
+  getIngredient(ingredientId: Int): Ingredient
+  getIngredients(recipeId: Int): [Ingredient]
+  getRecipe(recipeId: ID): Recipe
+  getRecipes(amount: Int, calories: Int, offset: Int = 0): [Recipe]
+  getUser(userId: ID): User
+  getUsers: [User]
+}
+
+type Ingredient {
+  calories: Int
+  description: String
+  ingredientId: ID
+  ingredientRecipes: IngredientRecipeType
+  ingredientType: IngredientType
+  name: String
+  photo: Photo
+}
+
+type IngredientRecipeType {
+  ingredient: Ingredient
+  ingredientId: ID
+  recipe: Recipe
+  recipeId: ID
+}
+
+type Photo {
+  image: Byte
+  photoId: ID
+}
+
+type Rating {
+  downVotes: Int
+  ratingId: ID
+  upVotes: Int
+}
+
+type Recipe {
+  author: User
+  calories: Int
+  comments: Comment
+  description: String
+  difficulty: Difficulty
+  estTime: Int
+  ingredientRecipes: IngredientRecipeType
+  name: String
+  photo: Photo
+  rating: Rating
+  recipeId: ID
+  weight: Int
+}
+
+type User {
+  comments: [Comment]
+  email: String
+  firstName: String
+  lastActive: Date
+  lastName: String
+  recipes: [Recipe]
+  registrationDate: Date
+  sex: Sex
+  userId: ID
+  userName: String
+}
+
+enum Difficulty {
+  EASY
+  HARD
+  MEDIUM
+  VERY_EASY
+  VERY_HARD
+}
+
+enum IngredientType {
+  DAIRY
+  FISH
+  FRUIT
+  GRAIN
+  MEAT
+  OTHER
+  SPICE
+  VEGETABLE
+}
+
+enum Sex {
+  FEMALE
+  MALE
+}
+
+input AddCommentInput {
+  content: String!
+}
+
+input AddIngredientInput {
+  calories: Int!
+  description: String
+  ingredientType: IngredientType!
+  name: String!
+  photoId: ID
+}
+
+input RecipeInput {
+  calories: Int!
+  description: String
+  difficulty: Difficulty!
+  estTime: Int
+  name: String!
+  photoId: ID
+  weight: Int!
+}
+
+input RegisterUserInput {
+  email: String!
+  firstName: String
+  lastName: String
+  sex: Sex
+  userName: String!
+}
+
+
+"The `Date` scalar type represents a year, month and day in accordance with the [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601) standard."
+scalar Date
+
+"The `DateTime` scalar type represents a date and time. `DateTime` expects timestamps to be formatted in accordance with the [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601) standard."
+scalar DateTime
+
+"The `DateTimeOffset` scalar type represents a date, time and offset from UTC. `DateTimeOffset` expects timestamps to be formatted in accordance with the [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601) standard."
+scalar DateTimeOffset
+
+"The `Seconds` scalar type represents a period of time represented as the total number of seconds."
+scalar Seconds
+
+"The `Milliseconds` scalar type represents a period of time represented as the total number of milliseconds."
+scalar Milliseconds
+
+scalar Decimal
+
+scalar Uri
+
+scalar Guid
+
+scalar Short
+
+scalar UShort
+
+scalar UInt
+
+scalar Long
+
+scalar BigInt
+
+scalar ULong
+
+scalar Byte
+
+scalar SByte

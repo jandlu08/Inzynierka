@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {Observable} from "rxjs";
+import {User, UsersGQL, UsersQuery, UsersQueryVariables} from "../generated/graphql";
+import {map} from "rxjs/operators";
+import {QueryRef} from "apollo-angular";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +10,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ClientApp';
+
+  users: User[];
+  queryRef: QueryRef<UsersQuery,UsersQueryVariables>;
+
+
+
+  constructor(usersGQL: UsersGQL) {
+    this.queryRef = usersGQL.watch();
+    this.queryRef.valueChanges.subscribe(result => {
+      this.users = result.data.getUsers;
+    })
+  }
+
+
 }

@@ -4,8 +4,13 @@
     <list default="true" id="490b1499-0315-47b0-85b5-49b079606736" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/Dieter.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/Dieter.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/tsconfig.json" afterDir="false" />
     </list>
     <list id="f107c17d-2d2f-482b-8382-8cd0796d5b43" name="add all queries (for now)" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,6 +69,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/88047F41-5225-4687-ACD9-C4C21126BF60/f8/b94b7722/IServiceScope.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Dieter/Migrations/20191025175209_updateRecipes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4879E833-0F18-48F3-820F-409B97366740/28/ce0df2e9/IdentityDbContext`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Dieter/ClientApp/.editorconfig" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Dieter/API/Models/GraphQL/InputTypes/AddPhotoInputType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C9A27F2C-E8B0-4750-9720-A7A21456B862/ba/358daea4/IdentityUser.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Dieter/API/Models/GraphQL/IngredientRecipeType.cs" root0="FORCE_HIGHLIGHTING" />
@@ -96,17 +102,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Dieter/Controllers/GraphQLController.cs" />
-        <option value="$PROJECT_DIR$/Dieter/API/GraphQlQuery.cs" />
-        <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/SexType.cs" />
-        <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/SexEnum.cs" />
-        <option value="$PROJECT_DIR$/Dieter/API/Models/Enums/Difficulty.cs" />
-        <option value="$PROJECT_DIR$/Dieter/API/Models/Enums/Sex.cs" />
-        <option value="$PROJECT_DIR$/Dieter/API/Models/Enums/IngredientType.cs" />
-        <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/IngredientTypeEnum.cs" />
-        <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/PhotoType.cs" />
-        <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/RatingType.cs" />
-        <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/DifficultyEnum.cs" />
         <option value="$PROJECT_DIR$/Dieter/appsettings.json" />
         <option value="$PROJECT_DIR$/Dieter/Dieter.csproj" />
         <option value="$PROJECT_DIR$/Dieter/API/Models/Rating.cs" />
@@ -147,6 +142,17 @@
         <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/RecipeType.cs" />
         <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/IngredientType.cs" />
         <option value="$PROJECT_DIR$/Dieter/Startup.cs" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/graphql.module.ts" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/schema.json" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/dupa.graphql" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/schema.json.graphql" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/.graphqlconfig" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/.gitignore" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/test.graphql" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/users.graphql" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/package.json" />
       </list>
     </option>
   </component>
@@ -220,11 +226,27 @@
         <option name="Build" enabled="true" />
       </method>
     </configuration>
+    <configuration name="update-schema" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/Dieter/ClientApp/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="update-schema" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue=".NET Launch Settings Profile.AuthServer" />
       <item itemvalue=".NET Launch Settings Profile.Dieter" />
       <item itemvalue=".NET Launch Settings Profile.Dieter: IIS Express" />
+      <item itemvalue="npm.update-schema" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.update-schema" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -392,5 +414,9 @@
         <watch expression="this.node" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
