@@ -73,16 +73,3490 @@
           </e>
           <e p="karma.conf.js" t="Include" />
           <e p="node_modules" t="Include">
-            <e p="@angular\animations" t="IncludeRecursive" />
-            <e p="@angular\cli" t="IncludeRecursive" />
-            <e p="@angular\common" t="IncludeRecursive" />
-            <e p="@angular\compiler" t="IncludeRecursive" />
-            <e p="@angular\compiler-cli" t="IncludeRecursive" />
-            <e p="@angular\core" t="IncludeRecursive" />
-            <e p="@angular\forms" t="IncludeRecursive" />
-            <e p="@angular\platform-browser" t="IncludeRecursive" />
-            <e p="@angular\platform-browser-dynamic" t="IncludeRecursive" />
-            <e p="@angular\router" t="IncludeRecursive" />
+            <e p="@angular" t="Include">
+              <e p="animations" t="IncludeRecursive" />
+              <e p="cdk" t="IncludeRecursive">
+                <e p="_a11y.scss" t="Include" />
+                <e p="_overlay.scss" t="Include" />
+                <e p="_text-field.scss" t="Include" />
+                <e p="a11y" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="a11y-module.d.ts" t="Include" />
+                    <e p="aria-describer" t="Include">
+                      <e p="aria-describer.d.ts" t="Include" />
+                      <e p="aria-reference.d.ts" t="Include" />
+                    </e>
+                    <e p="fake-mousedown.d.ts" t="Include" />
+                    <e p="focus-monitor" t="Include">
+                      <e p="focus-monitor.d.ts" t="Include" />
+                    </e>
+                    <e p="focus-trap" t="Include">
+                      <e p="focus-trap.d.ts" t="Include" />
+                    </e>
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="interactivity-checker" t="Include">
+                      <e p="interactivity-checker.d.ts" t="Include" />
+                    </e>
+                    <e p="key-manager" t="Include">
+                      <e p="activedescendant-key-manager.d.ts" t="Include" />
+                      <e p="focus-key-manager.d.ts" t="Include" />
+                      <e p="list-key-manager.d.ts" t="Include" />
+                    </e>
+                    <e p="live-announcer" t="Include">
+                      <e p="live-announcer-tokens.d.ts" t="Include" />
+                      <e p="live-announcer.d.ts" t="Include" />
+                    </e>
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="a11y-prebuilt.css" t="Include" />
+                <e p="a11y.d.ts" t="Include" />
+                <e p="a11y.metadata.json" t="Include" />
+                <e p="accordion" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="accordion-item.d.ts" t="Include" />
+                    <e p="accordion-module.d.ts" t="Include" />
+                    <e p="accordion.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="accordion.d.ts" t="Include" />
+                <e p="accordion.metadata.json" t="Include" />
+                <e p="bidi" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="bidi-module.d.ts" t="Include" />
+                    <e p="dir-document-token.d.ts" t="Include" />
+                    <e p="dir.d.ts" t="Include" />
+                    <e p="directionality.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="bidi.d.ts" t="Include" />
+                <e p="bidi.metadata.json" t="Include" />
+                <e p="bundles" t="Include">
+                  <e p="cdk-a11y.umd.js" t="Include" />
+                  <e p="cdk-a11y.umd.js.map" t="Include" />
+                  <e p="cdk-a11y.umd.min.js" t="Include" />
+                  <e p="cdk-a11y.umd.min.js.map" t="Include" />
+                  <e p="cdk-accordion.umd.js" t="Include" />
+                  <e p="cdk-accordion.umd.js.map" t="Include" />
+                  <e p="cdk-accordion.umd.min.js" t="Include" />
+                  <e p="cdk-accordion.umd.min.js.map" t="Include" />
+                  <e p="cdk-bidi.umd.js" t="Include" />
+                  <e p="cdk-bidi.umd.js.map" t="Include" />
+                  <e p="cdk-bidi.umd.min.js" t="Include" />
+                  <e p="cdk-bidi.umd.min.js.map" t="Include" />
+                  <e p="cdk-coercion.umd.js" t="Include" />
+                  <e p="cdk-coercion.umd.js.map" t="Include" />
+                  <e p="cdk-coercion.umd.min.js" t="Include" />
+                  <e p="cdk-coercion.umd.min.js.map" t="Include" />
+                  <e p="cdk-collections.umd.js" t="Include" />
+                  <e p="cdk-collections.umd.js.map" t="Include" />
+                  <e p="cdk-collections.umd.min.js" t="Include" />
+                  <e p="cdk-collections.umd.min.js.map" t="Include" />
+                  <e p="cdk-drag-drop.umd.js" t="Include" />
+                  <e p="cdk-drag-drop.umd.js.map" t="Include" />
+                  <e p="cdk-drag-drop.umd.min.js" t="Include" />
+                  <e p="cdk-drag-drop.umd.min.js.map" t="Include" />
+                  <e p="cdk-keycodes.umd.js" t="Include" />
+                  <e p="cdk-keycodes.umd.js.map" t="Include" />
+                  <e p="cdk-keycodes.umd.min.js" t="Include" />
+                  <e p="cdk-keycodes.umd.min.js.map" t="Include" />
+                  <e p="cdk-layout.umd.js" t="Include" />
+                  <e p="cdk-layout.umd.js.map" t="Include" />
+                  <e p="cdk-layout.umd.min.js" t="Include" />
+                  <e p="cdk-layout.umd.min.js.map" t="Include" />
+                  <e p="cdk-observers.umd.js" t="Include" />
+                  <e p="cdk-observers.umd.js.map" t="Include" />
+                  <e p="cdk-observers.umd.min.js" t="Include" />
+                  <e p="cdk-observers.umd.min.js.map" t="Include" />
+                  <e p="cdk-overlay.umd.js" t="Include" />
+                  <e p="cdk-overlay.umd.js.map" t="Include" />
+                  <e p="cdk-overlay.umd.min.js" t="Include" />
+                  <e p="cdk-overlay.umd.min.js.map" t="Include" />
+                  <e p="cdk-platform.umd.js" t="Include" />
+                  <e p="cdk-platform.umd.js.map" t="Include" />
+                  <e p="cdk-platform.umd.min.js" t="Include" />
+                  <e p="cdk-platform.umd.min.js.map" t="Include" />
+                  <e p="cdk-portal.umd.js" t="Include" />
+                  <e p="cdk-portal.umd.js.map" t="Include" />
+                  <e p="cdk-portal.umd.min.js" t="Include" />
+                  <e p="cdk-portal.umd.min.js.map" t="Include" />
+                  <e p="cdk-scrolling.umd.js" t="Include" />
+                  <e p="cdk-scrolling.umd.js.map" t="Include" />
+                  <e p="cdk-scrolling.umd.min.js" t="Include" />
+                  <e p="cdk-scrolling.umd.min.js.map" t="Include" />
+                  <e p="cdk-stepper.umd.js" t="Include" />
+                  <e p="cdk-stepper.umd.js.map" t="Include" />
+                  <e p="cdk-stepper.umd.min.js" t="Include" />
+                  <e p="cdk-stepper.umd.min.js.map" t="Include" />
+                  <e p="cdk-table.umd.js" t="Include" />
+                  <e p="cdk-table.umd.js.map" t="Include" />
+                  <e p="cdk-table.umd.min.js" t="Include" />
+                  <e p="cdk-table.umd.min.js.map" t="Include" />
+                  <e p="cdk-testing.umd.js" t="Include" />
+                  <e p="cdk-testing.umd.js.map" t="Include" />
+                  <e p="cdk-testing.umd.min.js" t="Include" />
+                  <e p="cdk-testing.umd.min.js.map" t="Include" />
+                  <e p="cdk-text-field.umd.js" t="Include" />
+                  <e p="cdk-text-field.umd.js.map" t="Include" />
+                  <e p="cdk-text-field.umd.min.js" t="Include" />
+                  <e p="cdk-text-field.umd.min.js.map" t="Include" />
+                  <e p="cdk-tree.umd.js" t="Include" />
+                  <e p="cdk-tree.umd.js.map" t="Include" />
+                  <e p="cdk-tree.umd.min.js" t="Include" />
+                  <e p="cdk-tree.umd.min.js.map" t="Include" />
+                  <e p="cdk.umd.js" t="Include" />
+                  <e p="cdk.umd.js.map" t="Include" />
+                  <e p="cdk.umd.min.js" t="Include" />
+                  <e p="cdk.umd.min.js.map" t="Include" />
+                </e>
+                <e p="cdk.d.ts" t="Include" />
+                <e p="cdk.metadata.json" t="Include" />
+                <e p="coercion" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="array.d.ts" t="Include" />
+                    <e p="boolean-property.d.ts" t="Include" />
+                    <e p="css-pixel-value.d.ts" t="Include" />
+                    <e p="element.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="number-property.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="coercion.d.ts" t="Include" />
+                <e p="coercion.metadata.json" t="Include" />
+                <e p="collections" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="array-data-source.d.ts" t="Include" />
+                    <e p="collection-viewer.d.ts" t="Include" />
+                    <e p="data-source.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="selection.d.ts" t="Include" />
+                    <e p="tree-adapter.d.ts" t="Include" />
+                    <e p="unique-selection-dispatcher.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="collections.d.ts" t="Include" />
+                <e p="collections.metadata.json" t="Include" />
+                <e p="drag-drop" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="directives" t="Include">
+                      <e p="drag-handle.d.ts" t="Include" />
+                      <e p="drag-placeholder.d.ts" t="Include" />
+                      <e p="drag-preview.d.ts" t="Include" />
+                      <e p="drag.d.ts" t="Include" />
+                      <e p="drop-list-group.d.ts" t="Include" />
+                      <e p="drop-list.d.ts" t="Include" />
+                    </e>
+                    <e p="drag-drop-module.d.ts" t="Include" />
+                    <e p="drag-drop-registry.d.ts" t="Include" />
+                    <e p="drag-drop.d.ts" t="Include" />
+                    <e p="drag-events.d.ts" t="Include" />
+                    <e p="drag-parent.d.ts" t="Include" />
+                    <e p="drag-ref.d.ts" t="Include" />
+                    <e p="drag-styling.d.ts" t="Include" />
+                    <e p="drag-utils.d.ts" t="Include" />
+                    <e p="drop-list-container.d.ts" t="Include" />
+                    <e p="drop-list-ref.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="transition-duration.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="drag-drop.d.ts" t="Include" />
+                <e p="drag-drop.metadata.json" t="Include" />
+                <e p="esm2015" t="Include">
+                  <e p="a11y.js" t="Include" />
+                  <e p="a11y.js.map" t="Include" />
+                  <e p="accordion.js" t="Include" />
+                  <e p="accordion.js.map" t="Include" />
+                  <e p="bidi.js" t="Include" />
+                  <e p="bidi.js.map" t="Include" />
+                  <e p="cdk.js" t="Include" />
+                  <e p="cdk.js.map" t="Include" />
+                  <e p="coercion.js" t="Include" />
+                  <e p="coercion.js.map" t="Include" />
+                  <e p="collections.js" t="Include" />
+                  <e p="collections.js.map" t="Include" />
+                  <e p="drag-drop.js" t="Include" />
+                  <e p="drag-drop.js.map" t="Include" />
+                  <e p="keycodes.js" t="Include" />
+                  <e p="keycodes.js.map" t="Include" />
+                  <e p="layout.js" t="Include" />
+                  <e p="layout.js.map" t="Include" />
+                  <e p="observers.js" t="Include" />
+                  <e p="observers.js.map" t="Include" />
+                  <e p="overlay.js" t="Include" />
+                  <e p="overlay.js.map" t="Include" />
+                  <e p="platform.js" t="Include" />
+                  <e p="platform.js.map" t="Include" />
+                  <e p="portal.js" t="Include" />
+                  <e p="portal.js.map" t="Include" />
+                  <e p="scrolling.js" t="Include" />
+                  <e p="scrolling.js.map" t="Include" />
+                  <e p="stepper.js" t="Include" />
+                  <e p="stepper.js.map" t="Include" />
+                  <e p="table.js" t="Include" />
+                  <e p="table.js.map" t="Include" />
+                  <e p="testing.js" t="Include" />
+                  <e p="testing.js.map" t="Include" />
+                  <e p="text-field.js" t="Include" />
+                  <e p="text-field.js.map" t="Include" />
+                  <e p="tree.js" t="Include" />
+                  <e p="tree.js.map" t="Include" />
+                </e>
+                <e p="esm5" t="Include">
+                  <e p="a11y.es5.js" t="Include" />
+                  <e p="a11y.es5.js.map" t="Include" />
+                  <e p="accordion.es5.js" t="Include" />
+                  <e p="accordion.es5.js.map" t="Include" />
+                  <e p="bidi.es5.js" t="Include" />
+                  <e p="bidi.es5.js.map" t="Include" />
+                  <e p="cdk.es5.js" t="Include" />
+                  <e p="cdk.es5.js.map" t="Include" />
+                  <e p="coercion.es5.js" t="Include" />
+                  <e p="coercion.es5.js.map" t="Include" />
+                  <e p="collections.es5.js" t="Include" />
+                  <e p="collections.es5.js.map" t="Include" />
+                  <e p="drag-drop.es5.js" t="Include" />
+                  <e p="drag-drop.es5.js.map" t="Include" />
+                  <e p="keycodes.es5.js" t="Include" />
+                  <e p="keycodes.es5.js.map" t="Include" />
+                  <e p="layout.es5.js" t="Include" />
+                  <e p="layout.es5.js.map" t="Include" />
+                  <e p="observers.es5.js" t="Include" />
+                  <e p="observers.es5.js.map" t="Include" />
+                  <e p="overlay.es5.js" t="Include" />
+                  <e p="overlay.es5.js.map" t="Include" />
+                  <e p="platform.es5.js" t="Include" />
+                  <e p="platform.es5.js.map" t="Include" />
+                  <e p="portal.es5.js" t="Include" />
+                  <e p="portal.es5.js.map" t="Include" />
+                  <e p="scrolling.es5.js" t="Include" />
+                  <e p="scrolling.es5.js.map" t="Include" />
+                  <e p="stepper.es5.js" t="Include" />
+                  <e p="stepper.es5.js.map" t="Include" />
+                  <e p="table.es5.js" t="Include" />
+                  <e p="table.es5.js.map" t="Include" />
+                  <e p="testing.es5.js" t="Include" />
+                  <e p="testing.es5.js.map" t="Include" />
+                  <e p="text-field.es5.js" t="Include" />
+                  <e p="text-field.es5.js.map" t="Include" />
+                  <e p="tree.es5.js" t="Include" />
+                  <e p="tree.es5.js.map" t="Include" />
+                </e>
+                <e p="keycodes" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="keycodes.d.ts" t="Include" />
+                    <e p="modifiers.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="keycodes.d.ts" t="Include" />
+                <e p="keycodes.metadata.json" t="Include" />
+                <e p="layout" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="breakpoints-observer.d.ts" t="Include" />
+                    <e p="breakpoints.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="layout-module.d.ts" t="Include" />
+                    <e p="media-matcher.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="layout.d.ts" t="Include" />
+                <e p="layout.metadata.json" t="Include" />
+                <e p="LICENSE" t="Include" />
+                <e p="node_modules" t="Include">
+                  <e p="parse5" t="Include">
+                    <e p="lib" t="Include">
+                      <e p="common" t="Include">
+                        <e p="doctype.js" t="Include" />
+                        <e p="error-codes.js" t="Include" />
+                        <e p="foreign-content.js" t="Include" />
+                        <e p="html.js" t="Include" />
+                        <e p="unicode.js" t="Include" />
+                      </e>
+                      <e p="extensions" t="Include">
+                        <e p="error-reporting" t="Include">
+                          <e p="mixin-base.js" t="Include" />
+                          <e p="parser-mixin.js" t="Include" />
+                          <e p="preprocessor-mixin.js" t="Include" />
+                          <e p="tokenizer-mixin.js" t="Include" />
+                        </e>
+                        <e p="location-info" t="Include">
+                          <e p="open-element-stack-mixin.js" t="Include" />
+                          <e p="parser-mixin.js" t="Include" />
+                          <e p="tokenizer-mixin.js" t="Include" />
+                        </e>
+                        <e p="position-tracking" t="Include">
+                          <e p="preprocessor-mixin.js" t="Include" />
+                        </e>
+                      </e>
+                      <e p="index.js" t="Include" />
+                      <e p="parser" t="Include">
+                        <e p="formatting-element-list.js" t="Include" />
+                        <e p="index.js" t="Include" />
+                        <e p="open-element-stack.js" t="Include" />
+                      </e>
+                      <e p="serializer" t="Include">
+                        <e p="index.js" t="Include" />
+                      </e>
+                      <e p="tokenizer" t="Include">
+                        <e p="index.js" t="Include" />
+                        <e p="named-entity-data.js" t="Include" />
+                        <e p="preprocessor.js" t="Include" />
+                      </e>
+                      <e p="tree-adapters" t="Include">
+                        <e p="default.js" t="Include" />
+                      </e>
+                      <e p="utils" t="Include">
+                        <e p="merge-options.js" t="Include" />
+                        <e p="mixin.js" t="Include" />
+                      </e>
+                    </e>
+                    <e p="package.json" t="Include" />
+                    <e p="README.md" t="Include" />
+                  </e>
+                </e>
+                <e p="observers" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="observe-content.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="observers.d.ts" t="Include" />
+                <e p="observers.metadata.json" t="Include" />
+                <e p="overlay" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="fullscreen-overlay-container.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="keyboard" t="Include">
+                      <e p="overlay-keyboard-dispatcher.d.ts" t="Include" />
+                    </e>
+                    <e p="overlay-config.d.ts" t="Include" />
+                    <e p="overlay-container.d.ts" t="Include" />
+                    <e p="overlay-directives.d.ts" t="Include" />
+                    <e p="overlay-module.d.ts" t="Include" />
+                    <e p="overlay-ref.d.ts" t="Include" />
+                    <e p="overlay-reference.d.ts" t="Include" />
+                    <e p="overlay.d.ts" t="Include" />
+                    <e p="position" t="Include">
+                      <e p="connected-position-strategy.d.ts" t="Include" />
+                      <e p="connected-position.d.ts" t="Include" />
+                      <e p="flexible-connected-position-strategy.d.ts" t="Include" />
+                      <e p="global-position-strategy.d.ts" t="Include" />
+                      <e p="overlay-position-builder.d.ts" t="Include" />
+                      <e p="position-strategy.d.ts" t="Include" />
+                      <e p="scroll-clip.d.ts" t="Include" />
+                    </e>
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="scroll" t="Include">
+                      <e p="block-scroll-strategy.d.ts" t="Include" />
+                      <e p="close-scroll-strategy.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="noop-scroll-strategy.d.ts" t="Include" />
+                      <e p="reposition-scroll-strategy.d.ts" t="Include" />
+                      <e p="scroll-strategy-options.d.ts" t="Include" />
+                      <e p="scroll-strategy.d.ts" t="Include" />
+                    </e>
+                  </e>
+                </e>
+                <e p="overlay-prebuilt.css" t="Include" />
+                <e p="overlay.d.ts" t="Include" />
+                <e p="overlay.metadata.json" t="Include" />
+                <e p="package.json" t="Include" />
+                <e p="platform" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="features" t="Include">
+                      <e p="input-types.d.ts" t="Include" />
+                      <e p="passive-listeners.d.ts" t="Include" />
+                      <e p="scrolling.d.ts" t="Include" />
+                      <e p="shadow-dom.d.ts" t="Include" />
+                    </e>
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="platform-module.d.ts" t="Include" />
+                    <e p="platform.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="platform.d.ts" t="Include" />
+                <e p="platform.metadata.json" t="Include" />
+                <e p="portal" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="dom-portal-outlet.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="portal-directives.d.ts" t="Include" />
+                    <e p="portal-errors.d.ts" t="Include" />
+                    <e p="portal-injector.d.ts" t="Include" />
+                    <e p="portal.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="portal.d.ts" t="Include" />
+                <e p="portal.metadata.json" t="Include" />
+                <e p="README.md" t="Include" />
+                <e p="schematics" t="Include">
+                  <e p="collection.json" t="Include" />
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.js" t="Include" />
+                  <e p="index.js.map" t="Include" />
+                  <e p="migration.json" t="Include" />
+                  <e p="ng-add" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.js" t="Include" />
+                    <e p="index.js.map" t="Include" />
+                    <e p="package-config.d.ts" t="Include" />
+                    <e p="package-config.js" t="Include" />
+                    <e p="package-config.js.map" t="Include" />
+                    <e p="schema.d.ts" t="Include" />
+                    <e p="schema.js" t="Include" />
+                    <e p="schema.js.map" t="Include" />
+                    <e p="schema.json" t="Include" />
+                  </e>
+                  <e p="ng-generate" t="Include">
+                    <e p="drag-drop" t="Include">
+                      <e p="files" t="Include">
+                        <e p="__path__" t="Include">
+                          <e p="__name@dasherize@if-flat__" t="Include">
+                            <e p="__name@dasherize__.component.__style__.template" t="Include" />
+                            <e p="__name@dasherize__.component.html.template" t="Include" />
+                            <e p="__name@dasherize__.component.spec.ts.template" t="Include" />
+                            <e p="__name@dasherize__.component.ts.template" t="Include" />
+                          </e>
+                        </e>
+                      </e>
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.js" t="Include" />
+                      <e p="index.js.map" t="Include" />
+                      <e p="schema.d.ts" t="Include" />
+                      <e p="schema.js" t="Include" />
+                      <e p="schema.js.map" t="Include" />
+                      <e p="schema.json" t="Include" />
+                    </e>
+                  </e>
+                  <e p="ng-update" t="Include">
+                    <e p="data" t="Include">
+                      <e p="attribute-selectors.d.ts" t="Include" />
+                      <e p="attribute-selectors.js" t="Include" />
+                      <e p="attribute-selectors.js.map" t="Include" />
+                      <e p="class-names.d.ts" t="Include" />
+                      <e p="class-names.js" t="Include" />
+                      <e p="class-names.js.map" t="Include" />
+                      <e p="constructor-checks.d.ts" t="Include" />
+                      <e p="constructor-checks.js" t="Include" />
+                      <e p="constructor-checks.js.map" t="Include" />
+                      <e p="css-selectors.d.ts" t="Include" />
+                      <e p="css-selectors.js" t="Include" />
+                      <e p="css-selectors.js.map" t="Include" />
+                      <e p="element-selectors.d.ts" t="Include" />
+                      <e p="element-selectors.js" t="Include" />
+                      <e p="element-selectors.js.map" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.js" t="Include" />
+                      <e p="index.js.map" t="Include" />
+                      <e p="input-names.d.ts" t="Include" />
+                      <e p="input-names.js" t="Include" />
+                      <e p="input-names.js.map" t="Include" />
+                      <e p="method-call-checks.d.ts" t="Include" />
+                      <e p="method-call-checks.js" t="Include" />
+                      <e p="method-call-checks.js.map" t="Include" />
+                      <e p="output-names.d.ts" t="Include" />
+                      <e p="output-names.js" t="Include" />
+                      <e p="output-names.js.map" t="Include" />
+                      <e p="property-names.d.ts" t="Include" />
+                      <e p="property-names.js" t="Include" />
+                      <e p="property-names.js.map" t="Include" />
+                    </e>
+                    <e p="html-parsing" t="Include">
+                      <e p="angular.d.ts" t="Include" />
+                      <e p="angular.js" t="Include" />
+                      <e p="angular.js.map" t="Include" />
+                      <e p="elements.d.ts" t="Include" />
+                      <e p="elements.js" t="Include" />
+                      <e p="elements.js.map" t="Include" />
+                    </e>
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.js" t="Include" />
+                    <e p="index.js.map" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="public-api.js" t="Include" />
+                    <e p="public-api.js.map" t="Include" />
+                    <e p="test-cases" t="Include">
+                      <e p="misc" t="Include">
+                        <e p="global-stylesheets-test.css" t="Include" />
+                      </e>
+                    </e>
+                    <e p="typescript" t="Include">
+                      <e p="base-types.d.ts" t="Include" />
+                      <e p="base-types.js" t="Include" />
+                      <e p="base-types.js.map" t="Include" />
+                      <e p="imports.d.ts" t="Include" />
+                      <e p="imports.js" t="Include" />
+                      <e p="imports.js.map" t="Include" />
+                      <e p="literal.d.ts" t="Include" />
+                      <e p="literal.js" t="Include" />
+                      <e p="literal.js.map" t="Include" />
+                      <e p="module-specifiers.d.ts" t="Include" />
+                      <e p="module-specifiers.js" t="Include" />
+                      <e p="module-specifiers.js.map" t="Include" />
+                    </e>
+                    <e p="upgrade-data.d.ts" t="Include" />
+                    <e p="upgrade-data.js" t="Include" />
+                    <e p="upgrade-data.js.map" t="Include" />
+                    <e p="upgrade-rules" t="Include">
+                      <e p="attribute-selectors-rule.d.ts" t="Include" />
+                      <e p="attribute-selectors-rule.js" t="Include" />
+                      <e p="attribute-selectors-rule.js.map" t="Include" />
+                      <e p="class-inheritance-rule.d.ts" t="Include" />
+                      <e p="class-inheritance-rule.js" t="Include" />
+                      <e p="class-inheritance-rule.js.map" t="Include" />
+                      <e p="class-names-rule.d.ts" t="Include" />
+                      <e p="class-names-rule.js" t="Include" />
+                      <e p="class-names-rule.js.map" t="Include" />
+                      <e p="constructor-signature-rule.d.ts" t="Include" />
+                      <e p="constructor-signature-rule.js" t="Include" />
+                      <e p="constructor-signature-rule.js.map" t="Include" />
+                      <e p="css-selectors-rule.d.ts" t="Include" />
+                      <e p="css-selectors-rule.js" t="Include" />
+                      <e p="css-selectors-rule.js.map" t="Include" />
+                      <e p="element-selectors-rule.d.ts" t="Include" />
+                      <e p="element-selectors-rule.js" t="Include" />
+                      <e p="element-selectors-rule.js.map" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.js" t="Include" />
+                      <e p="index.js.map" t="Include" />
+                      <e p="input-names-rule.d.ts" t="Include" />
+                      <e p="input-names-rule.js" t="Include" />
+                      <e p="input-names-rule.js.map" t="Include" />
+                      <e p="method-call-arguments-rule.d.ts" t="Include" />
+                      <e p="method-call-arguments-rule.js" t="Include" />
+                      <e p="method-call-arguments-rule.js.map" t="Include" />
+                      <e p="misc-template-rule.d.ts" t="Include" />
+                      <e p="misc-template-rule.js" t="Include" />
+                      <e p="misc-template-rule.js.map" t="Include" />
+                      <e p="output-names-rule.d.ts" t="Include" />
+                      <e p="output-names-rule.js" t="Include" />
+                      <e p="output-names-rule.js.map" t="Include" />
+                      <e p="property-names-rule.d.ts" t="Include" />
+                      <e p="property-names-rule.js" t="Include" />
+                      <e p="property-names-rule.js.map" t="Include" />
+                    </e>
+                  </e>
+                  <e p="tsconfig.tsbuildinfo" t="Include" />
+                  <e p="update-tool" t="Include">
+                    <e p="component-resource-collector.d.ts" t="Include" />
+                    <e p="component-resource-collector.js" t="Include" />
+                    <e p="component-resource-collector.js.map" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.js" t="Include" />
+                    <e p="index.js.map" t="Include" />
+                    <e p="migration-rule.d.ts" t="Include" />
+                    <e p="migration-rule.js" t="Include" />
+                    <e p="migration-rule.js.map" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="public-api.js" t="Include" />
+                    <e p="public-api.js.map" t="Include" />
+                    <e p="target-version.d.ts" t="Include" />
+                    <e p="target-version.js" t="Include" />
+                    <e p="target-version.js.map" t="Include" />
+                    <e p="utils" t="Include">
+                      <e p="decorators.d.ts" t="Include" />
+                      <e p="decorators.js" t="Include" />
+                      <e p="decorators.js.map" t="Include" />
+                      <e p="functions.d.ts" t="Include" />
+                      <e p="functions.js" t="Include" />
+                      <e p="functions.js.map" t="Include" />
+                      <e p="imports.d.ts" t="Include" />
+                      <e p="imports.js" t="Include" />
+                      <e p="imports.js.map" t="Include" />
+                      <e p="line-mappings.d.ts" t="Include" />
+                      <e p="line-mappings.js" t="Include" />
+                      <e p="line-mappings.js.map" t="Include" />
+                      <e p="parse-tsconfig.d.ts" t="Include" />
+                      <e p="parse-tsconfig.js" t="Include" />
+                      <e p="parse-tsconfig.js.map" t="Include" />
+                      <e p="property-name.d.ts" t="Include" />
+                      <e p="property-name.js" t="Include" />
+                      <e p="property-name.js.map" t="Include" />
+                    </e>
+                    <e p="version-changes.d.ts" t="Include" />
+                    <e p="version-changes.js" t="Include" />
+                    <e p="version-changes.js.map" t="Include" />
+                  </e>
+                  <e p="utils" t="Include">
+                    <e p="ast" t="Include">
+                      <e p="ng-module-imports.d.ts" t="Include" />
+                      <e p="ng-module-imports.js" t="Include" />
+                      <e p="ng-module-imports.js.map" t="Include" />
+                    </e>
+                    <e p="ast.d.ts" t="Include" />
+                    <e p="ast.js" t="Include" />
+                    <e p="ast.js.map" t="Include" />
+                    <e p="build-component.d.ts" t="Include" />
+                    <e p="build-component.js" t="Include" />
+                    <e p="build-component.js.map" t="Include" />
+                    <e p="get-project.d.ts" t="Include" />
+                    <e p="get-project.js" t="Include" />
+                    <e p="get-project.js.map" t="Include" />
+                    <e p="html-head-element.d.ts" t="Include" />
+                    <e p="html-head-element.js" t="Include" />
+                    <e p="html-head-element.js.map" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.js" t="Include" />
+                    <e p="index.js.map" t="Include" />
+                    <e p="parse5-element.d.ts" t="Include" />
+                    <e p="parse5-element.js" t="Include" />
+                    <e p="parse5-element.js.map" t="Include" />
+                    <e p="project-main-file.d.ts" t="Include" />
+                    <e p="project-main-file.js" t="Include" />
+                    <e p="project-main-file.js.map" t="Include" />
+                    <e p="project-style-file.d.ts" t="Include" />
+                    <e p="project-style-file.js" t="Include" />
+                    <e p="project-style-file.js.map" t="Include" />
+                    <e p="project-targets.d.ts" t="Include" />
+                    <e p="project-targets.js" t="Include" />
+                    <e p="project-targets.js.map" t="Include" />
+                    <e p="project-tsconfig-paths.d.ts" t="Include" />
+                    <e p="project-tsconfig-paths.js" t="Include" />
+                    <e p="project-tsconfig-paths.js.map" t="Include" />
+                    <e p="schematic-options.d.ts" t="Include" />
+                    <e p="schematic-options.js" t="Include" />
+                    <e p="schematic-options.js.map" t="Include" />
+                    <e p="version-agnostic-typescript.d.ts" t="Include" />
+                    <e p="version-agnostic-typescript.js" t="Include" />
+                    <e p="version-agnostic-typescript.js.map" t="Include" />
+                  </e>
+                </e>
+                <e p="scrolling" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="fixed-size-virtual-scroll.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="scroll-dispatcher.d.ts" t="Include" />
+                    <e p="scrollable.d.ts" t="Include" />
+                    <e p="scrolling-module.d.ts" t="Include" />
+                    <e p="viewport-ruler.d.ts" t="Include" />
+                    <e p="virtual-for-of.d.ts" t="Include" />
+                    <e p="virtual-scroll-strategy.d.ts" t="Include" />
+                    <e p="virtual-scroll-viewport.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="scrolling.d.ts" t="Include" />
+                <e p="scrolling.metadata.json" t="Include" />
+                <e p="stepper" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="step-header.d.ts" t="Include" />
+                    <e p="step-label.d.ts" t="Include" />
+                    <e p="stepper-button.d.ts" t="Include" />
+                    <e p="stepper-module.d.ts" t="Include" />
+                    <e p="stepper.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="stepper.d.ts" t="Include" />
+                <e p="stepper.metadata.json" t="Include" />
+                <e p="table" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="can-stick.d.ts" t="Include" />
+                    <e p="cell.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="row.d.ts" t="Include" />
+                    <e p="sticky-styler.d.ts" t="Include" />
+                    <e p="table-errors.d.ts" t="Include" />
+                    <e p="table-module.d.ts" t="Include" />
+                    <e p="table.d.ts" t="Include" />
+                    <e p="text-column.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="table.d.ts" t="Include" />
+                <e p="table.metadata.json" t="Include" />
+                <e p="testing" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="dispatch-events.d.ts" t="Include" />
+                    <e p="element-focus.d.ts" t="Include" />
+                    <e p="event-objects.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="type-in-element.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="testing.d.ts" t="Include" />
+                <e p="testing.metadata.json" t="Include" />
+                <e p="text-field" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="autofill.d.ts" t="Include" />
+                    <e p="autosize.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="text-field-module.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="text-field-prebuilt.css" t="Include" />
+                <e p="text-field.d.ts" t="Include" />
+                <e p="text-field.metadata.json" t="Include" />
+                <e p="tree" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="control" t="Include">
+                      <e p="base-tree-control.d.ts" t="Include" />
+                      <e p="flat-tree-control.d.ts" t="Include" />
+                      <e p="nested-tree-control.d.ts" t="Include" />
+                      <e p="tree-control.d.ts" t="Include" />
+                    </e>
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="nested-node.d.ts" t="Include" />
+                    <e p="node.d.ts" t="Include" />
+                    <e p="outlet.d.ts" t="Include" />
+                    <e p="padding.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="toggle.d.ts" t="Include" />
+                    <e p="tree-errors.d.ts" t="Include" />
+                    <e p="tree-module.d.ts" t="Include" />
+                    <e p="tree.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="tree.d.ts" t="Include" />
+                <e p="tree.metadata.json" t="Include" />
+                <e p="typings" t="Include">
+                  <e p="a11y" t="Include">
+                    <e p="a11y-module.d.ts" t="Include" />
+                    <e p="aria-describer" t="Include">
+                      <e p="aria-describer.d.ts" t="Include" />
+                      <e p="aria-reference.d.ts" t="Include" />
+                    </e>
+                    <e p="fake-mousedown.d.ts" t="Include" />
+                    <e p="focus-monitor" t="Include">
+                      <e p="focus-monitor.d.ts" t="Include" />
+                    </e>
+                    <e p="focus-trap" t="Include">
+                      <e p="focus-trap.d.ts" t="Include" />
+                    </e>
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="interactivity-checker" t="Include">
+                      <e p="interactivity-checker.d.ts" t="Include" />
+                    </e>
+                    <e p="key-manager" t="Include">
+                      <e p="activedescendant-key-manager.d.ts" t="Include" />
+                      <e p="focus-key-manager.d.ts" t="Include" />
+                      <e p="list-key-manager.d.ts" t="Include" />
+                    </e>
+                    <e p="live-announcer" t="Include">
+                      <e p="live-announcer-tokens.d.ts" t="Include" />
+                      <e p="live-announcer.d.ts" t="Include" />
+                    </e>
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                  <e p="accordion" t="Include">
+                    <e p="accordion-item.d.ts" t="Include" />
+                    <e p="accordion-module.d.ts" t="Include" />
+                    <e p="accordion.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                  <e p="bidi" t="Include">
+                    <e p="bidi-module.d.ts" t="Include" />
+                    <e p="dir-document-token.d.ts" t="Include" />
+                    <e p="dir.d.ts" t="Include" />
+                    <e p="directionality.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                  <e p="coercion" t="Include">
+                    <e p="array.d.ts" t="Include" />
+                    <e p="boolean-property.d.ts" t="Include" />
+                    <e p="css-pixel-value.d.ts" t="Include" />
+                    <e p="element.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="number-property.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                  <e p="collections" t="Include">
+                    <e p="array-data-source.d.ts" t="Include" />
+                    <e p="collection-viewer.d.ts" t="Include" />
+                    <e p="data-source.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="selection.d.ts" t="Include" />
+                    <e p="tree-adapter.d.ts" t="Include" />
+                    <e p="unique-selection-dispatcher.d.ts" t="Include" />
+                  </e>
+                  <e p="drag-drop" t="Include">
+                    <e p="directives" t="Include">
+                      <e p="drag-handle.d.ts" t="Include" />
+                      <e p="drag-placeholder.d.ts" t="Include" />
+                      <e p="drag-preview.d.ts" t="Include" />
+                      <e p="drag.d.ts" t="Include" />
+                      <e p="drop-list-group.d.ts" t="Include" />
+                      <e p="drop-list.d.ts" t="Include" />
+                    </e>
+                    <e p="drag-drop-module.d.ts" t="Include" />
+                    <e p="drag-drop-registry.d.ts" t="Include" />
+                    <e p="drag-drop.d.ts" t="Include" />
+                    <e p="drag-events.d.ts" t="Include" />
+                    <e p="drag-parent.d.ts" t="Include" />
+                    <e p="drag-ref.d.ts" t="Include" />
+                    <e p="drag-styling.d.ts" t="Include" />
+                    <e p="drag-utils.d.ts" t="Include" />
+                    <e p="drop-list-container.d.ts" t="Include" />
+                    <e p="drop-list-ref.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="transition-duration.d.ts" t="Include" />
+                  </e>
+                  <e p="esm5" t="Include">
+                    <e p="a11y" t="Include">
+                      <e p="a11y-module.d.ts" t="Include" />
+                      <e p="aria-describer" t="Include">
+                        <e p="aria-describer.d.ts" t="Include" />
+                        <e p="aria-reference.d.ts" t="Include" />
+                      </e>
+                      <e p="fake-mousedown.d.ts" t="Include" />
+                      <e p="focus-monitor" t="Include">
+                        <e p="focus-monitor.d.ts" t="Include" />
+                      </e>
+                      <e p="focus-trap" t="Include">
+                        <e p="focus-trap.d.ts" t="Include" />
+                      </e>
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="interactivity-checker" t="Include">
+                        <e p="interactivity-checker.d.ts" t="Include" />
+                      </e>
+                      <e p="key-manager" t="Include">
+                        <e p="activedescendant-key-manager.d.ts" t="Include" />
+                        <e p="focus-key-manager.d.ts" t="Include" />
+                        <e p="list-key-manager.d.ts" t="Include" />
+                      </e>
+                      <e p="live-announcer" t="Include">
+                        <e p="live-announcer-tokens.d.ts" t="Include" />
+                        <e p="live-announcer.d.ts" t="Include" />
+                      </e>
+                      <e p="public-api.d.ts" t="Include" />
+                    </e>
+                    <e p="accordion" t="Include">
+                      <e p="accordion-item.d.ts" t="Include" />
+                      <e p="accordion-module.d.ts" t="Include" />
+                      <e p="accordion.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                    </e>
+                    <e p="bidi" t="Include">
+                      <e p="bidi-module.d.ts" t="Include" />
+                      <e p="dir-document-token.d.ts" t="Include" />
+                      <e p="dir.d.ts" t="Include" />
+                      <e p="directionality.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                    </e>
+                    <e p="coercion" t="Include">
+                      <e p="array.d.ts" t="Include" />
+                      <e p="boolean-property.d.ts" t="Include" />
+                      <e p="css-pixel-value.d.ts" t="Include" />
+                      <e p="element.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="number-property.d.ts" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                    </e>
+                    <e p="collections" t="Include">
+                      <e p="array-data-source.d.ts" t="Include" />
+                      <e p="collection-viewer.d.ts" t="Include" />
+                      <e p="data-source.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="selection.d.ts" t="Include" />
+                      <e p="tree-adapter.d.ts" t="Include" />
+                      <e p="unique-selection-dispatcher.d.ts" t="Include" />
+                    </e>
+                    <e p="drag-drop" t="Include">
+                      <e p="directives" t="Include">
+                        <e p="drag-handle.d.ts" t="Include" />
+                        <e p="drag-placeholder.d.ts" t="Include" />
+                        <e p="drag-preview.d.ts" t="Include" />
+                        <e p="drag.d.ts" t="Include" />
+                        <e p="drop-list-group.d.ts" t="Include" />
+                        <e p="drop-list.d.ts" t="Include" />
+                      </e>
+                      <e p="drag-drop-module.d.ts" t="Include" />
+                      <e p="drag-drop-registry.d.ts" t="Include" />
+                      <e p="drag-drop.d.ts" t="Include" />
+                      <e p="drag-events.d.ts" t="Include" />
+                      <e p="drag-parent.d.ts" t="Include" />
+                      <e p="drag-ref.d.ts" t="Include" />
+                      <e p="drag-styling.d.ts" t="Include" />
+                      <e p="drag-utils.d.ts" t="Include" />
+                      <e p="drop-list-container.d.ts" t="Include" />
+                      <e p="drop-list-ref.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="transition-duration.d.ts" t="Include" />
+                    </e>
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="keycodes" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="keycodes.d.ts" t="Include" />
+                      <e p="modifiers.d.ts" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                    </e>
+                    <e p="layout" t="Include">
+                      <e p="breakpoints-observer.d.ts" t="Include" />
+                      <e p="breakpoints.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="layout-module.d.ts" t="Include" />
+                      <e p="media-matcher.d.ts" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                    </e>
+                    <e p="observers" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="observe-content.d.ts" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                    </e>
+                    <e p="overlay" t="Include">
+                      <e p="fullscreen-overlay-container.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="keyboard" t="Include">
+                        <e p="overlay-keyboard-dispatcher.d.ts" t="Include" />
+                      </e>
+                      <e p="overlay-config.d.ts" t="Include" />
+                      <e p="overlay-container.d.ts" t="Include" />
+                      <e p="overlay-directives.d.ts" t="Include" />
+                      <e p="overlay-module.d.ts" t="Include" />
+                      <e p="overlay-ref.d.ts" t="Include" />
+                      <e p="overlay-reference.d.ts" t="Include" />
+                      <e p="overlay.d.ts" t="Include" />
+                      <e p="position" t="Include">
+                        <e p="connected-position-strategy.d.ts" t="Include" />
+                        <e p="connected-position.d.ts" t="Include" />
+                        <e p="flexible-connected-position-strategy.d.ts" t="Include" />
+                        <e p="global-position-strategy.d.ts" t="Include" />
+                        <e p="overlay-position-builder.d.ts" t="Include" />
+                        <e p="position-strategy.d.ts" t="Include" />
+                        <e p="scroll-clip.d.ts" t="Include" />
+                      </e>
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="scroll" t="Include">
+                        <e p="block-scroll-strategy.d.ts" t="Include" />
+                        <e p="close-scroll-strategy.d.ts" t="Include" />
+                        <e p="index.d.ts" t="Include" />
+                        <e p="noop-scroll-strategy.d.ts" t="Include" />
+                        <e p="reposition-scroll-strategy.d.ts" t="Include" />
+                        <e p="scroll-strategy-options.d.ts" t="Include" />
+                        <e p="scroll-strategy.d.ts" t="Include" />
+                      </e>
+                    </e>
+                    <e p="platform" t="Include">
+                      <e p="features" t="Include">
+                        <e p="input-types.d.ts" t="Include" />
+                        <e p="passive-listeners.d.ts" t="Include" />
+                        <e p="scrolling.d.ts" t="Include" />
+                        <e p="shadow-dom.d.ts" t="Include" />
+                      </e>
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="platform-module.d.ts" t="Include" />
+                      <e p="platform.d.ts" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                    </e>
+                    <e p="portal" t="Include">
+                      <e p="dom-portal-outlet.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="portal-directives.d.ts" t="Include" />
+                      <e p="portal-errors.d.ts" t="Include" />
+                      <e p="portal-injector.d.ts" t="Include" />
+                      <e p="portal.d.ts" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                    </e>
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="scrolling" t="Include">
+                      <e p="fixed-size-virtual-scroll.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="scroll-dispatcher.d.ts" t="Include" />
+                      <e p="scrollable.d.ts" t="Include" />
+                      <e p="scrolling-module.d.ts" t="Include" />
+                      <e p="viewport-ruler.d.ts" t="Include" />
+                      <e p="virtual-for-of.d.ts" t="Include" />
+                      <e p="virtual-scroll-strategy.d.ts" t="Include" />
+                      <e p="virtual-scroll-viewport.d.ts" t="Include" />
+                    </e>
+                    <e p="stepper" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="step-header.d.ts" t="Include" />
+                      <e p="step-label.d.ts" t="Include" />
+                      <e p="stepper-button.d.ts" t="Include" />
+                      <e p="stepper-module.d.ts" t="Include" />
+                      <e p="stepper.d.ts" t="Include" />
+                    </e>
+                    <e p="table" t="Include">
+                      <e p="can-stick.d.ts" t="Include" />
+                      <e p="cell.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="row.d.ts" t="Include" />
+                      <e p="sticky-styler.d.ts" t="Include" />
+                      <e p="table-errors.d.ts" t="Include" />
+                      <e p="table-module.d.ts" t="Include" />
+                      <e p="table.d.ts" t="Include" />
+                      <e p="text-column.d.ts" t="Include" />
+                    </e>
+                    <e p="testing" t="Include">
+                      <e p="dispatch-events.d.ts" t="Include" />
+                      <e p="element-focus.d.ts" t="Include" />
+                      <e p="event-objects.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="type-in-element.d.ts" t="Include" />
+                    </e>
+                    <e p="text-field" t="Include">
+                      <e p="autofill.d.ts" t="Include" />
+                      <e p="autosize.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="text-field-module.d.ts" t="Include" />
+                    </e>
+                    <e p="tree" t="Include">
+                      <e p="control" t="Include">
+                        <e p="base-tree-control.d.ts" t="Include" />
+                        <e p="flat-tree-control.d.ts" t="Include" />
+                        <e p="nested-tree-control.d.ts" t="Include" />
+                        <e p="tree-control.d.ts" t="Include" />
+                      </e>
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="nested-node.d.ts" t="Include" />
+                      <e p="node.d.ts" t="Include" />
+                      <e p="outlet.d.ts" t="Include" />
+                      <e p="padding.d.ts" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="toggle.d.ts" t="Include" />
+                      <e p="tree-errors.d.ts" t="Include" />
+                      <e p="tree-module.d.ts" t="Include" />
+                      <e p="tree.d.ts" t="Include" />
+                    </e>
+                    <e p="version.d.ts" t="Include" />
+                  </e>
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="keycodes" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="keycodes.d.ts" t="Include" />
+                    <e p="modifiers.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                  <e p="layout" t="Include">
+                    <e p="breakpoints-observer.d.ts" t="Include" />
+                    <e p="breakpoints.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="layout-module.d.ts" t="Include" />
+                    <e p="media-matcher.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                  <e p="observers" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="observe-content.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                  <e p="overlay" t="Include">
+                    <e p="fullscreen-overlay-container.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="keyboard" t="Include">
+                      <e p="overlay-keyboard-dispatcher.d.ts" t="Include" />
+                    </e>
+                    <e p="overlay-config.d.ts" t="Include" />
+                    <e p="overlay-container.d.ts" t="Include" />
+                    <e p="overlay-directives.d.ts" t="Include" />
+                    <e p="overlay-module.d.ts" t="Include" />
+                    <e p="overlay-ref.d.ts" t="Include" />
+                    <e p="overlay-reference.d.ts" t="Include" />
+                    <e p="overlay.d.ts" t="Include" />
+                    <e p="position" t="Include">
+                      <e p="connected-position-strategy.d.ts" t="Include" />
+                      <e p="connected-position.d.ts" t="Include" />
+                      <e p="flexible-connected-position-strategy.d.ts" t="Include" />
+                      <e p="global-position-strategy.d.ts" t="Include" />
+                      <e p="overlay-position-builder.d.ts" t="Include" />
+                      <e p="position-strategy.d.ts" t="Include" />
+                      <e p="scroll-clip.d.ts" t="Include" />
+                    </e>
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="scroll" t="Include">
+                      <e p="block-scroll-strategy.d.ts" t="Include" />
+                      <e p="close-scroll-strategy.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="noop-scroll-strategy.d.ts" t="Include" />
+                      <e p="reposition-scroll-strategy.d.ts" t="Include" />
+                      <e p="scroll-strategy-options.d.ts" t="Include" />
+                      <e p="scroll-strategy.d.ts" t="Include" />
+                    </e>
+                  </e>
+                  <e p="platform" t="Include">
+                    <e p="features" t="Include">
+                      <e p="input-types.d.ts" t="Include" />
+                      <e p="passive-listeners.d.ts" t="Include" />
+                      <e p="scrolling.d.ts" t="Include" />
+                      <e p="shadow-dom.d.ts" t="Include" />
+                    </e>
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="platform-module.d.ts" t="Include" />
+                    <e p="platform.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                  <e p="portal" t="Include">
+                    <e p="dom-portal-outlet.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="portal-directives.d.ts" t="Include" />
+                    <e p="portal-errors.d.ts" t="Include" />
+                    <e p="portal-injector.d.ts" t="Include" />
+                    <e p="portal.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                  <e p="public-api.d.ts" t="Include" />
+                  <e p="schematics" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="ng-add" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="package-config.d.ts" t="Include" />
+                      <e p="schema.d.ts" t="Include" />
+                    </e>
+                    <e p="ng-generate" t="Include">
+                      <e p="drag-drop" t="Include">
+                        <e p="index.d.ts" t="Include" />
+                        <e p="schema.d.ts" t="Include" />
+                      </e>
+                    </e>
+                    <e p="ng-update" t="Include">
+                      <e p="data" t="Include">
+                        <e p="attribute-selectors.d.ts" t="Include" />
+                        <e p="class-names.d.ts" t="Include" />
+                        <e p="constructor-checks.d.ts" t="Include" />
+                        <e p="css-selectors.d.ts" t="Include" />
+                        <e p="element-selectors.d.ts" t="Include" />
+                        <e p="index.d.ts" t="Include" />
+                        <e p="input-names.d.ts" t="Include" />
+                        <e p="method-call-checks.d.ts" t="Include" />
+                        <e p="output-names.d.ts" t="Include" />
+                        <e p="property-names.d.ts" t="Include" />
+                      </e>
+                      <e p="html-parsing" t="Include">
+                        <e p="angular.d.ts" t="Include" />
+                        <e p="elements.d.ts" t="Include" />
+                      </e>
+                      <e p="index.d.ts" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="typescript" t="Include">
+                        <e p="base-types.d.ts" t="Include" />
+                        <e p="imports.d.ts" t="Include" />
+                        <e p="literal.d.ts" t="Include" />
+                        <e p="module-specifiers.d.ts" t="Include" />
+                      </e>
+                      <e p="upgrade-data.d.ts" t="Include" />
+                      <e p="upgrade-rules" t="Include">
+                        <e p="attribute-selectors-rule.d.ts" t="Include" />
+                        <e p="class-inheritance-rule.d.ts" t="Include" />
+                        <e p="class-names-rule.d.ts" t="Include" />
+                        <e p="constructor-signature-rule.d.ts" t="Include" />
+                        <e p="css-selectors-rule.d.ts" t="Include" />
+                        <e p="element-selectors-rule.d.ts" t="Include" />
+                        <e p="index.d.ts" t="Include" />
+                        <e p="input-names-rule.d.ts" t="Include" />
+                        <e p="method-call-arguments-rule.d.ts" t="Include" />
+                        <e p="misc-template-rule.d.ts" t="Include" />
+                        <e p="output-names-rule.d.ts" t="Include" />
+                        <e p="property-names-rule.d.ts" t="Include" />
+                      </e>
+                    </e>
+                    <e p="update-tool" t="Include">
+                      <e p="component-resource-collector.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="migration-rule.d.ts" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="target-version.d.ts" t="Include" />
+                      <e p="utils" t="Include">
+                        <e p="decorators.d.ts" t="Include" />
+                        <e p="functions.d.ts" t="Include" />
+                        <e p="imports.d.ts" t="Include" />
+                        <e p="line-mappings.d.ts" t="Include" />
+                        <e p="parse-tsconfig.d.ts" t="Include" />
+                        <e p="property-name.d.ts" t="Include" />
+                      </e>
+                      <e p="version-changes.d.ts" t="Include" />
+                    </e>
+                    <e p="utils" t="Include">
+                      <e p="ast" t="Include">
+                        <e p="ng-module-imports.d.ts" t="Include" />
+                      </e>
+                      <e p="ast.d.ts" t="Include" />
+                      <e p="build-component.d.ts" t="Include" />
+                      <e p="get-project.d.ts" t="Include" />
+                      <e p="html-head-element.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="parse5-element.d.ts" t="Include" />
+                      <e p="project-main-file.d.ts" t="Include" />
+                      <e p="project-style-file.d.ts" t="Include" />
+                      <e p="project-targets.d.ts" t="Include" />
+                      <e p="project-tsconfig-paths.d.ts" t="Include" />
+                      <e p="schematic-options.d.ts" t="Include" />
+                      <e p="version-agnostic-typescript.d.ts" t="Include" />
+                    </e>
+                  </e>
+                  <e p="scrolling" t="Include">
+                    <e p="fixed-size-virtual-scroll.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="scroll-dispatcher.d.ts" t="Include" />
+                    <e p="scrollable.d.ts" t="Include" />
+                    <e p="scrolling-module.d.ts" t="Include" />
+                    <e p="viewport-ruler.d.ts" t="Include" />
+                    <e p="virtual-for-of.d.ts" t="Include" />
+                    <e p="virtual-scroll-strategy.d.ts" t="Include" />
+                    <e p="virtual-scroll-viewport.d.ts" t="Include" />
+                  </e>
+                  <e p="stepper" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="step-header.d.ts" t="Include" />
+                    <e p="step-label.d.ts" t="Include" />
+                    <e p="stepper-button.d.ts" t="Include" />
+                    <e p="stepper-module.d.ts" t="Include" />
+                    <e p="stepper.d.ts" t="Include" />
+                  </e>
+                  <e p="table" t="Include">
+                    <e p="can-stick.d.ts" t="Include" />
+                    <e p="cell.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="row.d.ts" t="Include" />
+                    <e p="sticky-styler.d.ts" t="Include" />
+                    <e p="table-errors.d.ts" t="Include" />
+                    <e p="table-module.d.ts" t="Include" />
+                    <e p="table.d.ts" t="Include" />
+                    <e p="text-column.d.ts" t="Include" />
+                  </e>
+                  <e p="testing" t="Include">
+                    <e p="dispatch-events.d.ts" t="Include" />
+                    <e p="element-focus.d.ts" t="Include" />
+                    <e p="event-objects.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="type-in-element.d.ts" t="Include" />
+                  </e>
+                  <e p="text-field" t="Include">
+                    <e p="autofill.d.ts" t="Include" />
+                    <e p="autosize.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="text-field-module.d.ts" t="Include" />
+                  </e>
+                  <e p="tree" t="Include">
+                    <e p="control" t="Include">
+                      <e p="base-tree-control.d.ts" t="Include" />
+                      <e p="flat-tree-control.d.ts" t="Include" />
+                      <e p="nested-tree-control.d.ts" t="Include" />
+                      <e p="tree-control.d.ts" t="Include" />
+                    </e>
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="nested-node.d.ts" t="Include" />
+                    <e p="node.d.ts" t="Include" />
+                    <e p="outlet.d.ts" t="Include" />
+                    <e p="padding.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="toggle.d.ts" t="Include" />
+                    <e p="tree-errors.d.ts" t="Include" />
+                    <e p="tree-module.d.ts" t="Include" />
+                    <e p="tree.d.ts" t="Include" />
+                  </e>
+                  <e p="version.d.ts" t="Include" />
+                </e>
+              </e>
+              <e p="cli" t="IncludeRecursive" />
+              <e p="common" t="IncludeRecursive" />
+              <e p="compiler" t="IncludeRecursive" />
+              <e p="compiler-cli" t="IncludeRecursive" />
+              <e p="core" t="IncludeRecursive" />
+              <e p="forms" t="IncludeRecursive" />
+              <e p="material" t="IncludeRecursive">
+                <e p="_theming.scss" t="Include" />
+                <e p="autocomplete" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="autocomplete-module.d.ts" t="Include" />
+                    <e p="autocomplete-origin.d.ts" t="Include" />
+                    <e p="autocomplete-trigger.d.ts" t="Include" />
+                    <e p="autocomplete.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="autocomplete.d.ts" t="Include" />
+                <e p="autocomplete.metadata.json" t="Include" />
+                <e p="badge" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="badge-module.d.ts" t="Include" />
+                    <e p="badge.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="badge.d.ts" t="Include" />
+                <e p="badge.metadata.json" t="Include" />
+                <e p="bottom-sheet" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="bottom-sheet-animations.d.ts" t="Include" />
+                    <e p="bottom-sheet-config.d.ts" t="Include" />
+                    <e p="bottom-sheet-container.d.ts" t="Include" />
+                    <e p="bottom-sheet-module.d.ts" t="Include" />
+                    <e p="bottom-sheet-ref.d.ts" t="Include" />
+                    <e p="bottom-sheet.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="bottom-sheet.d.ts" t="Include" />
+                <e p="bottom-sheet.metadata.json" t="Include" />
+                <e p="bundles" t="Include">
+                  <e p="material-autocomplete.umd.js" t="Include" />
+                  <e p="material-autocomplete.umd.js.map" t="Include" />
+                  <e p="material-autocomplete.umd.min.js" t="Include" />
+                  <e p="material-autocomplete.umd.min.js.map" t="Include" />
+                  <e p="material-badge.umd.js" t="Include" />
+                  <e p="material-badge.umd.js.map" t="Include" />
+                  <e p="material-badge.umd.min.js" t="Include" />
+                  <e p="material-badge.umd.min.js.map" t="Include" />
+                  <e p="material-bottom-sheet.umd.js" t="Include" />
+                  <e p="material-bottom-sheet.umd.js.map" t="Include" />
+                  <e p="material-bottom-sheet.umd.min.js" t="Include" />
+                  <e p="material-bottom-sheet.umd.min.js.map" t="Include" />
+                  <e p="material-button-toggle.umd.js" t="Include" />
+                  <e p="material-button-toggle.umd.js.map" t="Include" />
+                  <e p="material-button-toggle.umd.min.js" t="Include" />
+                  <e p="material-button-toggle.umd.min.js.map" t="Include" />
+                  <e p="material-button.umd.js" t="Include" />
+                  <e p="material-button.umd.js.map" t="Include" />
+                  <e p="material-button.umd.min.js" t="Include" />
+                  <e p="material-button.umd.min.js.map" t="Include" />
+                  <e p="material-card.umd.js" t="Include" />
+                  <e p="material-card.umd.js.map" t="Include" />
+                  <e p="material-card.umd.min.js" t="Include" />
+                  <e p="material-card.umd.min.js.map" t="Include" />
+                  <e p="material-checkbox.umd.js" t="Include" />
+                  <e p="material-checkbox.umd.js.map" t="Include" />
+                  <e p="material-checkbox.umd.min.js" t="Include" />
+                  <e p="material-checkbox.umd.min.js.map" t="Include" />
+                  <e p="material-chips.umd.js" t="Include" />
+                  <e p="material-chips.umd.js.map" t="Include" />
+                  <e p="material-chips.umd.min.js" t="Include" />
+                  <e p="material-chips.umd.min.js.map" t="Include" />
+                  <e p="material-core.umd.js" t="Include" />
+                  <e p="material-core.umd.js.map" t="Include" />
+                  <e p="material-core.umd.min.js" t="Include" />
+                  <e p="material-core.umd.min.js.map" t="Include" />
+                  <e p="material-datepicker.umd.js" t="Include" />
+                  <e p="material-datepicker.umd.js.map" t="Include" />
+                  <e p="material-datepicker.umd.min.js" t="Include" />
+                  <e p="material-datepicker.umd.min.js.map" t="Include" />
+                  <e p="material-dialog.umd.js" t="Include" />
+                  <e p="material-dialog.umd.js.map" t="Include" />
+                  <e p="material-dialog.umd.min.js" t="Include" />
+                  <e p="material-dialog.umd.min.js.map" t="Include" />
+                  <e p="material-divider.umd.js" t="Include" />
+                  <e p="material-divider.umd.js.map" t="Include" />
+                  <e p="material-divider.umd.min.js" t="Include" />
+                  <e p="material-divider.umd.min.js.map" t="Include" />
+                  <e p="material-expansion.umd.js" t="Include" />
+                  <e p="material-expansion.umd.js.map" t="Include" />
+                  <e p="material-expansion.umd.min.js" t="Include" />
+                  <e p="material-expansion.umd.min.js.map" t="Include" />
+                  <e p="material-form-field.umd.js" t="Include" />
+                  <e p="material-form-field.umd.js.map" t="Include" />
+                  <e p="material-form-field.umd.min.js" t="Include" />
+                  <e p="material-form-field.umd.min.js.map" t="Include" />
+                  <e p="material-grid-list.umd.js" t="Include" />
+                  <e p="material-grid-list.umd.js.map" t="Include" />
+                  <e p="material-grid-list.umd.min.js" t="Include" />
+                  <e p="material-grid-list.umd.min.js.map" t="Include" />
+                  <e p="material-icon.umd.js" t="Include" />
+                  <e p="material-icon.umd.js.map" t="Include" />
+                  <e p="material-icon.umd.min.js" t="Include" />
+                  <e p="material-icon.umd.min.js.map" t="Include" />
+                  <e p="material-input.umd.js" t="Include" />
+                  <e p="material-input.umd.js.map" t="Include" />
+                  <e p="material-input.umd.min.js" t="Include" />
+                  <e p="material-input.umd.min.js.map" t="Include" />
+                  <e p="material-list.umd.js" t="Include" />
+                  <e p="material-list.umd.js.map" t="Include" />
+                  <e p="material-list.umd.min.js" t="Include" />
+                  <e p="material-list.umd.min.js.map" t="Include" />
+                  <e p="material-menu.umd.js" t="Include" />
+                  <e p="material-menu.umd.js.map" t="Include" />
+                  <e p="material-menu.umd.min.js" t="Include" />
+                  <e p="material-menu.umd.min.js.map" t="Include" />
+                  <e p="material-paginator.umd.js" t="Include" />
+                  <e p="material-paginator.umd.js.map" t="Include" />
+                  <e p="material-paginator.umd.min.js" t="Include" />
+                  <e p="material-paginator.umd.min.js.map" t="Include" />
+                  <e p="material-progress-bar.umd.js" t="Include" />
+                  <e p="material-progress-bar.umd.js.map" t="Include" />
+                  <e p="material-progress-bar.umd.min.js" t="Include" />
+                  <e p="material-progress-bar.umd.min.js.map" t="Include" />
+                  <e p="material-progress-spinner.umd.js" t="Include" />
+                  <e p="material-progress-spinner.umd.js.map" t="Include" />
+                  <e p="material-progress-spinner.umd.min.js" t="Include" />
+                  <e p="material-progress-spinner.umd.min.js.map" t="Include" />
+                  <e p="material-radio.umd.js" t="Include" />
+                  <e p="material-radio.umd.js.map" t="Include" />
+                  <e p="material-radio.umd.min.js" t="Include" />
+                  <e p="material-radio.umd.min.js.map" t="Include" />
+                  <e p="material-select.umd.js" t="Include" />
+                  <e p="material-select.umd.js.map" t="Include" />
+                  <e p="material-select.umd.min.js" t="Include" />
+                  <e p="material-select.umd.min.js.map" t="Include" />
+                  <e p="material-sidenav.umd.js" t="Include" />
+                  <e p="material-sidenav.umd.js.map" t="Include" />
+                  <e p="material-sidenav.umd.min.js" t="Include" />
+                  <e p="material-sidenav.umd.min.js.map" t="Include" />
+                  <e p="material-slide-toggle.umd.js" t="Include" />
+                  <e p="material-slide-toggle.umd.js.map" t="Include" />
+                  <e p="material-slide-toggle.umd.min.js" t="Include" />
+                  <e p="material-slide-toggle.umd.min.js.map" t="Include" />
+                  <e p="material-slider.umd.js" t="Include" />
+                  <e p="material-slider.umd.js.map" t="Include" />
+                  <e p="material-slider.umd.min.js" t="Include" />
+                  <e p="material-slider.umd.min.js.map" t="Include" />
+                  <e p="material-snack-bar.umd.js" t="Include" />
+                  <e p="material-snack-bar.umd.js.map" t="Include" />
+                  <e p="material-snack-bar.umd.min.js" t="Include" />
+                  <e p="material-snack-bar.umd.min.js.map" t="Include" />
+                  <e p="material-sort.umd.js" t="Include" />
+                  <e p="material-sort.umd.js.map" t="Include" />
+                  <e p="material-sort.umd.min.js" t="Include" />
+                  <e p="material-sort.umd.min.js.map" t="Include" />
+                  <e p="material-stepper.umd.js" t="Include" />
+                  <e p="material-stepper.umd.js.map" t="Include" />
+                  <e p="material-stepper.umd.min.js" t="Include" />
+                  <e p="material-stepper.umd.min.js.map" t="Include" />
+                  <e p="material-table.umd.js" t="Include" />
+                  <e p="material-table.umd.js.map" t="Include" />
+                  <e p="material-table.umd.min.js" t="Include" />
+                  <e p="material-table.umd.min.js.map" t="Include" />
+                  <e p="material-tabs.umd.js" t="Include" />
+                  <e p="material-tabs.umd.js.map" t="Include" />
+                  <e p="material-tabs.umd.min.js" t="Include" />
+                  <e p="material-tabs.umd.min.js.map" t="Include" />
+                  <e p="material-toolbar.umd.js" t="Include" />
+                  <e p="material-toolbar.umd.js.map" t="Include" />
+                  <e p="material-toolbar.umd.min.js" t="Include" />
+                  <e p="material-toolbar.umd.min.js.map" t="Include" />
+                  <e p="material-tooltip.umd.js" t="Include" />
+                  <e p="material-tooltip.umd.js.map" t="Include" />
+                  <e p="material-tooltip.umd.min.js" t="Include" />
+                  <e p="material-tooltip.umd.min.js.map" t="Include" />
+                  <e p="material-tree.umd.js" t="Include" />
+                  <e p="material-tree.umd.js.map" t="Include" />
+                  <e p="material-tree.umd.min.js" t="Include" />
+                  <e p="material-tree.umd.min.js.map" t="Include" />
+                  <e p="material.umd.js" t="Include" />
+                  <e p="material.umd.js.map" t="Include" />
+                  <e p="material.umd.min.js" t="Include" />
+                  <e p="material.umd.min.js.map" t="Include" />
+                </e>
+                <e p="button" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="button-module.d.ts" t="Include" />
+                    <e p="button.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="button-toggle" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="button-toggle-module.d.ts" t="Include" />
+                    <e p="button-toggle.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="button-toggle.d.ts" t="Include" />
+                <e p="button-toggle.metadata.json" t="Include" />
+                <e p="button.d.ts" t="Include" />
+                <e p="button.metadata.json" t="Include" />
+                <e p="card" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="card-module.d.ts" t="Include" />
+                    <e p="card.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="card.d.ts" t="Include" />
+                <e p="card.metadata.json" t="Include" />
+                <e p="checkbox" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="checkbox-config.d.ts" t="Include" />
+                    <e p="checkbox-module.d.ts" t="Include" />
+                    <e p="checkbox-required-validator.d.ts" t="Include" />
+                    <e p="checkbox.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="checkbox.d.ts" t="Include" />
+                <e p="checkbox.metadata.json" t="Include" />
+                <e p="chips" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="chip-default-options.d.ts" t="Include" />
+                    <e p="chip-input.d.ts" t="Include" />
+                    <e p="chip-list.d.ts" t="Include" />
+                    <e p="chip-text-control.d.ts" t="Include" />
+                    <e p="chip.d.ts" t="Include" />
+                    <e p="chips-module.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="chips.d.ts" t="Include" />
+                <e p="chips.metadata.json" t="Include" />
+                <e p="core" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="animation" t="Include">
+                      <e p="animation.d.ts" t="Include" />
+                    </e>
+                    <e p="common-behaviors" t="Include">
+                      <e p="color.d.ts" t="Include" />
+                      <e p="common-module.d.ts" t="Include" />
+                      <e p="constructor.d.ts" t="Include" />
+                      <e p="disable-ripple.d.ts" t="Include" />
+                      <e p="disabled.d.ts" t="Include" />
+                      <e p="error-state.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="initialized.d.ts" t="Include" />
+                      <e p="tabindex.d.ts" t="Include" />
+                    </e>
+                    <e p="datetime" t="Include">
+                      <e p="date-adapter.d.ts" t="Include" />
+                      <e p="date-formats.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="native-date-adapter.d.ts" t="Include" />
+                      <e p="native-date-formats.d.ts" t="Include" />
+                    </e>
+                    <e p="error" t="Include">
+                      <e p="error-options.d.ts" t="Include" />
+                    </e>
+                    <e p="gestures" t="Include">
+                      <e p="gesture-annotations.d.ts" t="Include" />
+                      <e p="gesture-config.d.ts" t="Include" />
+                    </e>
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="label" t="Include">
+                      <e p="label-options.d.ts" t="Include" />
+                    </e>
+                    <e p="line" t="Include">
+                      <e p="line.d.ts" t="Include" />
+                    </e>
+                    <e p="month-constants.d.ts" t="Include" />
+                    <e p="option" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="optgroup.d.ts" t="Include" />
+                      <e p="option.d.ts" t="Include" />
+                    </e>
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="ripple" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="ripple-ref.d.ts" t="Include" />
+                      <e p="ripple-renderer.d.ts" t="Include" />
+                      <e p="ripple.d.ts" t="Include" />
+                    </e>
+                    <e p="selection" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="pseudo-checkbox" t="Include">
+                        <e p="pseudo-checkbox.d.ts" t="Include" />
+                      </e>
+                    </e>
+                    <e p="version.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="core.d.ts" t="Include" />
+                <e p="core.metadata.json" t="Include" />
+                <e p="datepicker" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="calendar-body.d.ts" t="Include" />
+                    <e p="calendar.d.ts" t="Include" />
+                    <e p="datepicker-animations.d.ts" t="Include" />
+                    <e p="datepicker-errors.d.ts" t="Include" />
+                    <e p="datepicker-input.d.ts" t="Include" />
+                    <e p="datepicker-intl.d.ts" t="Include" />
+                    <e p="datepicker-module.d.ts" t="Include" />
+                    <e p="datepicker-toggle.d.ts" t="Include" />
+                    <e p="datepicker.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="month-view.d.ts" t="Include" />
+                    <e p="multi-year-view.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="year-view.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="datepicker.d.ts" t="Include" />
+                <e p="datepicker.metadata.json" t="Include" />
+                <e p="dialog" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="dialog-animations.d.ts" t="Include" />
+                    <e p="dialog-config.d.ts" t="Include" />
+                    <e p="dialog-container.d.ts" t="Include" />
+                    <e p="dialog-content-directives.d.ts" t="Include" />
+                    <e p="dialog-module.d.ts" t="Include" />
+                    <e p="dialog-ref.d.ts" t="Include" />
+                    <e p="dialog.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="dialog.d.ts" t="Include" />
+                <e p="dialog.metadata.json" t="Include" />
+                <e p="divider" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="divider-module.d.ts" t="Include" />
+                    <e p="divider.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="divider.d.ts" t="Include" />
+                <e p="divider.metadata.json" t="Include" />
+                <e p="esm2015" t="Include">
+                  <e p="autocomplete.js" t="Include" />
+                  <e p="autocomplete.js.map" t="Include" />
+                  <e p="badge.js" t="Include" />
+                  <e p="badge.js.map" t="Include" />
+                  <e p="bottom-sheet.js" t="Include" />
+                  <e p="bottom-sheet.js.map" t="Include" />
+                  <e p="button-toggle.js" t="Include" />
+                  <e p="button-toggle.js.map" t="Include" />
+                  <e p="button.js" t="Include" />
+                  <e p="button.js.map" t="Include" />
+                  <e p="card.js" t="Include" />
+                  <e p="card.js.map" t="Include" />
+                  <e p="checkbox.js" t="Include" />
+                  <e p="checkbox.js.map" t="Include" />
+                  <e p="chips.js" t="Include" />
+                  <e p="chips.js.map" t="Include" />
+                  <e p="core.js" t="Include" />
+                  <e p="core.js.map" t="Include" />
+                  <e p="datepicker.js" t="Include" />
+                  <e p="datepicker.js.map" t="Include" />
+                  <e p="dialog.js" t="Include" />
+                  <e p="dialog.js.map" t="Include" />
+                  <e p="divider.js" t="Include" />
+                  <e p="divider.js.map" t="Include" />
+                  <e p="expansion.js" t="Include" />
+                  <e p="expansion.js.map" t="Include" />
+                  <e p="form-field.js" t="Include" />
+                  <e p="form-field.js.map" t="Include" />
+                  <e p="grid-list.js" t="Include" />
+                  <e p="grid-list.js.map" t="Include" />
+                  <e p="icon.js" t="Include" />
+                  <e p="icon.js.map" t="Include" />
+                  <e p="input.js" t="Include" />
+                  <e p="input.js.map" t="Include" />
+                  <e p="list.js" t="Include" />
+                  <e p="list.js.map" t="Include" />
+                  <e p="material.js" t="Include" />
+                  <e p="material.js.map" t="Include" />
+                  <e p="menu.js" t="Include" />
+                  <e p="menu.js.map" t="Include" />
+                  <e p="paginator.js" t="Include" />
+                  <e p="paginator.js.map" t="Include" />
+                  <e p="progress-bar.js" t="Include" />
+                  <e p="progress-bar.js.map" t="Include" />
+                  <e p="progress-spinner.js" t="Include" />
+                  <e p="progress-spinner.js.map" t="Include" />
+                  <e p="radio.js" t="Include" />
+                  <e p="radio.js.map" t="Include" />
+                  <e p="select.js" t="Include" />
+                  <e p="select.js.map" t="Include" />
+                  <e p="sidenav.js" t="Include" />
+                  <e p="sidenav.js.map" t="Include" />
+                  <e p="slide-toggle.js" t="Include" />
+                  <e p="slide-toggle.js.map" t="Include" />
+                  <e p="slider.js" t="Include" />
+                  <e p="slider.js.map" t="Include" />
+                  <e p="snack-bar.js" t="Include" />
+                  <e p="snack-bar.js.map" t="Include" />
+                  <e p="sort.js" t="Include" />
+                  <e p="sort.js.map" t="Include" />
+                  <e p="stepper.js" t="Include" />
+                  <e p="stepper.js.map" t="Include" />
+                  <e p="table.js" t="Include" />
+                  <e p="table.js.map" t="Include" />
+                  <e p="tabs.js" t="Include" />
+                  <e p="tabs.js.map" t="Include" />
+                  <e p="toolbar.js" t="Include" />
+                  <e p="toolbar.js.map" t="Include" />
+                  <e p="tooltip.js" t="Include" />
+                  <e p="tooltip.js.map" t="Include" />
+                  <e p="tree.js" t="Include" />
+                  <e p="tree.js.map" t="Include" />
+                </e>
+                <e p="esm5" t="Include">
+                  <e p="autocomplete.es5.js" t="Include" />
+                  <e p="autocomplete.es5.js.map" t="Include" />
+                  <e p="badge.es5.js" t="Include" />
+                  <e p="badge.es5.js.map" t="Include" />
+                  <e p="bottom-sheet.es5.js" t="Include" />
+                  <e p="bottom-sheet.es5.js.map" t="Include" />
+                  <e p="button-toggle.es5.js" t="Include" />
+                  <e p="button-toggle.es5.js.map" t="Include" />
+                  <e p="button.es5.js" t="Include" />
+                  <e p="button.es5.js.map" t="Include" />
+                  <e p="card.es5.js" t="Include" />
+                  <e p="card.es5.js.map" t="Include" />
+                  <e p="checkbox.es5.js" t="Include" />
+                  <e p="checkbox.es5.js.map" t="Include" />
+                  <e p="chips.es5.js" t="Include" />
+                  <e p="chips.es5.js.map" t="Include" />
+                  <e p="core.es5.js" t="Include" />
+                  <e p="core.es5.js.map" t="Include" />
+                  <e p="datepicker.es5.js" t="Include" />
+                  <e p="datepicker.es5.js.map" t="Include" />
+                  <e p="dialog.es5.js" t="Include" />
+                  <e p="dialog.es5.js.map" t="Include" />
+                  <e p="divider.es5.js" t="Include" />
+                  <e p="divider.es5.js.map" t="Include" />
+                  <e p="expansion.es5.js" t="Include" />
+                  <e p="expansion.es5.js.map" t="Include" />
+                  <e p="form-field.es5.js" t="Include" />
+                  <e p="form-field.es5.js.map" t="Include" />
+                  <e p="grid-list.es5.js" t="Include" />
+                  <e p="grid-list.es5.js.map" t="Include" />
+                  <e p="icon.es5.js" t="Include" />
+                  <e p="icon.es5.js.map" t="Include" />
+                  <e p="input.es5.js" t="Include" />
+                  <e p="input.es5.js.map" t="Include" />
+                  <e p="list.es5.js" t="Include" />
+                  <e p="list.es5.js.map" t="Include" />
+                  <e p="material.es5.js" t="Include" />
+                  <e p="material.es5.js.map" t="Include" />
+                  <e p="menu.es5.js" t="Include" />
+                  <e p="menu.es5.js.map" t="Include" />
+                  <e p="paginator.es5.js" t="Include" />
+                  <e p="paginator.es5.js.map" t="Include" />
+                  <e p="progress-bar.es5.js" t="Include" />
+                  <e p="progress-bar.es5.js.map" t="Include" />
+                  <e p="progress-spinner.es5.js" t="Include" />
+                  <e p="progress-spinner.es5.js.map" t="Include" />
+                  <e p="radio.es5.js" t="Include" />
+                  <e p="radio.es5.js.map" t="Include" />
+                  <e p="select.es5.js" t="Include" />
+                  <e p="select.es5.js.map" t="Include" />
+                  <e p="sidenav.es5.js" t="Include" />
+                  <e p="sidenav.es5.js.map" t="Include" />
+                  <e p="slide-toggle.es5.js" t="Include" />
+                  <e p="slide-toggle.es5.js.map" t="Include" />
+                  <e p="slider.es5.js" t="Include" />
+                  <e p="slider.es5.js.map" t="Include" />
+                  <e p="snack-bar.es5.js" t="Include" />
+                  <e p="snack-bar.es5.js.map" t="Include" />
+                  <e p="sort.es5.js" t="Include" />
+                  <e p="sort.es5.js.map" t="Include" />
+                  <e p="stepper.es5.js" t="Include" />
+                  <e p="stepper.es5.js.map" t="Include" />
+                  <e p="table.es5.js" t="Include" />
+                  <e p="table.es5.js.map" t="Include" />
+                  <e p="tabs.es5.js" t="Include" />
+                  <e p="tabs.es5.js.map" t="Include" />
+                  <e p="toolbar.es5.js" t="Include" />
+                  <e p="toolbar.es5.js.map" t="Include" />
+                  <e p="tooltip.es5.js" t="Include" />
+                  <e p="tooltip.es5.js.map" t="Include" />
+                  <e p="tree.es5.js" t="Include" />
+                  <e p="tree.es5.js.map" t="Include" />
+                </e>
+                <e p="expansion" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="accordion-base.d.ts" t="Include" />
+                    <e p="accordion.d.ts" t="Include" />
+                    <e p="expansion-animations.d.ts" t="Include" />
+                    <e p="expansion-module.d.ts" t="Include" />
+                    <e p="expansion-panel-content.d.ts" t="Include" />
+                    <e p="expansion-panel-header.d.ts" t="Include" />
+                    <e p="expansion-panel.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="expansion.d.ts" t="Include" />
+                <e p="expansion.metadata.json" t="Include" />
+                <e p="form-field" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="error.d.ts" t="Include" />
+                    <e p="form-field-animations.d.ts" t="Include" />
+                    <e p="form-field-control.d.ts" t="Include" />
+                    <e p="form-field-errors.d.ts" t="Include" />
+                    <e p="form-field-module.d.ts" t="Include" />
+                    <e p="form-field.d.ts" t="Include" />
+                    <e p="hint.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="label.d.ts" t="Include" />
+                    <e p="placeholder.d.ts" t="Include" />
+                    <e p="prefix.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="suffix.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="form-field.d.ts" t="Include" />
+                <e p="form-field.metadata.json" t="Include" />
+                <e p="grid-list" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="grid-list-base.d.ts" t="Include" />
+                    <e p="grid-list-module.d.ts" t="Include" />
+                    <e p="grid-list.d.ts" t="Include" />
+                    <e p="grid-tile.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="tile-coordinator.d.ts" t="Include" />
+                    <e p="tile-styler.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="grid-list.d.ts" t="Include" />
+                <e p="grid-list.metadata.json" t="Include" />
+                <e p="icon" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="icon-module.d.ts" t="Include" />
+                    <e p="icon-registry.d.ts" t="Include" />
+                    <e p="icon.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="icon.d.ts" t="Include" />
+                <e p="icon.metadata.json" t="Include" />
+                <e p="input" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="autosize.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="input-errors.d.ts" t="Include" />
+                    <e p="input-module.d.ts" t="Include" />
+                    <e p="input-value-accessor.d.ts" t="Include" />
+                    <e p="input.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="input.d.ts" t="Include" />
+                <e p="input.metadata.json" t="Include" />
+                <e p="LICENSE" t="Include" />
+                <e p="list" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="list-module.d.ts" t="Include" />
+                    <e p="list.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="selection-list.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="list.d.ts" t="Include" />
+                <e p="list.metadata.json" t="Include" />
+                <e p="material.d.ts" t="Include" />
+                <e p="material.metadata.json" t="Include" />
+                <e p="menu" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="menu-animations.d.ts" t="Include" />
+                    <e p="menu-content.d.ts" t="Include" />
+                    <e p="menu-errors.d.ts" t="Include" />
+                    <e p="menu-item.d.ts" t="Include" />
+                    <e p="menu-module.d.ts" t="Include" />
+                    <e p="menu-panel.d.ts" t="Include" />
+                    <e p="menu-positions.d.ts" t="Include" />
+                    <e p="menu-trigger.d.ts" t="Include" />
+                    <e p="menu.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="menu.d.ts" t="Include" />
+                <e p="menu.metadata.json" t="Include" />
+                <e p="package.json" t="Include" />
+                <e p="paginator" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="paginator-intl.d.ts" t="Include" />
+                    <e p="paginator-module.d.ts" t="Include" />
+                    <e p="paginator.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="paginator.d.ts" t="Include" />
+                <e p="paginator.metadata.json" t="Include" />
+                <e p="prebuilt-themes" t="Include">
+                  <e p="deeppurple-amber.css" t="Include" />
+                  <e p="indigo-pink.css" t="Include" />
+                  <e p="pink-bluegrey.css" t="Include" />
+                  <e p="purple-green.css" t="Include" />
+                </e>
+                <e p="progress-bar" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="progress-bar-module.d.ts" t="Include" />
+                    <e p="progress-bar.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="progress-bar.d.ts" t="Include" />
+                <e p="progress-bar.metadata.json" t="Include" />
+                <e p="progress-spinner" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="progress-spinner-module.d.ts" t="Include" />
+                    <e p="progress-spinner.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="progress-spinner.d.ts" t="Include" />
+                <e p="progress-spinner.metadata.json" t="Include" />
+                <e p="radio" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="radio-module.d.ts" t="Include" />
+                    <e p="radio.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="radio.d.ts" t="Include" />
+                <e p="radio.metadata.json" t="Include" />
+                <e p="README.md" t="Include" />
+                <e p="schematics" t="Include">
+                  <e p="collection.json" t="Include" />
+                  <e p="migration.json" t="Include" />
+                  <e p="ng-add" t="Include">
+                    <e p="fonts" t="Include">
+                      <e p="material-fonts.d.ts" t="Include" />
+                      <e p="material-fonts.js" t="Include" />
+                      <e p="material-fonts.js.map" t="Include" />
+                      <e p="project-index-html.d.ts" t="Include" />
+                      <e p="project-index-html.js" t="Include" />
+                      <e p="project-index-html.js.map" t="Include" />
+                    </e>
+                    <e p="gestures" t="Include">
+                      <e p="hammerjs-import.d.ts" t="Include" />
+                      <e p="hammerjs-import.js" t="Include" />
+                      <e p="hammerjs-import.js.map" t="Include" />
+                    </e>
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.js" t="Include" />
+                    <e p="index.js.map" t="Include" />
+                    <e p="package-config.d.ts" t="Include" />
+                    <e p="package-config.js" t="Include" />
+                    <e p="package-config.js.map" t="Include" />
+                    <e p="schema.d.ts" t="Include" />
+                    <e p="schema.js" t="Include" />
+                    <e p="schema.js.map" t="Include" />
+                    <e p="schema.json" t="Include" />
+                    <e p="setup-project.d.ts" t="Include" />
+                    <e p="setup-project.js" t="Include" />
+                    <e p="setup-project.js.map" t="Include" />
+                    <e p="theming" t="Include">
+                      <e p="create-custom-theme.d.ts" t="Include" />
+                      <e p="create-custom-theme.js" t="Include" />
+                      <e p="create-custom-theme.js.map" t="Include" />
+                      <e p="theming.d.ts" t="Include" />
+                      <e p="theming.js" t="Include" />
+                      <e p="theming.js.map" t="Include" />
+                    </e>
+                    <e p="version-names.d.ts" t="Include" />
+                    <e p="version-names.js" t="Include" />
+                    <e p="version-names.js.map" t="Include" />
+                  </e>
+                  <e p="ng-generate" t="Include">
+                    <e p="address-form" t="Include">
+                      <e p="files" t="Include">
+                        <e p="__path__" t="Include">
+                          <e p="__name@dasherize@if-flat__" t="Include">
+                            <e p="__name@dasherize__.component.__style__.template" t="Include" />
+                            <e p="__name@dasherize__.component.html.template" t="Include" />
+                            <e p="__name@dasherize__.component.spec.ts.template" t="Include" />
+                            <e p="__name@dasherize__.component.ts.template" t="Include" />
+                          </e>
+                        </e>
+                      </e>
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.js" t="Include" />
+                      <e p="index.js.map" t="Include" />
+                      <e p="schema.d.ts" t="Include" />
+                      <e p="schema.js" t="Include" />
+                      <e p="schema.js.map" t="Include" />
+                      <e p="schema.json" t="Include" />
+                    </e>
+                    <e p="dashboard" t="Include">
+                      <e p="files" t="Include">
+                        <e p="__path__" t="Include">
+                          <e p="__name@dasherize@if-flat__" t="Include">
+                            <e p="__name@dasherize__.component.__style__.template" t="Include" />
+                            <e p="__name@dasherize__.component.html.template" t="Include" />
+                            <e p="__name@dasherize__.component.spec.ts.template" t="Include" />
+                            <e p="__name@dasherize__.component.ts.template" t="Include" />
+                          </e>
+                        </e>
+                      </e>
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.js" t="Include" />
+                      <e p="index.js.map" t="Include" />
+                      <e p="schema.d.ts" t="Include" />
+                      <e p="schema.js" t="Include" />
+                      <e p="schema.js.map" t="Include" />
+                      <e p="schema.json" t="Include" />
+                    </e>
+                    <e p="nav" t="Include">
+                      <e p="files" t="Include">
+                        <e p="__path__" t="Include">
+                          <e p="__name@dasherize@if-flat__" t="Include">
+                            <e p="__name@dasherize__.component.__style__.template" t="Include" />
+                            <e p="__name@dasherize__.component.html.template" t="Include" />
+                            <e p="__name@dasherize__.component.spec.ts.template" t="Include" />
+                            <e p="__name@dasherize__.component.ts.template" t="Include" />
+                          </e>
+                        </e>
+                      </e>
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.js" t="Include" />
+                      <e p="index.js.map" t="Include" />
+                      <e p="schema.d.ts" t="Include" />
+                      <e p="schema.js" t="Include" />
+                      <e p="schema.js.map" t="Include" />
+                      <e p="schema.json" t="Include" />
+                    </e>
+                    <e p="table" t="Include">
+                      <e p="files" t="Include">
+                        <e p="__path__" t="Include">
+                          <e p="__name@dasherize@if-flat__" t="Include">
+                            <e p="__name@dasherize__-datasource.ts.template" t="Include" />
+                            <e p="__name@dasherize__.component.__style__.template" t="Include" />
+                            <e p="__name@dasherize__.component.html.template" t="Include" />
+                            <e p="__name@dasherize__.component.spec.ts.template" t="Include" />
+                            <e p="__name@dasherize__.component.ts.template" t="Include" />
+                          </e>
+                        </e>
+                      </e>
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.js" t="Include" />
+                      <e p="index.js.map" t="Include" />
+                      <e p="schema.d.ts" t="Include" />
+                      <e p="schema.js" t="Include" />
+                      <e p="schema.js.map" t="Include" />
+                      <e p="schema.json" t="Include" />
+                    </e>
+                    <e p="tree" t="Include">
+                      <e p="files" t="Include">
+                        <e p="__path__" t="Include">
+                          <e p="__name@dasherize@if-flat__" t="Include">
+                            <e p="__name@dasherize__.component.__style__.template" t="Include" />
+                            <e p="__name@dasherize__.component.html.template" t="Include" />
+                            <e p="__name@dasherize__.component.spec.ts.template" t="Include" />
+                            <e p="__name@dasherize__.component.ts.template" t="Include" />
+                            <e p="example-data.ts.template" t="Include" />
+                          </e>
+                        </e>
+                      </e>
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.js" t="Include" />
+                      <e p="index.js.map" t="Include" />
+                      <e p="schema.d.ts" t="Include" />
+                      <e p="schema.js" t="Include" />
+                      <e p="schema.js.map" t="Include" />
+                      <e p="schema.json" t="Include" />
+                    </e>
+                  </e>
+                  <e p="ng-update" t="Include">
+                    <e p="data" t="Include">
+                      <e p="attribute-selectors.d.ts" t="Include" />
+                      <e p="attribute-selectors.js" t="Include" />
+                      <e p="attribute-selectors.js.map" t="Include" />
+                      <e p="class-names.d.ts" t="Include" />
+                      <e p="class-names.js" t="Include" />
+                      <e p="class-names.js.map" t="Include" />
+                      <e p="constructor-checks.d.ts" t="Include" />
+                      <e p="constructor-checks.js" t="Include" />
+                      <e p="constructor-checks.js.map" t="Include" />
+                      <e p="css-selectors.d.ts" t="Include" />
+                      <e p="css-selectors.js" t="Include" />
+                      <e p="css-selectors.js.map" t="Include" />
+                      <e p="element-selectors.d.ts" t="Include" />
+                      <e p="element-selectors.js" t="Include" />
+                      <e p="element-selectors.js.map" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.js" t="Include" />
+                      <e p="index.js.map" t="Include" />
+                      <e p="input-names.d.ts" t="Include" />
+                      <e p="input-names.js" t="Include" />
+                      <e p="input-names.js.map" t="Include" />
+                      <e p="method-call-checks.d.ts" t="Include" />
+                      <e p="method-call-checks.js" t="Include" />
+                      <e p="method-call-checks.js.map" t="Include" />
+                      <e p="output-names.d.ts" t="Include" />
+                      <e p="output-names.js" t="Include" />
+                      <e p="output-names.js.map" t="Include" />
+                      <e p="property-names.d.ts" t="Include" />
+                      <e p="property-names.js" t="Include" />
+                      <e p="property-names.js.map" t="Include" />
+                    </e>
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.js" t="Include" />
+                    <e p="index.js.map" t="Include" />
+                    <e p="typescript" t="Include">
+                      <e p="module-specifiers.d.ts" t="Include" />
+                      <e p="module-specifiers.js" t="Include" />
+                      <e p="module-specifiers.js.map" t="Include" />
+                    </e>
+                    <e p="upgrade-data.d.ts" t="Include" />
+                    <e p="upgrade-data.js" t="Include" />
+                    <e p="upgrade-data.js.map" t="Include" />
+                    <e p="upgrade-rules" t="Include">
+                      <e p="misc-checks" t="Include">
+                        <e p="misc-class-inheritance-rule.d.ts" t="Include" />
+                        <e p="misc-class-inheritance-rule.js" t="Include" />
+                        <e p="misc-class-inheritance-rule.js.map" t="Include" />
+                        <e p="misc-class-names-rule.d.ts" t="Include" />
+                        <e p="misc-class-names-rule.js" t="Include" />
+                        <e p="misc-class-names-rule.js.map" t="Include" />
+                        <e p="misc-imports-rule.d.ts" t="Include" />
+                        <e p="misc-imports-rule.js" t="Include" />
+                        <e p="misc-imports-rule.js.map" t="Include" />
+                        <e p="misc-property-names-rule.d.ts" t="Include" />
+                        <e p="misc-property-names-rule.js" t="Include" />
+                        <e p="misc-property-names-rule.js.map" t="Include" />
+                        <e p="misc-template-rule.d.ts" t="Include" />
+                        <e p="misc-template-rule.js" t="Include" />
+                        <e p="misc-template-rule.js.map" t="Include" />
+                      </e>
+                      <e p="misc-ripples-v7" t="Include">
+                        <e p="ripple-speed-factor-rule.d.ts" t="Include" />
+                        <e p="ripple-speed-factor-rule.js" t="Include" />
+                        <e p="ripple-speed-factor-rule.js.map" t="Include" />
+                        <e p="ripple-speed-factor.d.ts" t="Include" />
+                        <e p="ripple-speed-factor.js" t="Include" />
+                        <e p="ripple-speed-factor.js.map" t="Include" />
+                      </e>
+                      <e p="package-imports-v8" t="Include">
+                        <e p="secondary-entry-points-rule.d.ts" t="Include" />
+                        <e p="secondary-entry-points-rule.js" t="Include" />
+                        <e p="secondary-entry-points-rule.js.map" t="Include" />
+                      </e>
+                    </e>
+                  </e>
+                </e>
+                <e p="select" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="select-animations.d.ts" t="Include" />
+                    <e p="select-errors.d.ts" t="Include" />
+                    <e p="select-module.d.ts" t="Include" />
+                    <e p="select.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="select.d.ts" t="Include" />
+                <e p="select.metadata.json" t="Include" />
+                <e p="sidenav" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="drawer-animations.d.ts" t="Include" />
+                    <e p="drawer.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="sidenav-module.d.ts" t="Include" />
+                    <e p="sidenav.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="sidenav.d.ts" t="Include" />
+                <e p="sidenav.metadata.json" t="Include" />
+                <e p="slide-toggle" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="slide-toggle-config.d.ts" t="Include" />
+                    <e p="slide-toggle-module.d.ts" t="Include" />
+                    <e p="slide-toggle-required-validator.d.ts" t="Include" />
+                    <e p="slide-toggle.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="slide-toggle.d.ts" t="Include" />
+                <e p="slide-toggle.metadata.json" t="Include" />
+                <e p="slider" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="slider-module.d.ts" t="Include" />
+                    <e p="slider.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="slider.d.ts" t="Include" />
+                <e p="slider.metadata.json" t="Include" />
+                <e p="snack-bar" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="simple-snack-bar.d.ts" t="Include" />
+                    <e p="snack-bar-animations.d.ts" t="Include" />
+                    <e p="snack-bar-config.d.ts" t="Include" />
+                    <e p="snack-bar-container.d.ts" t="Include" />
+                    <e p="snack-bar-module.d.ts" t="Include" />
+                    <e p="snack-bar-ref.d.ts" t="Include" />
+                    <e p="snack-bar.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="snack-bar.d.ts" t="Include" />
+                <e p="snack-bar.metadata.json" t="Include" />
+                <e p="sort" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="sort-animations.d.ts" t="Include" />
+                    <e p="sort-direction.d.ts" t="Include" />
+                    <e p="sort-errors.d.ts" t="Include" />
+                    <e p="sort-header-intl.d.ts" t="Include" />
+                    <e p="sort-header.d.ts" t="Include" />
+                    <e p="sort-module.d.ts" t="Include" />
+                    <e p="sort.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="sort.d.ts" t="Include" />
+                <e p="sort.metadata.json" t="Include" />
+                <e p="stepper" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="step-header.d.ts" t="Include" />
+                    <e p="step-label.d.ts" t="Include" />
+                    <e p="stepper-animations.d.ts" t="Include" />
+                    <e p="stepper-button.d.ts" t="Include" />
+                    <e p="stepper-icon.d.ts" t="Include" />
+                    <e p="stepper-intl.d.ts" t="Include" />
+                    <e p="stepper-module.d.ts" t="Include" />
+                    <e p="stepper.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="stepper.d.ts" t="Include" />
+                <e p="stepper.metadata.json" t="Include" />
+                <e p="table" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="cell.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="row.d.ts" t="Include" />
+                    <e p="table-data-source.d.ts" t="Include" />
+                    <e p="table-module.d.ts" t="Include" />
+                    <e p="table.d.ts" t="Include" />
+                    <e p="text-column.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="table.d.ts" t="Include" />
+                <e p="table.metadata.json" t="Include" />
+                <e p="tabs" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="ink-bar.d.ts" t="Include" />
+                    <e p="paginated-tab-header.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="tab-body.d.ts" t="Include" />
+                    <e p="tab-content.d.ts" t="Include" />
+                    <e p="tab-group.d.ts" t="Include" />
+                    <e p="tab-header.d.ts" t="Include" />
+                    <e p="tab-label-wrapper.d.ts" t="Include" />
+                    <e p="tab-label.d.ts" t="Include" />
+                    <e p="tab-nav-bar" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="tab-nav-bar.d.ts" t="Include" />
+                    </e>
+                    <e p="tab.d.ts" t="Include" />
+                    <e p="tabs-animations.d.ts" t="Include" />
+                    <e p="tabs-module.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="tabs.d.ts" t="Include" />
+                <e p="tabs.metadata.json" t="Include" />
+                <e p="toolbar" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="toolbar-module.d.ts" t="Include" />
+                    <e p="toolbar.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="toolbar.d.ts" t="Include" />
+                <e p="toolbar.metadata.json" t="Include" />
+                <e p="tooltip" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="tooltip-animations.d.ts" t="Include" />
+                    <e p="tooltip-module.d.ts" t="Include" />
+                    <e p="tooltip.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="tooltip.d.ts" t="Include" />
+                <e p="tooltip.metadata.json" t="Include" />
+                <e p="tree" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="data-source" t="Include">
+                      <e p="flat-data-source.d.ts" t="Include" />
+                      <e p="nested-data-source.d.ts" t="Include" />
+                    </e>
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="node.d.ts" t="Include" />
+                    <e p="outlet.d.ts" t="Include" />
+                    <e p="padding.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="toggle.d.ts" t="Include" />
+                    <e p="tree-module.d.ts" t="Include" />
+                    <e p="tree.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="tree.d.ts" t="Include" />
+                <e p="tree.metadata.json" t="Include" />
+                <e p="typings" t="Include">
+                  <e p="autocomplete" t="Include">
+                    <e p="autocomplete-module.d.ts" t="Include" />
+                    <e p="autocomplete-origin.d.ts" t="Include" />
+                    <e p="autocomplete-trigger.d.ts" t="Include" />
+                    <e p="autocomplete.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                  <e p="badge" t="Include">
+                    <e p="badge-module.d.ts" t="Include" />
+                    <e p="badge.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                  <e p="bottom-sheet" t="Include">
+                    <e p="bottom-sheet-animations.d.ts" t="Include" />
+                    <e p="bottom-sheet-config.d.ts" t="Include" />
+                    <e p="bottom-sheet-container.d.ts" t="Include" />
+                    <e p="bottom-sheet-module.d.ts" t="Include" />
+                    <e p="bottom-sheet-ref.d.ts" t="Include" />
+                    <e p="bottom-sheet.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                  <e p="button" t="Include">
+                    <e p="button-module.d.ts" t="Include" />
+                    <e p="button.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                  <e p="button-toggle" t="Include">
+                    <e p="button-toggle-module.d.ts" t="Include" />
+                    <e p="button-toggle.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                  <e p="card" t="Include">
+                    <e p="card-module.d.ts" t="Include" />
+                    <e p="card.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                  <e p="checkbox" t="Include">
+                    <e p="checkbox-config.d.ts" t="Include" />
+                    <e p="checkbox-module.d.ts" t="Include" />
+                    <e p="checkbox-required-validator.d.ts" t="Include" />
+                    <e p="checkbox.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                  <e p="chips" t="Include">
+                    <e p="chip-default-options.d.ts" t="Include" />
+                    <e p="chip-input.d.ts" t="Include" />
+                    <e p="chip-list.d.ts" t="Include" />
+                    <e p="chip-text-control.d.ts" t="Include" />
+                    <e p="chip.d.ts" t="Include" />
+                    <e p="chips-module.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                  <e p="core" t="Include">
+                    <e p="animation" t="Include">
+                      <e p="animation.d.ts" t="Include" />
+                    </e>
+                    <e p="common-behaviors" t="Include">
+                      <e p="color.d.ts" t="Include" />
+                      <e p="common-module.d.ts" t="Include" />
+                      <e p="constructor.d.ts" t="Include" />
+                      <e p="disable-ripple.d.ts" t="Include" />
+                      <e p="disabled.d.ts" t="Include" />
+                      <e p="error-state.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="initialized.d.ts" t="Include" />
+                      <e p="tabindex.d.ts" t="Include" />
+                    </e>
+                    <e p="datetime" t="Include">
+                      <e p="date-adapter.d.ts" t="Include" />
+                      <e p="date-formats.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="native-date-adapter.d.ts" t="Include" />
+                      <e p="native-date-formats.d.ts" t="Include" />
+                    </e>
+                    <e p="error" t="Include">
+                      <e p="error-options.d.ts" t="Include" />
+                    </e>
+                    <e p="gestures" t="Include">
+                      <e p="gesture-annotations.d.ts" t="Include" />
+                      <e p="gesture-config.d.ts" t="Include" />
+                    </e>
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="label" t="Include">
+                      <e p="label-options.d.ts" t="Include" />
+                    </e>
+                    <e p="line" t="Include">
+                      <e p="line.d.ts" t="Include" />
+                    </e>
+                    <e p="month-constants.d.ts" t="Include" />
+                    <e p="option" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="optgroup.d.ts" t="Include" />
+                      <e p="option.d.ts" t="Include" />
+                    </e>
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="ripple" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="ripple-ref.d.ts" t="Include" />
+                      <e p="ripple-renderer.d.ts" t="Include" />
+                      <e p="ripple.d.ts" t="Include" />
+                    </e>
+                    <e p="selection" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="pseudo-checkbox" t="Include">
+                        <e p="pseudo-checkbox.d.ts" t="Include" />
+                      </e>
+                    </e>
+                    <e p="version.d.ts" t="Include" />
+                  </e>
+                  <e p="datepicker" t="Include">
+                    <e p="calendar-body.d.ts" t="Include" />
+                    <e p="calendar.d.ts" t="Include" />
+                    <e p="datepicker-animations.d.ts" t="Include" />
+                    <e p="datepicker-errors.d.ts" t="Include" />
+                    <e p="datepicker-input.d.ts" t="Include" />
+                    <e p="datepicker-intl.d.ts" t="Include" />
+                    <e p="datepicker-module.d.ts" t="Include" />
+                    <e p="datepicker-toggle.d.ts" t="Include" />
+                    <e p="datepicker.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="month-view.d.ts" t="Include" />
+                    <e p="multi-year-view.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="year-view.d.ts" t="Include" />
+                  </e>
+                  <e p="dialog" t="Include">
+                    <e p="dialog-animations.d.ts" t="Include" />
+                    <e p="dialog-config.d.ts" t="Include" />
+                    <e p="dialog-container.d.ts" t="Include" />
+                    <e p="dialog-content-directives.d.ts" t="Include" />
+                    <e p="dialog-module.d.ts" t="Include" />
+                    <e p="dialog-ref.d.ts" t="Include" />
+                    <e p="dialog.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                  <e p="divider" t="Include">
+                    <e p="divider-module.d.ts" t="Include" />
+                    <e p="divider.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                  <e p="esm5" t="Include">
+                    <e p="autocomplete" t="Include">
+                      <e p="autocomplete-module.d.ts" t="Include" />
+                      <e p="autocomplete-origin.d.ts" t="Include" />
+                      <e p="autocomplete-trigger.d.ts" t="Include" />
+                      <e p="autocomplete.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                    </e>
+                    <e p="badge" t="Include">
+                      <e p="badge-module.d.ts" t="Include" />
+                      <e p="badge.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                    </e>
+                    <e p="bottom-sheet" t="Include">
+                      <e p="bottom-sheet-animations.d.ts" t="Include" />
+                      <e p="bottom-sheet-config.d.ts" t="Include" />
+                      <e p="bottom-sheet-container.d.ts" t="Include" />
+                      <e p="bottom-sheet-module.d.ts" t="Include" />
+                      <e p="bottom-sheet-ref.d.ts" t="Include" />
+                      <e p="bottom-sheet.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                    </e>
+                    <e p="button" t="Include">
+                      <e p="button-module.d.ts" t="Include" />
+                      <e p="button.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                    </e>
+                    <e p="button-toggle" t="Include">
+                      <e p="button-toggle-module.d.ts" t="Include" />
+                      <e p="button-toggle.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                    </e>
+                    <e p="card" t="Include">
+                      <e p="card-module.d.ts" t="Include" />
+                      <e p="card.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                    </e>
+                    <e p="checkbox" t="Include">
+                      <e p="checkbox-config.d.ts" t="Include" />
+                      <e p="checkbox-module.d.ts" t="Include" />
+                      <e p="checkbox-required-validator.d.ts" t="Include" />
+                      <e p="checkbox.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                    </e>
+                    <e p="chips" t="Include">
+                      <e p="chip-default-options.d.ts" t="Include" />
+                      <e p="chip-input.d.ts" t="Include" />
+                      <e p="chip-list.d.ts" t="Include" />
+                      <e p="chip-text-control.d.ts" t="Include" />
+                      <e p="chip.d.ts" t="Include" />
+                      <e p="chips-module.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                    </e>
+                    <e p="core" t="Include">
+                      <e p="animation" t="Include">
+                        <e p="animation.d.ts" t="Include" />
+                      </e>
+                      <e p="common-behaviors" t="Include">
+                        <e p="color.d.ts" t="Include" />
+                        <e p="common-module.d.ts" t="Include" />
+                        <e p="constructor.d.ts" t="Include" />
+                        <e p="disable-ripple.d.ts" t="Include" />
+                        <e p="disabled.d.ts" t="Include" />
+                        <e p="error-state.d.ts" t="Include" />
+                        <e p="index.d.ts" t="Include" />
+                        <e p="initialized.d.ts" t="Include" />
+                        <e p="tabindex.d.ts" t="Include" />
+                      </e>
+                      <e p="datetime" t="Include">
+                        <e p="date-adapter.d.ts" t="Include" />
+                        <e p="date-formats.d.ts" t="Include" />
+                        <e p="index.d.ts" t="Include" />
+                        <e p="native-date-adapter.d.ts" t="Include" />
+                        <e p="native-date-formats.d.ts" t="Include" />
+                      </e>
+                      <e p="error" t="Include">
+                        <e p="error-options.d.ts" t="Include" />
+                      </e>
+                      <e p="gestures" t="Include">
+                        <e p="gesture-annotations.d.ts" t="Include" />
+                        <e p="gesture-config.d.ts" t="Include" />
+                      </e>
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="label" t="Include">
+                        <e p="label-options.d.ts" t="Include" />
+                      </e>
+                      <e p="line" t="Include">
+                        <e p="line.d.ts" t="Include" />
+                      </e>
+                      <e p="month-constants.d.ts" t="Include" />
+                      <e p="option" t="Include">
+                        <e p="index.d.ts" t="Include" />
+                        <e p="optgroup.d.ts" t="Include" />
+                        <e p="option.d.ts" t="Include" />
+                      </e>
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="ripple" t="Include">
+                        <e p="index.d.ts" t="Include" />
+                        <e p="ripple-ref.d.ts" t="Include" />
+                        <e p="ripple-renderer.d.ts" t="Include" />
+                        <e p="ripple.d.ts" t="Include" />
+                      </e>
+                      <e p="selection" t="Include">
+                        <e p="index.d.ts" t="Include" />
+                        <e p="pseudo-checkbox" t="Include">
+                          <e p="pseudo-checkbox.d.ts" t="Include" />
+                        </e>
+                      </e>
+                      <e p="version.d.ts" t="Include" />
+                    </e>
+                    <e p="datepicker" t="Include">
+                      <e p="calendar-body.d.ts" t="Include" />
+                      <e p="calendar.d.ts" t="Include" />
+                      <e p="datepicker-animations.d.ts" t="Include" />
+                      <e p="datepicker-errors.d.ts" t="Include" />
+                      <e p="datepicker-input.d.ts" t="Include" />
+                      <e p="datepicker-intl.d.ts" t="Include" />
+                      <e p="datepicker-module.d.ts" t="Include" />
+                      <e p="datepicker-toggle.d.ts" t="Include" />
+                      <e p="datepicker.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="month-view.d.ts" t="Include" />
+                      <e p="multi-year-view.d.ts" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="year-view.d.ts" t="Include" />
+                    </e>
+                    <e p="dialog" t="Include">
+                      <e p="dialog-animations.d.ts" t="Include" />
+                      <e p="dialog-config.d.ts" t="Include" />
+                      <e p="dialog-container.d.ts" t="Include" />
+                      <e p="dialog-content-directives.d.ts" t="Include" />
+                      <e p="dialog-module.d.ts" t="Include" />
+                      <e p="dialog-ref.d.ts" t="Include" />
+                      <e p="dialog.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                    </e>
+                    <e p="divider" t="Include">
+                      <e p="divider-module.d.ts" t="Include" />
+                      <e p="divider.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                    </e>
+                    <e p="expansion" t="Include">
+                      <e p="accordion-base.d.ts" t="Include" />
+                      <e p="accordion.d.ts" t="Include" />
+                      <e p="expansion-animations.d.ts" t="Include" />
+                      <e p="expansion-module.d.ts" t="Include" />
+                      <e p="expansion-panel-content.d.ts" t="Include" />
+                      <e p="expansion-panel-header.d.ts" t="Include" />
+                      <e p="expansion-panel.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                    </e>
+                    <e p="form-field" t="Include">
+                      <e p="error.d.ts" t="Include" />
+                      <e p="form-field-animations.d.ts" t="Include" />
+                      <e p="form-field-control.d.ts" t="Include" />
+                      <e p="form-field-errors.d.ts" t="Include" />
+                      <e p="form-field-module.d.ts" t="Include" />
+                      <e p="form-field.d.ts" t="Include" />
+                      <e p="hint.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="label.d.ts" t="Include" />
+                      <e p="placeholder.d.ts" t="Include" />
+                      <e p="prefix.d.ts" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="suffix.d.ts" t="Include" />
+                    </e>
+                    <e p="grid-list" t="Include">
+                      <e p="grid-list-base.d.ts" t="Include" />
+                      <e p="grid-list-module.d.ts" t="Include" />
+                      <e p="grid-list.d.ts" t="Include" />
+                      <e p="grid-tile.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="tile-coordinator.d.ts" t="Include" />
+                      <e p="tile-styler.d.ts" t="Include" />
+                    </e>
+                    <e p="icon" t="Include">
+                      <e p="icon-module.d.ts" t="Include" />
+                      <e p="icon-registry.d.ts" t="Include" />
+                      <e p="icon.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                    </e>
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="input" t="Include">
+                      <e p="autosize.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="input-errors.d.ts" t="Include" />
+                      <e p="input-module.d.ts" t="Include" />
+                      <e p="input-value-accessor.d.ts" t="Include" />
+                      <e p="input.d.ts" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                    </e>
+                    <e p="list" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="list-module.d.ts" t="Include" />
+                      <e p="list.d.ts" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="selection-list.d.ts" t="Include" />
+                    </e>
+                    <e p="menu" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="menu-animations.d.ts" t="Include" />
+                      <e p="menu-content.d.ts" t="Include" />
+                      <e p="menu-errors.d.ts" t="Include" />
+                      <e p="menu-item.d.ts" t="Include" />
+                      <e p="menu-module.d.ts" t="Include" />
+                      <e p="menu-panel.d.ts" t="Include" />
+                      <e p="menu-positions.d.ts" t="Include" />
+                      <e p="menu-trigger.d.ts" t="Include" />
+                      <e p="menu.d.ts" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                    </e>
+                    <e p="paginator" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="paginator-intl.d.ts" t="Include" />
+                      <e p="paginator-module.d.ts" t="Include" />
+                      <e p="paginator.d.ts" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                    </e>
+                    <e p="progress-bar" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="progress-bar-module.d.ts" t="Include" />
+                      <e p="progress-bar.d.ts" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                    </e>
+                    <e p="progress-spinner" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="progress-spinner-module.d.ts" t="Include" />
+                      <e p="progress-spinner.d.ts" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                    </e>
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="radio" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="radio-module.d.ts" t="Include" />
+                      <e p="radio.d.ts" t="Include" />
+                    </e>
+                    <e p="select" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="select-animations.d.ts" t="Include" />
+                      <e p="select-errors.d.ts" t="Include" />
+                      <e p="select-module.d.ts" t="Include" />
+                      <e p="select.d.ts" t="Include" />
+                    </e>
+                    <e p="sidenav" t="Include">
+                      <e p="drawer-animations.d.ts" t="Include" />
+                      <e p="drawer.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="sidenav-module.d.ts" t="Include" />
+                      <e p="sidenav.d.ts" t="Include" />
+                    </e>
+                    <e p="slide-toggle" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="slide-toggle-config.d.ts" t="Include" />
+                      <e p="slide-toggle-module.d.ts" t="Include" />
+                      <e p="slide-toggle-required-validator.d.ts" t="Include" />
+                      <e p="slide-toggle.d.ts" t="Include" />
+                    </e>
+                    <e p="slider" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="slider-module.d.ts" t="Include" />
+                      <e p="slider.d.ts" t="Include" />
+                    </e>
+                    <e p="snack-bar" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="simple-snack-bar.d.ts" t="Include" />
+                      <e p="snack-bar-animations.d.ts" t="Include" />
+                      <e p="snack-bar-config.d.ts" t="Include" />
+                      <e p="snack-bar-container.d.ts" t="Include" />
+                      <e p="snack-bar-module.d.ts" t="Include" />
+                      <e p="snack-bar-ref.d.ts" t="Include" />
+                      <e p="snack-bar.d.ts" t="Include" />
+                    </e>
+                    <e p="sort" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="sort-animations.d.ts" t="Include" />
+                      <e p="sort-direction.d.ts" t="Include" />
+                      <e p="sort-errors.d.ts" t="Include" />
+                      <e p="sort-header-intl.d.ts" t="Include" />
+                      <e p="sort-header.d.ts" t="Include" />
+                      <e p="sort-module.d.ts" t="Include" />
+                      <e p="sort.d.ts" t="Include" />
+                    </e>
+                    <e p="stepper" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="step-header.d.ts" t="Include" />
+                      <e p="step-label.d.ts" t="Include" />
+                      <e p="stepper-animations.d.ts" t="Include" />
+                      <e p="stepper-button.d.ts" t="Include" />
+                      <e p="stepper-icon.d.ts" t="Include" />
+                      <e p="stepper-intl.d.ts" t="Include" />
+                      <e p="stepper-module.d.ts" t="Include" />
+                      <e p="stepper.d.ts" t="Include" />
+                    </e>
+                    <e p="table" t="Include">
+                      <e p="cell.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="row.d.ts" t="Include" />
+                      <e p="table-data-source.d.ts" t="Include" />
+                      <e p="table-module.d.ts" t="Include" />
+                      <e p="table.d.ts" t="Include" />
+                      <e p="text-column.d.ts" t="Include" />
+                    </e>
+                    <e p="tabs" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="ink-bar.d.ts" t="Include" />
+                      <e p="paginated-tab-header.d.ts" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="tab-body.d.ts" t="Include" />
+                      <e p="tab-content.d.ts" t="Include" />
+                      <e p="tab-group.d.ts" t="Include" />
+                      <e p="tab-header.d.ts" t="Include" />
+                      <e p="tab-label-wrapper.d.ts" t="Include" />
+                      <e p="tab-label.d.ts" t="Include" />
+                      <e p="tab-nav-bar" t="Include">
+                        <e p="index.d.ts" t="Include" />
+                        <e p="tab-nav-bar.d.ts" t="Include" />
+                      </e>
+                      <e p="tab.d.ts" t="Include" />
+                      <e p="tabs-animations.d.ts" t="Include" />
+                      <e p="tabs-module.d.ts" t="Include" />
+                    </e>
+                    <e p="toolbar" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="toolbar-module.d.ts" t="Include" />
+                      <e p="toolbar.d.ts" t="Include" />
+                    </e>
+                    <e p="tooltip" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="tooltip-animations.d.ts" t="Include" />
+                      <e p="tooltip-module.d.ts" t="Include" />
+                      <e p="tooltip.d.ts" t="Include" />
+                    </e>
+                    <e p="tree" t="Include">
+                      <e p="data-source" t="Include">
+                        <e p="flat-data-source.d.ts" t="Include" />
+                        <e p="nested-data-source.d.ts" t="Include" />
+                      </e>
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="node.d.ts" t="Include" />
+                      <e p="outlet.d.ts" t="Include" />
+                      <e p="padding.d.ts" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="toggle.d.ts" t="Include" />
+                      <e p="tree-module.d.ts" t="Include" />
+                      <e p="tree.d.ts" t="Include" />
+                    </e>
+                  </e>
+                  <e p="expansion" t="Include">
+                    <e p="accordion-base.d.ts" t="Include" />
+                    <e p="accordion.d.ts" t="Include" />
+                    <e p="expansion-animations.d.ts" t="Include" />
+                    <e p="expansion-module.d.ts" t="Include" />
+                    <e p="expansion-panel-content.d.ts" t="Include" />
+                    <e p="expansion-panel-header.d.ts" t="Include" />
+                    <e p="expansion-panel.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                  <e p="form-field" t="Include">
+                    <e p="error.d.ts" t="Include" />
+                    <e p="form-field-animations.d.ts" t="Include" />
+                    <e p="form-field-control.d.ts" t="Include" />
+                    <e p="form-field-errors.d.ts" t="Include" />
+                    <e p="form-field-module.d.ts" t="Include" />
+                    <e p="form-field.d.ts" t="Include" />
+                    <e p="hint.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="label.d.ts" t="Include" />
+                    <e p="placeholder.d.ts" t="Include" />
+                    <e p="prefix.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="suffix.d.ts" t="Include" />
+                  </e>
+                  <e p="grid-list" t="Include">
+                    <e p="grid-list-base.d.ts" t="Include" />
+                    <e p="grid-list-module.d.ts" t="Include" />
+                    <e p="grid-list.d.ts" t="Include" />
+                    <e p="grid-tile.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="tile-coordinator.d.ts" t="Include" />
+                    <e p="tile-styler.d.ts" t="Include" />
+                  </e>
+                  <e p="icon" t="Include">
+                    <e p="icon-module.d.ts" t="Include" />
+                    <e p="icon-registry.d.ts" t="Include" />
+                    <e p="icon.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="input" t="Include">
+                    <e p="autosize.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="input-errors.d.ts" t="Include" />
+                    <e p="input-module.d.ts" t="Include" />
+                    <e p="input-value-accessor.d.ts" t="Include" />
+                    <e p="input.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                  <e p="list" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="list-module.d.ts" t="Include" />
+                    <e p="list.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="selection-list.d.ts" t="Include" />
+                  </e>
+                  <e p="menu" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="menu-animations.d.ts" t="Include" />
+                    <e p="menu-content.d.ts" t="Include" />
+                    <e p="menu-errors.d.ts" t="Include" />
+                    <e p="menu-item.d.ts" t="Include" />
+                    <e p="menu-module.d.ts" t="Include" />
+                    <e p="menu-panel.d.ts" t="Include" />
+                    <e p="menu-positions.d.ts" t="Include" />
+                    <e p="menu-trigger.d.ts" t="Include" />
+                    <e p="menu.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                  <e p="paginator" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="paginator-intl.d.ts" t="Include" />
+                    <e p="paginator-module.d.ts" t="Include" />
+                    <e p="paginator.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                  <e p="progress-bar" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="progress-bar-module.d.ts" t="Include" />
+                    <e p="progress-bar.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                  <e p="progress-spinner" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="progress-spinner-module.d.ts" t="Include" />
+                    <e p="progress-spinner.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                  <e p="public-api.d.ts" t="Include" />
+                  <e p="radio" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="radio-module.d.ts" t="Include" />
+                    <e p="radio.d.ts" t="Include" />
+                  </e>
+                  <e p="schematics" t="Include">
+                    <e p="ng-add" t="Include">
+                      <e p="fonts" t="Include">
+                        <e p="material-fonts.d.ts" t="Include" />
+                        <e p="project-index-html.d.ts" t="Include" />
+                      </e>
+                      <e p="gestures" t="Include">
+                        <e p="hammerjs-import.d.ts" t="Include" />
+                      </e>
+                      <e p="index.d.ts" t="Include" />
+                      <e p="package-config.d.ts" t="Include" />
+                      <e p="schema.d.ts" t="Include" />
+                      <e p="setup-project.d.ts" t="Include" />
+                      <e p="theming" t="Include">
+                        <e p="create-custom-theme.d.ts" t="Include" />
+                        <e p="theming.d.ts" t="Include" />
+                      </e>
+                      <e p="version-names.d.ts" t="Include" />
+                    </e>
+                    <e p="ng-generate" t="Include">
+                      <e p="address-form" t="Include">
+                        <e p="index.d.ts" t="Include" />
+                        <e p="schema.d.ts" t="Include" />
+                      </e>
+                      <e p="dashboard" t="Include">
+                        <e p="index.d.ts" t="Include" />
+                        <e p="schema.d.ts" t="Include" />
+                      </e>
+                      <e p="nav" t="Include">
+                        <e p="index.d.ts" t="Include" />
+                        <e p="schema.d.ts" t="Include" />
+                      </e>
+                      <e p="table" t="Include">
+                        <e p="index.d.ts" t="Include" />
+                        <e p="schema.d.ts" t="Include" />
+                      </e>
+                      <e p="tree" t="Include">
+                        <e p="index.d.ts" t="Include" />
+                        <e p="schema.d.ts" t="Include" />
+                      </e>
+                    </e>
+                    <e p="ng-update" t="Include">
+                      <e p="data" t="Include">
+                        <e p="attribute-selectors.d.ts" t="Include" />
+                        <e p="class-names.d.ts" t="Include" />
+                        <e p="constructor-checks.d.ts" t="Include" />
+                        <e p="css-selectors.d.ts" t="Include" />
+                        <e p="element-selectors.d.ts" t="Include" />
+                        <e p="index.d.ts" t="Include" />
+                        <e p="input-names.d.ts" t="Include" />
+                        <e p="method-call-checks.d.ts" t="Include" />
+                        <e p="output-names.d.ts" t="Include" />
+                        <e p="property-names.d.ts" t="Include" />
+                      </e>
+                      <e p="index.d.ts" t="Include" />
+                      <e p="typescript" t="Include">
+                        <e p="module-specifiers.d.ts" t="Include" />
+                      </e>
+                      <e p="upgrade-data.d.ts" t="Include" />
+                      <e p="upgrade-rules" t="Include">
+                        <e p="misc-checks" t="Include">
+                          <e p="misc-class-inheritance-rule.d.ts" t="Include" />
+                          <e p="misc-class-names-rule.d.ts" t="Include" />
+                          <e p="misc-imports-rule.d.ts" t="Include" />
+                          <e p="misc-property-names-rule.d.ts" t="Include" />
+                          <e p="misc-template-rule.d.ts" t="Include" />
+                        </e>
+                        <e p="misc-ripples-v7" t="Include">
+                          <e p="ripple-speed-factor-rule.d.ts" t="Include" />
+                          <e p="ripple-speed-factor.d.ts" t="Include" />
+                        </e>
+                        <e p="package-imports-v8" t="Include">
+                          <e p="secondary-entry-points-rule.d.ts" t="Include" />
+                        </e>
+                      </e>
+                    </e>
+                  </e>
+                  <e p="select" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="select-animations.d.ts" t="Include" />
+                    <e p="select-errors.d.ts" t="Include" />
+                    <e p="select-module.d.ts" t="Include" />
+                    <e p="select.d.ts" t="Include" />
+                  </e>
+                  <e p="sidenav" t="Include">
+                    <e p="drawer-animations.d.ts" t="Include" />
+                    <e p="drawer.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="sidenav-module.d.ts" t="Include" />
+                    <e p="sidenav.d.ts" t="Include" />
+                  </e>
+                  <e p="slide-toggle" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="slide-toggle-config.d.ts" t="Include" />
+                    <e p="slide-toggle-module.d.ts" t="Include" />
+                    <e p="slide-toggle-required-validator.d.ts" t="Include" />
+                    <e p="slide-toggle.d.ts" t="Include" />
+                  </e>
+                  <e p="slider" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="slider-module.d.ts" t="Include" />
+                    <e p="slider.d.ts" t="Include" />
+                  </e>
+                  <e p="snack-bar" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="simple-snack-bar.d.ts" t="Include" />
+                    <e p="snack-bar-animations.d.ts" t="Include" />
+                    <e p="snack-bar-config.d.ts" t="Include" />
+                    <e p="snack-bar-container.d.ts" t="Include" />
+                    <e p="snack-bar-module.d.ts" t="Include" />
+                    <e p="snack-bar-ref.d.ts" t="Include" />
+                    <e p="snack-bar.d.ts" t="Include" />
+                  </e>
+                  <e p="sort" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="sort-animations.d.ts" t="Include" />
+                    <e p="sort-direction.d.ts" t="Include" />
+                    <e p="sort-errors.d.ts" t="Include" />
+                    <e p="sort-header-intl.d.ts" t="Include" />
+                    <e p="sort-header.d.ts" t="Include" />
+                    <e p="sort-module.d.ts" t="Include" />
+                    <e p="sort.d.ts" t="Include" />
+                  </e>
+                  <e p="stepper" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="step-header.d.ts" t="Include" />
+                    <e p="step-label.d.ts" t="Include" />
+                    <e p="stepper-animations.d.ts" t="Include" />
+                    <e p="stepper-button.d.ts" t="Include" />
+                    <e p="stepper-icon.d.ts" t="Include" />
+                    <e p="stepper-intl.d.ts" t="Include" />
+                    <e p="stepper-module.d.ts" t="Include" />
+                    <e p="stepper.d.ts" t="Include" />
+                  </e>
+                  <e p="table" t="Include">
+                    <e p="cell.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="row.d.ts" t="Include" />
+                    <e p="table-data-source.d.ts" t="Include" />
+                    <e p="table-module.d.ts" t="Include" />
+                    <e p="table.d.ts" t="Include" />
+                    <e p="text-column.d.ts" t="Include" />
+                  </e>
+                  <e p="tabs" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="ink-bar.d.ts" t="Include" />
+                    <e p="paginated-tab-header.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="tab-body.d.ts" t="Include" />
+                    <e p="tab-content.d.ts" t="Include" />
+                    <e p="tab-group.d.ts" t="Include" />
+                    <e p="tab-header.d.ts" t="Include" />
+                    <e p="tab-label-wrapper.d.ts" t="Include" />
+                    <e p="tab-label.d.ts" t="Include" />
+                    <e p="tab-nav-bar" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="tab-nav-bar.d.ts" t="Include" />
+                    </e>
+                    <e p="tab.d.ts" t="Include" />
+                    <e p="tabs-animations.d.ts" t="Include" />
+                    <e p="tabs-module.d.ts" t="Include" />
+                  </e>
+                  <e p="toolbar" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="toolbar-module.d.ts" t="Include" />
+                    <e p="toolbar.d.ts" t="Include" />
+                  </e>
+                  <e p="tooltip" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="tooltip-animations.d.ts" t="Include" />
+                    <e p="tooltip-module.d.ts" t="Include" />
+                    <e p="tooltip.d.ts" t="Include" />
+                  </e>
+                  <e p="tree" t="Include">
+                    <e p="data-source" t="Include">
+                      <e p="flat-data-source.d.ts" t="Include" />
+                      <e p="nested-data-source.d.ts" t="Include" />
+                    </e>
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="node.d.ts" t="Include" />
+                    <e p="outlet.d.ts" t="Include" />
+                    <e p="padding.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="toggle.d.ts" t="Include" />
+                    <e p="tree-module.d.ts" t="Include" />
+                    <e p="tree.d.ts" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="platform-browser" t="IncludeRecursive" />
+              <e p="platform-browser-dynamic" t="IncludeRecursive" />
+              <e p="router" t="IncludeRecursive" />
+            </e>
             <e p="@angular-devkit\architect" t="IncludeRecursive" />
             <e p="@angular-devkit\build-angular" t="IncludeRecursive" />
             <e p="@angular-devkit\build-optimizer" t="IncludeRecursive" />
@@ -6663,7 +10137,22 @@
               <e p="app.component.spec.ts" t="Include" />
               <e p="app.component.ts" t="Include" />
               <e p="app.module.ts" t="Include" />
+              <e p="core" t="Include">
+                <e p="material.module.ts" t="Include" />
+              </e>
               <e p="graphql.module.ts" t="Include" />
+              <e p="login" t="Include">
+                <e p="login.component.html" t="Include" />
+                <e p="login.component.scss" t="Include" />
+                <e p="login.component.spec.ts" t="Include" />
+                <e p="login.component.ts" t="Include" />
+              </e>
+              <e p="nav-menu" t="Include">
+                <e p="nav-menu.component.html" t="Include" />
+                <e p="nav-menu.component.scss" t="Include" />
+                <e p="nav-menu.component.spec.ts" t="Include" />
+                <e p="nav-menu.component.ts" t="Include" />
+              </e>
               <e p="users.graphql" t="Include" />
             </e>
             <e p="assets" t="Include">
