@@ -38,7 +38,7 @@ export class LoginComponent implements OnInit, OnDestroy {
       .mutate({username: this.username, password: this.password})
       .subscribe(result => {
         this.user = result.data.loginUser;
-        console.warn(this.user);
+        this.router.navigateByUrl('/main');
       })
   }
   register() {

@@ -7,11 +7,9 @@
       <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/core/material.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/core/material.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/login/login.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/login/login.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/generated/graphql.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/generated/graphql.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/register/register.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/register/register.component.ts" afterDir="false" />
     </list>
     <list id="f107c17d-2d2f-482b-8382-8cd0796d5b43" name="add all queries (for now)" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,6 +46,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="GraphQL File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -110,7 +109,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Dieter/Idendity/Models/AppRole.cs" />
         <option value="$PROJECT_DIR$/Dieter/Identity/Models/AppRole.cs" />
         <option value="$PROJECT_DIR$/Dieter/ResourcesDbContext.cs" />
         <option value="$PROJECT_DIR$/Dieter/Helper.cs" />
@@ -143,7 +141,6 @@
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/users.graphql" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/package.json" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.component.scss" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/index.html" />
@@ -152,15 +149,17 @@
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/nav-menu/nav-menu.component.html" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/login/loginUser.graphql" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/login/login.component.scss" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/login/login.component.html" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/login/login.component.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/styles.scss" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/core/material.module.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/register/register.component.scss" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/register/registerUser.graphql" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/core/equal-validator.ts" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/core/material.module.ts" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/register/register.component.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/register/register.component.html" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/login/login.component.ts" />
       </list>
     </option>
   </component>
@@ -179,6 +178,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="ts.external.directory.path" value="C:\Users\Janusz\RiderProjects\Dieter\Dieter\ClientApp\node_modules\typescript\lib" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -294,6 +294,7 @@
       <workItem from="1572080194097" duration="14444000" />
       <workItem from="1572102264362" duration="870000" />
       <workItem from="1572272078824" duration="4427000" />
+      <workItem from="1572329887200" duration="3045000" />
     </task>
     <task id="LOCAL-00001" summary="add getUsers query">
       <created>1571733525858</created>
@@ -386,7 +387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572287629306</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add register component, without graphql">
+      <created>1572297832083</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1572297832083</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,7 +427,8 @@
     <MESSAGE value="add lazy loading" />
     <MESSAGE value="add graphql integration to ClientApp" />
     <MESSAGE value="add nav-menu and login component" />
-    <option name="LAST_COMMIT_MESSAGE" value="add nav-menu and login component" />
+    <MESSAGE value="add register component, without graphql" />
+    <option name="LAST_COMMIT_MESSAGE" value="add register component, without graphql" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
