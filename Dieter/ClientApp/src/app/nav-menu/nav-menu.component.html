@@ -6,4 +6,5 @@
 
   <button mat-button>User</button>
   <button mat-button>Contact</button>
+  <button mat-button *ngIf="isLogged$ | async" (click)="logout()">Logout</button>
 </mat-toolbar>

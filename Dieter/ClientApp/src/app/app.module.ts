@@ -12,6 +12,7 @@ import {NavMenuComponent} from './nav-menu/nav-menu.component';
 import {FormsModule} from '@angular/forms';
 import {RegisterComponent} from './register/register.component';
 import { MainPageComponent } from './main-page/main-page.component';
+import {CookieService} from 'ngx-cookie-service';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import { MainPageComponent } from './main-page/main-page.component';
     HttpClientModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

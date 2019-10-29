@@ -4,12 +4,15 @@
     <list default="true" id="490b1499-0315-47b0-85b5-49b079606736" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/core/material.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/core/material.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/register/register.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/register/register.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/nav-menu/nav-menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/nav-menu/nav-menu.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/nav-menu/nav-menu.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/nav-menu/nav-menu.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/Dieter.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/Dieter.csproj" afterDir="false" />
     </list>
     <list id="f107c17d-2d2f-482b-8382-8cd0796d5b43" name="add all queries (for now)" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -109,10 +112,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Dieter/Identity/Models/AppRole.cs" />
-        <option value="$PROJECT_DIR$/Dieter/ResourcesDbContext.cs" />
-        <option value="$PROJECT_DIR$/Dieter/Helper.cs" />
-        <option value="$PROJECT_DIR$/Dieter/Identity/IdentityUser.cs" />
         <option value="$PROJECT_DIR$/Dieter/Identity/AppUser.cs" />
         <option value="$PROJECT_DIR$/Dieter/Identity/IdentityContext.cs" />
         <option value="$PROJECT_DIR$/Dieter/API/Controllers/GraphQLController.cs" />
@@ -139,27 +138,31 @@
         <option value="$PROJECT_DIR$/Dieter/ClientApp/.gitignore" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/test.graphql" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/users.graphql" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/package.json" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.component.scss" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/index.html" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/angular.json" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/nav-menu/nav-menu.component.scss" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/nav-menu/nav-menu.component.html" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/login/loginUser.graphql" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/login/login.component.scss" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/login/login.component.html" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/styles.scss" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/register/register.component.scss" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/register/registerUser.graphql" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/core/equal-validator.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/core/material.module.ts" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/register/register.component.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/register/register.component.html" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/core/services/user-service.service.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/login/login.component.ts" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/core/guards/auth.guard.ts" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/core/services/user.service.ts" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/nav-menu/nav-menu.component.ts" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/nav-menu/nav-menu.component.html" />
       </list>
     </option>
   </component>
@@ -294,7 +297,7 @@
       <workItem from="1572080194097" duration="14444000" />
       <workItem from="1572102264362" duration="870000" />
       <workItem from="1572272078824" duration="4427000" />
-      <workItem from="1572329887200" duration="3045000" />
+      <workItem from="1572329887200" duration="8253000" />
     </task>
     <task id="LOCAL-00001" summary="add getUsers query">
       <created>1571733525858</created>
@@ -394,7 +397,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572297832083</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="end registration page">
+      <created>1572333285484</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1572333285484</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,7 +438,8 @@
     <MESSAGE value="add graphql integration to ClientApp" />
     <MESSAGE value="add nav-menu and login component" />
     <MESSAGE value="add register component, without graphql" />
-    <option name="LAST_COMMIT_MESSAGE" value="add register component, without graphql" />
+    <MESSAGE value="end registration page" />
+    <option name="LAST_COMMIT_MESSAGE" value="end registration page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

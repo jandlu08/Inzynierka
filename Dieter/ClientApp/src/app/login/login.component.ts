@@ -10,6 +10,7 @@ import {
 import {QueryRef} from 'apollo-angular';
 import {Subscription} from 'rxjs';
 import {Router} from '@angular/router';
+import {UserService} from '../core/services/user.service';
 
 @Component({
   selector: 'app-login',
@@ -20,15 +21,16 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   username: string;
   password: string;
-  user: User;
 
 
   constructor(private loginUserGQL: LoginUserGQL,
-              private router: Router) {
+              private router: Router,
+              private userService: UserService) {
   }
 
   ngOnInit() {
   }
+
   ngOnDestroy(): void {
   }
 
@@ -37,10 +39,13 @@ export class LoginComponent implements OnInit, OnDestroy {
     this.loginUserGQL
       .mutate({username: this.username, password: this.password})
       .subscribe(result => {
-        this.user = result.data.loginUser;
+
+        this.userService.changeUser(result.data.loginUser);
+       
         this.router.navigateByUrl('/main');
       })
   }
+
   register() {
     this.router.navigateByUrl('/register');
   }
