@@ -17,6 +17,7 @@
               <e p="Difficulty.cs" t="Include" />
               <e p="IngredientType.cs" t="Include" />
               <e p="Sex.cs" t="Include" />
+              <e p="VoteType.cs" t="Include" />
             </e>
             <e p="Graphql" t="Include">
               <e p="CommentType.cs" t="Include" />
@@ -42,7 +43,8 @@
               <e p="RecipeType.cs" t="Include" />
               <e p="SexEnum.cs" t="Include" />
               <e p="UserType.cs" t="Include" />
-              <e p="VoteEnum.cs" t="Include" />
+              <e p="UserVoteType.cs" t="Include" />
+              <e p="VoteTypeEnum.cs" t="Include" />
             </e>
             <e p="Ingredient.cs" t="Include" />
             <e p="IngredientRecipe.cs" t="Include" />
@@ -50,6 +52,7 @@
             <e p="Rating.cs" t="Include" />
             <e p="Recipe.cs" t="Include" />
             <e p="User.cs" t="Include" />
+            <e p="UserVote.cs" t="Include" />
           </e>
           <e p="ResourcesDbContext.cs" t="Include" />
         </e>
@@ -319,6 +322,8 @@
           <e p="20191028145350_lazyLoading.Designer.cs" t="Include" />
           <e p="20191028145806_fix.cs" t="Include" />
           <e p="20191028145806_fix.Designer.cs" t="Include" />
+          <e p="20191030213624_addUserVote.cs" t="Include" />
+          <e p="20191030213624_addUserVote.Designer.cs" t="Include" />
           <e p="AuthDb" t="Include">
             <e p="20191026131948_identity.cs" t="Include" />
             <e p="20191026131948_identity.Designer.cs" t="Include" />

@@ -27,5 +27,6 @@ namespace Dieter.API
         public DbSet<Recipe> Recipes { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<IngredientRecipe> IngredientRecipes { get; set; }
+        public DbSet<UserVote> UserVotes { get; set; }
     }
 }
