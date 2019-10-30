@@ -1,0 +1,5 @@
+﻿mutation addIngredient($ingredient: AddIngredientInput!){
+  addIngredient(ingredient: $ingredient){
+    ingredientId
+  }
+}

@@ -1,0 +1,54 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Add ingredient</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form #f="ngForm" id="addIngredientForm" (ngSubmit)="addIngredient()">
+      <table class="fill-dialog" cellspacing="0">
+        <tr>
+          <td>
+            <mat-form-field  class="fill-dialog">
+              <input matInput [(ngModel)]="ingredient.name" placeholder="Name" name="name" type="text" required >
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field class="fill-dialog">
+              <textarea matInput [(ngModel)]="ingredient.description" placeholder="Description" type="text" name="description" required></textarea>
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field class="fill-dialog">
+              <input matInput [(ngModel)]="ingredient.calories" placeholder="Calories / 100g" type="number" name="calories" required min="0" >
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field class="fill-dialog">
+              <mat-label>Type</mat-label>
+              <mat-select [(value)]="ingredient.ingredientType">
+                 <mat-option [value]="ingredientTypes.other">Other</mat-option>
+                 <mat-option [value]="ingredientTypes.dairy">Dairy</mat-option>
+                 <mat-option [value]="ingredientTypes.fish">Fish</mat-option>
+                 <mat-option [value]="ingredientTypes.fruit">Fruit</mat-option>
+                 <mat-option [value]="ingredientTypes.vegetable">Vegetable</mat-option>
+                 <mat-option [value]="ingredientTypes.spice">Spice</mat-option>
+                 <mat-option [value]="ingredientTypes.meat">Meat</mat-option>
+                 <mat-option [value]="ingredientTypes.grain">Grain</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <!--  <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>-->
+  </mat-card-content>
+  <mat-card-actions class="action-buttons">
+    <button mat-raised-button [disabled]="!f.form.valid"  color="primary" type="submit" form="addIngredientForm" >Add</button>
+    <button mat-button (click)="cancel()" color="primary">Cancel</button>
+  </mat-card-actions>
+</mat-card>

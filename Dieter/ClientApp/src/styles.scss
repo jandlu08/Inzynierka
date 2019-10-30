@@ -1,6 +1,8 @@
-@import "src/app/nav-menu/nav-menu.component";
-@import "src/app/login/login.component";
-@import "src/app/register/register.component";
+@import "src/app/pages/nav-menu/nav-menu.component";
+@import "src/app/pages/login/login.component";
+@import "src/app/pages/register/register.component";
+@import "src/app/app.component";
+@import "src/app/pages/modals/add-ingredient/add-ingredient.component";
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

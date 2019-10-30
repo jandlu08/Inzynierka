@@ -286,6 +286,19 @@ export type LoginUserMutation = (
   )> }
 );
 
+export type AddIngredientMutationVariables = {
+  ingredient: AddIngredientInput
+};
+
+
+export type AddIngredientMutation = (
+  { __typename?: 'DieterMutation' }
+  & { addIngredient: Maybe<(
+    { __typename?: 'Ingredient' }
+    & Pick<Ingredient, 'ingredientId'>
+  )> }
+);
+
 export type RegisterUserMutationVariables = {
   password: Scalars['String'],
   user: RegisterUserInput
@@ -336,6 +349,21 @@ export const LoginUserDocument = gql`
   })
   export class LoginUserGQL extends Apollo.Mutation<LoginUserMutation, LoginUserMutationVariables> {
     document = LoginUserDocument;
+    
+  }
+export const AddIngredientDocument = gql`
+    mutation addIngredient($ingredient: AddIngredientInput!) {
+  addIngredient(ingredient: $ingredient) {
+    ingredientId
+  }
+}
+    `;
+
+  @Injectable({
+    providedIn: 'root'
+  })
+  export class AddIngredientGQL extends Apollo.Mutation<AddIngredientMutation, AddIngredientMutationVariables> {
+    document = AddIngredientDocument;
     
   }
 export const RegisterUserDocument = gql`

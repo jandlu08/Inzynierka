@@ -1,0 +1,20 @@
+app-root{
+  .mat-card-placeholder {
+    margin: 30px auto;
+    width: 30%;
+  }
+
+  .full-width {
+    width: 100%;
+  }
+  .small{
+    font-size: 9px;
+    color: red;
+  }
+
+  .action-buttons{
+    display: flex;
+    justify-content: space-between;
+  }
+
+}

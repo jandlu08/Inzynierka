@@ -1,16 +1,10 @@
-import {Component, Injectable, OnDestroy, OnInit} from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {
   LoginUserGQL,
-  LoginUserMutation,
-  LoginUserMutationVariables,
-  User,
-  UsersQuery,
-  UsersQueryVariables
-} from '../../generated/graphql';
-import {QueryRef} from 'apollo-angular';
-import {Subscription} from 'rxjs';
+} from '../../../generated/graphql';
 import {Router} from '@angular/router';
 import {UserService} from '../../core/services/user.service';
+import {Subscription} from 'rxjs';
 
 @Component({
   selector: 'app-login',
@@ -21,6 +15,7 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   username: string;
   password: string;
+  private subscription: Subscription = new Subscription();
 
 
   constructor(private loginUserGQL: LoginUserGQL,
@@ -32,18 +27,19 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
+    this.subscription.unsubscribe();
   }
 
 
   login() {
-    this.loginUserGQL
+    this.subscription.add( this.loginUserGQL
       .mutate({username: this.username, password: this.password})
       .subscribe(result => {
 
         this.userService.changeUser(result.data.loginUser);
 
         this.router.navigateByUrl('/main');
-      })
+      }));
   }
 
   register() {

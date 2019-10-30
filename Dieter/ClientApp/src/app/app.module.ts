@@ -13,6 +13,8 @@ import {FormsModule} from '@angular/forms';
 import {RegisterComponent} from './pages/register/register.component';
 import { MainPageComponent } from './pages/main-page/main-page.component';
 import {CookieService} from 'ngx-cookie-service';
+import {UserService} from './core/services/user.service';
+import {ModalsModule} from './pages/modals/modals.module';
 
 @NgModule({
   declarations: [
@@ -30,8 +32,9 @@ import {CookieService} from 'ngx-cookie-service';
     GraphQLModule,
     HttpClientModule,
     FormsModule,
+    ModalsModule,
   ],
-  providers: [CookieService],
+  providers: [CookieService, UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
