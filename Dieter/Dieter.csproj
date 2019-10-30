@@ -29,6 +29,7 @@
     <ItemGroup>
       <Folder Include="ClientApp\src\app\core\guards" />
       <Folder Include="ClientApp\src\app\core\services" />
+      <Folder Include="ClientApp\src\app\pages" />
     </ItemGroup>
 
 </Project>

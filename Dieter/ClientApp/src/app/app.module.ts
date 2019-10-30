@@ -6,12 +6,12 @@ import {AppComponent} from './app.component';
 import {GraphQLModule} from './graphql.module';
 import {HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {LoginComponent} from './login/login.component';
+import {LoginComponent} from './pages/login/login.component';
 import {CustomMaterialModule} from './core/material.module';
-import {NavMenuComponent} from './nav-menu/nav-menu.component';
+import {NavMenuComponent} from './pages/nav-menu/nav-menu.component';
 import {FormsModule} from '@angular/forms';
-import {RegisterComponent} from './register/register.component';
-import { MainPageComponent } from './main-page/main-page.component';
+import {RegisterComponent} from './pages/register/register.component';
+import { MainPageComponent } from './pages/main-page/main-page.component';
 import {CookieService} from 'ngx-cookie-service';
 
 @NgModule({

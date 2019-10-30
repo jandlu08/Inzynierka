@@ -10,7 +10,7 @@ import {
 import {QueryRef} from 'apollo-angular';
 import {Subscription} from 'rxjs';
 import {Router} from '@angular/router';
-import {UserService} from '../core/services/user.service';
+import {UserService} from '../../core/services/user.service';
 
 @Component({
   selector: 'app-login',
@@ -41,7 +41,7 @@ export class LoginComponent implements OnInit, OnDestroy {
       .subscribe(result => {
 
         this.userService.changeUser(result.data.loginUser);
-       
+
         this.router.navigateByUrl('/main');
       })
   }

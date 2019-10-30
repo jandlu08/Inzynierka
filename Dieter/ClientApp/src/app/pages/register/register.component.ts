@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {RegisterUserGQL, RegisterUserInput, Sex} from '../../generated/graphql';
+import {RegisterUserGQL, RegisterUserInput, Sex} from '../../../generated/graphql';
 import {Router} from '@angular/router';
 import {MatSnackBar} from '@angular/material/snack-bar';
 
