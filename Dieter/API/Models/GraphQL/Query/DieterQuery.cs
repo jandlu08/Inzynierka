@@ -132,14 +132,21 @@ namespace Dieter.API.Models.GraphQL.Query
             Field<ListGraphType<IngredientType>>(
                 "getIngredients",
                 arguments: new QueryArguments(
-                    new QueryArgument<IntGraphType> {Name = "recipeId"}),
+                    new QueryArgument<IntGraphType> {Name = "recipeId"},
+                    new QueryArgument<IngredientTypeEnum> {Name = "ingredientType"}),
                 resolve: context =>
                 {
                     var recipeId = context.GetArgument<int?>("recipeId");
+                    var ingredientType = context.GetArgument<Enums.IngredientType>("ingredientType");
 
-                    if (recipeId == null)
+                    if (recipeId == null && ingredientType == null)
                     {
                         return db.Ingredients;
+                    }
+                    else if (recipeId == null)
+                    {
+                        return db.Ingredients
+                            .Where(x => x.IngredientType.Value == ingredientType);
                     }
 
                     return db.Recipes
