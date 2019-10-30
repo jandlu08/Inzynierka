@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Dieter.API.Models.Enums;
 using Dieter.API.Models.GraphQL.InputTypes;
 using Dieter.Identity;
 using GraphQL.Types;
@@ -207,6 +208,74 @@ namespace Dieter.API.Models.GraphQL.DieterMutation
                     return ingredientRecipe;
                 }
             );
+            Field<UserType>(
+                name: "vote",
+                arguments: new QueryArguments(
+                    new QueryArgument<NonNullGraphType<IdGraphType>> {Name = "userId"},
+                    new QueryArgument<IdGraphType> {Name = "recipeId"},
+                    new QueryArgument<IdGraphType> {Name = "commentId"},
+                    new QueryArgument<NonNullGraphType<VoteTypeEnum>> {Name = "voteType"}),
+                resolve: context =>
+                {
+                    var userId = context.GetArgument<int>("userId");
+                    var recipeId = context.GetArgument<int?>("recipeId");
+                    var commentId = context.GetArgument<int?>("commentId");
+                    var voteType = context.GetArgument<VoteType>("voteType");
+                    var user = db.Users
+                        .FirstOrDefault(x => x.UserId == userId);
+
+                    if (recipeId == null && commentId == null)
+                    {
+                        return null;
+                    }
+
+                    Rating rating = null;
+                    if (recipeId != null)
+                    {
+                        rating = db.Recipes
+                            .Where(x=>x.RecipeId == recipeId)
+                            .Select(x => x.Rating)
+                            .FirstOrDefault();
+                    }
+                    else
+                    {
+                        rating = db.Comments
+                            .Where(x=>x.CommentId == commentId)
+                            .Select(x => x.Rating)
+                            .FirstOrDefault();
+                    }
+
+
+                    var checkUserVoted = db.UserVotes
+                        .Where(x => x.Rating == rating)
+                        .FirstOrDefault(x => x.User == user);
+
+                    if (checkUserVoted != null)
+                    {
+                        return null;
+                    }
+
+                    switch (voteType)
+                    {
+                        case VoteType.Up:
+                            if (rating != null) rating.UpVotes += 1;
+                            db.SaveChanges();
+                            break;
+                        case VoteType.Down:
+                            if (rating != null) rating.UpVotes += 1;
+                            db.SaveChanges();
+                            break;
+                        default:
+                            return null;
+                    }
+
+                    var userVote = new UserVote {Rating = rating, User = user, VoteType = voteType};
+                    db.UserVotes.Add(userVote);
+                    db.SaveChanges();
+
+
+                    return user;
+                });
         }
     }
 }
