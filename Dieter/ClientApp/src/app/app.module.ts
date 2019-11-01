@@ -15,6 +15,7 @@ import { MainPageComponent } from './pages/main-page/main-page.component';
 import {CookieService} from 'ngx-cookie-service';
 import {UserService} from './core/services/user.service';
 import {ModalsModule} from './pages/modals/modals.module';
+import {CommonTypesService} from './core/services/common-types.service';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,7 @@ import {ModalsModule} from './pages/modals/modals.module';
     FormsModule,
     ModalsModule,
   ],
-  providers: [CookieService, UserService],
+  providers: [CookieService, UserService, CommonTypesService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

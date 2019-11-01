@@ -1,0 +1,107 @@
+<mat-dialog-content>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Add recipe</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form #f="ngForm" id="addIngredientForm" (ngSubmit)="addRecipe()">
+        <table class="fill-dialog" cellspacing="0">
+          <tr>
+            <td>
+              <mat-form-field class="fill-dialog">
+                <input matInput [(ngModel)]="recipe.name" placeholder="Name" name="name" type="text" required>
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <mat-form-field class="fill-dialog">
+                <textarea matInput [(ngModel)]="recipe.description" placeholder="Description" type="text"
+                          name="description" required></textarea>
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <mat-form-field class="fill-dialog">
+                <input matInput [(ngModel)]="recipe.calories" placeholder="Calories / 100g" type="number"
+                       name="calories" required min="0">
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <mat-form-field class="fill-dialog">
+                <input matInput [(ngModel)]="recipe.estTime" placeholder="Estimated time [min]" type="number"
+                       name="estTime" required min="0">
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <mat-form-field class="fill-dialog">
+                <input matInput [(ngModel)]="recipe.weight" placeholder="Weight [g]" type="number" name="weight"
+                       required min="0">
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <mat-form-field class="fill-dialog">
+                <mat-label>Difficulty</mat-label>
+                <mat-select [(value)]="recipe.difficulty">
+                  <mat-option [value]="commonTypes.difficultyTypes.veryEasy">Very Easy</mat-option>
+                  <mat-option [value]="commonTypes.difficultyTypes.veryEasy">Easy</mat-option>
+                  <mat-option [value]="commonTypes.difficultyTypes.veryEasy">Medium</mat-option>
+                  <mat-option [value]="commonTypes.difficultyTypes.veryEasy">Hard</mat-option>
+                  <mat-option [value]="commonTypes.difficultyTypes.veryEasy">Very Hard</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <mat-form-field class="fill-dialog">
+                <mat-label>Type</mat-label>
+                <mat-select [(value)]="ingredientType" (valueChange)="updateList()">
+                  <mat-option [value]="commonTypes.ingredientTypes.other">Other</mat-option>
+                  <mat-option [value]="commonTypes.ingredientTypes.dairy">Dairy</mat-option>
+                  <mat-option [value]="commonTypes.ingredientTypes.fish">Fish</mat-option>
+                  <mat-option [value]="commonTypes.ingredientTypes.fruit">Fruit</mat-option>
+                  <mat-option [value]="commonTypes.ingredientTypes.vegetable">Vegetable</mat-option>
+                  <mat-option [value]="commonTypes.ingredientTypes.spice">Spice</mat-option>
+                  <mat-option [value]="commonTypes.ingredientTypes.meat">Meat</mat-option>
+                  <mat-option [value]="commonTypes.ingredientTypes.grain">Grain</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <mat-selection-list #ingredientsList [(ngModel)]="selectedIngredients"
+                                  class="list-placeholder"
+                                  (ngModelChange)="onNgModelChange($event)" [ngModelOptions]="{standalone: true}">
+                <mat-list-option *ngFor="let ingredient of slicedIngredients" [value]="ingredient">
+                  {{ingredient.name}} - {{ingredient.calories}} calories / 100g
+                </mat-list-option>
+              </mat-selection-list>
+              <mat-paginator #dupa (page)="pageChangeEvent($event)"
+                [length]="pageLength"
+                [pageSize]="pageSize"
+                [pageSizeOptions]="[5]">
+              </mat-paginator>
+
+
+            </td>
+          </tr>
+        </table>
+      </form>
+      <!--  <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>-->
+    </mat-card-content>
+    <mat-card-actions class="action-buttons">
+      <button mat-raised-button [disabled]="!f.form.valid" color="primary" type="submit" form="addIngredientForm">Add
+      </button>
+      <button mat-button (click)="cancel()" color="primary">Cancel</button>
+    </mat-card-actions>
+  </mat-card>
+</mat-dialog-content>

@@ -12,10 +12,11 @@ export class UserService{
   private _isLoggedObs: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
 
 
-  readonly user: Observable<User> = this._user.asObservable();
+  readonly userObs: Observable<User> = this._user.asObservable();
   readonly isLoggedObs: Observable<boolean> = this._isLoggedObs.asObservable();
 
   isLogged: boolean = false;
+  user: User;
 
   constructor(private cookieService: CookieService) {
   }
@@ -27,6 +28,7 @@ export class UserService{
     this.cookieService.set("user",JSON.stringify(user),7);
     this.cookieService.set("isLogged",JSON.stringify(this.isLogged),7);
     this._user.next(user);
+    this.user = user;
   }
 
   logout(){
@@ -34,7 +36,7 @@ export class UserService{
   }
 
   getUser() {
-    return this.user;
+    return this.userObs;
   }
 
   getIsLogged(){
@@ -42,9 +44,12 @@ export class UserService{
   }
 
   refreshCookies(){
-    this._user.next(JSON.parse(this.cookieService.get("user")));
+    this.user = JSON.parse(this.cookieService.get("user"));
+    this._user.next(this.user);
     this.isLogged = JSON.parse(this.cookieService.get("isLogged"))
     this._isLoggedObs.next(this.isLogged);
+
+
   }
 
 

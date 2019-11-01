@@ -314,6 +314,32 @@ export type AddIngredientMutation = (
   )> }
 );
 
+export type AddRecipeMutationVariables = {
+  authorUserId: Scalars['ID'],
+  ingredients: Array<Maybe<Scalars['ID']>>,
+  recipe: RecipeInput
+};
+
+
+export type AddRecipeMutation = (
+  { __typename?: 'DieterMutation' }
+  & { addRecipe: Maybe<(
+    { __typename?: 'Recipe' }
+    & Pick<Recipe, 'recipeId'>
+  )> }
+);
+
+export type GetIngredientsQueryVariables = {};
+
+
+export type GetIngredientsQuery = (
+  { __typename?: 'DieterQuery' }
+  & { getIngredients: Maybe<Array<Maybe<(
+    { __typename?: 'Ingredient' }
+    & Pick<Ingredient, 'name' | 'calories' | 'ingredientId' | 'ingredientType'>
+  )>>> }
+);
+
 export type RegisterUserMutationVariables = {
   password: Scalars['String'],
   user: RegisterUserInput
@@ -379,6 +405,39 @@ export const AddIngredientDocument = gql`
   })
   export class AddIngredientGQL extends Apollo.Mutation<AddIngredientMutation, AddIngredientMutationVariables> {
     document = AddIngredientDocument;
+    
+  }
+export const AddRecipeDocument = gql`
+    mutation addRecipe($authorUserId: ID!, $ingredients: [ID]!, $recipe: RecipeInput!) {
+  addRecipe(authorUserId: $authorUserId, ingredientIds: $ingredients, recipe: $recipe) {
+    recipeId
+  }
+}
+    `;
+
+  @Injectable({
+    providedIn: 'root'
+  })
+  export class AddRecipeGQL extends Apollo.Mutation<AddRecipeMutation, AddRecipeMutationVariables> {
+    document = AddRecipeDocument;
+    
+  }
+export const GetIngredientsDocument = gql`
+    query getIngredients {
+  getIngredients {
+    name
+    calories
+    ingredientId
+    ingredientType
+  }
+}
+    `;
+
+  @Injectable({
+    providedIn: 'root'
+  })
+  export class GetIngredientsGQL extends Apollo.Query<GetIngredientsQuery, GetIngredientsQueryVariables> {
+    document = GetIngredientsDocument;
     
   }
 export const RegisterUserDocument = gql`

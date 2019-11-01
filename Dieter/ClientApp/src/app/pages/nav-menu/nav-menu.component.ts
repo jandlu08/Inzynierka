@@ -5,6 +5,7 @@ import {Observable, Subscription} from 'rxjs';
 import {MatDialog} from '@angular/material/dialog';
 import {AddIngredientComponent} from '../modals/add-ingredient/add-ingredient.component';
 import {MatSnackBar} from '@angular/material/snack-bar';
+import {AddRecipeComponent} from '../modals/add-recipe/add-recipe.component';
 
 @Component({
   selector: 'app-nav-menu',
@@ -37,13 +38,26 @@ export class NavMenuComponent implements OnInit, OnDestroy {
   }
 
   openAddIngredient() {
-
     const dialogRef = this.dialog.open(AddIngredientComponent, {
       width: '800px',
     });
     dialogRef.afterClosed().subscribe(isIngredientCreated => {
       if(isIngredientCreated.data) {
         this.snackBar.open("Ingredient was added!",
+          "OK", {duration: 3000});
+      }
+
+    })
+  }
+
+  openAddRecipe() {
+
+    const dialogRef = this.dialog.open(AddRecipeComponent, {
+      width: '800px',
+    });
+    dialogRef.afterClosed().subscribe(isRecipeCreated => {
+      if(isRecipeCreated.data) {
+        this.snackBar.open("Recipe was added!",
           "OK", {duration: 3000});
       }
 

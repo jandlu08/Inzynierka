@@ -1,8 +1,9 @@
-import {Component, Inject, OnDestroy, OnInit} from '@angular/core';
-import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
+import {Component, OnDestroy, OnInit} from '@angular/core';
+import { MatDialogRef} from '@angular/material/dialog';
 import {AddIngredientGQL, AddIngredientInput, IngredientType} from '../../../../generated/graphql';
 import {Subscription} from 'rxjs';
 import {MatSnackBar} from '@angular/material/snack-bar';
+import {CommonTypesService} from '../../../core/services/common-types.service';
 
 @Component({
   selector: 'app-add-ingredient',
@@ -12,22 +13,14 @@ import {MatSnackBar} from '@angular/material/snack-bar';
 export class AddIngredientComponent implements OnInit, OnDestroy {
 
   ingredient: AddIngredientInput;
-  ingredientTypes = {
-    other: IngredientType.Other,
-    dairy: IngredientType.Dairy,
-    fish: IngredientType.Fish,
-    fruit: IngredientType.Fruit,
-    vegetable: IngredientType.Vegetable,
-    spice: IngredientType.Spice,
-    meat: IngredientType.Meat,
-    grain: IngredientType.Grain,
-  };
+
 
   private subscription: Subscription = new Subscription();
 
   constructor(public dialogRef: MatDialogRef<AddIngredientComponent>,
               private addIngredientGQL: AddIngredientGQL,
-              private snackBar: MatSnackBar) {
+              private snackBar: MatSnackBar,
+              private commonTypes: CommonTypesService) {
   }
 
   ngOnInit() {

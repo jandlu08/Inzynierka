@@ -1,0 +1,8 @@
+﻿query getIngredients{
+  getIngredients{
+    name
+    calories
+    ingredientId
+    ingredientType
+  }
+}

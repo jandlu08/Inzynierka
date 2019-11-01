@@ -1,0 +1,5 @@
+﻿mutation addRecipe($authorUserId: ID!, $ingredients: [ID]!, $recipe: RecipeInput!){
+  addRecipe(authorUserId: $authorUserId,ingredientIds: $ingredients, recipe: $recipe){
+    recipeId
+  }
+}

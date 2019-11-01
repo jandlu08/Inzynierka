@@ -31,14 +31,14 @@
             <mat-form-field class="fill-dialog">
               <mat-label>Type</mat-label>
               <mat-select [(value)]="ingredient.ingredientType">
-                 <mat-option [value]="ingredientTypes.other">Other</mat-option>
-                 <mat-option [value]="ingredientTypes.dairy">Dairy</mat-option>
-                 <mat-option [value]="ingredientTypes.fish">Fish</mat-option>
-                 <mat-option [value]="ingredientTypes.fruit">Fruit</mat-option>
-                 <mat-option [value]="ingredientTypes.vegetable">Vegetable</mat-option>
-                 <mat-option [value]="ingredientTypes.spice">Spice</mat-option>
-                 <mat-option [value]="ingredientTypes.meat">Meat</mat-option>
-                 <mat-option [value]="ingredientTypes.grain">Grain</mat-option>
+                 <mat-option [value]="commonTypes.ingredientTypes.other">Other</mat-option>
+                 <mat-option [value]="commonTypes.ingredientTypes.dairy">Dairy</mat-option>
+                 <mat-option [value]="commonTypes.ingredientTypes.fish">Fish</mat-option>
+                 <mat-option [value]="commonTypes.ingredientTypes.fruit">Fruit</mat-option>
+                 <mat-option [value]="commonTypes.ingredientTypes.vegetable">Vegetable</mat-option>
+                 <mat-option [value]="commonTypes.ingredientTypes.spice">Spice</mat-option>
+                 <mat-option [value]="commonTypes.ingredientTypes.meat">Meat</mat-option>
+                 <mat-option [value]="commonTypes.ingredientTypes.grain">Grain</mat-option>
               </mat-select>
             </mat-form-field>
           </td>
