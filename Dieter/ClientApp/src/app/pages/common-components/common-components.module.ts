@@ -11,7 +11,8 @@ import {FlexLayoutModule} from '@angular/flex-layout';
   declarations: [RecipesListComponent, CommentsListComponent, IngredientsListComponent],
   exports: [
     RecipesListComponent,
-    CommentsListComponent
+    CommentsListComponent,
+    IngredientsListComponent
   ],
   imports: [
     CommonModule,

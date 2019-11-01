@@ -67,6 +67,32 @@
           <e p="angular.json" t="Include" />
           <e p="browserslist" t="Include" />
           <e p="codegen.yml" t="Include" />
+          <e p="dist" t="Include">
+            <e p="ClientApp" t="Include">
+              <e p="favicon.ico" t="Include" />
+              <e p="index.html" t="Include" />
+              <e p="main-es2015.js" t="Include" />
+              <e p="main-es2015.js.map" t="Include" />
+              <e p="main-es5.js" t="Include" />
+              <e p="main-es5.js.map" t="Include" />
+              <e p="polyfills-es2015.js" t="Include" />
+              <e p="polyfills-es2015.js.map" t="Include" />
+              <e p="polyfills-es5.js" t="Include" />
+              <e p="polyfills-es5.js.map" t="Include" />
+              <e p="runtime-es2015.js" t="Include" />
+              <e p="runtime-es2015.js.map" t="Include" />
+              <e p="runtime-es5.js" t="Include" />
+              <e p="runtime-es5.js.map" t="Include" />
+              <e p="styles-es2015.js" t="Include" />
+              <e p="styles-es2015.js.map" t="Include" />
+              <e p="styles-es5.js" t="Include" />
+              <e p="styles-es5.js.map" t="Include" />
+              <e p="vendor-es2015.js" t="Include" />
+              <e p="vendor-es2015.js.map" t="Include" />
+              <e p="vendor-es5.js" t="Include" />
+              <e p="vendor-es5.js.map" t="Include" />
+            </e>
+          </e>
           <e p="e2e" t="Include">
             <e p="protractor.conf.js" t="Include" />
             <e p="src" t="Include">
@@ -77,6 +103,114 @@
           </e>
           <e p="karma.conf.js" t="Include" />
           <e p="node_modules" t="Include">
+            <e p=".cache" t="Include">
+              <e p="angular-build-dl" t="Include">
+                <e p="content-v2" t="Include">
+                  <e p="sha512" t="Include">
+                    <e p="14" t="Include">
+                      <e p="ee" t="Include">
+                        <e p="4513e6400d145831d5e0002d445b7ab0c82c4b325dee44d27eb78182d981ce299fdba3ddf5933a977cb3c605a8bfc341e7bea50aef2a756d975d2a1c91af" t="Include" />
+                      </e>
+                    </e>
+                    <e p="47" t="Include">
+                      <e p="f3" t="Include">
+                        <e p="56f2dfca1830eedb970508242094e5a4ef04b2a73a0f128f54f6e161d9fa664365b7e87610af20fb05399b8967cb324c506806784bfffa2ef6f5220a34cb" t="Include" />
+                      </e>
+                    </e>
+                    <e p="4a" t="Include">
+                      <e p="8b" t="Include">
+                        <e p="9d4820506e41d738849966c3578f35a88070104ed545a0c03c0b510af71c6dc51cceb52cf9991e296f2aef5582345eeff1755741a39df16b6c206cf6bf34" t="Include" />
+                      </e>
+                    </e>
+                    <e p="51" t="Include">
+                      <e p="91" t="Include">
+                        <e p="f6b0e578417a6521289c44753aecd71570263a7f187bb2dfcea1760684cdf728ca1dd305e93f817df89eec4beba61267dfc2e27ef680ebff00cc396ea776" t="Include" />
+                      </e>
+                    </e>
+                    <e p="60" t="Include">
+                      <e p="cc" t="Include">
+                        <e p="77eedf769bf1250574a1e0e55c92d3c910ebe51ce58237d7a6d7e7d35810fd40e32f3a5eb695e922b3c54c9ed0a853a8d88dea15dfc38cffbeff2450dc2d" t="Include" />
+                      </e>
+                    </e>
+                    <e p="66" t="Include">
+                      <e p="0c" t="Include">
+                        <e p="57cb35b267a2e1a62196e66ab2773e2515d07ce265dae6049b14d7de8e90dba4e90b12e7eb47d935854d6e1b94c3e0aa65666f3525e5a7257b2a413f21fd" t="Include" />
+                      </e>
+                    </e>
+                    <e p="91" t="Include">
+                      <e p="68" t="Include">
+                        <e p="673669ade800dd2bce7f45beb563a84b6e7ca2ba869dd5e55f01fa7b6e077f046694158954e1d6b98e52477d6517213c34942a5f8c27812288cffecbb348" t="Include" />
+                      </e>
+                    </e>
+                    <e p="95" t="Include">
+                      <e p="67" t="Include">
+                        <e p="9768726ddd1d007812fe0d4a0c51823ad9f1a2a10eceb5cc0debe98830ec82016e137e6d46264ab1866403e7a24046f7cb38a81146b50c1bdfe02b5f2521" t="Include" />
+                      </e>
+                    </e>
+                    <e p="c0" t="Include">
+                      <e p="b1" t="Include">
+                        <e p="8dd7a3c21500240b91c57b7589f21f7bda96178b7d18d3fcf097f825d681945fe451288cd5a570dc284018a6792dbcb006d7598a3511a6ea378c7bbbf5b8" t="Include" />
+                      </e>
+                    </e>
+                    <e p="da" t="Include">
+                      <e p="02" t="Include">
+                        <e p="ab828daf5d2a34f26fb02ced9a9792b5a621d395e0ce2c16882b132b72d214e9d4184a7cc0c4331ff7c33674484d8419c1122d69266ba8f409a5dc8c7741" t="Include" />
+                      </e>
+                    </e>
+                  </e>
+                </e>
+                <e p="index-v5" t="Include">
+                  <e p="3c" t="Include">
+                    <e p="ec" t="Include">
+                      <e p="9309024ffd87fd933b7840addb3a4137c4917bfd186a9452eedb5a566e12" t="Include" />
+                    </e>
+                  </e>
+                  <e p="4e" t="Include">
+                    <e p="bb" t="Include">
+                      <e p="1d77291ba7a8062d1c0fef45b081ffda01624afc782aa7c9859b58ddb9bf" t="Include" />
+                    </e>
+                  </e>
+                  <e p="64" t="Include">
+                    <e p="97" t="Include">
+                      <e p="33189990105f3372dfa844e21a496e26e4d2b8ac4033ce4bab454b839f20" t="Include" />
+                    </e>
+                  </e>
+                  <e p="68" t="Include">
+                    <e p="78" t="Include">
+                      <e p="b4927ae4a64a417cc460e1a97c035fbfa6a6f3e744edc4472a056d28dabf" t="Include" />
+                    </e>
+                  </e>
+                  <e p="a9" t="Include">
+                    <e p="d4" t="Include">
+                      <e p="f1056c4203b7cbe09f21274cd7b50b1cb824b1fb842ad6af1c87a90af47c" t="Include" />
+                    </e>
+                  </e>
+                  <e p="c2" t="Include">
+                    <e p="9c" t="Include">
+                      <e p="865ff835a7b07966c13da9a8bd554cdd2a85765907797985c4b6795262b2" t="Include" />
+                    </e>
+                  </e>
+                  <e p="d4" t="Include">
+                    <e p="24" t="Include">
+                      <e p="037c9852a6ee5adf366e58fedd5965bf1291a3f77984da625681f9bba59d" t="Include" />
+                    </e>
+                  </e>
+                  <e p="f6" t="Include">
+                    <e p="ef" t="Include">
+                      <e p="8a2d32ee0db2cab359898378d723569365480213e5076ee2565428cb24e9" t="Include" />
+                    </e>
+                  </e>
+                  <e p="fe" t="Include">
+                    <e p="dd" t="Include">
+                      <e p="41a0732237c2c1004bf0fc15227b0745b44dfc574b65886ab562519f947d" t="Include" />
+                    </e>
+                    <e p="e6" t="Include">
+                      <e p="8c53083ac7260ccb11655edd85045a8383e75c909d28813e078ceb8e4150" t="Include" />
+                    </e>
+                  </e>
+                </e>
+              </e>
+            </e>
             <e p="@angular" t="Include">
               <e p="animations" t="IncludeRecursive" />
               <e p="cdk" t="IncludeRecursive" />

@@ -1,0 +1,28 @@
+<mat-spinner color="accent" *ngIf="loading"></mat-spinner>
+<mat-card class="ingredients-list-card" *ngIf="!loading">
+  <mat-card-title>User recipes</mat-card-title>
+  <mat-grid-list cols=3 rowHeight="50px"
+                 gutterSize="5px">
+    <mat-grid-tile [colspan]="1" [rowspan]="1">Name</mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">Type</mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">Calories / 100g</mat-grid-tile>
+  </mat-grid-list>
+  <div class="mat-grid-list-ingredients">
+    <mat-grid-list *ngFor="let ingredient of slicedIngredients" cols=3 rowHeight="50px"
+                   gutterSize="5px"
+                   (click)="openIngredientInfo()">
+
+      <mat-grid-tile [colspan]="1" [rowspan]="1">{{ingredient.name}}</mat-grid-tile>
+      <mat-grid-tile [colspan]="1" [rowspan]="1">{{ingredient.ingredientType.toString()}} </mat-grid-tile>
+      <mat-grid-tile [colspan]="1" [rowspan]="1">{{ingredient.calories}}</mat-grid-tile>
+    </mat-grid-list>
+  </div>
+  <mat-card-footer>
+    <mat-paginator (page)="pageChangeEvent($event)"
+                   [length]="pageLength"
+                   [pageSize]="pageSize"
+                   [pageSizeOptions]="[5,10]">
+    </mat-paginator>
+  </mat-card-footer>
+</mat-card>
+
