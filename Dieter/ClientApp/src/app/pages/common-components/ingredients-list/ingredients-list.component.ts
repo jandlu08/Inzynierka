@@ -1,6 +1,9 @@
 import {Component, Input, OnDestroy, OnInit} from '@angular/core';
 import {Comment, GetRecipeIngredientsGQL, Ingredient} from '../../../../generated/graphql';
 import {Subscription} from 'rxjs';
+import {MatDialog} from '@angular/material/dialog';
+import {AddIngredientComponent} from '../../modals/add-ingredient/add-ingredient.component';
+import {IngredientInfoComponent} from '../../modals/ingredient-info/ingredient-info.component';
 
 @Component({
   selector: 'app-ingredients-list',
@@ -17,7 +20,8 @@ export class IngredientsListComponent implements OnInit, OnDestroy {
   pageLength: number = 5;
   slicedIngredients: Array<Ingredient> = new Array<Ingredient>();
   private subscription: Subscription = new Subscription();
-  constructor( private getRecipeIngredientsGQL: GetRecipeIngredientsGQL) { }
+  constructor( private getRecipeIngredientsGQL: GetRecipeIngredientsGQL,
+               public dialog: MatDialog) { }
 
   ngOnInit() {
     this.getIngredients();
@@ -30,6 +34,12 @@ export class IngredientsListComponent implements OnInit, OnDestroy {
     const offset = ((event.pageIndex + 1) - 1) * event.pageSize;
     this.slicedIngredients = this.ingredients.slice(offset).slice(0, event.pageSize);
     this.pageLength = this.ingredients.length;
+  }
+
+  openIngredientInfo(ingredient: Ingredient){
+    this.dialog.open(IngredientInfoComponent, {
+      width: '800px', data: ingredient.description
+    },);
   }
 
   private getIngredients(){

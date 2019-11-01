@@ -10,7 +10,7 @@
   <div class="mat-grid-list-ingredients">
     <mat-grid-list *ngFor="let ingredient of slicedIngredients" cols=3 rowHeight="50px"
                    gutterSize="5px"
-                   (click)="openIngredientInfo()">
+                   (click)="openIngredientInfo(ingredient)">
 
       <mat-grid-tile [colspan]="1" [rowspan]="1">{{ingredient.name}}</mat-grid-tile>
       <mat-grid-tile [colspan]="1" [rowspan]="1">{{ingredient.ingredientType.toString()}} </mat-grid-tile>

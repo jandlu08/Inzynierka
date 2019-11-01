@@ -1037,6 +1037,12 @@
                     <e p="addRecipe.graphql" t="Include" />
                     <e p="getIngredients.graphql" t="Include" />
                   </e>
+                  <e p="ingredient-info" t="Include">
+                    <e p="ingredient-info.component.html" t="Include" />
+                    <e p="ingredient-info.component.scss" t="Include" />
+                    <e p="ingredient-info.component.spec.ts" t="Include" />
+                    <e p="ingredient-info.component.ts" t="Include" />
+                  </e>
                   <e p="modals.module.ts" t="Include" />
                 </e>
                 <e p="nav-menu" t="Include">

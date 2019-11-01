@@ -6,6 +6,7 @@ import {MatDialog} from '@angular/material/dialog';
 import {AddIngredientComponent} from '../modals/add-ingredient/add-ingredient.component';
 import {MatSnackBar} from '@angular/material/snack-bar';
 import {AddRecipeComponent} from '../modals/add-recipe/add-recipe.component';
+import {Ingredient} from '../../../generated/graphql';
 
 @Component({
   selector: 'app-nav-menu',
@@ -42,9 +43,9 @@ export class NavMenuComponent implements OnInit, OnDestroy {
       width: '800px',
     });
     dialogRef.afterClosed().subscribe(isIngredientCreated => {
-      if(isIngredientCreated.data) {
-        this.snackBar.open("Ingredient was added!",
-          "OK", {duration: 3000});
+      if (isIngredientCreated.data) {
+        this.snackBar.open('Ingredient was added!',
+          'OK', {duration: 3000});
       }
 
     })
@@ -56,18 +57,17 @@ export class NavMenuComponent implements OnInit, OnDestroy {
       width: '800px',
     });
     dialogRef.afterClosed().subscribe(isRecipeCreated => {
-      if(isRecipeCreated.data) {
-        this.snackBar.open("Recipe was added!",
-          "OK", {duration: 3000});
+      if (isRecipeCreated.data) {
+        this.snackBar.open('Recipe was added!',
+          'OK', {duration: 3000});
       }
 
     })
   }
 
-  openUserInfo(){
-    this.router.navigate(['/user',this.userService.user.userId]);
+  openUserInfo() {
+    this.router.navigate(['/user', this.userService.user.userId]);
   }
-
 
 
 }
