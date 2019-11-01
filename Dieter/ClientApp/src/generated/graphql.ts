@@ -70,6 +70,7 @@ export type DieterMutation = {
   assignIngredient?: Maybe<IngredientRecipeType>,
   loginUser?: Maybe<User>,
   registerUser?: Maybe<User>,
+  vote?: Maybe<User>,
 };
 
 
@@ -109,6 +110,14 @@ export type DieterMutationRegisterUserArgs = {
   user: RegisterUserInput
 };
 
+
+export type DieterMutationVoteArgs = {
+  commentId?: Maybe<Scalars['ID']>,
+  recipeId?: Maybe<Scalars['ID']>,
+  userId: Scalars['ID'],
+  voteType: VoteType
+};
+
 export type DieterQuery = {
    __typename?: 'DieterQuery',
   getComment?: Maybe<Comment>,
@@ -138,6 +147,7 @@ export type DieterQueryGetIngredientArgs = {
 
 
 export type DieterQueryGetIngredientsArgs = {
+  ingredientType?: Maybe<IngredientType>,
   recipeId?: Maybe<Scalars['Int']>
 };
 
@@ -271,6 +281,11 @@ export type User = {
   userName?: Maybe<Scalars['String']>,
 };
 
+
+export enum VoteType {
+  Down = 'DOWN',
+  Up = 'UP'
+}
 
 export type LoginUserMutationVariables = {
   username: Scalars['String'],

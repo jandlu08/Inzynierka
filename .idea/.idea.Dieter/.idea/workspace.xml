@@ -4,10 +4,6 @@
     <list default="true" id="490b1499-0315-47b0-85b5-49b079606736" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/API/Models/GraphQL/DieterMutation/DieterMutation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/API/Models/GraphQL/DieterMutation/DieterMutation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/API/Models/GraphQL/VoteEnum.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/API/Models/GraphQL/VoteTypeEnum.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/API/ResourcesDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/API/ResourcesDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/Migrations/ResourcesDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/Migrations/ResourcesDbContextModelSnapshot.cs" afterDir="false" />
     </list>
     <list id="f107c17d-2d2f-482b-8382-8cd0796d5b43" name="add all queries (for now)" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -137,7 +133,9 @@
     <setting file="file://$PROJECT_DIR$/Dieter/API/Models/GraphQL/CommentType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Dieter/API/Models/GraphQL/SexEnum.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Dieter/API/Models/GraphQL/UserType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Dieter/Migrations/20191030213624_addUserVote.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Dieter/API/GraphQlQuery.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Dieter/Migrations/20191030213624_addUserVote.Designer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Dieter/API/Models/User.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Dieter/API/Models/GraphQL/UserVoteType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Dieter/API/Models/Photo.cs" root0="FORCE_HIGHLIGHTING" />
@@ -347,7 +345,8 @@
       <workItem from="1572272078824" duration="4427000" />
       <workItem from="1572329887200" duration="9143000" />
       <workItem from="1572456116442" duration="9707000" />
-      <workItem from="1572468634208" duration="4388000" />
+      <workItem from="1572468634208" duration="4514000" />
+      <workItem from="1572597997291" duration="657000" />
     </task>
     <task id="LOCAL-00001" summary="add getUsers query">
       <created>1571733525858</created>
@@ -482,7 +481,21 @@
       <option name="project" value="LOCAL" />
       <updated>1572468072043</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="add new entity UserVote">
+      <created>1572473171433</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1572473171433</updated>
+    </task>
+    <task id="LOCAL-00021" summary="add add vote mutation">
+      <created>1572473184996</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1572473184996</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -521,7 +534,9 @@
     <MESSAGE value="change structure" />
     <MESSAGE value="add ingredient filter" />
     <MESSAGE value="add add ingredient modal" />
-    <option name="LAST_COMMIT_MESSAGE" value="add add ingredient modal" />
+    <MESSAGE value="add new entity UserVote" />
+    <MESSAGE value="add add vote mutation" />
+    <option name="LAST_COMMIT_MESSAGE" value="add add vote mutation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -530,32 +545,6 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Dieter/API/Models/GraphQL/DieterMutation/DieterMutation.cs</url>
-          <line>219</line>
-          <properties documentPath="$PROJECT_DIR$/Dieter/API/Models/GraphQL/DieterMutation/DieterMutation.cs" initialLine="219">
-            <startOffsets>
-              <option value="9386" />
-            </startOffsets>
-            <endOffsets>
-              <option value="9434" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Dieter/API/Models/GraphQL/DieterMutation/DieterMutation.cs</url>
-          <line>241</line>
-          <properties documentPath="$PROJECT_DIR$/Dieter/API/Models/GraphQL/DieterMutation/DieterMutation.cs" initialLine="241">
-            <startOffsets>
-              <option value="10318" />
-            </startOffsets>
-            <endOffsets>
-              <option value="10500" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <reveal-manager>
