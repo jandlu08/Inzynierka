@@ -1,4 +1,4 @@
-﻿# This file was generated based on ".graphqlconfig". Do not edit manually.
+﻿# This file was generated based on "schema.json". Do not edit manually.
 
 schema {
   query: DieterQuery
@@ -21,13 +21,14 @@ type DieterMutation {
   assignIngredient(ingredientId: ID!, recipeId: ID!): IngredientRecipeType
   loginUser(password: String!, userName: String!): User
   registerUser(password: String!, user: RegisterUserInput!): User
+  vote(commentId: ID, recipeId: ID, userId: ID!, voteType: VoteType!): User
 }
 
 type DieterQuery {
   getComment(commentId: Int): Comment
   getComments(recipeId: Int): [Comment]
   getIngredient(ingredientId: Int): Ingredient
-  getIngredients(recipeId: Int): [Ingredient]
+  getIngredients(ingredientType: IngredientType, recipeId: Int): [Ingredient]
   getRecipe(recipeId: ID): Recipe
   getRecipes(amount: Int, calories: Int, offset: Int = 0): [Recipe]
   getUser(userId: ID): User
@@ -114,6 +115,11 @@ enum Sex {
   MALE
 }
 
+enum VoteType {
+  DOWN
+  UP
+}
+
 input AddCommentInput {
   content: String!
 }
@@ -148,6 +154,8 @@ input RegisterUserInput {
 "The `Date` scalar type represents a year, month and day in accordance with the [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601) standard."
 scalar Date
 
+scalar Byte
+
 "The `DateTime` scalar type represents a date and time. `DateTime` expects timestamps to be formatted in accordance with the [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601) standard."
 scalar DateTime
 
@@ -177,7 +185,5 @@ scalar Long
 scalar BigInt
 
 scalar ULong
-
-scalar Byte
 
 scalar SByte
