@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using GraphQL.Types;
+using GraphQLParser.AST;
 using Microsoft.EntityFrameworkCore;
 
 namespace Dieter.API.Models.GraphQL.Query
@@ -153,6 +154,15 @@ namespace Dieter.API.Models.GraphQL.Query
                         .Where(x => x.RecipeId == recipeId)
                         .Select(x => x.IngredientRecipes.Select(y => y.Ingredient))
                         .SingleOrDefault();
+                });
+            Field<ListGraphType<RecipeType>>(
+                "getUserRecipes",
+                arguments: new QueryArguments(
+                    new QueryArgument<NonNullGraphType<IdGraphType>> {Name = "userId"}),
+                resolve: context =>
+                {
+                    var userId = context.GetArgument<int>("userId");
+                    return db.Recipes.Where(x => x.Author.UserId == userId);
                 });
         }
     }
