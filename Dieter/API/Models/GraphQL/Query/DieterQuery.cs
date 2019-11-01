@@ -137,7 +137,7 @@ namespace Dieter.API.Models.GraphQL.Query
                 resolve: context =>
                 {
                     var recipeId = context.GetArgument<int?>("recipeId");
-                    var ingredientType = context.GetArgument<Enums.IngredientType>("ingredientType");
+                    var ingredientType = context.GetArgument<Enums.IngredientType?>("ingredientType");
 
                     if (recipeId == null && ingredientType == null)
                     {
