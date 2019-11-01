@@ -1,0 +1,15 @@
+<mat-spinner color="accent" *ngIf="loading"></mat-spinner>
+<mat-card *ngIf="!loading" >
+<div fxLayout="row wrap">
+      <mat-card  *ngFor="let comment of slicedComments" class="comment">
+        <mat-card-title>{{comment.author.userName}}</mat-card-title>
+        <mat-card-content>{{comment.content}}</mat-card-content>
+        <mat-card-footer>{{comment.publicationDate}}</mat-card-footer>
+      </mat-card>
+</div>
+  <mat-paginator (page)="pageChangeEvent($event)"
+                 [length]="pageLength"
+                 [pageSize]="pageSize"
+                 [pageSizeOptions]="[6]">
+  </mat-paginator>
+</mat-card>

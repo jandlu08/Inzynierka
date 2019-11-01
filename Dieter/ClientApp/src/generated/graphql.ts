@@ -293,6 +293,39 @@ export enum VoteType {
   Up = 'UP'
 }
 
+export type GetCommentsQueryVariables = {
+  recipeId?: Maybe<Scalars['ID']>
+};
+
+
+export type GetCommentsQuery = (
+  { __typename?: 'DieterQuery' }
+  & { getComments: Maybe<Array<Maybe<(
+    { __typename?: 'Comment' }
+    & Pick<Comment, 'commentId' | 'content' | 'publicationDate'>
+    & { author: Maybe<(
+      { __typename?: 'User' }
+      & Pick<User, 'userId' | 'userName'>
+    )>, rating: Maybe<(
+      { __typename?: 'Rating' }
+      & Pick<Rating, 'upVotes' | 'downVotes'>
+    )> }
+  )>>> }
+);
+
+export type GetRecipeIngredientsQueryVariables = {
+  recipeId?: Maybe<Scalars['ID']>
+};
+
+
+export type GetRecipeIngredientsQuery = (
+  { __typename?: 'DieterQuery' }
+  & { getIngredients: Maybe<Array<Maybe<(
+    { __typename?: 'Ingredient' }
+    & Pick<Ingredient, 'calories' | 'description' | 'ingredientId' | 'ingredientType' | 'name'>
+  )>>> }
+);
+
 export type GetUserRecipesQueryVariables = {
   userId: Scalars['ID']
 };
@@ -363,26 +396,6 @@ export type GetIngredientsQuery = (
   )>>> }
 );
 
-export type GetCommentsQueryVariables = {
-  recipeId?: Maybe<Scalars['ID']>
-};
-
-
-export type GetCommentsQuery = (
-  { __typename?: 'DieterQuery' }
-  & { getComments: Maybe<Array<Maybe<(
-    { __typename?: 'Comment' }
-    & Pick<Comment, 'commentId' | 'content' | 'publicationDate'>
-    & { author: Maybe<(
-      { __typename?: 'User' }
-      & Pick<User, 'userId' | 'userName'>
-    )>, rating: Maybe<(
-      { __typename?: 'Rating' }
-      & Pick<Rating, 'upVotes' | 'downVotes'>
-    )> }
-  )>>> }
-);
-
 export type GetRecipeQueryVariables = {
   recipeId?: Maybe<Scalars['ID']>
 };
@@ -398,19 +411,6 @@ export type GetRecipeQuery = (
       & Pick<User, 'userName'>
     )> }
   )> }
-);
-
-export type GetRecipeIngredientsQueryVariables = {
-  recipeId?: Maybe<Scalars['ID']>
-};
-
-
-export type GetRecipeIngredientsQuery = (
-  { __typename?: 'DieterQuery' }
-  & { getIngredients: Maybe<Array<Maybe<(
-    { __typename?: 'Ingredient' }
-    & Pick<Ingredient, 'calories' | 'description' | 'ingredientId' | 'ingredientType' | 'name'>
-  )>>> }
 );
 
 export type RegisterUserMutationVariables = {
@@ -441,6 +441,50 @@ export type GetUserInfoQuery = (
 );
 
 
+export const GetCommentsDocument = gql`
+    query getComments($recipeId: ID) {
+  getComments(recipeId: $recipeId) {
+    author {
+      userId
+      userName
+    }
+    commentId
+    content
+    publicationDate
+    rating {
+      upVotes
+      downVotes
+    }
+  }
+}
+    `;
+
+  @Injectable({
+    providedIn: 'root'
+  })
+  export class GetCommentsGQL extends Apollo.Query<GetCommentsQuery, GetCommentsQueryVariables> {
+    document = GetCommentsDocument;
+    
+  }
+export const GetRecipeIngredientsDocument = gql`
+    query getRecipeIngredients($recipeId: ID) {
+  getIngredients(recipeId: $recipeId) {
+    calories
+    description
+    ingredientId
+    ingredientType
+    name
+  }
+}
+    `;
+
+  @Injectable({
+    providedIn: 'root'
+  })
+  export class GetRecipeIngredientsGQL extends Apollo.Query<GetRecipeIngredientsQuery, GetRecipeIngredientsQueryVariables> {
+    document = GetRecipeIngredientsDocument;
+    
+  }
 export const GetUserRecipesDocument = gql`
     query getUserRecipes($userId: ID!) {
   getUserRecipes(userId: $userId) {
@@ -534,31 +578,6 @@ export const GetIngredientsDocument = gql`
     document = GetIngredientsDocument;
     
   }
-export const GetCommentsDocument = gql`
-    query getComments($recipeId: ID) {
-  getComments(recipeId: $recipeId) {
-    author {
-      userId
-      userName
-    }
-    commentId
-    content
-    publicationDate
-    rating {
-      upVotes
-      downVotes
-    }
-  }
-}
-    `;
-
-  @Injectable({
-    providedIn: 'root'
-  })
-  export class GetCommentsGQL extends Apollo.Query<GetCommentsQuery, GetCommentsQueryVariables> {
-    document = GetCommentsDocument;
-    
-  }
 export const GetRecipeDocument = gql`
     query getRecipe($recipeId: ID) {
   getRecipe(recipeId: $recipeId) {
@@ -579,25 +598,6 @@ export const GetRecipeDocument = gql`
   })
   export class GetRecipeGQL extends Apollo.Query<GetRecipeQuery, GetRecipeQueryVariables> {
     document = GetRecipeDocument;
-    
-  }
-export const GetRecipeIngredientsDocument = gql`
-    query getRecipeIngredients($recipeId: ID) {
-  getIngredients(recipeId: $recipeId) {
-    calories
-    description
-    ingredientId
-    ingredientType
-    name
-  }
-}
-    `;
-
-  @Injectable({
-    providedIn: 'root'
-  })
-  export class GetRecipeIngredientsGQL extends Apollo.Query<GetRecipeIngredientsQuery, GetRecipeIngredientsQueryVariables> {
-    document = GetRecipeIngredientsDocument;
     
   }
 export const RegisterUserDocument = gql`

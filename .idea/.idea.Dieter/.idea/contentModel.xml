@@ -76,136 +76,750 @@
             <e p="tsconfig.json" t="Include" />
           </e>
           <e p="karma.conf.js" t="Include" />
-          <e p="node_modules\@angular\animations" t="IncludeRecursive" />
-          <e p="node_modules\@angular\cdk" t="IncludeRecursive" />
-          <e p="node_modules\@angular\cli" t="IncludeRecursive" />
-          <e p="node_modules\@angular\common" t="IncludeRecursive" />
-          <e p="node_modules\@angular\compiler" t="IncludeRecursive" />
-          <e p="node_modules\@angular\compiler-cli" t="IncludeRecursive" />
-          <e p="node_modules\@angular\core" t="IncludeRecursive" />
-          <e p="node_modules\@angular\forms" t="IncludeRecursive" />
-          <e p="node_modules\@angular\material" t="IncludeRecursive" />
-          <e p="node_modules\@angular\platform-browser" t="IncludeRecursive" />
-          <e p="node_modules\@angular\platform-browser-dynamic" t="IncludeRecursive" />
-          <e p="node_modules\@angular\router" t="IncludeRecursive" />
-          <e p="node_modules\@angular-devkit\architect" t="IncludeRecursive" />
-          <e p="node_modules\@angular-devkit\build-angular" t="IncludeRecursive" />
-          <e p="node_modules\@angular-devkit\build-optimizer" t="IncludeRecursive" />
-          <e p="node_modules\@angular-devkit\build-webpack" t="IncludeRecursive" />
-          <e p="node_modules\@angular-devkit\core" t="IncludeRecursive" />
-          <e p="node_modules\@angular-devkit\schematics" t="IncludeRecursive" />
-          <e p="node_modules\@babel\parser" t="IncludeRecursive" />
-          <e p="node_modules\@babel\types" t="IncludeRecursive" />
-          <e p="node_modules\@graphql-codegen\cli" t="IncludeRecursive" />
-          <e p="node_modules\@graphql-codegen\core" t="IncludeRecursive" />
-          <e p="node_modules\@graphql-codegen\plugin-helpers" t="IncludeRecursive" />
-          <e p="node_modules\@graphql-codegen\typescript" t="IncludeRecursive" />
-          <e p="node_modules\@graphql-codegen\typescript-apollo-angular" t="IncludeRecursive" />
-          <e p="node_modules\@graphql-codegen\typescript-operations" t="IncludeRecursive" />
-          <e p="node_modules\@graphql-codegen\visitor-plugin-common" t="IncludeRecursive" />
-          <e p="node_modules\@graphql-toolkit\common" t="IncludeRecursive" />
-          <e p="node_modules\@graphql-toolkit\graphql-file-loader" t="IncludeRecursive" />
-          <e p="node_modules\@graphql-toolkit\json-file-loader" t="IncludeRecursive" />
-          <e p="node_modules\@graphql-toolkit\schema-merging" t="IncludeRecursive" />
-          <e p="node_modules\@graphql-toolkit\url-loader" t="IncludeRecursive" />
-          <e p="node_modules\@kamilkisiela\graphql-tools" t="IncludeRecursive" />
-          <e p="node_modules\@ngtools\webpack" t="IncludeRecursive" />
-          <e p="node_modules\@types" t="IncludeRecursive">
-            <e p="caseless" t="IncludeRecursive" />
-            <e p="events" t="IncludeRecursive" />
-            <e p="jasmine" t="IncludeRecursive" />
-            <e p="jasminewd2" t="IncludeRecursive" />
-            <e p="minimatch" t="IncludeRecursive" />
-            <e p="node" t="IncludeRecursive" />
-            <e p="source-list-map" t="IncludeRecursive" />
-            <e p="tough-cookie" t="IncludeRecursive" />
+          <e p="node_modules" t="Include">
+            <e p="@angular" t="Include">
+              <e p="animations" t="IncludeRecursive" />
+              <e p="cdk" t="IncludeRecursive" />
+              <e p="cli" t="IncludeRecursive" />
+              <e p="common" t="IncludeRecursive" />
+              <e p="compiler" t="IncludeRecursive" />
+              <e p="compiler-cli" t="IncludeRecursive" />
+              <e p="core" t="IncludeRecursive" />
+              <e p="flex-layout" t="IncludeRecursive">
+                <e p="_mq.scss" t="Include" />
+                <e p="bundles" t="Include">
+                  <e p="flex-layout-core.umd.js" t="Include" />
+                  <e p="flex-layout-core.umd.js.map" t="Include" />
+                  <e p="flex-layout-core.umd.min.js" t="Include" />
+                  <e p="flex-layout-core.umd.min.js.map" t="Include" />
+                  <e p="flex-layout-extended.umd.js" t="Include" />
+                  <e p="flex-layout-extended.umd.js.map" t="Include" />
+                  <e p="flex-layout-extended.umd.min.js" t="Include" />
+                  <e p="flex-layout-extended.umd.min.js.map" t="Include" />
+                  <e p="flex-layout-flex.umd.js" t="Include" />
+                  <e p="flex-layout-flex.umd.js.map" t="Include" />
+                  <e p="flex-layout-flex.umd.min.js" t="Include" />
+                  <e p="flex-layout-flex.umd.min.js.map" t="Include" />
+                  <e p="flex-layout-grid.umd.js" t="Include" />
+                  <e p="flex-layout-grid.umd.js.map" t="Include" />
+                  <e p="flex-layout-grid.umd.min.js" t="Include" />
+                  <e p="flex-layout-grid.umd.min.js.map" t="Include" />
+                  <e p="flex-layout-server.umd.js" t="Include" />
+                  <e p="flex-layout-server.umd.js.map" t="Include" />
+                  <e p="flex-layout-server.umd.min.js" t="Include" />
+                  <e p="flex-layout-server.umd.min.js.map" t="Include" />
+                  <e p="flex-layout.umd.js" t="Include" />
+                  <e p="flex-layout.umd.js.map" t="Include" />
+                  <e p="flex-layout.umd.min.js" t="Include" />
+                  <e p="flex-layout.umd.min.js.map" t="Include" />
+                </e>
+                <e p="core" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="add-alias.d.ts" t="Include" />
+                    <e p="base" t="Include">
+                      <e p="base2.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                    </e>
+                    <e p="basis-validator" t="Include">
+                      <e p="basis-validator.d.ts" t="Include" />
+                    </e>
+                    <e p="breakpoints" t="Include">
+                      <e p="break-point-registry.d.ts" t="Include" />
+                      <e p="break-point.d.ts" t="Include" />
+                      <e p="break-points-token.d.ts" t="Include" />
+                      <e p="breakpoint-tools.d.ts" t="Include" />
+                      <e p="data" t="Include">
+                        <e p="break-points.d.ts" t="Include" />
+                        <e p="orientation-break-points.d.ts" t="Include" />
+                      </e>
+                      <e p="index.d.ts" t="Include" />
+                    </e>
+                    <e p="browser-provider.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="match-media" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="match-media.d.ts" t="Include" />
+                      <e p="mock" t="Include">
+                        <e p="mock-match-media.d.ts" t="Include" />
+                      </e>
+                    </e>
+                    <e p="media-change.d.ts" t="Include" />
+                    <e p="media-marshaller" t="Include">
+                      <e p="media-marshaller.d.ts" t="Include" />
+                      <e p="print-hook.d.ts" t="Include" />
+                    </e>
+                    <e p="media-observer" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="media-observer.d.ts" t="Include" />
+                    </e>
+                    <e p="media-trigger" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="media-trigger.d.ts" t="Include" />
+                    </e>
+                    <e p="module.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="style-builder" t="Include">
+                      <e p="style-builder.d.ts" t="Include" />
+                    </e>
+                    <e p="style-utils" t="Include">
+                      <e p="style-utils.d.ts" t="Include" />
+                    </e>
+                    <e p="stylesheet-map" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="stylesheet-map.d.ts" t="Include" />
+                    </e>
+                    <e p="tokens" t="Include">
+                      <e p="breakpoint-token.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="library-config.d.ts" t="Include" />
+                      <e p="server-token.d.ts" t="Include" />
+                    </e>
+                    <e p="utils" t="Include">
+                      <e p="array.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="sort.d.ts" t="Include" />
+                    </e>
+                  </e>
+                </e>
+                <e p="core.d.ts" t="Include" />
+                <e p="core.metadata.json" t="Include" />
+                <e p="esm2015" t="Include">
+                  <e p="core.js" t="Include" />
+                  <e p="core.js.map" t="Include" />
+                  <e p="extended.js" t="Include" />
+                  <e p="extended.js.map" t="Include" />
+                  <e p="flex-layout.js" t="Include" />
+                  <e p="flex-layout.js.map" t="Include" />
+                  <e p="flex.js" t="Include" />
+                  <e p="flex.js.map" t="Include" />
+                  <e p="grid.js" t="Include" />
+                  <e p="grid.js.map" t="Include" />
+                  <e p="server.js" t="Include" />
+                  <e p="server.js.map" t="Include" />
+                </e>
+                <e p="esm5" t="Include">
+                  <e p="core.es5.js" t="Include" />
+                  <e p="core.es5.js.map" t="Include" />
+                  <e p="extended.es5.js" t="Include" />
+                  <e p="extended.es5.js.map" t="Include" />
+                  <e p="flex-layout.es5.js" t="Include" />
+                  <e p="flex-layout.es5.js.map" t="Include" />
+                  <e p="flex.es5.js" t="Include" />
+                  <e p="flex.es5.js.map" t="Include" />
+                  <e p="grid.es5.js" t="Include" />
+                  <e p="grid.es5.js.map" t="Include" />
+                  <e p="server.es5.js" t="Include" />
+                  <e p="server.es5.js.map" t="Include" />
+                </e>
+                <e p="extended" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="class" t="Include">
+                      <e p="class.d.ts" t="Include" />
+                    </e>
+                    <e p="img-src" t="Include">
+                      <e p="img-src.d.ts" t="Include" />
+                    </e>
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="module.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="show-hide" t="Include">
+                      <e p="show-hide.d.ts" t="Include" />
+                    </e>
+                    <e p="style" t="Include">
+                      <e p="style-transforms.d.ts" t="Include" />
+                      <e p="style.d.ts" t="Include" />
+                    </e>
+                  </e>
+                </e>
+                <e p="extended.d.ts" t="Include" />
+                <e p="extended.metadata.json" t="Include" />
+                <e p="flex" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="flex" t="Include">
+                      <e p="flex.d.ts" t="Include" />
+                    </e>
+                    <e p="flex-align" t="Include">
+                      <e p="flex-align.d.ts" t="Include" />
+                    </e>
+                    <e p="flex-fill" t="Include">
+                      <e p="flex-fill.d.ts" t="Include" />
+                    </e>
+                    <e p="flex-offset" t="Include">
+                      <e p="flex-offset.d.ts" t="Include" />
+                    </e>
+                    <e p="flex-order" t="Include">
+                      <e p="flex-order.d.ts" t="Include" />
+                    </e>
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="layout" t="Include">
+                      <e p="layout.d.ts" t="Include" />
+                    </e>
+                    <e p="layout-align" t="Include">
+                      <e p="layout-align.d.ts" t="Include" />
+                    </e>
+                    <e p="layout-gap" t="Include">
+                      <e p="layout-gap.d.ts" t="Include" />
+                    </e>
+                    <e p="module.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="flex-layout.d.ts" t="Include" />
+                <e p="flex-layout.metadata.json" t="Include" />
+                <e p="flex.d.ts" t="Include" />
+                <e p="flex.metadata.json" t="Include" />
+                <e p="grid" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="align-columns" t="Include">
+                      <e p="align-columns.d.ts" t="Include" />
+                    </e>
+                    <e p="align-rows" t="Include">
+                      <e p="align-rows.d.ts" t="Include" />
+                    </e>
+                    <e p="area" t="Include">
+                      <e p="area.d.ts" t="Include" />
+                    </e>
+                    <e p="areas" t="Include">
+                      <e p="areas.d.ts" t="Include" />
+                    </e>
+                    <e p="auto" t="Include">
+                      <e p="auto.d.ts" t="Include" />
+                    </e>
+                    <e p="column" t="Include">
+                      <e p="column.d.ts" t="Include" />
+                    </e>
+                    <e p="columns" t="Include">
+                      <e p="columns.d.ts" t="Include" />
+                    </e>
+                    <e p="gap" t="Include">
+                      <e p="gap.d.ts" t="Include" />
+                    </e>
+                    <e p="grid-align" t="Include">
+                      <e p="grid-align.d.ts" t="Include" />
+                    </e>
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="module.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="row" t="Include">
+                      <e p="row.d.ts" t="Include" />
+                    </e>
+                    <e p="rows" t="Include">
+                      <e p="rows.d.ts" t="Include" />
+                    </e>
+                  </e>
+                </e>
+                <e p="grid.d.ts" t="Include" />
+                <e p="grid.metadata.json" t="Include" />
+                <e p="LICENSE" t="Include" />
+                <e p="package.json" t="Include" />
+                <e p="README.md" t="Include" />
+                <e p="server" t="Include">
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="package.json" t="Include" />
+                  <e p="typings" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="module.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="server-match-media.d.ts" t="Include" />
+                    <e p="server-provider.d.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="server.d.ts" t="Include" />
+                <e p="server.metadata.json" t="Include" />
+                <e p="typings" t="Include">
+                  <e p="core" t="Include">
+                    <e p="add-alias.d.ts" t="Include" />
+                    <e p="base" t="Include">
+                      <e p="base2.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                    </e>
+                    <e p="basis-validator" t="Include">
+                      <e p="basis-validator.d.ts" t="Include" />
+                    </e>
+                    <e p="breakpoints" t="Include">
+                      <e p="break-point-registry.d.ts" t="Include" />
+                      <e p="break-point.d.ts" t="Include" />
+                      <e p="break-points-token.d.ts" t="Include" />
+                      <e p="breakpoint-tools.d.ts" t="Include" />
+                      <e p="data" t="Include">
+                        <e p="break-points.d.ts" t="Include" />
+                        <e p="orientation-break-points.d.ts" t="Include" />
+                      </e>
+                      <e p="index.d.ts" t="Include" />
+                    </e>
+                    <e p="browser-provider.d.ts" t="Include" />
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="match-media" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="match-media.d.ts" t="Include" />
+                      <e p="mock" t="Include">
+                        <e p="mock-match-media.d.ts" t="Include" />
+                      </e>
+                    </e>
+                    <e p="media-change.d.ts" t="Include" />
+                    <e p="media-marshaller" t="Include">
+                      <e p="media-marshaller.d.ts" t="Include" />
+                      <e p="print-hook.d.ts" t="Include" />
+                    </e>
+                    <e p="media-observer" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="media-observer.d.ts" t="Include" />
+                    </e>
+                    <e p="media-trigger" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="media-trigger.d.ts" t="Include" />
+                    </e>
+                    <e p="module.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="style-builder" t="Include">
+                      <e p="style-builder.d.ts" t="Include" />
+                    </e>
+                    <e p="style-utils" t="Include">
+                      <e p="style-utils.d.ts" t="Include" />
+                    </e>
+                    <e p="stylesheet-map" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="stylesheet-map.d.ts" t="Include" />
+                    </e>
+                    <e p="tokens" t="Include">
+                      <e p="breakpoint-token.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="library-config.d.ts" t="Include" />
+                      <e p="server-token.d.ts" t="Include" />
+                    </e>
+                    <e p="utils" t="Include">
+                      <e p="array.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="sort.d.ts" t="Include" />
+                    </e>
+                  </e>
+                  <e p="esm5" t="Include">
+                    <e p="core" t="Include">
+                      <e p="add-alias.d.ts" t="Include" />
+                      <e p="base" t="Include">
+                        <e p="base2.d.ts" t="Include" />
+                        <e p="index.d.ts" t="Include" />
+                      </e>
+                      <e p="basis-validator" t="Include">
+                        <e p="basis-validator.d.ts" t="Include" />
+                      </e>
+                      <e p="breakpoints" t="Include">
+                        <e p="break-point-registry.d.ts" t="Include" />
+                        <e p="break-point.d.ts" t="Include" />
+                        <e p="break-points-token.d.ts" t="Include" />
+                        <e p="breakpoint-tools.d.ts" t="Include" />
+                        <e p="data" t="Include">
+                          <e p="break-points.d.ts" t="Include" />
+                          <e p="orientation-break-points.d.ts" t="Include" />
+                        </e>
+                        <e p="index.d.ts" t="Include" />
+                      </e>
+                      <e p="browser-provider.d.ts" t="Include" />
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="match-media" t="Include">
+                        <e p="index.d.ts" t="Include" />
+                        <e p="match-media.d.ts" t="Include" />
+                        <e p="mock" t="Include">
+                          <e p="mock-match-media.d.ts" t="Include" />
+                        </e>
+                      </e>
+                      <e p="media-change.d.ts" t="Include" />
+                      <e p="media-marshaller" t="Include">
+                        <e p="media-marshaller.d.ts" t="Include" />
+                        <e p="print-hook.d.ts" t="Include" />
+                      </e>
+                      <e p="media-observer" t="Include">
+                        <e p="index.d.ts" t="Include" />
+                        <e p="media-observer.d.ts" t="Include" />
+                      </e>
+                      <e p="media-trigger" t="Include">
+                        <e p="index.d.ts" t="Include" />
+                        <e p="media-trigger.d.ts" t="Include" />
+                      </e>
+                      <e p="module.d.ts" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="style-builder" t="Include">
+                        <e p="style-builder.d.ts" t="Include" />
+                      </e>
+                      <e p="style-utils" t="Include">
+                        <e p="style-utils.d.ts" t="Include" />
+                      </e>
+                      <e p="stylesheet-map" t="Include">
+                        <e p="index.d.ts" t="Include" />
+                        <e p="stylesheet-map.d.ts" t="Include" />
+                      </e>
+                      <e p="tokens" t="Include">
+                        <e p="breakpoint-token.d.ts" t="Include" />
+                        <e p="index.d.ts" t="Include" />
+                        <e p="library-config.d.ts" t="Include" />
+                        <e p="server-token.d.ts" t="Include" />
+                      </e>
+                      <e p="utils" t="Include">
+                        <e p="array.d.ts" t="Include" />
+                        <e p="index.d.ts" t="Include" />
+                        <e p="sort.d.ts" t="Include" />
+                      </e>
+                    </e>
+                    <e p="extended" t="Include">
+                      <e p="class" t="Include">
+                        <e p="class.d.ts" t="Include" />
+                      </e>
+                      <e p="img-src" t="Include">
+                        <e p="img-src.d.ts" t="Include" />
+                      </e>
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="module.d.ts" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="show-hide" t="Include">
+                        <e p="show-hide.d.ts" t="Include" />
+                      </e>
+                      <e p="style" t="Include">
+                        <e p="style-transforms.d.ts" t="Include" />
+                        <e p="style.d.ts" t="Include" />
+                      </e>
+                    </e>
+                    <e p="flex" t="Include">
+                      <e p="flex" t="Include">
+                        <e p="flex.d.ts" t="Include" />
+                      </e>
+                      <e p="flex-align" t="Include">
+                        <e p="flex-align.d.ts" t="Include" />
+                      </e>
+                      <e p="flex-fill" t="Include">
+                        <e p="flex-fill.d.ts" t="Include" />
+                      </e>
+                      <e p="flex-offset" t="Include">
+                        <e p="flex-offset.d.ts" t="Include" />
+                      </e>
+                      <e p="flex-order" t="Include">
+                        <e p="flex-order.d.ts" t="Include" />
+                      </e>
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="layout" t="Include">
+                        <e p="layout.d.ts" t="Include" />
+                      </e>
+                      <e p="layout-align" t="Include">
+                        <e p="layout-align.d.ts" t="Include" />
+                      </e>
+                      <e p="layout-gap" t="Include">
+                        <e p="layout-gap.d.ts" t="Include" />
+                      </e>
+                      <e p="module.d.ts" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                    </e>
+                    <e p="grid" t="Include">
+                      <e p="align-columns" t="Include">
+                        <e p="align-columns.d.ts" t="Include" />
+                      </e>
+                      <e p="align-rows" t="Include">
+                        <e p="align-rows.d.ts" t="Include" />
+                      </e>
+                      <e p="area" t="Include">
+                        <e p="area.d.ts" t="Include" />
+                      </e>
+                      <e p="areas" t="Include">
+                        <e p="areas.d.ts" t="Include" />
+                      </e>
+                      <e p="auto" t="Include">
+                        <e p="auto.d.ts" t="Include" />
+                      </e>
+                      <e p="column" t="Include">
+                        <e p="column.d.ts" t="Include" />
+                      </e>
+                      <e p="columns" t="Include">
+                        <e p="columns.d.ts" t="Include" />
+                      </e>
+                      <e p="gap" t="Include">
+                        <e p="gap.d.ts" t="Include" />
+                      </e>
+                      <e p="grid-align" t="Include">
+                        <e p="grid-align.d.ts" t="Include" />
+                      </e>
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="module.d.ts" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="row" t="Include">
+                        <e p="row.d.ts" t="Include" />
+                      </e>
+                      <e p="rows" t="Include">
+                        <e p="rows.d.ts" t="Include" />
+                      </e>
+                    </e>
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="module.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="server" t="Include">
+                      <e p="index.d.ts" t="Include" />
+                      <e p="index.metadata.json" t="Include" />
+                      <e p="module.d.ts" t="Include" />
+                      <e p="public-api.d.ts" t="Include" />
+                      <e p="server-match-media.d.ts" t="Include" />
+                      <e p="server-provider.d.ts" t="Include" />
+                    </e>
+                    <e p="utils" t="Include">
+                      <e p="auto-prefixer.d.ts" t="Include" />
+                      <e p="layout-validator.d.ts" t="Include" />
+                      <e p="object-extend.d.ts" t="Include" />
+                    </e>
+                    <e p="version.d.ts" t="Include" />
+                  </e>
+                  <e p="extended" t="Include">
+                    <e p="class" t="Include">
+                      <e p="class.d.ts" t="Include" />
+                    </e>
+                    <e p="img-src" t="Include">
+                      <e p="img-src.d.ts" t="Include" />
+                    </e>
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="module.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="show-hide" t="Include">
+                      <e p="show-hide.d.ts" t="Include" />
+                    </e>
+                    <e p="style" t="Include">
+                      <e p="style-transforms.d.ts" t="Include" />
+                      <e p="style.d.ts" t="Include" />
+                    </e>
+                  </e>
+                  <e p="flex" t="Include">
+                    <e p="flex" t="Include">
+                      <e p="flex.d.ts" t="Include" />
+                    </e>
+                    <e p="flex-align" t="Include">
+                      <e p="flex-align.d.ts" t="Include" />
+                    </e>
+                    <e p="flex-fill" t="Include">
+                      <e p="flex-fill.d.ts" t="Include" />
+                    </e>
+                    <e p="flex-offset" t="Include">
+                      <e p="flex-offset.d.ts" t="Include" />
+                    </e>
+                    <e p="flex-order" t="Include">
+                      <e p="flex-order.d.ts" t="Include" />
+                    </e>
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="layout" t="Include">
+                      <e p="layout.d.ts" t="Include" />
+                    </e>
+                    <e p="layout-align" t="Include">
+                      <e p="layout-align.d.ts" t="Include" />
+                    </e>
+                    <e p="layout-gap" t="Include">
+                      <e p="layout-gap.d.ts" t="Include" />
+                    </e>
+                    <e p="module.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                  </e>
+                  <e p="grid" t="Include">
+                    <e p="align-columns" t="Include">
+                      <e p="align-columns.d.ts" t="Include" />
+                    </e>
+                    <e p="align-rows" t="Include">
+                      <e p="align-rows.d.ts" t="Include" />
+                    </e>
+                    <e p="area" t="Include">
+                      <e p="area.d.ts" t="Include" />
+                    </e>
+                    <e p="areas" t="Include">
+                      <e p="areas.d.ts" t="Include" />
+                    </e>
+                    <e p="auto" t="Include">
+                      <e p="auto.d.ts" t="Include" />
+                    </e>
+                    <e p="column" t="Include">
+                      <e p="column.d.ts" t="Include" />
+                    </e>
+                    <e p="columns" t="Include">
+                      <e p="columns.d.ts" t="Include" />
+                    </e>
+                    <e p="gap" t="Include">
+                      <e p="gap.d.ts" t="Include" />
+                    </e>
+                    <e p="grid-align" t="Include">
+                      <e p="grid-align.d.ts" t="Include" />
+                    </e>
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="module.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="row" t="Include">
+                      <e p="row.d.ts" t="Include" />
+                    </e>
+                    <e p="rows" t="Include">
+                      <e p="rows.d.ts" t="Include" />
+                    </e>
+                  </e>
+                  <e p="index.d.ts" t="Include" />
+                  <e p="index.metadata.json" t="Include" />
+                  <e p="module.d.ts" t="Include" />
+                  <e p="public-api.d.ts" t="Include" />
+                  <e p="server" t="Include">
+                    <e p="index.d.ts" t="Include" />
+                    <e p="index.metadata.json" t="Include" />
+                    <e p="module.d.ts" t="Include" />
+                    <e p="public-api.d.ts" t="Include" />
+                    <e p="server-match-media.d.ts" t="Include" />
+                    <e p="server-provider.d.ts" t="Include" />
+                  </e>
+                  <e p="utils" t="Include">
+                    <e p="auto-prefixer.d.ts" t="Include" />
+                    <e p="layout-validator.d.ts" t="Include" />
+                    <e p="object-extend.d.ts" t="Include" />
+                  </e>
+                  <e p="version.d.ts" t="Include" />
+                </e>
+              </e>
+              <e p="forms" t="IncludeRecursive" />
+              <e p="material" t="IncludeRecursive" />
+              <e p="platform-browser" t="IncludeRecursive" />
+              <e p="platform-browser-dynamic" t="IncludeRecursive" />
+              <e p="router" t="IncludeRecursive" />
+            </e>
+            <e p="@angular-devkit\architect" t="IncludeRecursive" />
+            <e p="@angular-devkit\build-angular" t="IncludeRecursive" />
+            <e p="@angular-devkit\build-optimizer" t="IncludeRecursive" />
+            <e p="@angular-devkit\build-webpack" t="IncludeRecursive" />
+            <e p="@angular-devkit\core" t="IncludeRecursive" />
+            <e p="@angular-devkit\schematics" t="IncludeRecursive" />
+            <e p="@babel\parser" t="IncludeRecursive" />
+            <e p="@babel\types" t="IncludeRecursive" />
+            <e p="@graphql-codegen\cli" t="IncludeRecursive" />
+            <e p="@graphql-codegen\core" t="IncludeRecursive" />
+            <e p="@graphql-codegen\plugin-helpers" t="IncludeRecursive" />
+            <e p="@graphql-codegen\typescript" t="IncludeRecursive" />
+            <e p="@graphql-codegen\typescript-apollo-angular" t="IncludeRecursive" />
+            <e p="@graphql-codegen\typescript-operations" t="IncludeRecursive" />
+            <e p="@graphql-codegen\visitor-plugin-common" t="IncludeRecursive" />
+            <e p="@graphql-toolkit\common" t="IncludeRecursive" />
+            <e p="@graphql-toolkit\graphql-file-loader" t="IncludeRecursive" />
+            <e p="@graphql-toolkit\json-file-loader" t="IncludeRecursive" />
+            <e p="@graphql-toolkit\schema-merging" t="IncludeRecursive" />
+            <e p="@graphql-toolkit\url-loader" t="IncludeRecursive" />
+            <e p="@kamilkisiela\graphql-tools" t="IncludeRecursive" />
+            <e p="@ngtools\webpack" t="IncludeRecursive" />
+            <e p="@types" t="IncludeRecursive">
+              <e p="caseless" t="IncludeRecursive" />
+              <e p="events" t="IncludeRecursive" />
+              <e p="jasmine" t="IncludeRecursive" />
+              <e p="jasminewd2" t="IncludeRecursive" />
+              <e p="minimatch" t="IncludeRecursive" />
+              <e p="node" t="IncludeRecursive" />
+              <e p="source-list-map" t="IncludeRecursive" />
+              <e p="tough-cookie" t="IncludeRecursive" />
+            </e>
+            <e p="@wry\context" t="IncludeRecursive" />
+            <e p="@wry\equality" t="IncludeRecursive" />
+            <e p="ajv" t="IncludeRecursive" />
+            <e p="apollo-angular" t="IncludeRecursive" />
+            <e p="apollo-angular-link-http" t="IncludeRecursive" />
+            <e p="apollo-angular-link-http-common" t="IncludeRecursive" />
+            <e p="apollo-cache" t="IncludeRecursive" />
+            <e p="apollo-cache-inmemory" t="IncludeRecursive" />
+            <e p="apollo-client" t="IncludeRecursive" />
+            <e p="apollo-link" t="IncludeRecursive" />
+            <e p="apollo-utilities" t="IncludeRecursive" />
+            <e p="blocking-proxy" t="IncludeRecursive" />
+            <e p="camel-case" t="IncludeRecursive" />
+            <e p="canonical-path" t="IncludeRecursive" />
+            <e p="chalk" t="IncludeRecursive" />
+            <e p="change-case" t="IncludeRecursive" />
+            <e p="chokidar" t="IncludeRecursive" />
+            <e p="codelyzer" t="IncludeRecursive" />
+            <e p="commander" t="IncludeRecursive" />
+            <e p="constant-case" t="IncludeRecursive" />
+            <e p="cross-fetch" t="IncludeRecursive" />
+            <e p="dependency-graph" t="IncludeRecursive" />
+            <e p="deprecated-decorator" t="IncludeRecursive" />
+            <e p="dot-case" t="IncludeRecursive" />
+            <e p="es6-promise" t="IncludeRecursive" />
+            <e p="fast-deep-equal" t="IncludeRecursive" />
+            <e p="form-data" t="IncludeRecursive" />
+            <e p="Graphql" t="IncludeRecursive" />
+            <e p="graphql-cli" t="IncludeRecursive" />
+            <e p="graphql-config" t="IncludeRecursive" />
+            <e p="graphql-import" t="IncludeRecursive" />
+            <e p="graphql-tag" t="IncludeRecursive" />
+            <e p="graphql-tag-pluck" t="IncludeRecursive" />
+            <e p="graphql-toolkit" t="IncludeRecursive" />
+            <e p="graphql-tools" t="IncludeRecursive" />
+            <e p="header-case" t="IncludeRecursive" />
+            <e p="is-lower-case" t="IncludeRecursive" />
+            <e p="is-upper-case" t="IncludeRecursive" />
+            <e p="iterall" t="IncludeRecursive" />
+            <e p="jasmine-core" t="IncludeRecursive" />
+            <e p="jasmine-spec-reporter" t="IncludeRecursive" />
+            <e p="jest-worker" t="IncludeRecursive" />
+            <e p="karma" t="IncludeRecursive" />
+            <e p="karma-chrome-launcher" t="IncludeRecursive" />
+            <e p="karma-coverage-istanbul-reporter" t="IncludeRecursive" />
+            <e p="karma-jasmine" t="IncludeRecursive" />
+            <e p="karma-jasmine-html-reporter" t="IncludeRecursive" />
+            <e p="license-webpack-plugin" t="IncludeRecursive" />
+            <e p="lower-case" t="IncludeRecursive" />
+            <e p="lower-case-first" t="IncludeRecursive" />
+            <e p="magic-string" t="IncludeRecursive" />
+            <e p="ngx-cookie-service" t="IncludeRecursive" />
+            <e p="no-case" t="IncludeRecursive" />
+            <e p="npm-run-all" t="IncludeRecursive" />
+            <e p="optimism" t="IncludeRecursive" />
+            <e p="param-case" t="IncludeRecursive" />
+            <e p="pascal-case" t="IncludeRecursive" />
+            <e p="path-case" t="IncludeRecursive" />
+            <e p="portfinder" t="IncludeRecursive" />
+            <e p="postcss" t="IncludeRecursive" />
+            <e p="protractor" t="IncludeRecursive" />
+            <e p="reflect-metadata" t="IncludeRecursive" />
+            <e p="rxjs" t="IncludeRecursive" />
+            <e p="sentence-case" t="IncludeRecursive" />
+            <e p="should" t="IncludeRecursive" />
+            <e p="snake-case" t="IncludeRecursive" />
+            <e p="source-map" t="IncludeRecursive" />
+            <e p="sourcemap-codec" t="IncludeRecursive" />
+            <e p="swap-case" t="IncludeRecursive" />
+            <e p="symbol-observable" t="IncludeRecursive" />
+            <e p="terser" t="IncludeRecursive" />
+            <e p="title-case" t="IncludeRecursive" />
+            <e p="tree-kill" t="IncludeRecursive" />
+            <e p="ts-invariant" t="IncludeRecursive" />
+            <e p="ts-log" t="IncludeRecursive" />
+            <e p="ts-node" t="IncludeRecursive" />
+            <e p="tslib" t="IncludeRecursive" />
+            <e p="tslint" t="IncludeRecursive" />
+            <e p="upath" t="IncludeRecursive" />
+            <e p="upper-case" t="IncludeRecursive" />
+            <e p="upper-case-first" t="IncludeRecursive" />
+            <e p="uri-js" t="IncludeRecursive" />
+            <e p="webdriver-js-extender" t="IncludeRecursive" />
+            <e p="worker-farm" t="IncludeRecursive" />
+            <e p="zen-observable-ts" t="IncludeRecursive" />
+            <e p="zone.js" t="IncludeRecursive" />
           </e>
-          <e p="node_modules\@wry\context" t="IncludeRecursive" />
-          <e p="node_modules\@wry\equality" t="IncludeRecursive" />
-          <e p="node_modules\ajv" t="IncludeRecursive" />
-          <e p="node_modules\apollo-angular" t="IncludeRecursive" />
-          <e p="node_modules\apollo-angular-link-http" t="IncludeRecursive" />
-          <e p="node_modules\apollo-angular-link-http-common" t="IncludeRecursive" />
-          <e p="node_modules\apollo-cache" t="IncludeRecursive" />
-          <e p="node_modules\apollo-cache-inmemory" t="IncludeRecursive" />
-          <e p="node_modules\apollo-client" t="IncludeRecursive" />
-          <e p="node_modules\apollo-link" t="IncludeRecursive" />
-          <e p="node_modules\apollo-utilities" t="IncludeRecursive" />
-          <e p="node_modules\blocking-proxy" t="IncludeRecursive" />
-          <e p="node_modules\camel-case" t="IncludeRecursive" />
-          <e p="node_modules\canonical-path" t="IncludeRecursive" />
-          <e p="node_modules\chalk" t="IncludeRecursive" />
-          <e p="node_modules\change-case" t="IncludeRecursive" />
-          <e p="node_modules\chokidar" t="IncludeRecursive" />
-          <e p="node_modules\codelyzer" t="IncludeRecursive" />
-          <e p="node_modules\commander" t="IncludeRecursive" />
-          <e p="node_modules\constant-case" t="IncludeRecursive" />
-          <e p="node_modules\cross-fetch" t="IncludeRecursive" />
-          <e p="node_modules\dependency-graph" t="IncludeRecursive" />
-          <e p="node_modules\deprecated-decorator" t="IncludeRecursive" />
-          <e p="node_modules\dot-case" t="IncludeRecursive" />
-          <e p="node_modules\es6-promise" t="IncludeRecursive" />
-          <e p="node_modules\fast-deep-equal" t="IncludeRecursive" />
-          <e p="node_modules\form-data" t="IncludeRecursive" />
-          <e p="node_modules\Graphql" t="IncludeRecursive" />
-          <e p="node_modules\graphql-cli" t="IncludeRecursive" />
-          <e p="node_modules\graphql-config" t="IncludeRecursive" />
-          <e p="node_modules\graphql-import" t="IncludeRecursive" />
-          <e p="node_modules\graphql-tag" t="IncludeRecursive" />
-          <e p="node_modules\graphql-tag-pluck" t="IncludeRecursive" />
-          <e p="node_modules\graphql-toolkit" t="IncludeRecursive" />
-          <e p="node_modules\graphql-tools" t="IncludeRecursive" />
-          <e p="node_modules\header-case" t="IncludeRecursive" />
-          <e p="node_modules\is-lower-case" t="IncludeRecursive" />
-          <e p="node_modules\is-upper-case" t="IncludeRecursive" />
-          <e p="node_modules\iterall" t="IncludeRecursive" />
-          <e p="node_modules\jasmine-core" t="IncludeRecursive" />
-          <e p="node_modules\jasmine-spec-reporter" t="IncludeRecursive" />
-          <e p="node_modules\jest-worker" t="IncludeRecursive" />
-          <e p="node_modules\karma" t="IncludeRecursive" />
-          <e p="node_modules\karma-chrome-launcher" t="IncludeRecursive" />
-          <e p="node_modules\karma-coverage-istanbul-reporter" t="IncludeRecursive" />
-          <e p="node_modules\karma-jasmine" t="IncludeRecursive" />
-          <e p="node_modules\karma-jasmine-html-reporter" t="IncludeRecursive" />
-          <e p="node_modules\license-webpack-plugin" t="IncludeRecursive" />
-          <e p="node_modules\lower-case" t="IncludeRecursive" />
-          <e p="node_modules\lower-case-first" t="IncludeRecursive" />
-          <e p="node_modules\magic-string" t="IncludeRecursive" />
-          <e p="node_modules\ngx-cookie-service" t="IncludeRecursive" />
-          <e p="node_modules\no-case" t="IncludeRecursive" />
-          <e p="node_modules\npm-run-all" t="IncludeRecursive" />
-          <e p="node_modules\optimism" t="IncludeRecursive" />
-          <e p="node_modules\param-case" t="IncludeRecursive" />
-          <e p="node_modules\pascal-case" t="IncludeRecursive" />
-          <e p="node_modules\path-case" t="IncludeRecursive" />
-          <e p="node_modules\portfinder" t="IncludeRecursive" />
-          <e p="node_modules\postcss" t="IncludeRecursive" />
-          <e p="node_modules\protractor" t="IncludeRecursive" />
-          <e p="node_modules\reflect-metadata" t="IncludeRecursive" />
-          <e p="node_modules\rxjs" t="IncludeRecursive" />
-          <e p="node_modules\sentence-case" t="IncludeRecursive" />
-          <e p="node_modules\should" t="IncludeRecursive" />
-          <e p="node_modules\snake-case" t="IncludeRecursive" />
-          <e p="node_modules\source-map" t="IncludeRecursive" />
-          <e p="node_modules\sourcemap-codec" t="IncludeRecursive" />
-          <e p="node_modules\swap-case" t="IncludeRecursive" />
-          <e p="node_modules\symbol-observable" t="IncludeRecursive" />
-          <e p="node_modules\terser" t="IncludeRecursive" />
-          <e p="node_modules\title-case" t="IncludeRecursive" />
-          <e p="node_modules\tree-kill" t="IncludeRecursive" />
-          <e p="node_modules\ts-invariant" t="IncludeRecursive" />
-          <e p="node_modules\ts-log" t="IncludeRecursive" />
-          <e p="node_modules\ts-node" t="IncludeRecursive" />
-          <e p="node_modules\tslib" t="IncludeRecursive" />
-          <e p="node_modules\tslint" t="IncludeRecursive" />
-          <e p="node_modules\upath" t="IncludeRecursive" />
-          <e p="node_modules\upper-case" t="IncludeRecursive" />
-          <e p="node_modules\upper-case-first" t="IncludeRecursive" />
-          <e p="node_modules\uri-js" t="IncludeRecursive" />
-          <e p="node_modules\webdriver-js-extender" t="IncludeRecursive" />
-          <e p="node_modules\worker-farm" t="IncludeRecursive" />
-          <e p="node_modules\zen-observable-ts" t="IncludeRecursive" />
-          <e p="node_modules\zone.js" t="IncludeRecursive" />
           <e p="package-lock.json" t="Include" />
           <e p="package.json" t="Include" />
           <e p="README.md" t="Include" />
@@ -237,7 +851,21 @@
               <e p="pages" t="Include">
                 <e p="common" t="Include" />
                 <e p="common-components" t="Include">
+                  <e p="comments-list" t="Include">
+                    <e p="comments-list.component.html" t="Include" />
+                    <e p="comments-list.component.scss" t="Include" />
+                    <e p="comments-list.component.spec.ts" t="Include" />
+                    <e p="comments-list.component.ts" t="Include" />
+                    <e p="getComments.graphql" t="Include" />
+                  </e>
                   <e p="common-components.module.ts" t="Include" />
+                  <e p="ingredients-list" t="Include">
+                    <e p="getRecipeIngredients.graphql" t="Include" />
+                    <e p="ingredients-list.component.html" t="Include" />
+                    <e p="ingredients-list.component.scss" t="Include" />
+                    <e p="ingredients-list.component.spec.ts" t="Include" />
+                    <e p="ingredients-list.component.ts" t="Include" />
+                  </e>
                   <e p="recipes-list" t="Include">
                     <e p="getUserRecipes.graphql" t="Include" />
                     <e p="recipes-list.component.html" t="Include" />
@@ -284,9 +912,7 @@
                   <e p="nav-menu.component.ts" t="Include" />
                 </e>
                 <e p="recipe-info" t="Include">
-                  <e p="getComments.graphql" t="Include" />
                   <e p="getRecipe.graphql" t="Include" />
-                  <e p="getRecipeIngredients.graphql" t="Include" />
                   <e p="recipe-info.component.html" t="Include" />
                   <e p="recipe-info.component.scss" t="Include" />
                   <e p="recipe-info.component.spec.ts" t="Include" />

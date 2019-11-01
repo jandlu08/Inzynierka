@@ -2,11 +2,7 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {Subscription} from 'rxjs';
 import {
-  Comment,
-  GetCommentsGQL,
   GetRecipeGQL,
-  GetRecipeIngredientsGQL,
-  Ingredient,
   Recipe
 } from '../../../generated/graphql';
 
@@ -18,24 +14,17 @@ import {
 export class RecipeInfoComponent implements OnInit, OnDestroy {
 
   recipe: Recipe;
-  comments: Comment[];
-  ingredients: Ingredient[];
-
+  loading: boolean = true;
   private subscription: Subscription = new Subscription();
 
   constructor(private route: ActivatedRoute,
               private getRecipeGQL: GetRecipeGQL,
-              private getCommentsGQL: GetCommentsGQL,
-              private getRecipeIngredientsGQL: GetRecipeIngredientsGQL) {
+             ) {
   }
 
   ngOnInit() {
     const recipeId = this.route.snapshot.paramMap.get('recipeId');
     this.getRecipe(recipeId);
-    this.getComments(recipeId);
-    this.getIngredients(recipeId);
-
-
   }
 
   ngOnDestroy() {
@@ -46,24 +35,11 @@ export class RecipeInfoComponent implements OnInit, OnDestroy {
     this.subscription.add(this.getRecipeGQL
       .fetch({recipeId})
       .subscribe(result => {
+        this.loading = result.loading;
         this.recipe = result.data.getRecipe;
-        console.warn( this.recipe)
+      }));
+  }
 
-      }));
-  }
-  private getComments(recipeId: string){
-    this.subscription.add(this.getCommentsGQL
-      .fetch({recipeId})
-      .subscribe(result => {
-        this.comments = result.data.getComments;
-      }));
-  }
-  private getIngredients(recipeId: string){
-    this.subscription.add(this.getRecipeIngredientsGQL
-      .fetch({recipeId})
-      .subscribe(result => {
-        this.ingredients = result.data.getIngredients;
-      }));
-  }
+
 
 }

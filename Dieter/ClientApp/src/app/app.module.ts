@@ -19,6 +19,7 @@ import {CommonTypesService} from './core/services/common-types.service';
 import { UserInfoComponent } from './pages/user-info/user-info.component';
 import { RecipeInfoComponent } from './pages/recipe-info/recipe-info.component';
 import {CommonComponentsModule} from './pages/common-components/common-components.module';
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {CommonComponentsModule} from './pages/common-components/common-component
     RegisterComponent,
     MainPageComponent,
     UserInfoComponent,
-    RecipeInfoComponent
+    RecipeInfoComponent,
+
   ],
   imports: [
     AppRoutingModule,
@@ -40,6 +42,7 @@ import {CommonComponentsModule} from './pages/common-components/common-component
     FormsModule,
     ModalsModule,
     CommonComponentsModule,
+    FlexLayoutModule,
   ],
   providers: [CookieService, UserService, CommonTypesService],
   bootstrap: [AppComponent]
