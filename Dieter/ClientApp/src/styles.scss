@@ -4,6 +4,10 @@
 @import "src/app/app.component";
 @import "src/app/pages/modals/add-ingredient/add-ingredient.component";
 @import "src/app/pages/modals/add-recipe/add-recipe.component";
+@import "src/app/pages/user-info/user-info.component";
+@import 'app/pages/common-components/recipes-list/recipes-list.component';
+@import '~@angular/material/theming';
+@import 'src/styles/variables';
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

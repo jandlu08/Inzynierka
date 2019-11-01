@@ -127,6 +127,7 @@ export type DieterQuery = {
   getRecipe?: Maybe<Recipe>,
   getRecipes?: Maybe<Array<Maybe<Recipe>>>,
   getUser?: Maybe<User>,
+  getUserRecipes?: Maybe<Array<Maybe<Recipe>>>,
   getUsers?: Maybe<Array<Maybe<User>>>,
 };
 
@@ -166,6 +167,11 @@ export type DieterQueryGetRecipesArgs = {
 
 export type DieterQueryGetUserArgs = {
   userId?: Maybe<Scalars['ID']>
+};
+
+
+export type DieterQueryGetUserRecipesArgs = {
+  userId: Scalars['ID']
 };
 
 export enum Difficulty {
@@ -354,18 +360,20 @@ export type RegisterUserMutation = (
   )> }
 );
 
-export type UsersQueryVariables = {};
+export type GetUserRecipesQueryVariables = {
+  userId: Scalars['ID']
+};
 
 
-export type UsersQuery = (
+export type GetUserRecipesQuery = (
   { __typename?: 'DieterQuery' }
-  & { getUsers: Maybe<Array<Maybe<(
-    { __typename?: 'User' }
-    & Pick<User, 'userId' | 'userName'>
-    & { comments: Maybe<Array<Maybe<(
-      { __typename?: 'Comment' }
-      & Pick<Comment, 'content'>
-    )>>> }
+  & { getUserRecipes: Maybe<Array<Maybe<(
+    { __typename?: 'Recipe' }
+    & Pick<Recipe, 'recipeId' | 'name' | 'calories' | 'difficulty' | 'estTime'>
+    & { rating: Maybe<(
+      { __typename?: 'Rating' }
+      & Pick<Rating, 'downVotes' | 'upVotes'>
+    )> }
   )>>> }
 );
 
@@ -455,14 +463,18 @@ export const RegisterUserDocument = gql`
     document = RegisterUserDocument;
     
   }
-export const UsersDocument = gql`
-    query Users {
-  getUsers {
-    userId
-    userName
-    comments {
-      content
+export const GetUserRecipesDocument = gql`
+    query getUserRecipes($userId: ID!) {
+  getUserRecipes(userId: $userId) {
+    recipeId
+    name
+    rating {
+      downVotes
+      upVotes
     }
+    calories
+    difficulty
+    estTime
   }
 }
     `;
@@ -470,7 +482,7 @@ export const UsersDocument = gql`
   @Injectable({
     providedIn: 'root'
   })
-  export class UsersGQL extends Apollo.Query<UsersQuery, UsersQueryVariables> {
-    document = UsersDocument;
+  export class GetUserRecipesGQL extends Apollo.Query<GetUserRecipesQuery, GetUserRecipesQueryVariables> {
+    document = GetUserRecipesDocument;
     
   }

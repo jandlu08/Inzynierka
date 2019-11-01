@@ -85,7 +85,7 @@
                   {{ingredient.name}} - {{ingredient.calories}} calories / 100g
                 </mat-list-option>
               </mat-selection-list>
-              <mat-paginator #dupa (page)="pageChangeEvent($event)"
+              <mat-paginator  (page)="pageChangeEvent($event)"
                 [length]="pageLength"
                 [pageSize]="pageSize"
                 [pageSizeOptions]="[5]">

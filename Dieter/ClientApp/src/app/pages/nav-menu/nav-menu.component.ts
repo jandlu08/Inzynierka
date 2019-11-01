@@ -64,6 +64,10 @@ export class NavMenuComponent implements OnInit, OnDestroy {
     })
   }
 
+  openUserInfo(){
+    this.router.navigateByUrl('/user');
+  }
+
 
 
 }

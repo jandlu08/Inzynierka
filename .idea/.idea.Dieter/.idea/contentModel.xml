@@ -286,6 +286,15 @@
               </e>
               <e p="graphql.module.ts" t="Include" />
               <e p="pages" t="Include">
+                <e p="common-components" t="Include">
+                  <e p="common-components.module.ts" t="Include" />
+                  <e p="recipes-list" t="Include">
+                    <e p="recipes-list.component.html" t="Include" />
+                    <e p="recipes-list.component.scss" t="Include" />
+                    <e p="recipes-list.component.spec.ts" t="Include" />
+                    <e p="recipes-list.component.ts" t="Include" />
+                  </e>
+                </e>
                 <e p="login" t="Include">
                   <e p="login.component.html" t="Include" />
                   <e p="login.component.scss" t="Include" />
@@ -330,8 +339,20 @@
                   <e p="register.component.ts" t="Include" />
                   <e p="registerUser.graphql" t="Include" />
                 </e>
+                <e p="user-info" t="Include">
+                  <e p="getUserRecipes.graphql" t="Include" />
+                  <e p="user-info.component.html" t="Include" />
+                  <e p="user-info.component.scss" t="Include" />
+                  <e p="user-info.component.spec.ts" t="Include" />
+                  <e p="user-info.component.ts" t="Include" />
+                </e>
               </e>
-              <e p="users.graphql" t="Include" />
+              <e p="recipe-info" t="Include">
+                <e p="recipe-info.component.html" t="Include" />
+                <e p="recipe-info.component.scss" t="Include" />
+                <e p="recipe-info.component.spec.ts" t="Include" />
+                <e p="recipe-info.component.ts" t="Include" />
+              </e>
             </e>
             <e p="assets" t="Include">
               <e p=".gitkeep" t="Include" />
@@ -347,6 +368,9 @@
             <e p="index.html" t="Include" />
             <e p="main.ts" t="Include" />
             <e p="polyfills.ts" t="Include" />
+            <e p="styles" t="Include">
+              <e p="variables.scss" t="Include" />
+            </e>
             <e p="styles.scss" t="Include" />
             <e p="test.ts" t="Include" />
           </e>

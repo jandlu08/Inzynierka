@@ -1,0 +1,31 @@
+
+app-user-info {
+  .mat-card-subtitle {
+    margin-bottom: 4px;
+  }
+
+  .mat-card-content {
+    margin-bottom: 14px;
+  }
+
+  .mat-card {
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 600px;
+  }
+
+  .user-info-card {
+    width: 15%;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .recipes-list-placeholder {
+    width: 75%;
+  }
+
+
+}

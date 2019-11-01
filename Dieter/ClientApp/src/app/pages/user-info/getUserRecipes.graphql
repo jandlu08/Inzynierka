@@ -1,0 +1,13 @@
+﻿query getUserRecipes($userId: ID!){
+  getUserRecipes(userId: $userId){
+    recipeId
+    name
+    rating{
+      downVotes
+      upVotes
+    }
+    calories
+    difficulty
+    estTime
+  }
+}

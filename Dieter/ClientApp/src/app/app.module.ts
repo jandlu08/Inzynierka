@@ -16,6 +16,9 @@ import {CookieService} from 'ngx-cookie-service';
 import {UserService} from './core/services/user.service';
 import {ModalsModule} from './pages/modals/modals.module';
 import {CommonTypesService} from './core/services/common-types.service';
+import { UserInfoComponent } from './pages/user-info/user-info.component';
+import { RecipeInfoComponent } from './recipe-info/recipe-info.component';
+import {CommonComponentsModule} from './pages/common-components/common-components.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,9 @@ import {CommonTypesService} from './core/services/common-types.service';
     LoginComponent,
     NavMenuComponent,
     RegisterComponent,
-    MainPageComponent
+    MainPageComponent,
+    UserInfoComponent,
+    RecipeInfoComponent
   ],
   imports: [
     AppRoutingModule,
@@ -34,6 +39,7 @@ import {CommonTypesService} from './core/services/common-types.service';
     HttpClientModule,
     FormsModule,
     ModalsModule,
+    CommonComponentsModule,
   ],
   providers: [CookieService, UserService, CommonTypesService],
   bootstrap: [AppComponent]

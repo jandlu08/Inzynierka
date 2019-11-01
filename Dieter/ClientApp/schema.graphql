@@ -32,6 +32,7 @@ type DieterQuery {
   getRecipe(recipeId: ID): Recipe
   getRecipes(amount: Int, calories: Int, offset: Int = 0): [Recipe]
   getUser(userId: ID): User
+  getUserRecipes(userId: ID!): [Recipe]
   getUsers: [User]
 }
 

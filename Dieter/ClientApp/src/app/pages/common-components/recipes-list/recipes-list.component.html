@@ -1,0 +1,29 @@
+<mat-card class="recipes-list-card">
+  <mat-card-title>User recipes</mat-card-title>
+  <mat-grid-list cols=6 rowHeight="50px"
+                 gutterSize="5px">
+    <mat-grid-tile [colspan]="1" [rowspan]="1">Name</mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">Calories</mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">Difficulty</mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">Est. time</mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">Up votes</mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">Down votes</mat-grid-tile>
+  </mat-grid-list>
+  <mat-grid-list *ngFor="let recipe of slicedRecipes" cols=6 rowHeight="50px"
+                 gutterSize="5px" class="mat-grid-list-recipes"
+                 (click)="openRecipeInfo(recipe.recipeId)">
+    <mat-grid-tile [colspan]="1" [rowspan]="1">{{recipe.name}}</mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">{{recipe.calories}} </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">{{recipe.difficulty.toString()}}</mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">{{recipe.estTime}}</mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">{{recipe.rating.upVotes}}</mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">{{recipe.rating.downVotes}}</mat-grid-tile>
+  </mat-grid-list>
+  <mat-card-footer>
+    <mat-paginator  (page)="pageChangeEvent($event)"
+                    [length]="pageLength"
+                    [pageSize]="pageSize"
+                    [pageSizeOptions]="[5,10]">
+    </mat-paginator>
+  </mat-card-footer>
+</mat-card>
