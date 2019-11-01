@@ -1,0 +1,12 @@
+﻿query getUserInfo($userId: ID){
+  getUser(userId: $userId){
+    email
+    firstName
+    lastActive
+    lastName
+    registrationDate
+    sex
+    userId
+    userName
+  }
+}

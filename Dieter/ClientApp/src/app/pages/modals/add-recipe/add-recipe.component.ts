@@ -28,6 +28,7 @@ export class AddRecipeComponent implements OnInit, OnDestroy {
   pageSize: number = 5;
   pageLength: number = 5;
   ingredientType: IngredientType = IngredientType.Other;
+  loading: boolean = true;
 
   private subscription: Subscription = new Subscription();
   private pageIndex: number = 0;
@@ -66,8 +67,6 @@ export class AddRecipeComponent implements OnInit, OnDestroy {
     this.savedIngredients.forEach(ingredient => {
       this.ingredientIds.push(ingredient.ingredientId);
     });
-    console.warn(this.savedIngredients);
-    console.warn(this.ingredientIds);
     this.subscription.add(
       this.addRecipeGQL
         .mutate({
@@ -88,7 +87,7 @@ export class AddRecipeComponent implements OnInit, OnDestroy {
 
 
   cancel() {
-    this.dialogRef.close({data: true});
+    this.dialogRef.close({data: false});
 
   }
 
@@ -136,6 +135,7 @@ export class AddRecipeComponent implements OnInit, OnDestroy {
     this.subscription.add(
       this.getIngredientsGQL.fetch().subscribe(
         result => {
+          this.loading = result.loading;
           this.ingredients = result.data.getIngredients;
           this.slicedIngredients = this.ingredients.filter(x => x.ingredientType === this.ingredientType)
             .slice(((0 + 1) - 1) * this.pageSize).slice(0, this.pageSize);

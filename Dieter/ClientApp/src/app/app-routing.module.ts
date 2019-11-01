@@ -5,7 +5,7 @@ import {RegisterComponent} from './pages/register/register.component';
 import {MainPageComponent} from './pages/main-page/main-page.component';
 import {AuthGuard} from './core/guards/auth.guard';
 import {UserInfoComponent} from './pages/user-info/user-info.component';
-import {RecipeInfoComponent} from './recipe-info/recipe-info.component';
+import {RecipeInfoComponent} from './pages/recipe-info/recipe-info.component';
 
 
 const routes: Routes = [
@@ -14,7 +14,7 @@ const routes: Routes = [
   {path: 'main', canActivate: [AuthGuard],
     component: MainPageComponent},
   {path: '', redirectTo: '/login', pathMatch: 'full'},
-  {path: 'user',  canActivate: [AuthGuard], component: UserInfoComponent},
+  {path: 'user/:userId',  canActivate: [AuthGuard], component: UserInfoComponent},
   {path:'recipe/:recipeId', canActivate:[AuthGuard], component:RecipeInfoComponent}
 ];
 

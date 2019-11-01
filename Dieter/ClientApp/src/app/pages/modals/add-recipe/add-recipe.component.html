@@ -17,14 +17,15 @@
             <td>
               <mat-form-field class="fill-dialog">
                 <textarea matInput [(ngModel)]="recipe.description" placeholder="Description" type="text"
-                          name="description" required></textarea>
+                          name="description" required
+                          matTextareaAutosize matAutosizeMinRows=10 matAutosizeMaxRows=20></textarea>
               </mat-form-field>
             </td>
           </tr>
           <tr>
             <td>
               <mat-form-field class="fill-dialog">
-                <input matInput [(ngModel)]="recipe.calories" placeholder="Calories / 100g" type="number"
+                <input matInput [(ngModel)]="recipe.calories" placeholder="Calories" type="number"
                        name="calories" required min="0">
               </mat-form-field>
             </td>
@@ -77,7 +78,8 @@
             </td>
           </tr>
           <tr>
-            <td>
+            <mat-spinner color="accent" *ngIf="loading"></mat-spinner>
+            <td *ngIf="!loading">
               <mat-selection-list #ingredientsList [(ngModel)]="selectedIngredients"
                                   class="list-placeholder"
                                   (ngModelChange)="onNgModelChange($event)" [ngModelOptions]="{standalone: true}">

@@ -1,0 +1,13 @@
+﻿query getRecipe($recipeId: ID){
+  getRecipe(recipeId: $recipeId){
+    recipeId
+    description
+    calories
+    difficulty
+    estTime
+    author{
+      userName
+    }
+
+  }
+}

@@ -16,7 +16,10 @@ app-root{
     display: flex;
     justify-content: space-between;
   }
-
-
+  .mat-spinner{
+    position: relative;
+    margin-left: 50%;
+    margin-top: 20%;
+  }
 
 }

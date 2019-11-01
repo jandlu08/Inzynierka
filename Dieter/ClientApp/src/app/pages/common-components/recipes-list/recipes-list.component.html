@@ -1,11 +1,12 @@
-<mat-card class="recipes-list-card">
+<mat-spinner color="accent" *ngIf="loading"></mat-spinner>
+<mat-card class="recipes-list-card" *ngIf="!loading">
   <mat-card-title>User recipes</mat-card-title>
   <mat-grid-list cols=6 rowHeight="50px"
                  gutterSize="5px">
     <mat-grid-tile [colspan]="1" [rowspan]="1">Name</mat-grid-tile>
     <mat-grid-tile [colspan]="1" [rowspan]="1">Calories</mat-grid-tile>
     <mat-grid-tile [colspan]="1" [rowspan]="1">Difficulty</mat-grid-tile>
-    <mat-grid-tile [colspan]="1" [rowspan]="1">Est. time</mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">Est. time [min]</mat-grid-tile>
     <mat-grid-tile [colspan]="1" [rowspan]="1">Up votes</mat-grid-tile>
     <mat-grid-tile [colspan]="1" [rowspan]="1">Down votes</mat-grid-tile>
   </mat-grid-list>

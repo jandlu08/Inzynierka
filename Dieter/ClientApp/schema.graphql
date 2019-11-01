@@ -25,10 +25,10 @@ type DieterMutation {
 }
 
 type DieterQuery {
-  getComment(commentId: Int): Comment
-  getComments(recipeId: Int): [Comment]
-  getIngredient(ingredientId: Int): Ingredient
-  getIngredients(ingredientType: IngredientType, recipeId: Int): [Ingredient]
+  getComment(commentId: ID): Comment
+  getComments(recipeId: ID): [Comment]
+  getIngredient(ingredientId: ID): Ingredient
+  getIngredients(ingredientType: IngredientType, recipeId: ID): [Ingredient]
   getRecipe(recipeId: ID): Recipe
   getRecipes(amount: Int, calories: Int, offset: Int = 0): [Recipe]
   getUser(userId: ID): User

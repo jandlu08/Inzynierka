@@ -16,6 +16,7 @@ export class RecipesListComponent implements OnInit, OnDestroy {
   pageSize: number = 5;
   pageLength: number = 5;
   slicedRecipes: Array<Recipe> = new Array<Recipe>();
+  loading: boolean = true;
 
   private subscription: Subscription = new Subscription();
 
@@ -44,6 +45,7 @@ export class RecipesListComponent implements OnInit, OnDestroy {
     this.subscription.add(
       this.getUserRecipesGQL.fetch({userId:this.userId})
         .subscribe(result =>{
+          this.loading = result.loading;
           this.recipes = result.data.getUserRecipes;
           this.slicedRecipes = this.recipes.slice(((0 + 1) - 1) * this.pageSize).slice(0, this.pageSize);
           this.pageLength = this.recipes.length;

@@ -1,0 +1,15 @@
+﻿query getComments($recipeId: ID){
+  getComments(recipeId:$recipeId){
+    author{
+      userId
+      userName
+    }
+    commentId
+    content
+    publicationDate
+    rating{
+      upVotes
+      downVotes
+    }
+  }
+}

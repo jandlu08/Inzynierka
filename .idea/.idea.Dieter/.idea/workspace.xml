@@ -4,18 +4,26 @@
     <list default="true" id="490b1499-0315-47b0-85b5-49b079606736" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/API/Models/GraphQL/Query/DieterQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/API/Models/GraphQL/Query/DieterQuery.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/schema.graphql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/schema.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/core/material.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/core/material.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/common-components/recipes-list/recipes-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/common-components/recipes-list/recipes-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/common-components/recipes-list/recipes-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/common-components/recipes-list/recipes-list.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/modals/add-recipe/add-recipe.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/modals/add-recipe/add-recipe.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/nav-menu/nav-menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/nav-menu/nav-menu.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/modals/add-recipe/add-recipe.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/modals/add-recipe/add-recipe.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/nav-menu/nav-menu.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/nav-menu/nav-menu.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/users.graphql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/user-info/getUserRecipes.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/common-components/recipes-list/getUserRecipes.graphql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/user-info/user-info.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/user-info/user-info.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/user-info/user-info.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/user-info/user-info.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/user-info/user-info.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/user-info/user-info.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/recipe-info/recipe-info.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/recipe-info/recipe-info.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/recipe-info/recipe-info.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/recipe-info/recipe-info.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/recipe-info/recipe-info.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/recipe-info/recipe-info.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/recipe-info/recipe-info.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/recipe-info/recipe-info.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/generated/graphql.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/generated/graphql.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/Dieter.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/Dieter.csproj" afterDir="false" />
     </list>
     <list id="f107c17d-2d2f-482b-8382-8cd0796d5b43" name="add all queries (for now)" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -170,14 +178,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/nav-menu/nav-menu.component.html" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/register/register.component.ts" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/login/login.component.ts" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/register/register.component.scss" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/login/login.component.scss" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/register/register.component.html" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/modals/add-ingredient/add-ingredient.component.scss" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/modals/add-ingredient/addIngredient.graphql" />
         <option value="$PROJECT_DIR$/Dieter/API/Models/Enums/VoteType.cs" />
         <option value="$PROJECT_DIR$/Dieter/API/Models/UserVote.cs" />
@@ -196,31 +196,39 @@
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/modals/add-ingredient/add-ingredient.component.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/modals/add-ingredient/add-ingredient.component.html" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/modals/modals.module.ts" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.component.scss" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/modals/add-recipe/getIngredients.graphql" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/modals/add-recipe/add-recipe.component.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/modals/add-recipe/add-recipe.component.scss" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/modals/add-recipe/add-recipe.component.html" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/nav-menu/nav-menu.component.html" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/nav-menu/nav-menu.component.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/user-info/getRecipes.graphql" />
-        <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/Query/DieterQuery.cs" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/schema.json.graphql" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/user-info/addUserRecipes.graphql" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/user-info/getUserRecipes.graphql" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/core/material.module.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/styles/variables.scss" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/common/common.module.ts" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/styles.scss" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/common-components/recipes-list/recipes-list.component.html" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/common-components/common-components.module.ts" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/user-info/user-info.component.ts" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/common-components/recipes-list/recipes-list.component.ts" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/user-info/user-info.component.html" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/common-components/recipes-list/recipes-list.component.scss" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/recipe-info/getRecipe.graphql" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/recipe-info/getComments.graphql" />
+        <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/Query/DieterQuery.cs" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/schema.json.graphql" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/recipe-info/getIngredients.graphql" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/recipe-info/getRecipeIngredients.graphql" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/recipe-info/recipe-info.component.ts" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/recipe-info/recipe-info.component.html" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/nav-menu/nav-menu.component.ts" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/user-info/getUser.graphql" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/user-info/getUserInfo.graphql" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/user-info/user-info.component.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/user-info/user-info.component.scss" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.component.scss" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/user-info/user-info.component.html" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/common-components/recipes-list/recipes-list.component.html" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/common-components/recipes-list/recipes-list.component.ts" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/modals/add-recipe/add-recipe.component.ts" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/modals/add-recipe/add-recipe.component.html" />
       </list>
     </option>
   </component>
@@ -239,7 +247,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
-    <property name="ts.external.directory.path" value="C:\Users\Janusz\RiderProjects\Dieter\Dieter\ClientApp\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\JetBrains Rider 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -359,7 +367,8 @@
       <workItem from="1572456116442" duration="9707000" />
       <workItem from="1572468634208" duration="4514000" />
       <workItem from="1572597997291" duration="16147000" />
-      <workItem from="1572618290760" duration="12594000" />
+      <workItem from="1572618290760" duration="15336000" />
+      <workItem from="1572634868097" duration="1911000" />
     </task>
     <task id="LOCAL-00001" summary="add getUsers query">
       <created>1571733525858</created>
@@ -543,7 +552,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572630949738</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="add userInfo and recipe list">
+      <created>1572632068148</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1572632068148</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -588,7 +604,8 @@
     <MESSAGE value="fix get ingredients query" />
     <MESSAGE value="add recipe add" />
     <MESSAGE value="add getUserRecipes query" />
-    <option name="LAST_COMMIT_MESSAGE" value="add getUserRecipes query" />
+    <MESSAGE value="add userInfo and recipe list" />
+    <option name="LAST_COMMIT_MESSAGE" value="add userInfo and recipe list" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,4 +1,5 @@
-<div class="card-container">
+<mat-spinner  color="accent" *ngIf="loading"></mat-spinner>
+<div class="card-container" *ngIf="!loading">
   <mat-card class="user-info-card">
     <mat-card-title>User info</mat-card-title>
     <mat-card-subtitle>Username</mat-card-subtitle>

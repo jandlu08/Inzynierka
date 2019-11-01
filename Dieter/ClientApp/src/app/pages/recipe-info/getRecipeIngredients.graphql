@@ -1,0 +1,9 @@
+﻿query getRecipeIngredients($recipeId: ID) {
+  getIngredients(recipeId: $recipeId){
+    calories
+    description
+    ingredientId
+    ingredientType
+    name
+  }
+}

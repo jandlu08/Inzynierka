@@ -102,7 +102,7 @@ namespace Dieter.API.Models.GraphQL.Query
             Field<CommentType>(
                 "getComment",
                 arguments: new QueryArguments(
-                    new QueryArgument<IntGraphType> {Name = "commentId"}),
+                    new QueryArgument<IdGraphType> {Name = "commentId"}),
                 resolve: context =>
                 {
                     var commentId = context.GetArgument<int?>("commentId");
@@ -112,7 +112,7 @@ namespace Dieter.API.Models.GraphQL.Query
             Field<ListGraphType<CommentType>>(
                 "getComments",
                 arguments: new QueryArguments(
-                    new QueryArgument<IntGraphType> {Name = "recipeId"}),
+                    new QueryArgument<IdGraphType> {Name = "recipeId"}),
                 resolve: context =>
                 {
                     var recipeId = context.GetArgument<int?>("recipeId");
@@ -123,7 +123,7 @@ namespace Dieter.API.Models.GraphQL.Query
             Field<IngredientType>(
                 "getIngredient",
                 arguments: new QueryArguments(
-                    new QueryArgument<IntGraphType> {Name = "ingredientId"}),
+                    new QueryArgument<IdGraphType> {Name = "ingredientId"}),
                 resolve: context =>
                 {
                     var ingredientId = context.GetArgument<int?>("ingredientId");
@@ -133,7 +133,7 @@ namespace Dieter.API.Models.GraphQL.Query
             Field<ListGraphType<IngredientType>>(
                 "getIngredients",
                 arguments: new QueryArguments(
-                    new QueryArgument<IntGraphType> {Name = "recipeId"},
+                    new QueryArgument<IdGraphType> {Name = "recipeId"},
                     new QueryArgument<IngredientTypeEnum> {Name = "ingredientType"}),
                 resolve: context =>
                 {
