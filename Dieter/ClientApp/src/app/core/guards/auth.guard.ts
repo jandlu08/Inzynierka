@@ -21,7 +21,8 @@ export class AuthGuard implements CanActivate, CanActivateChild, OnInit {
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
     this.userService.refreshCookies();
-    this.dietGeneratorService.refreshCookies();
+    if (this.dietGeneratorService.calories != null)
+      this.dietGeneratorService.refreshCookies();
     return this.userService.isLogged;
   }
 
@@ -29,7 +30,8 @@ export class AuthGuard implements CanActivate, CanActivateChild, OnInit {
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
     this.userService.refreshCookies();
-    this.dietGeneratorService.refreshCookies();
+    if (this.dietGeneratorService.calories != null)
+      this.dietGeneratorService.refreshCookies();
     return this.userService.isLogged;
   }
 }

@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="490b1499-0315-47b0-85b5-49b079606736" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/core/guards/auth.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/core/guards/auth.guard.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/core/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/core/services/user.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/generate-diet/generate-diet.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/generate-diet/generate-diet.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/generate-diet/generate-diet.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/generate-diet/generate-diet.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/login/login.component.ts" afterDir="false" />
     </list>
     <list id="f107c17d-2d2f-482b-8382-8cd0796d5b43" name="add all queries (for now)" comment="" />
@@ -209,11 +205,11 @@
         <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/Query/DieterQuery.cs" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/generate-diet/generate-diet.component.scss" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/generate-diet/generate-diet.component.html" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/login/login.component.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/core/services/user.service.ts" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/core/guards/auth.guard.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/core/services/diet-generator.service.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/generate-diet/generate-diet.component.ts" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/login/login.component.ts" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/core/guards/auth.guard.ts" />
       </list>
     </option>
   </component>

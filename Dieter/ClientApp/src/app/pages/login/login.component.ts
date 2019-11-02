@@ -5,6 +5,7 @@ import {
 import {Router} from '@angular/router';
 import {UserService} from '../../core/services/user.service';
 import {Subscription} from 'rxjs';
+import {DietGeneratorService} from '../../core/services/diet-generator.service';
 
 @Component({
   selector: 'app-login',
@@ -20,7 +21,8 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   constructor(private loginUserGQL: LoginUserGQL,
               private router: Router,
-              private userService: UserService) {
+              private userService: UserService,
+              private dietGeneratorService: DietGeneratorService) {
   }
 
   ngOnInit() {
@@ -36,6 +38,8 @@ export class LoginComponent implements OnInit, OnDestroy {
       .mutate({username: this.username, password: this.password})
       .subscribe(result => {
 
+        this.dietGeneratorService.changeAmount(0);
+        this.dietGeneratorService.changeCalories(0);
         this.userService.changeUser(result.data.loginUser);
         this.router.navigateByUrl('/main');
       }));
