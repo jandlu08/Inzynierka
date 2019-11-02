@@ -73,7 +73,7 @@ namespace Dieter.API.Models.GraphQL.Query
                     }
 
                     var allRecipes = db.Recipes
-                        .Where(x => x.Calories <= calories).ToList();
+                        .Where(x => x.Calories <= calories/amount).ToList();
 
                     var returnRecipes = new List<Recipe>();
                     var rnd = new Random();
@@ -85,12 +85,11 @@ namespace Dieter.API.Models.GraphQL.Query
                         {
                             returnRecipes.Add(recipe);
                             amount--;
-                            calories = -recipe.Calories;
+                            calories -= recipe.Calories;
                             allRecipes.RemoveAt(index);
                         }
                         else
                         {
-                            amount--;
                             allRecipes.RemoveAt(index);
                         }
                     }
