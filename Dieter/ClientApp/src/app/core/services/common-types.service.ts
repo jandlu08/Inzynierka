@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {Difficulty, IngredientType} from '../../../generated/graphql';
+import {Difficulty, IngredientType, VoteType} from '../../../generated/graphql';
 
 @Injectable({
   providedIn: 'root'
@@ -23,6 +23,11 @@ export class CommonTypesService {
     medium: Difficulty.Medium,
     hard: Difficulty.Hard,
     veryHard: Difficulty.VeryHard,
+  };
+
+  voteTypes = {
+    down: VoteType.Down,
+    up: VoteType.Up,
   };
 
   constructor() { }

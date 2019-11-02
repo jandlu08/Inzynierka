@@ -1,12 +1,28 @@
 <mat-spinner color="accent" *ngIf="loading"></mat-spinner>
-<mat-card *ngIf="!loading" >
-<div fxLayout="row wrap">
-      <mat-card  *ngFor="let comment of slicedComments" class="comment">
-        <mat-card-title>{{comment.author.userName}}</mat-card-title>
-        <mat-card-content>{{comment.content}}</mat-card-content>
-        <mat-card-footer>{{comment.publicationDate}}</mat-card-footer>
-      </mat-card>
-</div>
+<mat-card *ngIf="!loading">
+  <div fxLayout="row wrap">
+    <mat-card *ngFor="let comment of slicedComments" class="comment">
+      <div class="row">
+        <div class="col right">
+          <mat-card-title>{{comment.author.userName}}</mat-card-title>
+        </div>
+        <div class="col vote-container">
+          <div>{{comment.rating.upVotes}}</div>
+        </div>
+        <div class="col clickable" (click)="vote(commonTypes.voteTypes.up, comment)">
+          <svg-icon src="/assets/img/plus.svg" [svgStyle]="{ 'width.px':25 }"></svg-icon>
+        </div>
+        <div class="col vote-container">
+          <div>{{comment.rating.downVotes}}</div>
+        </div>
+        <div class="col clickable" (click)="vote(commonTypes.voteTypes.down, comment)">
+          <svg-icon src="/assets/img/minus.svg" [svgStyle]="{ 'width.px':25 }"></svg-icon>
+        </div>
+      </div>
+      <mat-card-content>{{comment.content}}</mat-card-content>
+      <mat-card-footer>{{comment.publicationDate}}</mat-card-footer>
+    </mat-card>
+  </div>
   <mat-paginator (page)="pageChangeEvent($event)"
                  [length]="pageLength"
                  [pageSize]="pageSize"

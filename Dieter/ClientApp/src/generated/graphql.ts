@@ -313,6 +313,22 @@ export type GetCommentsQuery = (
   )>>> }
 );
 
+export type VoteMutationVariables = {
+  userId: Scalars['ID'],
+  recipeId?: Maybe<Scalars['ID']>,
+  commentId?: Maybe<Scalars['ID']>,
+  voteType: VoteType
+};
+
+
+export type VoteMutation = (
+  { __typename?: 'DieterMutation' }
+  & { vote: Maybe<(
+    { __typename?: 'User' }
+    & Pick<User, 'userId'>
+  )> }
+);
+
 export type GetRecipeIngredientsQueryVariables = {
   recipeId?: Maybe<Scalars['ID']>
 };
@@ -464,6 +480,21 @@ export const GetCommentsDocument = gql`
   })
   export class GetCommentsGQL extends Apollo.Query<GetCommentsQuery, GetCommentsQueryVariables> {
     document = GetCommentsDocument;
+    
+  }
+export const VoteDocument = gql`
+    mutation vote($userId: ID!, $recipeId: ID, $commentId: ID, $voteType: VoteType!) {
+  vote(userId: $userId, recipeId: $recipeId, commentId: $commentId, voteType: $voteType) {
+    userId
+  }
+}
+    `;
+
+  @Injectable({
+    providedIn: 'root'
+  })
+  export class VoteGQL extends Apollo.Mutation<VoteMutation, VoteMutationVariables> {
+    document = VoteDocument;
     
   }
 export const GetRecipeIngredientsDocument = gql`

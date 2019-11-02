@@ -1,0 +1,5 @@
+﻿mutation vote($userId: ID!, $recipeId: ID, $commentId: ID, $voteType: VoteType!){
+  vote(userId: $userId,recipeId: $recipeId, commentId: $commentId, voteType: $voteType){
+    userId
+  }
+}

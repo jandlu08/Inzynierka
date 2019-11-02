@@ -103,738 +103,19 @@
           </e>
           <e p="karma.conf.js" t="Include" />
           <e p="node_modules" t="Include">
-            <e p=".cache" t="Include">
-              <e p="angular-build-dl" t="Include">
-                <e p="content-v2" t="Include">
-                  <e p="sha512" t="Include">
-                    <e p="14" t="Include">
-                      <e p="ee" t="Include">
-                        <e p="4513e6400d145831d5e0002d445b7ab0c82c4b325dee44d27eb78182d981ce299fdba3ddf5933a977cb3c605a8bfc341e7bea50aef2a756d975d2a1c91af" t="Include" />
-                      </e>
-                    </e>
-                    <e p="47" t="Include">
-                      <e p="f3" t="Include">
-                        <e p="56f2dfca1830eedb970508242094e5a4ef04b2a73a0f128f54f6e161d9fa664365b7e87610af20fb05399b8967cb324c506806784bfffa2ef6f5220a34cb" t="Include" />
-                      </e>
-                    </e>
-                    <e p="4a" t="Include">
-                      <e p="8b" t="Include">
-                        <e p="9d4820506e41d738849966c3578f35a88070104ed545a0c03c0b510af71c6dc51cceb52cf9991e296f2aef5582345eeff1755741a39df16b6c206cf6bf34" t="Include" />
-                      </e>
-                    </e>
-                    <e p="51" t="Include">
-                      <e p="91" t="Include">
-                        <e p="f6b0e578417a6521289c44753aecd71570263a7f187bb2dfcea1760684cdf728ca1dd305e93f817df89eec4beba61267dfc2e27ef680ebff00cc396ea776" t="Include" />
-                      </e>
-                    </e>
-                    <e p="60" t="Include">
-                      <e p="cc" t="Include">
-                        <e p="77eedf769bf1250574a1e0e55c92d3c910ebe51ce58237d7a6d7e7d35810fd40e32f3a5eb695e922b3c54c9ed0a853a8d88dea15dfc38cffbeff2450dc2d" t="Include" />
-                      </e>
-                    </e>
-                    <e p="66" t="Include">
-                      <e p="0c" t="Include">
-                        <e p="57cb35b267a2e1a62196e66ab2773e2515d07ce265dae6049b14d7de8e90dba4e90b12e7eb47d935854d6e1b94c3e0aa65666f3525e5a7257b2a413f21fd" t="Include" />
-                      </e>
-                    </e>
-                    <e p="91" t="Include">
-                      <e p="68" t="Include">
-                        <e p="673669ade800dd2bce7f45beb563a84b6e7ca2ba869dd5e55f01fa7b6e077f046694158954e1d6b98e52477d6517213c34942a5f8c27812288cffecbb348" t="Include" />
-                      </e>
-                    </e>
-                    <e p="95" t="Include">
-                      <e p="67" t="Include">
-                        <e p="9768726ddd1d007812fe0d4a0c51823ad9f1a2a10eceb5cc0debe98830ec82016e137e6d46264ab1866403e7a24046f7cb38a81146b50c1bdfe02b5f2521" t="Include" />
-                      </e>
-                    </e>
-                    <e p="c0" t="Include">
-                      <e p="b1" t="Include">
-                        <e p="8dd7a3c21500240b91c57b7589f21f7bda96178b7d18d3fcf097f825d681945fe451288cd5a570dc284018a6792dbcb006d7598a3511a6ea378c7bbbf5b8" t="Include" />
-                      </e>
-                    </e>
-                    <e p="da" t="Include">
-                      <e p="02" t="Include">
-                        <e p="ab828daf5d2a34f26fb02ced9a9792b5a621d395e0ce2c16882b132b72d214e9d4184a7cc0c4331ff7c33674484d8419c1122d69266ba8f409a5dc8c7741" t="Include" />
-                      </e>
-                    </e>
-                  </e>
-                </e>
-                <e p="index-v5" t="Include">
-                  <e p="3c" t="Include">
-                    <e p="ec" t="Include">
-                      <e p="9309024ffd87fd933b7840addb3a4137c4917bfd186a9452eedb5a566e12" t="Include" />
-                    </e>
-                  </e>
-                  <e p="4e" t="Include">
-                    <e p="bb" t="Include">
-                      <e p="1d77291ba7a8062d1c0fef45b081ffda01624afc782aa7c9859b58ddb9bf" t="Include" />
-                    </e>
-                  </e>
-                  <e p="64" t="Include">
-                    <e p="97" t="Include">
-                      <e p="33189990105f3372dfa844e21a496e26e4d2b8ac4033ce4bab454b839f20" t="Include" />
-                    </e>
-                  </e>
-                  <e p="68" t="Include">
-                    <e p="78" t="Include">
-                      <e p="b4927ae4a64a417cc460e1a97c035fbfa6a6f3e744edc4472a056d28dabf" t="Include" />
-                    </e>
-                  </e>
-                  <e p="a9" t="Include">
-                    <e p="d4" t="Include">
-                      <e p="f1056c4203b7cbe09f21274cd7b50b1cb824b1fb842ad6af1c87a90af47c" t="Include" />
-                    </e>
-                  </e>
-                  <e p="c2" t="Include">
-                    <e p="9c" t="Include">
-                      <e p="865ff835a7b07966c13da9a8bd554cdd2a85765907797985c4b6795262b2" t="Include" />
-                    </e>
-                  </e>
-                  <e p="d4" t="Include">
-                    <e p="24" t="Include">
-                      <e p="037c9852a6ee5adf366e58fedd5965bf1291a3f77984da625681f9bba59d" t="Include" />
-                    </e>
-                  </e>
-                  <e p="f6" t="Include">
-                    <e p="ef" t="Include">
-                      <e p="8a2d32ee0db2cab359898378d723569365480213e5076ee2565428cb24e9" t="Include" />
-                    </e>
-                  </e>
-                  <e p="fe" t="Include">
-                    <e p="dd" t="Include">
-                      <e p="41a0732237c2c1004bf0fc15227b0745b44dfc574b65886ab562519f947d" t="Include" />
-                    </e>
-                    <e p="e6" t="Include">
-                      <e p="8c53083ac7260ccb11655edd85045a8383e75c909d28813e078ceb8e4150" t="Include" />
-                    </e>
-                  </e>
-                </e>
-              </e>
-            </e>
-            <e p="@angular" t="Include">
-              <e p="animations" t="IncludeRecursive" />
-              <e p="cdk" t="IncludeRecursive" />
-              <e p="cli" t="IncludeRecursive" />
-              <e p="common" t="IncludeRecursive" />
-              <e p="compiler" t="IncludeRecursive" />
-              <e p="compiler-cli" t="IncludeRecursive" />
-              <e p="core" t="IncludeRecursive" />
-              <e p="flex-layout" t="IncludeRecursive">
-                <e p="_mq.scss" t="Include" />
-                <e p="bundles" t="Include">
-                  <e p="flex-layout-core.umd.js" t="Include" />
-                  <e p="flex-layout-core.umd.js.map" t="Include" />
-                  <e p="flex-layout-core.umd.min.js" t="Include" />
-                  <e p="flex-layout-core.umd.min.js.map" t="Include" />
-                  <e p="flex-layout-extended.umd.js" t="Include" />
-                  <e p="flex-layout-extended.umd.js.map" t="Include" />
-                  <e p="flex-layout-extended.umd.min.js" t="Include" />
-                  <e p="flex-layout-extended.umd.min.js.map" t="Include" />
-                  <e p="flex-layout-flex.umd.js" t="Include" />
-                  <e p="flex-layout-flex.umd.js.map" t="Include" />
-                  <e p="flex-layout-flex.umd.min.js" t="Include" />
-                  <e p="flex-layout-flex.umd.min.js.map" t="Include" />
-                  <e p="flex-layout-grid.umd.js" t="Include" />
-                  <e p="flex-layout-grid.umd.js.map" t="Include" />
-                  <e p="flex-layout-grid.umd.min.js" t="Include" />
-                  <e p="flex-layout-grid.umd.min.js.map" t="Include" />
-                  <e p="flex-layout-server.umd.js" t="Include" />
-                  <e p="flex-layout-server.umd.js.map" t="Include" />
-                  <e p="flex-layout-server.umd.min.js" t="Include" />
-                  <e p="flex-layout-server.umd.min.js.map" t="Include" />
-                  <e p="flex-layout.umd.js" t="Include" />
-                  <e p="flex-layout.umd.js.map" t="Include" />
-                  <e p="flex-layout.umd.min.js" t="Include" />
-                  <e p="flex-layout.umd.min.js.map" t="Include" />
-                </e>
-                <e p="core" t="Include">
-                  <e p="index.d.ts" t="Include" />
-                  <e p="index.metadata.json" t="Include" />
-                  <e p="package.json" t="Include" />
-                  <e p="typings" t="Include">
-                    <e p="add-alias.d.ts" t="Include" />
-                    <e p="base" t="Include">
-                      <e p="base2.d.ts" t="Include" />
-                      <e p="index.d.ts" t="Include" />
-                    </e>
-                    <e p="basis-validator" t="Include">
-                      <e p="basis-validator.d.ts" t="Include" />
-                    </e>
-                    <e p="breakpoints" t="Include">
-                      <e p="break-point-registry.d.ts" t="Include" />
-                      <e p="break-point.d.ts" t="Include" />
-                      <e p="break-points-token.d.ts" t="Include" />
-                      <e p="breakpoint-tools.d.ts" t="Include" />
-                      <e p="data" t="Include">
-                        <e p="break-points.d.ts" t="Include" />
-                        <e p="orientation-break-points.d.ts" t="Include" />
-                      </e>
-                      <e p="index.d.ts" t="Include" />
-                    </e>
-                    <e p="browser-provider.d.ts" t="Include" />
-                    <e p="index.d.ts" t="Include" />
-                    <e p="index.metadata.json" t="Include" />
-                    <e p="match-media" t="Include">
-                      <e p="index.d.ts" t="Include" />
-                      <e p="match-media.d.ts" t="Include" />
-                      <e p="mock" t="Include">
-                        <e p="mock-match-media.d.ts" t="Include" />
-                      </e>
-                    </e>
-                    <e p="media-change.d.ts" t="Include" />
-                    <e p="media-marshaller" t="Include">
-                      <e p="media-marshaller.d.ts" t="Include" />
-                      <e p="print-hook.d.ts" t="Include" />
-                    </e>
-                    <e p="media-observer" t="Include">
-                      <e p="index.d.ts" t="Include" />
-                      <e p="media-observer.d.ts" t="Include" />
-                    </e>
-                    <e p="media-trigger" t="Include">
-                      <e p="index.d.ts" t="Include" />
-                      <e p="media-trigger.d.ts" t="Include" />
-                    </e>
-                    <e p="module.d.ts" t="Include" />
-                    <e p="public-api.d.ts" t="Include" />
-                    <e p="style-builder" t="Include">
-                      <e p="style-builder.d.ts" t="Include" />
-                    </e>
-                    <e p="style-utils" t="Include">
-                      <e p="style-utils.d.ts" t="Include" />
-                    </e>
-                    <e p="stylesheet-map" t="Include">
-                      <e p="index.d.ts" t="Include" />
-                      <e p="stylesheet-map.d.ts" t="Include" />
-                    </e>
-                    <e p="tokens" t="Include">
-                      <e p="breakpoint-token.d.ts" t="Include" />
-                      <e p="index.d.ts" t="Include" />
-                      <e p="library-config.d.ts" t="Include" />
-                      <e p="server-token.d.ts" t="Include" />
-                    </e>
-                    <e p="utils" t="Include">
-                      <e p="array.d.ts" t="Include" />
-                      <e p="index.d.ts" t="Include" />
-                      <e p="sort.d.ts" t="Include" />
-                    </e>
-                  </e>
-                </e>
-                <e p="core.d.ts" t="Include" />
-                <e p="core.metadata.json" t="Include" />
-                <e p="esm2015" t="Include">
-                  <e p="core.js" t="Include" />
-                  <e p="core.js.map" t="Include" />
-                  <e p="extended.js" t="Include" />
-                  <e p="extended.js.map" t="Include" />
-                  <e p="flex-layout.js" t="Include" />
-                  <e p="flex-layout.js.map" t="Include" />
-                  <e p="flex.js" t="Include" />
-                  <e p="flex.js.map" t="Include" />
-                  <e p="grid.js" t="Include" />
-                  <e p="grid.js.map" t="Include" />
-                  <e p="server.js" t="Include" />
-                  <e p="server.js.map" t="Include" />
-                </e>
-                <e p="esm5" t="Include">
-                  <e p="core.es5.js" t="Include" />
-                  <e p="core.es5.js.map" t="Include" />
-                  <e p="extended.es5.js" t="Include" />
-                  <e p="extended.es5.js.map" t="Include" />
-                  <e p="flex-layout.es5.js" t="Include" />
-                  <e p="flex-layout.es5.js.map" t="Include" />
-                  <e p="flex.es5.js" t="Include" />
-                  <e p="flex.es5.js.map" t="Include" />
-                  <e p="grid.es5.js" t="Include" />
-                  <e p="grid.es5.js.map" t="Include" />
-                  <e p="server.es5.js" t="Include" />
-                  <e p="server.es5.js.map" t="Include" />
-                </e>
-                <e p="extended" t="Include">
-                  <e p="index.d.ts" t="Include" />
-                  <e p="index.metadata.json" t="Include" />
-                  <e p="package.json" t="Include" />
-                  <e p="typings" t="Include">
-                    <e p="class" t="Include">
-                      <e p="class.d.ts" t="Include" />
-                    </e>
-                    <e p="img-src" t="Include">
-                      <e p="img-src.d.ts" t="Include" />
-                    </e>
-                    <e p="index.d.ts" t="Include" />
-                    <e p="index.metadata.json" t="Include" />
-                    <e p="module.d.ts" t="Include" />
-                    <e p="public-api.d.ts" t="Include" />
-                    <e p="show-hide" t="Include">
-                      <e p="show-hide.d.ts" t="Include" />
-                    </e>
-                    <e p="style" t="Include">
-                      <e p="style-transforms.d.ts" t="Include" />
-                      <e p="style.d.ts" t="Include" />
-                    </e>
-                  </e>
-                </e>
-                <e p="extended.d.ts" t="Include" />
-                <e p="extended.metadata.json" t="Include" />
-                <e p="flex" t="Include">
-                  <e p="index.d.ts" t="Include" />
-                  <e p="index.metadata.json" t="Include" />
-                  <e p="package.json" t="Include" />
-                  <e p="typings" t="Include">
-                    <e p="flex" t="Include">
-                      <e p="flex.d.ts" t="Include" />
-                    </e>
-                    <e p="flex-align" t="Include">
-                      <e p="flex-align.d.ts" t="Include" />
-                    </e>
-                    <e p="flex-fill" t="Include">
-                      <e p="flex-fill.d.ts" t="Include" />
-                    </e>
-                    <e p="flex-offset" t="Include">
-                      <e p="flex-offset.d.ts" t="Include" />
-                    </e>
-                    <e p="flex-order" t="Include">
-                      <e p="flex-order.d.ts" t="Include" />
-                    </e>
-                    <e p="index.d.ts" t="Include" />
-                    <e p="index.metadata.json" t="Include" />
-                    <e p="layout" t="Include">
-                      <e p="layout.d.ts" t="Include" />
-                    </e>
-                    <e p="layout-align" t="Include">
-                      <e p="layout-align.d.ts" t="Include" />
-                    </e>
-                    <e p="layout-gap" t="Include">
-                      <e p="layout-gap.d.ts" t="Include" />
-                    </e>
-                    <e p="module.d.ts" t="Include" />
-                    <e p="public-api.d.ts" t="Include" />
-                  </e>
-                </e>
-                <e p="flex-layout.d.ts" t="Include" />
-                <e p="flex-layout.metadata.json" t="Include" />
-                <e p="flex.d.ts" t="Include" />
-                <e p="flex.metadata.json" t="Include" />
-                <e p="grid" t="Include">
-                  <e p="index.d.ts" t="Include" />
-                  <e p="index.metadata.json" t="Include" />
-                  <e p="package.json" t="Include" />
-                  <e p="typings" t="Include">
-                    <e p="align-columns" t="Include">
-                      <e p="align-columns.d.ts" t="Include" />
-                    </e>
-                    <e p="align-rows" t="Include">
-                      <e p="align-rows.d.ts" t="Include" />
-                    </e>
-                    <e p="area" t="Include">
-                      <e p="area.d.ts" t="Include" />
-                    </e>
-                    <e p="areas" t="Include">
-                      <e p="areas.d.ts" t="Include" />
-                    </e>
-                    <e p="auto" t="Include">
-                      <e p="auto.d.ts" t="Include" />
-                    </e>
-                    <e p="column" t="Include">
-                      <e p="column.d.ts" t="Include" />
-                    </e>
-                    <e p="columns" t="Include">
-                      <e p="columns.d.ts" t="Include" />
-                    </e>
-                    <e p="gap" t="Include">
-                      <e p="gap.d.ts" t="Include" />
-                    </e>
-                    <e p="grid-align" t="Include">
-                      <e p="grid-align.d.ts" t="Include" />
-                    </e>
-                    <e p="index.d.ts" t="Include" />
-                    <e p="index.metadata.json" t="Include" />
-                    <e p="module.d.ts" t="Include" />
-                    <e p="public-api.d.ts" t="Include" />
-                    <e p="row" t="Include">
-                      <e p="row.d.ts" t="Include" />
-                    </e>
-                    <e p="rows" t="Include">
-                      <e p="rows.d.ts" t="Include" />
-                    </e>
-                  </e>
-                </e>
-                <e p="grid.d.ts" t="Include" />
-                <e p="grid.metadata.json" t="Include" />
-                <e p="LICENSE" t="Include" />
-                <e p="package.json" t="Include" />
-                <e p="README.md" t="Include" />
-                <e p="server" t="Include">
-                  <e p="index.d.ts" t="Include" />
-                  <e p="index.metadata.json" t="Include" />
-                  <e p="package.json" t="Include" />
-                  <e p="typings" t="Include">
-                    <e p="index.d.ts" t="Include" />
-                    <e p="index.metadata.json" t="Include" />
-                    <e p="module.d.ts" t="Include" />
-                    <e p="public-api.d.ts" t="Include" />
-                    <e p="server-match-media.d.ts" t="Include" />
-                    <e p="server-provider.d.ts" t="Include" />
-                  </e>
-                </e>
-                <e p="server.d.ts" t="Include" />
-                <e p="server.metadata.json" t="Include" />
-                <e p="typings" t="Include">
-                  <e p="core" t="Include">
-                    <e p="add-alias.d.ts" t="Include" />
-                    <e p="base" t="Include">
-                      <e p="base2.d.ts" t="Include" />
-                      <e p="index.d.ts" t="Include" />
-                    </e>
-                    <e p="basis-validator" t="Include">
-                      <e p="basis-validator.d.ts" t="Include" />
-                    </e>
-                    <e p="breakpoints" t="Include">
-                      <e p="break-point-registry.d.ts" t="Include" />
-                      <e p="break-point.d.ts" t="Include" />
-                      <e p="break-points-token.d.ts" t="Include" />
-                      <e p="breakpoint-tools.d.ts" t="Include" />
-                      <e p="data" t="Include">
-                        <e p="break-points.d.ts" t="Include" />
-                        <e p="orientation-break-points.d.ts" t="Include" />
-                      </e>
-                      <e p="index.d.ts" t="Include" />
-                    </e>
-                    <e p="browser-provider.d.ts" t="Include" />
-                    <e p="index.d.ts" t="Include" />
-                    <e p="index.metadata.json" t="Include" />
-                    <e p="match-media" t="Include">
-                      <e p="index.d.ts" t="Include" />
-                      <e p="match-media.d.ts" t="Include" />
-                      <e p="mock" t="Include">
-                        <e p="mock-match-media.d.ts" t="Include" />
-                      </e>
-                    </e>
-                    <e p="media-change.d.ts" t="Include" />
-                    <e p="media-marshaller" t="Include">
-                      <e p="media-marshaller.d.ts" t="Include" />
-                      <e p="print-hook.d.ts" t="Include" />
-                    </e>
-                    <e p="media-observer" t="Include">
-                      <e p="index.d.ts" t="Include" />
-                      <e p="media-observer.d.ts" t="Include" />
-                    </e>
-                    <e p="media-trigger" t="Include">
-                      <e p="index.d.ts" t="Include" />
-                      <e p="media-trigger.d.ts" t="Include" />
-                    </e>
-                    <e p="module.d.ts" t="Include" />
-                    <e p="public-api.d.ts" t="Include" />
-                    <e p="style-builder" t="Include">
-                      <e p="style-builder.d.ts" t="Include" />
-                    </e>
-                    <e p="style-utils" t="Include">
-                      <e p="style-utils.d.ts" t="Include" />
-                    </e>
-                    <e p="stylesheet-map" t="Include">
-                      <e p="index.d.ts" t="Include" />
-                      <e p="stylesheet-map.d.ts" t="Include" />
-                    </e>
-                    <e p="tokens" t="Include">
-                      <e p="breakpoint-token.d.ts" t="Include" />
-                      <e p="index.d.ts" t="Include" />
-                      <e p="library-config.d.ts" t="Include" />
-                      <e p="server-token.d.ts" t="Include" />
-                    </e>
-                    <e p="utils" t="Include">
-                      <e p="array.d.ts" t="Include" />
-                      <e p="index.d.ts" t="Include" />
-                      <e p="sort.d.ts" t="Include" />
-                    </e>
-                  </e>
-                  <e p="esm5" t="Include">
-                    <e p="core" t="Include">
-                      <e p="add-alias.d.ts" t="Include" />
-                      <e p="base" t="Include">
-                        <e p="base2.d.ts" t="Include" />
-                        <e p="index.d.ts" t="Include" />
-                      </e>
-                      <e p="basis-validator" t="Include">
-                        <e p="basis-validator.d.ts" t="Include" />
-                      </e>
-                      <e p="breakpoints" t="Include">
-                        <e p="break-point-registry.d.ts" t="Include" />
-                        <e p="break-point.d.ts" t="Include" />
-                        <e p="break-points-token.d.ts" t="Include" />
-                        <e p="breakpoint-tools.d.ts" t="Include" />
-                        <e p="data" t="Include">
-                          <e p="break-points.d.ts" t="Include" />
-                          <e p="orientation-break-points.d.ts" t="Include" />
-                        </e>
-                        <e p="index.d.ts" t="Include" />
-                      </e>
-                      <e p="browser-provider.d.ts" t="Include" />
-                      <e p="index.d.ts" t="Include" />
-                      <e p="index.metadata.json" t="Include" />
-                      <e p="match-media" t="Include">
-                        <e p="index.d.ts" t="Include" />
-                        <e p="match-media.d.ts" t="Include" />
-                        <e p="mock" t="Include">
-                          <e p="mock-match-media.d.ts" t="Include" />
-                        </e>
-                      </e>
-                      <e p="media-change.d.ts" t="Include" />
-                      <e p="media-marshaller" t="Include">
-                        <e p="media-marshaller.d.ts" t="Include" />
-                        <e p="print-hook.d.ts" t="Include" />
-                      </e>
-                      <e p="media-observer" t="Include">
-                        <e p="index.d.ts" t="Include" />
-                        <e p="media-observer.d.ts" t="Include" />
-                      </e>
-                      <e p="media-trigger" t="Include">
-                        <e p="index.d.ts" t="Include" />
-                        <e p="media-trigger.d.ts" t="Include" />
-                      </e>
-                      <e p="module.d.ts" t="Include" />
-                      <e p="public-api.d.ts" t="Include" />
-                      <e p="style-builder" t="Include">
-                        <e p="style-builder.d.ts" t="Include" />
-                      </e>
-                      <e p="style-utils" t="Include">
-                        <e p="style-utils.d.ts" t="Include" />
-                      </e>
-                      <e p="stylesheet-map" t="Include">
-                        <e p="index.d.ts" t="Include" />
-                        <e p="stylesheet-map.d.ts" t="Include" />
-                      </e>
-                      <e p="tokens" t="Include">
-                        <e p="breakpoint-token.d.ts" t="Include" />
-                        <e p="index.d.ts" t="Include" />
-                        <e p="library-config.d.ts" t="Include" />
-                        <e p="server-token.d.ts" t="Include" />
-                      </e>
-                      <e p="utils" t="Include">
-                        <e p="array.d.ts" t="Include" />
-                        <e p="index.d.ts" t="Include" />
-                        <e p="sort.d.ts" t="Include" />
-                      </e>
-                    </e>
-                    <e p="extended" t="Include">
-                      <e p="class" t="Include">
-                        <e p="class.d.ts" t="Include" />
-                      </e>
-                      <e p="img-src" t="Include">
-                        <e p="img-src.d.ts" t="Include" />
-                      </e>
-                      <e p="index.d.ts" t="Include" />
-                      <e p="index.metadata.json" t="Include" />
-                      <e p="module.d.ts" t="Include" />
-                      <e p="public-api.d.ts" t="Include" />
-                      <e p="show-hide" t="Include">
-                        <e p="show-hide.d.ts" t="Include" />
-                      </e>
-                      <e p="style" t="Include">
-                        <e p="style-transforms.d.ts" t="Include" />
-                        <e p="style.d.ts" t="Include" />
-                      </e>
-                    </e>
-                    <e p="flex" t="Include">
-                      <e p="flex" t="Include">
-                        <e p="flex.d.ts" t="Include" />
-                      </e>
-                      <e p="flex-align" t="Include">
-                        <e p="flex-align.d.ts" t="Include" />
-                      </e>
-                      <e p="flex-fill" t="Include">
-                        <e p="flex-fill.d.ts" t="Include" />
-                      </e>
-                      <e p="flex-offset" t="Include">
-                        <e p="flex-offset.d.ts" t="Include" />
-                      </e>
-                      <e p="flex-order" t="Include">
-                        <e p="flex-order.d.ts" t="Include" />
-                      </e>
-                      <e p="index.d.ts" t="Include" />
-                      <e p="index.metadata.json" t="Include" />
-                      <e p="layout" t="Include">
-                        <e p="layout.d.ts" t="Include" />
-                      </e>
-                      <e p="layout-align" t="Include">
-                        <e p="layout-align.d.ts" t="Include" />
-                      </e>
-                      <e p="layout-gap" t="Include">
-                        <e p="layout-gap.d.ts" t="Include" />
-                      </e>
-                      <e p="module.d.ts" t="Include" />
-                      <e p="public-api.d.ts" t="Include" />
-                    </e>
-                    <e p="grid" t="Include">
-                      <e p="align-columns" t="Include">
-                        <e p="align-columns.d.ts" t="Include" />
-                      </e>
-                      <e p="align-rows" t="Include">
-                        <e p="align-rows.d.ts" t="Include" />
-                      </e>
-                      <e p="area" t="Include">
-                        <e p="area.d.ts" t="Include" />
-                      </e>
-                      <e p="areas" t="Include">
-                        <e p="areas.d.ts" t="Include" />
-                      </e>
-                      <e p="auto" t="Include">
-                        <e p="auto.d.ts" t="Include" />
-                      </e>
-                      <e p="column" t="Include">
-                        <e p="column.d.ts" t="Include" />
-                      </e>
-                      <e p="columns" t="Include">
-                        <e p="columns.d.ts" t="Include" />
-                      </e>
-                      <e p="gap" t="Include">
-                        <e p="gap.d.ts" t="Include" />
-                      </e>
-                      <e p="grid-align" t="Include">
-                        <e p="grid-align.d.ts" t="Include" />
-                      </e>
-                      <e p="index.d.ts" t="Include" />
-                      <e p="index.metadata.json" t="Include" />
-                      <e p="module.d.ts" t="Include" />
-                      <e p="public-api.d.ts" t="Include" />
-                      <e p="row" t="Include">
-                        <e p="row.d.ts" t="Include" />
-                      </e>
-                      <e p="rows" t="Include">
-                        <e p="rows.d.ts" t="Include" />
-                      </e>
-                    </e>
-                    <e p="index.d.ts" t="Include" />
-                    <e p="index.metadata.json" t="Include" />
-                    <e p="module.d.ts" t="Include" />
-                    <e p="public-api.d.ts" t="Include" />
-                    <e p="server" t="Include">
-                      <e p="index.d.ts" t="Include" />
-                      <e p="index.metadata.json" t="Include" />
-                      <e p="module.d.ts" t="Include" />
-                      <e p="public-api.d.ts" t="Include" />
-                      <e p="server-match-media.d.ts" t="Include" />
-                      <e p="server-provider.d.ts" t="Include" />
-                    </e>
-                    <e p="utils" t="Include">
-                      <e p="auto-prefixer.d.ts" t="Include" />
-                      <e p="layout-validator.d.ts" t="Include" />
-                      <e p="object-extend.d.ts" t="Include" />
-                    </e>
-                    <e p="version.d.ts" t="Include" />
-                  </e>
-                  <e p="extended" t="Include">
-                    <e p="class" t="Include">
-                      <e p="class.d.ts" t="Include" />
-                    </e>
-                    <e p="img-src" t="Include">
-                      <e p="img-src.d.ts" t="Include" />
-                    </e>
-                    <e p="index.d.ts" t="Include" />
-                    <e p="index.metadata.json" t="Include" />
-                    <e p="module.d.ts" t="Include" />
-                    <e p="public-api.d.ts" t="Include" />
-                    <e p="show-hide" t="Include">
-                      <e p="show-hide.d.ts" t="Include" />
-                    </e>
-                    <e p="style" t="Include">
-                      <e p="style-transforms.d.ts" t="Include" />
-                      <e p="style.d.ts" t="Include" />
-                    </e>
-                  </e>
-                  <e p="flex" t="Include">
-                    <e p="flex" t="Include">
-                      <e p="flex.d.ts" t="Include" />
-                    </e>
-                    <e p="flex-align" t="Include">
-                      <e p="flex-align.d.ts" t="Include" />
-                    </e>
-                    <e p="flex-fill" t="Include">
-                      <e p="flex-fill.d.ts" t="Include" />
-                    </e>
-                    <e p="flex-offset" t="Include">
-                      <e p="flex-offset.d.ts" t="Include" />
-                    </e>
-                    <e p="flex-order" t="Include">
-                      <e p="flex-order.d.ts" t="Include" />
-                    </e>
-                    <e p="index.d.ts" t="Include" />
-                    <e p="index.metadata.json" t="Include" />
-                    <e p="layout" t="Include">
-                      <e p="layout.d.ts" t="Include" />
-                    </e>
-                    <e p="layout-align" t="Include">
-                      <e p="layout-align.d.ts" t="Include" />
-                    </e>
-                    <e p="layout-gap" t="Include">
-                      <e p="layout-gap.d.ts" t="Include" />
-                    </e>
-                    <e p="module.d.ts" t="Include" />
-                    <e p="public-api.d.ts" t="Include" />
-                  </e>
-                  <e p="grid" t="Include">
-                    <e p="align-columns" t="Include">
-                      <e p="align-columns.d.ts" t="Include" />
-                    </e>
-                    <e p="align-rows" t="Include">
-                      <e p="align-rows.d.ts" t="Include" />
-                    </e>
-                    <e p="area" t="Include">
-                      <e p="area.d.ts" t="Include" />
-                    </e>
-                    <e p="areas" t="Include">
-                      <e p="areas.d.ts" t="Include" />
-                    </e>
-                    <e p="auto" t="Include">
-                      <e p="auto.d.ts" t="Include" />
-                    </e>
-                    <e p="column" t="Include">
-                      <e p="column.d.ts" t="Include" />
-                    </e>
-                    <e p="columns" t="Include">
-                      <e p="columns.d.ts" t="Include" />
-                    </e>
-                    <e p="gap" t="Include">
-                      <e p="gap.d.ts" t="Include" />
-                    </e>
-                    <e p="grid-align" t="Include">
-                      <e p="grid-align.d.ts" t="Include" />
-                    </e>
-                    <e p="index.d.ts" t="Include" />
-                    <e p="index.metadata.json" t="Include" />
-                    <e p="module.d.ts" t="Include" />
-                    <e p="public-api.d.ts" t="Include" />
-                    <e p="row" t="Include">
-                      <e p="row.d.ts" t="Include" />
-                    </e>
-                    <e p="rows" t="Include">
-                      <e p="rows.d.ts" t="Include" />
-                    </e>
-                  </e>
-                  <e p="index.d.ts" t="Include" />
-                  <e p="index.metadata.json" t="Include" />
-                  <e p="module.d.ts" t="Include" />
-                  <e p="public-api.d.ts" t="Include" />
-                  <e p="server" t="Include">
-                    <e p="index.d.ts" t="Include" />
-                    <e p="index.metadata.json" t="Include" />
-                    <e p="module.d.ts" t="Include" />
-                    <e p="public-api.d.ts" t="Include" />
-                    <e p="server-match-media.d.ts" t="Include" />
-                    <e p="server-provider.d.ts" t="Include" />
-                  </e>
-                  <e p="utils" t="Include">
-                    <e p="auto-prefixer.d.ts" t="Include" />
-                    <e p="layout-validator.d.ts" t="Include" />
-                    <e p="object-extend.d.ts" t="Include" />
-                  </e>
-                  <e p="version.d.ts" t="Include" />
-                </e>
-              </e>
-              <e p="forms" t="IncludeRecursive" />
-              <e p="material" t="IncludeRecursive" />
-              <e p="platform-browser" t="IncludeRecursive" />
-              <e p="platform-browser-dynamic" t="IncludeRecursive" />
-              <e p="router" t="IncludeRecursive" />
-            </e>
+            <e p="@angular\animations" t="IncludeRecursive" />
+            <e p="@angular\cdk" t="IncludeRecursive" />
+            <e p="@angular\cli" t="IncludeRecursive" />
+            <e p="@angular\common" t="IncludeRecursive" />
+            <e p="@angular\compiler" t="IncludeRecursive" />
+            <e p="@angular\compiler-cli" t="IncludeRecursive" />
+            <e p="@angular\core" t="IncludeRecursive" />
+            <e p="@angular\flex-layout" t="IncludeRecursive" />
+            <e p="@angular\forms" t="IncludeRecursive" />
+            <e p="@angular\material" t="IncludeRecursive" />
+            <e p="@angular\platform-browser" t="IncludeRecursive" />
+            <e p="@angular\platform-browser-dynamic" t="IncludeRecursive" />
+            <e p="@angular\router" t="IncludeRecursive" />
             <e p="@angular-devkit\architect" t="IncludeRecursive" />
             <e p="@angular-devkit\build-angular" t="IncludeRecursive" />
             <e p="@angular-devkit\build-optimizer" t="IncludeRecursive" />
@@ -870,6 +151,54 @@
             <e p="@wry\context" t="IncludeRecursive" />
             <e p="@wry\equality" t="IncludeRecursive" />
             <e p="ajv" t="IncludeRecursive" />
+            <e p="angular-svg-icon" t="IncludeRecursive">
+              <e p="angular-svg-icon.d.ts" t="Include" />
+              <e p="angular-svg-icon.metadata.json" t="Include" />
+              <e p="bundles" t="Include">
+                <e p="angular-svg-icon.umd.js" t="Include" />
+                <e p="angular-svg-icon.umd.js.map" t="Include" />
+                <e p="angular-svg-icon.umd.min.js" t="Include" />
+                <e p="angular-svg-icon.umd.min.js.map" t="Include" />
+              </e>
+              <e p="esm2015" t="Include">
+                <e p="angular-svg-icon.js" t="Include" />
+                <e p="lib" t="Include">
+                  <e p="angular-svg-icon.module.js" t="Include" />
+                  <e p="svg-icon-registry.service.js" t="Include" />
+                  <e p="svg-icon.component.js" t="Include" />
+                  <e p="svg-loader.js" t="Include" />
+                </e>
+                <e p="public-api.js" t="Include" />
+              </e>
+              <e p="esm5" t="Include">
+                <e p="angular-svg-icon.js" t="Include" />
+                <e p="lib" t="Include">
+                  <e p="angular-svg-icon.module.js" t="Include" />
+                  <e p="svg-icon-registry.service.js" t="Include" />
+                  <e p="svg-icon.component.js" t="Include" />
+                  <e p="svg-loader.js" t="Include" />
+                </e>
+                <e p="public-api.js" t="Include" />
+              </e>
+              <e p="fesm2015" t="Include">
+                <e p="angular-svg-icon.js" t="Include" />
+                <e p="angular-svg-icon.js.map" t="Include" />
+              </e>
+              <e p="fesm5" t="Include">
+                <e p="angular-svg-icon.js" t="Include" />
+                <e p="angular-svg-icon.js.map" t="Include" />
+              </e>
+              <e p="lib" t="Include">
+                <e p="angular-svg-icon.module.d.ts" t="Include" />
+                <e p="svg-icon-registry.service.d.ts" t="Include" />
+                <e p="svg-icon.component.d.ts" t="Include" />
+                <e p="svg-loader.d.ts" t="Include" />
+              </e>
+              <e p="LICENSE" t="Include" />
+              <e p="package.json" t="Include" />
+              <e p="public-api.d.ts" t="Include" />
+              <e p="README.md" t="Include" />
+            </e>
             <e p="apollo-angular" t="IncludeRecursive" />
             <e p="apollo-angular-link-http" t="IncludeRecursive" />
             <e p="apollo-angular-link-http-common" t="IncludeRecursive" />
@@ -945,6 +274,57 @@
             <e p="ts-node" t="IncludeRecursive" />
             <e p="tslib" t="IncludeRecursive" />
             <e p="tslint" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.dom.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.dom.iterable.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2015.collection.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2015.core.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2015.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2015.generator.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2015.iterable.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2015.promise.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2015.proxy.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2015.reflect.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2015.symbol.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2015.symbol.wellknown.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2016.array.include.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2016.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2016.full.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2017.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2017.full.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2017.intl.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2017.object.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2017.sharedmemory.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2017.string.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2017.typedarrays.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2018.asynciterable.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2018.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2018.full.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2018.intl.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2018.promise.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2018.regexp.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2019.array.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2019.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2019.full.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2019.object.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2019.string.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2019.symbol.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2020.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2020.full.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2020.string.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es2020.symbol.wellknown.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es5.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.es6.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.esnext.array.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.esnext.asynciterable.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.esnext.bigint.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.esnext.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.esnext.full.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.esnext.intl.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.esnext.symbol.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.scripthost.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.webworker.d.ts" t="IncludeRecursive" />
+            <e p="typescript\lib\lib.webworker.importscripts.d.ts" t="IncludeRecursive" />
             <e p="upath" t="IncludeRecursive" />
             <e p="upper-case" t="IncludeRecursive" />
             <e p="upper-case-first" t="IncludeRecursive" />
@@ -991,6 +371,7 @@
                     <e p="comments-list.component.spec.ts" t="Include" />
                     <e p="comments-list.component.ts" t="Include" />
                     <e p="getComments.graphql" t="Include" />
+                    <e p="vote.graphql" t="Include" />
                   </e>
                   <e p="common-components.module.ts" t="Include" />
                   <e p="ingredients-list" t="Include">
@@ -1076,6 +457,10 @@
             </e>
             <e p="assets" t="Include">
               <e p=".gitkeep" t="Include" />
+              <e p="img" t="Include">
+                <e p="minus.svg" t="Include" />
+                <e p="plus.svg" t="Include" />
+              </e>
             </e>
             <e p="environments" t="Include">
               <e p="environment.prod.ts" t="Include" />

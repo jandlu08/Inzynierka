@@ -5,6 +5,8 @@ import {CustomMaterialModule} from '../../core/material.module';
 import {CommentsListComponent} from './comments-list/comments-list.component';
 import {IngredientsListComponent} from './ingredients-list/ingredients-list.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import {AngularSvgIconModule} from 'angular-svg-icon';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -18,6 +20,8 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     CommonModule,
     CustomMaterialModule,
     FlexLayoutModule,
+    AngularSvgIconModule,
+    HttpClientModule,
   ]
 })
 export class CommonComponentsModule {
