@@ -21,6 +21,7 @@ import { RecipeInfoComponent } from './pages/recipe-info/recipe-info.component';
 import {CommonComponentsModule} from './pages/common-components/common-components.module';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import {AngularSvgIconModule} from 'angular-svg-icon';
+import { GenerateDietComponent } from './pages/generate-diet/generate-diet.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import {AngularSvgIconModule} from 'angular-svg-icon';
     MainPageComponent,
     UserInfoComponent,
     RecipeInfoComponent,
+    GenerateDietComponent,
 
   ],
   imports: [

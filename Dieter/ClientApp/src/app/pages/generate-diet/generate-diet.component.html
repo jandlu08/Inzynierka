@@ -1,0 +1,26 @@
+<mat-card *ngIf="!isInputProvided">
+  <form >
+    <mat-card-content>
+      <div class="row">
+        <div class="col">
+          <mat-form-field>
+            <input matInput [(ngModel)]="calories"
+                   placeholder="Calories" type="number" name="calories" required min="0">
+          </mat-form-field>
+        </div>
+        <div class="col">
+          <mat-form-field>
+            <input matInput [(ngModel)]="amount"
+                   placeholder="Amount of dishes" type="number" name="amount" required min="0">
+          </mat-form-field>
+        </div>
+      </div>
+    </mat-card-content>
+  </form>
+  <button mat-flat-button color="primary" (click)="generateDiet()">Generate</button>
+</mat-card>
+
+<div *ngIf="isInputProvided">
+  <app-recipes-list [amount]="amount" [calories]="calories"></app-recipes-list>
+  <button class="reset-button" mat-flat-button color="primary" (click)="resetDiet()">Reset</button>
+</div>

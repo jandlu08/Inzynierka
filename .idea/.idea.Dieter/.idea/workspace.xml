@@ -4,12 +4,11 @@
     <list default="true" id="490b1499-0315-47b0-85b5-49b079606736" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dieter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/modals/add-ingredient/add-ingredient.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/modals/add-ingredient/add-ingredient.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/modals/add-ingredient/add-ingredient.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/modals/add-ingredient/add-ingredient.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/modals/modals.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/modals/modals.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/recipe-info/recipe-info.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/recipe-info/recipe-info.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/recipe-info/recipe-info.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/recipe-info/recipe-info.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/recipe-info/recipe-info.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/recipe-info/recipe-info.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/common-components/recipes-list/recipes-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/common-components/recipes-list/recipes-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/common-components/recipes-list/recipes-list.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/common-components/recipes-list/recipes-list.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/common-components/recipes-list/recipes-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/common-components/recipes-list/recipes-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/main-page/main-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/main-page/main-page.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/generated/graphql.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/generated/graphql.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dieter/ClientApp/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Dieter/ClientApp/src/styles.scss" afterDir="false" />
     </list>
@@ -166,16 +165,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/nav-menu/nav-menu.component.html" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/user-info/getRecipes.graphql" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/user-info/addUserRecipes.graphql" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/user-info/getUserRecipes.graphql" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/core/material.module.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/styles/variables.scss" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/common/common.module.ts" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/common-components/recipes-list/recipes-list.component.scss" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/recipe-info/getComments.graphql" />
-        <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/Query/DieterQuery.cs" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/schema.json.graphql" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/recipe-info/getIngredients.graphql" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/recipe-info/getRecipeIngredients.graphql" />
@@ -185,11 +177,9 @@
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/user-info/user-info.component.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/user-info/user-info.component.scss" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/user-info/user-info.component.html" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/common-components/recipes-list/recipes-list.component.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/modals/add-recipe/add-recipe.component.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/modals/add-recipe/add-recipe.component.html" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/common-components/lists.scss" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/common-components/recipes-list/recipes-list.component.html" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/nav-menu/nav-menu.component.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/common-components/ingredients-list/ingredients-list.component.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/modals/ingredient-info/ingredient-info.component.ts" />
@@ -206,17 +196,26 @@
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/common-components/comments-list/comments-list.component.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/recipe-info/getRecipe.graphql" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/common-components/recipes-list/getUserRecipes.graphql" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/styles.scss" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/modals/add-ingredient/add-ingredient.component.html" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/modals/add-comment/add-comment.component.scss" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/modals/modals.module.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/modals/add-ingredient/add-ingredient.component.ts" />
-        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/recipe-info/recipe-info.component.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/modals/add-comment/addComment.graphql" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/modals/add-comment/add-comment.component.html" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/modals/add-comment/add-comment.component.ts" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/recipe-info/recipe-info.component.html" />
         <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/recipe-info/recipe-info.component.scss" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/recipe-info/recipe-info.component.ts" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/common-components/recipes-list/getRecipes.graphql" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/common-components/recipes-list/recipes-list.component.ts" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/main-page/main-page.component.html" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/styles.scss" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/common-components/recipes-list/recipes-list.component.scss" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/common-components/recipes-list/recipes-list.component.html" />
+        <option value="$PROJECT_DIR$/Dieter/API/Models/GraphQL/Query/DieterQuery.cs" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/generate-diet/generate-diet.component.html" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/generate-diet/generate-diet.component.scss" />
+        <option value="$PROJECT_DIR$/Dieter/ClientApp/src/app/pages/generate-diet/generate-diet.component.ts" />
       </list>
     </option>
   </component>
@@ -249,7 +248,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.graphql-codegen">
+  <component name="RunManager" selected=".NET Launch Settings Profile.Dieter">
     <configuration name="AuthServer" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/AuthServer/AuthServer.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.0" />
@@ -357,7 +356,7 @@
       <workItem from="1572597997291" duration="16147000" />
       <workItem from="1572618290760" duration="15336000" />
       <workItem from="1572634868097" duration="9379000" />
-      <workItem from="1572685208868" duration="11553000" />
+      <workItem from="1572685208868" duration="16197000" />
     </task>
     <task id="LOCAL-00001" summary="add getUsers query">
       <created>1571733525858</created>
@@ -597,7 +596,21 @@
       <option name="project" value="LOCAL" />
       <updated>1572694507428</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="add add comment">
+      <created>1572697168135</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1572697168135</updated>
+    </task>
+    <task id="LOCAL-00036" summary="fix get recipes query">
+      <created>1572702588434</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1572702588434</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -620,8 +633,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
-    <MESSAGE value="add mutations" />
-    <MESSAGE value="add authentication" />
     <MESSAGE value="add lazy loading" />
     <MESSAGE value="add graphql integration to ClientApp" />
     <MESSAGE value="add nav-menu and login component" />
@@ -645,7 +656,9 @@
     <MESSAGE value="add comment voting" />
     <MESSAGE value="add recipe voting" />
     <MESSAGE value="add recipe info" />
-    <option name="LAST_COMMIT_MESSAGE" value="add recipe info" />
+    <MESSAGE value="add add comment" />
+    <MESSAGE value="fix get recipes query" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix get recipes query" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -654,6 +667,32 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Dieter/API/Models/GraphQL/Query/DieterQuery.cs</url>
+          <line>52</line>
+          <properties documentPath="$PROJECT_DIR$/Dieter/API/Models/GraphQL/Query/DieterQuery.cs" initialLine="52">
+            <startOffsets>
+              <option value="1919" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1968" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Dieter/API/Models/GraphQL/Query/DieterQuery.cs</url>
+          <line>77</line>
+          <properties documentPath="$PROJECT_DIR$/Dieter/API/Models/GraphQL/Query/DieterQuery.cs" initialLine="77">
+            <startOffsets>
+              <option value="2721" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2760" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <reveal-manager>

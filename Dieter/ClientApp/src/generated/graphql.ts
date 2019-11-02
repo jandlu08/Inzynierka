@@ -342,6 +342,24 @@ export type GetRecipeIngredientsQuery = (
   )>>> }
 );
 
+export type GetRecipesQueryVariables = {
+  calories?: Maybe<Scalars['Int']>,
+  amount?: Maybe<Scalars['Int']>
+};
+
+
+export type GetRecipesQuery = (
+  { __typename?: 'DieterQuery' }
+  & { getRecipes: Maybe<Array<Maybe<(
+    { __typename?: 'Recipe' }
+    & Pick<Recipe, 'recipeId' | 'name' | 'calories' | 'difficulty' | 'estTime'>
+    & { rating: Maybe<(
+      { __typename?: 'Rating' }
+      & Pick<Rating, 'downVotes' | 'upVotes'>
+    )> }
+  )>>> }
+);
+
 export type GetUserRecipesQueryVariables = {
   userId: Scalars['ID']
 };
@@ -532,6 +550,29 @@ export const GetRecipeIngredientsDocument = gql`
   })
   export class GetRecipeIngredientsGQL extends Apollo.Query<GetRecipeIngredientsQuery, GetRecipeIngredientsQueryVariables> {
     document = GetRecipeIngredientsDocument;
+    
+  }
+export const GetRecipesDocument = gql`
+    query getRecipes($calories: Int, $amount: Int) {
+  getRecipes(calories: $calories, amount: $amount) {
+    recipeId
+    name
+    rating {
+      downVotes
+      upVotes
+    }
+    calories
+    difficulty
+    estTime
+  }
+}
+    `;
+
+  @Injectable({
+    providedIn: 'root'
+  })
+  export class GetRecipesGQL extends Apollo.Query<GetRecipesQuery, GetRecipesQueryVariables> {
+    document = GetRecipesDocument;
     
   }
 export const GetUserRecipesDocument = gql`

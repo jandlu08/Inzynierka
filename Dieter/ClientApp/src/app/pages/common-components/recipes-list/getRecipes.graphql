@@ -1,0 +1,13 @@
+﻿query getRecipes($calories: Int, $amount: Int){
+  getRecipes(calories: $calories, amount: $amount){
+    recipeId
+    name
+    rating{
+      downVotes
+      upVotes
+    }
+    calories
+    difficulty
+    estTime
+  }
+}

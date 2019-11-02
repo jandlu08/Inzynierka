@@ -382,12 +382,19 @@
                     <e p="ingredients-list.component.ts" t="Include" />
                   </e>
                   <e p="recipes-list" t="Include">
+                    <e p="getRecipes.graphql" t="Include" />
                     <e p="getUserRecipes.graphql" t="Include" />
                     <e p="recipes-list.component.html" t="Include" />
                     <e p="recipes-list.component.scss" t="Include" />
                     <e p="recipes-list.component.spec.ts" t="Include" />
                     <e p="recipes-list.component.ts" t="Include" />
                   </e>
+                </e>
+                <e p="generate-diet" t="Include">
+                  <e p="generate-diet.component.html" t="Include" />
+                  <e p="generate-diet.component.scss" t="Include" />
+                  <e p="generate-diet.component.spec.ts" t="Include" />
+                  <e p="generate-diet.component.ts" t="Include" />
                 </e>
                 <e p="login" t="Include">
                   <e p="login.component.html" t="Include" />

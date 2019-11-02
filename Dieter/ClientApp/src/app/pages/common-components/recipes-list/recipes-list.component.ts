@@ -1,6 +1,6 @@
 import {Component, Input, OnDestroy, OnInit} from '@angular/core';
 import {UserService} from '../../../core/services/user.service';
-import {GetUserRecipesGQL, Recipe} from '../../../../generated/graphql';
+import {GetRecipesGQL, GetUserRecipesGQL, Recipe} from '../../../../generated/graphql';
 import {Router} from '@angular/router';
 import {Subscription} from 'rxjs';
 
@@ -12,6 +12,8 @@ import {Subscription} from 'rxjs';
 export class RecipesListComponent implements OnInit, OnDestroy {
 
   @Input() userId: string;
+  @Input() calories: number;
+  @Input() amount: number;
   recipes: Recipe[];
   pageSize: number = 5;
   pageLength: number = 5;
@@ -22,10 +24,16 @@ export class RecipesListComponent implements OnInit, OnDestroy {
 
   constructor(private userService: UserService,
               private getUserRecipesGQL: GetUserRecipesGQL,
+              private getRecipesGQL: GetRecipesGQL,
               private router: Router) { }
 
   ngOnInit() {
-    this.getUserRecipes();
+    if(this.userId != null) {
+      this.getUserRecipes();
+    }
+    else{
+      this.getRecipes();
+    }
   }
 
   ngOnDestroy(){
@@ -47,6 +55,18 @@ export class RecipesListComponent implements OnInit, OnDestroy {
         .subscribe(result =>{
           this.loading = result.loading;
           this.recipes = result.data.getUserRecipes;
+          this.slicedRecipes = this.recipes.slice(((0 + 1) - 1) * this.pageSize).slice(0, this.pageSize);
+          this.pageLength = this.recipes.length;
+        })
+    )
+  }
+
+  private getRecipes(){
+    this.subscription.add(
+      this.getRecipesGQL.fetch({amount: this.amount,calories:this.calories})
+        .subscribe(result =>{
+          this.loading = result.loading;
+          this.recipes = result.data.getRecipes;
           this.slicedRecipes = this.recipes.slice(((0 + 1) - 1) * this.pageSize).slice(0, this.pageSize);
           this.pageLength = this.recipes.length;
         })
