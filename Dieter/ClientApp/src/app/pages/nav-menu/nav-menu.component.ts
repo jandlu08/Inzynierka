@@ -69,5 +69,9 @@ export class NavMenuComponent implements OnInit, OnDestroy {
     this.router.navigate(['/user', this.userService.user.userId]);
   }
 
+  openMainPage() {
+    this.router.navigateByUrl('/main');
+  }
+
 
 }

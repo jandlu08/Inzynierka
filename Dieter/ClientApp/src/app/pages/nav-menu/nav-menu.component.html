@@ -5,6 +5,7 @@
   <span class="fill-remaining-space"></span>
 
   <span *ngIf="isLogged$ | async">
+    <button mat-button (click)="openMainPage()">Generate</button>
     <button mat-button (click)="openUserInfo()">User</button>
     <button mat-button (click)="openAddRecipe()">Add recipe</button>
     <button mat-button (click)="openAddIngredient()">Add ingredient</button>
