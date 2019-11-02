@@ -2,13 +2,20 @@ app-recipe-info {
   .mat-card {
     margin: 20px;
   }
-  .vote-container{
+
+  .vote-container {
     margin-left: 20px;
     margin-right: 10px;
     margin-top: 5px;
   }
-  .title-container{
+
+  .title-container {
     display: flex;
     justify-content: space-between;
+  }
+
+  .info-container {
+    width: 200px;
+    height: 75px;
   }
 }

@@ -1,5 +1,5 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {Subscription} from 'rxjs';
 import {
   GetRecipeGQL,
@@ -25,7 +25,8 @@ export class RecipeInfoComponent implements OnInit, OnDestroy {
               private commonTypes: CommonTypesService,
               private snackBar: MatSnackBar,
               private userService: UserService,
-              private voteGQL: VoteGQL) {
+              private voteGQL: VoteGQL,
+              private router: Router) {
   }
 
   ngOnInit() {
@@ -35,6 +36,10 @@ export class RecipeInfoComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.subscription.unsubscribe();
+  }
+
+  openUserInfo() {
+    this.router.navigate(['/user', this.recipe.author.userId]);
   }
 
   private vote(voteType: VoteType) {

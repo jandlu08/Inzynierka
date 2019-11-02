@@ -21,8 +21,45 @@
           </div>
         </div>
       </div>
-</div>
-</mat-card>
-<app-ingredients-list [recipeId]="recipe.recipeId"></app-ingredients-list>
-<app-comments-list [recipeId]="recipe.recipeId"></app-comments-list>
+    </div>
+    <div class="row">
+      <div class="col clickable" (click)="openUserInfo()">
+        <mat-card class="info-container">
+          <mat-card-subtitle>Author</mat-card-subtitle>
+          <mat-card-content>{{recipe.author.userName}} </mat-card-content>
+        </mat-card>
+      </div>
+      <div class="col">
+        <mat-card class="info-container">
+          <mat-card-subtitle>Calories</mat-card-subtitle>
+          <mat-card-content>{{recipe.calories}}</mat-card-content>
+        </mat-card>
+      </div>
+      <div class="col">
+        <mat-card class="info-container">
+          <mat-card-subtitle>Estimated time</mat-card-subtitle>
+          <mat-card-content>{{recipe.estTime}} minutes</mat-card-content>
+        </mat-card>
+      </div>
+      <div class="col">
+        <mat-card class="info-container">
+          <mat-card-subtitle>Difficulty</mat-card-subtitle>
+          <mat-card-content>{{recipe.difficulty.toString()}} </mat-card-content>
+        </mat-card>
+      </div>
+      <div class="col">
+        <mat-card class="info-container">
+          <mat-card-subtitle>Weight</mat-card-subtitle>
+          <mat-card-content>{{recipe.weight}} g</mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+    <mat-card>
+      <mat-card-title>Description</mat-card-title>
+      <mat-card-content>{{recipe.description}}</mat-card-content>
+    </mat-card>
+
+  </mat-card>
+  <app-ingredients-list [recipeId]="recipe.recipeId"></app-ingredients-list>
+  <app-comments-list [recipeId]="recipe.recipeId"></app-comments-list>
 </div>

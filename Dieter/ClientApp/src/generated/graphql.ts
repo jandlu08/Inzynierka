@@ -421,10 +421,10 @@ export type GetRecipeQuery = (
   { __typename?: 'DieterQuery' }
   & { getRecipe: Maybe<(
     { __typename?: 'Recipe' }
-    & Pick<Recipe, 'recipeId' | 'description' | 'calories' | 'difficulty' | 'estTime'>
+    & Pick<Recipe, 'recipeId' | 'description' | 'calories' | 'difficulty' | 'estTime' | 'weight'>
     & { author: Maybe<(
       { __typename?: 'User' }
-      & Pick<User, 'userName'>
+      & Pick<User, 'userName' | 'userId'>
     )>, rating: Maybe<(
       { __typename?: 'Rating' }
       & Pick<Rating, 'downVotes' | 'upVotes'>
@@ -620,8 +620,10 @@ export const GetRecipeDocument = gql`
     calories
     difficulty
     estTime
+    weight
     author {
       userName
+      userId
     }
     rating {
       downVotes

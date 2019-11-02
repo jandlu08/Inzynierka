@@ -5,8 +5,10 @@
     calories
     difficulty
     estTime
+    weight
     author{
       userName
+      userId
     }
     rating{
       downVotes
