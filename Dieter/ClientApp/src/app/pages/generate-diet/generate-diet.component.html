@@ -1,5 +1,5 @@
-<mat-card *ngIf="!isInputProvided">
-  <form >
+<mat-card *ngIf="!(isDietInputProvided$ |async)">
+  <form>
     <mat-card-content>
       <div class="row">
         <div class="col">
@@ -20,7 +20,7 @@
   <button mat-flat-button color="primary" (click)="generateDiet()">Generate</button>
 </mat-card>
 
-<div *ngIf="isInputProvided">
+<div *ngIf="isDietInputProvided$ | async">
   <app-recipes-list [amount]="amount" [calories]="calories"></app-recipes-list>
   <button class="reset-button" mat-flat-button color="primary" (click)="resetDiet()">Reset</button>
 </div>

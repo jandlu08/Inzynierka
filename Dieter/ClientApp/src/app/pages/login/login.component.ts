@@ -37,7 +37,6 @@ export class LoginComponent implements OnInit, OnDestroy {
       .subscribe(result => {
 
         this.userService.changeUser(result.data.loginUser);
-
         this.router.navigateByUrl('/main');
       }));
   }

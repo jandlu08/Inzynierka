@@ -357,6 +357,8 @@
                 <e p="services" t="Include">
                   <e p="common-types.service.spec.ts" t="Include" />
                   <e p="common-types.service.ts" t="Include" />
+                  <e p="diet-generator.service.spec.ts" t="Include" />
+                  <e p="diet-generator.service.ts" t="Include" />
                   <e p="user-service.service.spec.ts" t="Include" />
                   <e p="user.service.ts" t="Include" />
                 </e>
