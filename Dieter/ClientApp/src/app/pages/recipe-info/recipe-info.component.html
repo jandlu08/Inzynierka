@@ -1,2 +1,28 @@
+<mat-spinner color="accent" *ngIf="loading"></mat-spinner>
+<div *ngIf="!loading">
+  <mat-card>
+    <div class="row title-container">
+      <div class="col">
+        <mat-card-title>Recipe info</mat-card-title>
+      </div>
+      <div class="col">
+        <div class="row">
+          <div class="col vote-container">
+            <div>{{recipe.rating.upVotes}}</div>
+          </div>
+          <div class="col clickable icon" (click)="vote(commonTypes.voteTypes.up)">
+            <svg-icon src="/assets/img/plus.svg" [svgStyle]="{ 'width.px':25 }"></svg-icon>
+          </div>
+          <div class="col vote-container">
+            <div>{{recipe.rating.downVotes}}</div>
+          </div>
+          <div class="col clickable icon" (click)="vote(commonTypes.voteTypes.down)">
+            <svg-icon src="/assets/img/minus.svg" [svgStyle]="{ 'width.px':25 }"></svg-icon>
+          </div>
+        </div>
+      </div>
+</div>
+</mat-card>
 <app-ingredients-list [recipeId]="recipe.recipeId"></app-ingredients-list>
 <app-comments-list [recipeId]="recipe.recipeId"></app-comments-list>
+</div>

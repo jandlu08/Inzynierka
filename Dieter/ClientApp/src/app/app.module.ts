@@ -20,6 +20,7 @@ import { UserInfoComponent } from './pages/user-info/user-info.component';
 import { RecipeInfoComponent } from './pages/recipe-info/recipe-info.component';
 import {CommonComponentsModule} from './pages/common-components/common-components.module';
 import { FlexLayoutModule } from "@angular/flex-layout";
+import {AngularSvgIconModule} from 'angular-svg-icon';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     ModalsModule,
     CommonComponentsModule,
     FlexLayoutModule,
+    AngularSvgIconModule,
   ],
   providers: [CookieService, UserService, CommonTypesService],
   bootstrap: [AppComponent]

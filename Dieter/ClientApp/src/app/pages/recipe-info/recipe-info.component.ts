@@ -3,8 +3,11 @@ import {ActivatedRoute} from '@angular/router';
 import {Subscription} from 'rxjs';
 import {
   GetRecipeGQL,
-  Recipe
+  Recipe, VoteGQL, VoteType
 } from '../../../generated/graphql';
+import {CommonTypesService} from '../../core/services/common-types.service';
+import {MatSnackBar} from '@angular/material/snack-bar';
+import {UserService} from '../../core/services/user.service';
 
 @Component({
   selector: 'app-recipe-info',
@@ -19,7 +22,10 @@ export class RecipeInfoComponent implements OnInit, OnDestroy {
 
   constructor(private route: ActivatedRoute,
               private getRecipeGQL: GetRecipeGQL,
-             ) {
+              private commonTypes: CommonTypesService,
+              private snackBar: MatSnackBar,
+              private userService: UserService,
+              private voteGQL: VoteGQL) {
   }
 
   ngOnInit() {
@@ -31,6 +37,23 @@ export class RecipeInfoComponent implements OnInit, OnDestroy {
     this.subscription.unsubscribe();
   }
 
+  private vote(voteType: VoteType) {
+    this.subscription.add(this.voteGQL
+      .mutate({userId: this.userService.user.userId, recipeId: this.recipe.recipeId, voteType: voteType})
+      .subscribe(result => {
+        if (result.data.vote == null) {
+          this.snackBar.open('You already voted!',
+            'OK', {duration: 3000});
+        } else {
+          if (voteType == VoteType.Up) {
+            this.recipe.rating.upVotes += 1;
+          } else {
+            this.recipe.rating.downVotes += 1;
+          }
+        }
+      }));
+  }
+
   private getRecipe(recipeId: string) {
     this.subscription.add(this.getRecipeGQL
       .fetch({recipeId})
@@ -39,7 +62,6 @@ export class RecipeInfoComponent implements OnInit, OnDestroy {
         this.recipe = result.data.getRecipe;
       }));
   }
-
 
 
 }

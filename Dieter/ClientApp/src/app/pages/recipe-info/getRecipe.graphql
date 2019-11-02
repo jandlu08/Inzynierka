@@ -8,6 +8,10 @@
     author{
       userName
     }
+    rating{
+      downVotes
+      upVotes
+    }
 
   }
 }

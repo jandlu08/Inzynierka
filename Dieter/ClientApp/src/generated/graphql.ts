@@ -425,6 +425,9 @@ export type GetRecipeQuery = (
     & { author: Maybe<(
       { __typename?: 'User' }
       & Pick<User, 'userName'>
+    )>, rating: Maybe<(
+      { __typename?: 'Rating' }
+      & Pick<Rating, 'downVotes' | 'upVotes'>
     )> }
   )> }
 );
@@ -619,6 +622,10 @@ export const GetRecipeDocument = gql`
     estTime
     author {
       userName
+    }
+    rating {
+      downVotes
+      upVotes
     }
   }
 }

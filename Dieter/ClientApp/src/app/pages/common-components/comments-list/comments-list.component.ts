@@ -70,7 +70,7 @@ export class CommentsListComponent implements OnInit, OnDestroy {
             comment.rating.downVotes +=1;
           }
         }
-      }))
+      }));
   }
 
 }

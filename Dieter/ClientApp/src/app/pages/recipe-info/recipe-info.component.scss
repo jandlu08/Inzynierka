@@ -1,0 +1,14 @@
+app-recipe-info {
+  .mat-card {
+    margin: 20px;
+  }
+  .vote-container{
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+  .title-container{
+    display: flex;
+    justify-content: space-between;
+  }
+}
