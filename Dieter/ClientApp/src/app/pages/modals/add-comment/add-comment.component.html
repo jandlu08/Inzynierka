@@ -1,0 +1,24 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Add comment</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form #f="ngForm" id="addCommentForm" (ngSubmit)="addComment()">
+      <table class="fill-dialog" cellspacing="0">
+        <tr>
+          <td>
+            <mat-form-field class="fill-dialog">
+              <textarea matInput [(ngModel)]="comment.content" placeholder="Comment" type="text"
+                        name="content"  matTextareaAutosize matAutosizeMinRows=5 matAutosizeMaxRows=10
+                        required></textarea>
+            </mat-form-field>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </mat-card-content>
+  <mat-card-actions class="action-buttons">
+    <button mat-raised-button [disabled]="!f.form.valid"  color="primary" type="submit" form="addCommentForm" >Add</button>
+    <button mat-button (click)="cancel()" color="primary">Cancel</button>
+  </mat-card-actions>
+</mat-card>

@@ -403,6 +403,13 @@
                   <e p="main-page.component.ts" t="Include" />
                 </e>
                 <e p="modals" t="Include">
+                  <e p="add-comment" t="Include">
+                    <e p="add-comment.component.html" t="Include" />
+                    <e p="add-comment.component.scss" t="Include" />
+                    <e p="add-comment.component.spec.ts" t="Include" />
+                    <e p="add-comment.component.ts" t="Include" />
+                    <e p="addComment.graphql" t="Include" />
+                  </e>
                   <e p="add-ingredient" t="Include">
                     <e p="add-ingredient.component.html" t="Include" />
                     <e p="add-ingredient.component.scss" t="Include" />

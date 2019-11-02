@@ -1,0 +1,5 @@
+﻿mutation addComment($authorUserId: ID!, $recipeId: ID!, $comment: AddCommentInput!){
+  addComment(recipeId: $recipeId, authorUserId: $authorUserId, comment: $comment){
+    commentId
+  }
+}

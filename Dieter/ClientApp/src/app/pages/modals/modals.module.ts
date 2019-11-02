@@ -5,11 +5,20 @@ import {FormsModule} from '@angular/forms';
 import {CustomMaterialModule} from '../../core/material.module';
 import {AddRecipeComponent} from './add-recipe/add-recipe.component';
 import {IngredientInfoComponent} from './ingredient-info/ingredient-info.component';
+import {AddCommentComponent} from './add-comment/add-comment.component';
 
 
 @NgModule({
-  declarations: [AddIngredientComponent, AddRecipeComponent, IngredientInfoComponent],
-  entryComponents: [AddIngredientComponent, AddRecipeComponent, IngredientInfoComponent],
+  declarations: [
+    AddIngredientComponent,
+    AddRecipeComponent,
+    IngredientInfoComponent,
+    AddCommentComponent],
+  entryComponents: [
+    AddIngredientComponent,
+    AddRecipeComponent,
+    IngredientInfoComponent,
+    AddCommentComponent],
   imports: [
     CommonModule,
     FormsModule,

@@ -8,6 +8,9 @@ import {
 import {CommonTypesService} from '../../core/services/common-types.service';
 import {MatSnackBar} from '@angular/material/snack-bar';
 import {UserService} from '../../core/services/user.service';
+import {AddRecipeComponent} from '../modals/add-recipe/add-recipe.component';
+import {MatDialog} from '@angular/material/dialog';
+import {AddCommentComponent} from '../modals/add-comment/add-comment.component';
 
 @Component({
   selector: 'app-recipe-info',
@@ -26,7 +29,8 @@ export class RecipeInfoComponent implements OnInit, OnDestroy {
               private snackBar: MatSnackBar,
               private userService: UserService,
               private voteGQL: VoteGQL,
-              private router: Router) {
+              private router: Router,
+              public dialog: MatDialog) {
   }
 
   ngOnInit() {
@@ -40,6 +44,19 @@ export class RecipeInfoComponent implements OnInit, OnDestroy {
 
   openUserInfo() {
     this.router.navigate(['/user', this.recipe.author.userId]);
+  }
+  addComment(){
+    const dialogRef = this.dialog.open(AddCommentComponent, {
+      width: '800px', data:{authorUserId: this.userService.user.userId,
+      recipeId: this.recipe.recipeId}
+    });
+    dialogRef.afterClosed().subscribe(isCommentCreated => {
+      if (isCommentCreated.data) {
+        this.snackBar.open('Comment was added!',
+          'OK', {duration: 3000});
+      }
+
+    })
   }
 
   private vote(voteType: VoteType) {

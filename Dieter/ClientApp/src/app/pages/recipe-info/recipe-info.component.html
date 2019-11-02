@@ -58,7 +58,9 @@
       <mat-card-title>Description</mat-card-title>
       <mat-card-content>{{recipe.description}}</mat-card-content>
     </mat-card>
-
+    <div class="action-buttons">
+      <button mat-flat-button color="primary" (click)="addComment()">Add comment</button>
+    </div>
   </mat-card>
   <app-ingredients-list [recipeId]="recipe.recipeId"></app-ingredients-list>
   <app-comments-list [recipeId]="recipe.recipeId"></app-comments-list>

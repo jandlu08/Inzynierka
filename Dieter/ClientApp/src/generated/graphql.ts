@@ -373,6 +373,21 @@ export type LoginUserMutation = (
   )> }
 );
 
+export type AddCommentMutationVariables = {
+  authorUserId: Scalars['ID'],
+  recipeId: Scalars['ID'],
+  comment: AddCommentInput
+};
+
+
+export type AddCommentMutation = (
+  { __typename?: 'DieterMutation' }
+  & { addComment: Maybe<(
+    { __typename?: 'Comment' }
+    & Pick<Comment, 'commentId'>
+  )> }
+);
+
 export type AddIngredientMutationVariables = {
   ingredient: AddIngredientInput
 };
@@ -562,6 +577,21 @@ export const LoginUserDocument = gql`
   })
   export class LoginUserGQL extends Apollo.Mutation<LoginUserMutation, LoginUserMutationVariables> {
     document = LoginUserDocument;
+    
+  }
+export const AddCommentDocument = gql`
+    mutation addComment($authorUserId: ID!, $recipeId: ID!, $comment: AddCommentInput!) {
+  addComment(recipeId: $recipeId, authorUserId: $authorUserId, comment: $comment) {
+    commentId
+  }
+}
+    `;
+
+  @Injectable({
+    providedIn: 'root'
+  })
+  export class AddCommentGQL extends Apollo.Mutation<AddCommentMutation, AddCommentMutationVariables> {
+    document = AddCommentDocument;
     
   }
 export const AddIngredientDocument = gql`

@@ -1,5 +1,5 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import { MatDialogRef} from '@angular/material/dialog';
+import {MatDialog, MatDialogRef} from '@angular/material/dialog';
 import {AddIngredientGQL, AddIngredientInput, IngredientType} from '../../../../generated/graphql';
 import {Subscription} from 'rxjs';
 import {MatSnackBar} from '@angular/material/snack-bar';
@@ -20,7 +20,8 @@ export class AddIngredientComponent implements OnInit, OnDestroy {
   constructor(public dialogRef: MatDialogRef<AddIngredientComponent>,
               private addIngredientGQL: AddIngredientGQL,
               private snackBar: MatSnackBar,
-              private commonTypes: CommonTypesService) {
+              private commonTypes: CommonTypesService,
+              public dialog: MatDialog) {
   }
 
   ngOnInit() {
