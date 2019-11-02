@@ -262,7 +262,7 @@ namespace Dieter.API.Models.GraphQL.DieterMutation
                             db.SaveChanges();
                             break;
                         case VoteType.Down:
-                            if (rating != null) rating.UpVotes += 1;
+                            if (rating != null) rating.DownVotes += 1;
                             db.SaveChanges();
                             break;
                         default:
